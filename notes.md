@@ -47,6 +47,12 @@
 - « L'un des pires records d'inflation de l'histoire » plutôt que « le record » : une étude de 2022 le conteste, et la source du record porte un nom de marque, non cité.
 - Le taux de conversion du forint (4 × 10^29) est dit « un nombre à trente chiffres », sans le prononcer.
 - « La guerre vient de finir, le pays est ruiné, l'État imprime des billets » : contexte général, non chiffré.
-- Script et 60 plans prêts, planche de contrôle faite avec un minutage PROVISOIRE (`mots.json` marqué « provisoire »).
-  La voix n'a pas pu être générée : quota ElevenLabs insuffisant (564 crédits, il en faut environ 1 240).
-  Dès que la voix existe : align.py, prep_voice.py (régler tempo et pauses dans voix.json), render.js all, audio.py v1.
+### Fabrication de la v1 (vidéo 002)
+- Voix : même voix que la vidéo 001 (Adrien Clairon, eleven_v4), deux prises générées après recharge du compte.
+  Prise 1 retenue (74,3 s, la plus longue) ; la prise 2 est conservée dans `audio/voix-brute-prise2.mp3`. Choix fait sans écoute.
+- Voix ralentie de 2 % et silences de plus de 0,6 s raccourcis : durée finale 76,1 s.
+- « pengős » écrit « pengueus » pour la synthèse ; la prononciation n'a pas pu être vérifiée à l'oreille.
+- La transcription plaçait « 1946 » une seconde trop tard : `prep_voice.py` recale désormais les débuts de mots sur les
+  reprises de voix mesurées, et un début a été corrigé à la main (`starts` dans `voix.json`).
+- Les plans de la vidéo ont été dessinés avant la voix, sur un minutage provisoire, puis recalés sur la vraie voix.
+- Mesures : −13,1 LUFS, musique 21 dB sous la voix, pointes des bruitages 5 dB sous la voix, 111 bruitages. Son non écouté.

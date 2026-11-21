@@ -1,8 +1,17 @@
 {
-"tempo": 1.0,
+"tempo": 0.98,
 "pause": 0.0,
 "tail": 0.6,
-"breaks_after": [],
+"breaks_after": [
+11,
+39,
+61,
+83,
+125,
+158,
+190,
+194
+],
 "display": [
 "Le",
 "jour",
@@ -215,5 +224,9 @@
 "Jusqu'au",
 "jour",
 "où…"
-]
+],
+"max_silence": 0.6,
+"starts": {
+"41": 13.28
+}
 }

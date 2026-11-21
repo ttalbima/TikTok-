@@ -127,7 +127,8 @@
 
   /* ===== SCÈNE 5 — TOUTES LES QUINZE HEURES ===== */
   S(84, 5, bg => [
-    E(540, 760, O.calendar('JUILLET 1946', { w: 760, fs: 96 }), { a: 'spin', sfx: 'swish' }),
+    E(540, 600, O.calendar('JUILLET', { w: 640, fs: 130 }), { a: 'spin', sfx: 'swish', m: [{ w: 85, r: -5, dur: .2 }, { w: 85, d: .25, r: 0, dur: .2 }] }),
+    E(540, 1120, Tx('1946', 320, 'var(--a1)'), { a: 'stamp', w: 86, sfx: 'stamp', m: [{ w: 86, d: .7, s: 1.08, dur: .2 }, { w: 86, d: .95, s: 1, dur: .2 }] }),
   ]);
   S(87, 5, bg => [
     E(540, 420, O.tag('PRIX', { w: 520, fill: P.navy, ink: P.cream }), { a: 'down' }),
@@ -296,6 +297,6 @@
   ]);
   S(208, 8, bg => [
     E(540, 600, Tx("JUSQU'AU", 240), { a: 'down' }),
-    E(540, 880, Tx('JOUR OÙ…', 250, 'var(--a1)'), { a: 'stamp', w: 209, sfx: 'stamp' }),
+    E(540, 880, Tx('JOUR OÙ…', 250, 'var(--a1)'), { a: 'stamp', w: 209, sfx: 'stamp', loop: 'pulse', amp: .04, per: .6 }),
   ]);
 })();

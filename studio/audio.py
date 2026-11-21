@@ -91,6 +91,10 @@ for i, e in enumerate(meta["events"]):
     x = x[: N - o]; pan = ((i * 37) % 7 - 3) / 3 * .25
     fx[o:o + len(x), 0] += x * (1 - max(pan, 0)); fx[o:o + len(x), 1] += x * (1 + min(pan, 0))
 
+# bruitages superposés : on garde les pointes à 5 dB sous la voix
+fxmax = float(np.max(np.abs(fx))) if len(meta["events"]) else 0
+if fxmax > vpeak * db(-5): fx *= vpeak * db(-5) / fxmax
+
 # ---------- musique : électro minimale, 100 BPM ----------
 BPM = 100; beat = 60 / BPM; bar = 4 * beat; s16 = beat / 4
 A = 220.0
