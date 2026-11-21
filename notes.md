@@ -64,3 +64,6 @@
 
 ## Règle de variété (demande du propriétaire)
 - Les vidéos ne doivent pas se répéter. Niche et promesse fixes ; univers, famille de hook, structure, fin, objet vedette et tonalité de la musique tournent. Le format unique « Pourquoi tu… » est remplacé par quatre familles de hook.
+
+## Marque à éviter
+- « Caddie » est une marque déposée en France (signalé pendant la fabrication de la vidéo 005) : on dit et on écrit « chariot ». Le dossier de la vidéo 005 garde son nom d'origine.

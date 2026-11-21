@@ -43,7 +43,7 @@ Règles de fond, sans exception :
   - Palette (le fond change de couleur à chaque plan) : vert billet `#0E3B2E`, bleu nuit `#14213D`, crème `#F4EBD9`, jaune or `#FFC83D`, corail `#FF5A4E`.
   - Polices : Anton (gros titres), Inter ExtraBold (sous-titres). Repli si Anton indisponible : Inter Display Black.
   - Personnages : silhouettes sans visage, formes géométriques.
-  - Objets récurrents : pièces, billets, étiquettes de prix, courbes, tirelires, caddies génériques.
+  - Objets récurrents : pièces, billets, étiquettes de prix, courbes, tirelires, chariots de courses génériques (ne jamais dire ni écrire « caddie », marque déposée).
 - Mouvement : zoom léger ou mouvement de caméra à l'entrée de chaque plan, rebonds, transition rapide entre les grandes scènes.
 - Zones sûres : rien d'important au-dessus de y=190 ni en dessous de y=1400. Sous-titres vers y=1425, en capitales, 2-4 mots à la fois, mot prononcé surligné, toujours en 2D par-dessus l'image.
 - Planche de contrôle (une image par plan) avant le rendu complet.
