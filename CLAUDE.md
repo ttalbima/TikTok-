@@ -47,7 +47,7 @@ Règles de fond, sans exception :
 - Voix : générée avec ElevenLabs (voix française masculine posée, la même pour toute la série), sauf si un fichier de voix est fourni. Coupe des graves sous 70 Hz, compression légère. C'est la référence de niveau.
 - Bruitages faits en code, uniquement sur une action visible, jamais en remplissage. Pointes 5 dB sous la voix.
 - Musique composée en code (libre de droits) : électro minimale, environ 100 BPM, basse ronde, notes pincées, percussions sèches ; mineur pendant la tension, résolution à la révélation. Elle suit l'ambiance des scènes et place un accent sur chaque mot-clé.
-  Niveau : environ 16 dB sous la voix, mesuré entre 300 et 5000 Hz (26 dB était inaudible sur la vidéo 001). Baisse automatique quand la voix parle.
+  Niveau : environ 21 dB sous la voix, mesuré entre 300 et 5000 Hz (réglé à l'écoute sur la vidéo 001 : 26 dB inaudible, 16 dB trop fort). Baisse automatique quand la voix parle.
 - Sortie : environ −13 LUFS, AAC 224 kb/s.
 
 ## 4. LIVRAISON

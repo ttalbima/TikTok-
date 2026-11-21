@@ -36,3 +36,6 @@
 
 ### v2 (vidéo 001)
 - Musique remontée de 10 dB (16 dB sous la voix au lieu de 26) : elle était inaudible en v1. Image, voix et bruitages inchangés ; l'image muette de la v1 reste valable.
+
+### v3 (vidéo 001)
+- Musique baissée de 5 dB par rapport à la v2 (21 dB sous la voix). Image, voix et bruitages inchangés.
