@@ -53,9 +53,8 @@ Règles de fond, sans exception :
 ## 4. LIVRAISON
 - Pistes séparées (voix, bruitages, musique, image muette). Versions numérotées v1, v2… sans écraser les précédentes.
 - Compte rendu court : le fichier, ce qui a changé, ce qui n'a pas pu être vérifié (le son ne peut pas être écouté).
-- La première vidéo validée devient la référence pour toutes les suivantes.
+- Référence de la série : vidéo 001, version v3 (`videos/001-pourquoi-tu-9-99/livraison/001-pourquoi-tu-9-99-v3.mp4`), validée par le propriétaire du compte. Même charte, même rythme, même voix, mêmes niveaux sonores pour toutes les suivantes.
 
 ## VALIDATION
-- Vidéo n°1 : une seule pause, pour faire valider le script avant de générer la voix (seule étape payante).
-- Ensuite : autonomie complète, du sujet à la vidéo finie.
+- Autonomie complète, du sujet à la vidéo finie (la vidéo 001 est validée).
 - Publication : faite manuellement par le propriétaire du compte.

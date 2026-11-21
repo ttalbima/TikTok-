@@ -209,7 +209,86 @@
     return `<div style="width:${w}px;height:${h}px;background:${fill};border-radius:18px 18px 0 0;transform-origin:50% 100%" data-grow='${JSON.stringify(grow)}'></div>`;
   };
   O.crown = (o = {}) => {
-    const { w = 220 } = o;
-    return svg(w, 220, 160, `<path d="M0,160 L10,30 L70,90 L110,0 L150,90 L210,30 L220,160 Z" fill="${P.yellow}"/><rect x="0" y="134" width="220" height="26" fill="${T.yellow2}"/>`);
+    const { w = 220, fill = P.yellow, band = T.yellow2 } = o;
+    return svg(w, 220, 160, `<path d="M0,160 L10,30 L70,90 L110,0 L150,90 L210,30 L220,160 Z" fill="${fill}"/><rect x="0" y="134" width="220" height="26" fill="${band}"/>`);
+  };
+  /* ----- objets ajoutés pour la vidéo 002 ----- */
+  // billet avec inscription
+  O.note = (txt, o = {}) => {
+    const { w = 520, fill = T.green2, ink = P.cream, fs = 110 } = o;
+    return svg(w, 520, 250,
+      `<rect width="520" height="250" rx="20" fill="${fill}"/>
+       <rect x="16" y="16" width="488" height="218" rx="10" fill="none" stroke="${ink}" stroke-width="6" opacity=".55"/>
+       <circle cx="52" cy="52" r="16" fill="${ink}" opacity=".55"/><circle cx="468" cy="198" r="16" fill="${ink}" opacity=".55"/>
+       <text x="260" y="${125 + fs * .36}" text-anchor="middle" font-size="${fs}" fill="${ink}">${txt}</text>`);
+  };
+  // presse à billets
+  O.press = (o = {}) => {
+    const { w = 600, fill = P.coral, ink = P.cream } = o;
+    return svg(w, 600, 420,
+      `<rect x="40" y="0" width="520" height="90" rx="20" fill="${ink}"/>
+       <rect x="0" y="70" width="600" height="290" rx="26" fill="${fill}"/>
+       <circle cx="150" cy="190" r="62" fill="${ink}"/><circle cx="300" cy="190" r="62" fill="${ink}"/><circle cx="450" cy="190" r="62" fill="${ink}"/>
+       <g fill="${fill}"><circle cx="150" cy="190" r="20"/><circle cx="300" cy="190" r="20"/><circle cx="450" cy="190" r="20"/></g>
+       <rect x="80" y="300" width="440" height="36" rx="18" fill="rgba(0,0,0,.45)"/>
+       <rect x="40" y="360" width="80" height="60" fill="${fill}"/><rect x="480" y="360" width="80" height="60" fill="${fill}"/>`);
+  };
+  // horloge : cadran, puis aiguille à part (à faire tourner)
+  O.clock = (o = {}) => {
+    const { w = 620, fill = P.cream, ink = P.navy } = o;
+    let ticks = '';
+    for (let i = 0; i < 12; i++) ticks += `<rect x="292" y="34" width="16" height="${i % 3 ? 34 : 60}" rx="8" fill="${ink}" transform="rotate(${i * 30} 300 300)"/>`;
+    return svg(w, 600, 600, `<circle cx="300" cy="300" r="300" fill="${ink}"/><circle cx="300" cy="300" r="268" fill="${fill}"/>${ticks}<circle cx="300" cy="300" r="26" fill="${ink}"/>`);
+  };
+  O.hand = (o = {}) => {
+    const { w = 620, col = P.coral, len = .36, sw = 26 } = o;
+    return svg(w, 600, 600, `<rect x="${300 - sw / 2}" y="${300 - 600 * len}" width="${sw}" height="${600 * len + 20}" rx="${sw / 2}" fill="${col}"/>`);
+  };
+  // pain
+  O.bread = (o = {}) => {
+    const { w = 460 } = o;
+    return svg(w, 460, 300,
+      `<path d="M40,300 V150 Q40,20 230,20 Q420,20 420,150 V300 Z" fill="${T.yellow2}"/>
+       <path d="M40,300 V200 H420 V300 Z" fill="rgba(0,0,0,.14)"/>
+       <g stroke="${P.cream}" stroke-width="16" stroke-linecap="round"><path d="M140,80 L170,150 M220,66 L250,140 M300,80 L330,150"/></g>`);
+  };
+  O.sun = (o = {}) => {
+    const { w = 320, col = P.yellow } = o;
+    let r = '';
+    for (let i = 0; i < 12; i++) r += `<rect x="150" y="0" width="20" height="56" rx="10" fill="${col}" transform="rotate(${i * 30} 160 160)"/>`;
+    return svg(w, 320, 320, `${r}<circle cx="160" cy="160" r="84" fill="${col}"/>`);
+  };
+  O.moon = (o = {}) => {
+    const { w = 260, fill = P.cream } = o;
+    return svg(w, 260, 260, `<path d="M214,172 A104,104 0 1 1 96,22 A84,84 0 1 0 214,172 Z" fill="${fill}"/>`);
+  };
+  // poubelle
+  O.bin = (o = {}) => {
+    const { w = 460, fill = P.navy, ink = P.cream } = o;
+    return svg(w, 460, 520,
+      `<path d="M50,110 H410 L374,520 H86 Z" fill="${fill}"/><rect x="10" y="50" width="440" height="60" rx="16" fill="${fill}"/>
+       <rect x="10" y="50" width="440" height="60" rx="16" fill="rgba(0,0,0,.22)"/><rect x="170" y="0" width="120" height="50" rx="14" fill="${fill}"/>
+       <g stroke="${ink}" stroke-width="14" stroke-linecap="round" opacity=".5"><path d="M150,180 L164,450 M230,180 V450 M310,180 L296,450"/></g>`);
+  };
+  // banque
+  O.bank = (o = {}) => {
+    const { w = 600, fill = P.cream, ink = P.navy } = o;
+    return svg(w, 600, 520,
+      `<path d="M300,0 L600,150 H0 Z" fill="${fill}"/><circle cx="300" cy="92" r="30" fill="${ink}"/>
+       <rect x="20" y="170" width="560" height="40" fill="${fill}"/>
+       <g fill="${fill}">${[70, 200, 330, 460].map(x => `<rect x="${x}" y="226" width="70" height="210" rx="8"/>`).join('')}</g>
+       <rect x="0" y="450" width="600" height="70" rx="8" fill="${fill}"/>`);
+  };
+  // repère de carte
+  O.pin = (o = {}) => {
+    const { w = 280, fill = P.coral, ink = P.cream } = o;
+    return svg(w, 280, 380, `<path d="M140,380 C40,240 0,190 0,140 A140,140 0 1 1 280,140 C280,190 240,240 140,380 Z" fill="${fill}"/><circle cx="140" cy="140" r="56" fill="${ink}"/>`);
+  };
+  // ampoule
+  O.bulb = (o = {}) => {
+    const { w = 360, ink = P.navy } = o;
+    return svg(w, 360, 500,
+      `<path d="M180,0 A170,170 0 0 1 290,300 V340 H70 V300 A170,170 0 0 1 180,0 Z" fill="${P.yellow}"/>
+       <rect x="80" y="350" width="200" height="44" rx="14" fill="${ink}"/><rect x="96" y="404" width="168" height="40" rx="14" fill="${ink}"/><rect x="130" y="454" width="100" height="40" rx="18" fill="${ink}"/>`);
   };
 })();

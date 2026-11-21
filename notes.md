@@ -39,3 +39,14 @@
 
 ### v3 (vidéo 001)
 - Musique baissée de 5 dB par rapport à la v2 (21 dB sous la voix). Image, voix et bruitages inchangés.
+
+## Vidéo 002 — Le jour où un pays a imprimé un billet de cent trillions
+- Sujet choisi sans recherche de tendances payante. Format « Le jour où… », fin en boucle.
+- « Environ toutes les quinze heures » : les sources donnent 15 h, 15,6 h ou 16 h (une seule dit 11 h).
+- « Le triple le lendemain » et « perdre les deux tiers en une nuit » sont calculés à partir de l'inflation quotidienne de 207 %.
+- « L'un des pires records d'inflation de l'histoire » plutôt que « le record » : une étude de 2022 le conteste, et la source du record porte un nom de marque, non cité.
+- Le taux de conversion du forint (4 × 10^29) est dit « un nombre à trente chiffres », sans le prononcer.
+- « La guerre vient de finir, le pays est ruiné, l'État imprime des billets » : contexte général, non chiffré.
+- Script et 60 plans prêts, planche de contrôle faite avec un minutage PROVISOIRE (`mots.json` marqué « provisoire »).
+  La voix n'a pas pu être générée : quota ElevenLabs insuffisant (564 crédits, il en faut environ 1 240).
+  Dès que la voix existe : align.py, prep_voice.py (régler tempo et pauses dans voix.json), render.js all, audio.py v1.
