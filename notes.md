@@ -33,3 +33,6 @@
 2. `python3 studio/prep_voice.py <vidéo>` → `audio/voix.wav`, `mots.json`
 3. `node studio/render.js <vidéo> sheet` → planche de contrôle ; `scene <n>` pour refaire une scène ; `all` pour tout
 4. `python3 studio/audio.py <vidéo> v1` → `livraison/`
+
+### v2 (vidéo 001)
+- Musique remontée de 10 dB (16 dB sous la voix au lieu de 26) : elle était inaudible en v1. Image, voix et bruitages inchangés ; l'image muette de la v1 reste valable.
