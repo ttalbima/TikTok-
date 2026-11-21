@@ -1,0 +1,5 @@
+node_modules/
+build/
+_voix_tempo.wav
+__pycache__/
+videos/*/audio/voix.wav
