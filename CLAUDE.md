@@ -79,6 +79,12 @@ Variable : cinq éléments tournent. **Deux vidéos qui se suivent ne partagent 
 - Image et son : objet vedette différent, ouverture différente (gros titre, objet ou personnage), tonalité de la musique décalée d'une vidéo à l'autre (`key` dans `son.json`).
 Le choix fait pour chaque vidéo est noté dans `sujets.md`.
 
+## OBJECTIF À TERME ET PRIORITÉS DU PROPRIÉTAIRE
+- But final : proposer une offre payante à l'audience, **plus tard**, une fois la communauté installée. D'ici là : aucune vente, aucun lien commercial, aucun appel à acheter dans les vidéos ni les descriptions.
+- Le propriétaire a peu de temps : tout ce qui est livré doit être prêt à l'emploi (fichier, description, hashtags), et la même vidéo sert sur TikTok, Instagram et YouTube Shorts.
+- Les corrections des vidéos 003 à 015 (v1 non écoutées) sont remises à plus tard, à sa demande.
+- Documents de lancement : `guide-comptes.md`, `comptes/descriptions.md`, `comptes/photo-de-profil.png`.
+
 ## VALIDATION
 - Autonomie complète, du sujet à la vidéo finie (la vidéo 001 est validée).
 - Publication : faite manuellement par le propriétaire du compte.

@@ -1,4 +1,7 @@
-# Guide — créer et lancer les comptes TikTok et Instagram
+# Guide — créer et lancer les comptes, de A à Z
+
+Temps à prévoir : 45 minutes une seule fois pour tout créer, puis 20 minutes par semaine.
+Fichiers prêts : `comptes/photo-de-profil.png` (photo de profil) et `comptes/descriptions.md` (texte à coller pour chaque vidéo).
 
 ## 1. La niche en une phrase
 
@@ -6,93 +9,98 @@
 
 - Un seul sujet : les prix et ce qu'ils te font faire.
 - Un seul décor : la vie de consommateur en France.
-- Des vidéos qui ne se ressemblent pas : le lieu (supermarché, restaurant, en ligne, abonnements, soldes, cinéma), la façon d'ouvrir, la façon de raconter et la fin changent à chaque fois.
-- Une seule promesse : après chaque vidéo, tu repères un piège de plus.
+- Des vidéos qui ne se ressemblent pas : le lieu, la façon d'ouvrir, la façon de raconter et la fin changent à chaque fois.
 
-Celui qui a aimé la vidéo sur le 9,99 € doit retrouver exactement la même chose dans la suivante : c'est ce qui le fait s'abonner.
+## 2. Avant de commencer (5 minutes)
 
-## 2. Identité du compte (identique sur les deux plateformes)
+1. Crée une adresse e-mail réservée au projet (par exemple chez un fournisseur gratuit). Elle servira aux trois comptes et te protège si un compte est piraté.
+2. Choisis le nom. Mes deux préférés, pour lesquels je n'ai trouvé aucun profil public sur TikTok ni sur Instagram le 21/11/2026 (ce n'est pas une garantie de disponibilité, seule l'inscription le confirme) :
+   - `lepiegedesprix` (recommandé)
+   - `piegeaprix`
+   Solutions de repli : `prixpieges`, `pourquoitupaies`, `cachedansleprix`.
+3. Garde sous la main :
+   - **Nom affiché** : `Les pièges des prix`
+   - **Photo** : `comptes/photo-de-profil.png`
+   - **Bio** : `Pourquoi tu paies plus sans le voir. Un piège de prix expliqué par vidéo.`
 
-**Nom d'utilisateur** : même nom partout, court, sans chiffre ni marque. Idées (disponibilité non vérifiée, à tester dans les applis) :
-- `lepiegedesprix`
-- `piegeaprix`
-- `prixpieges`
-- `pourquoitupaies`
-- `cachedansleprix`
+## 3. Créer le compte TikTok (15 minutes)
 
-**Nom affiché** : `Les pièges des prix`
+1. Installe l'appli TikTok, touche « S'inscrire », choisis « Utiliser un téléphone ou une adresse e-mail », onglet e-mail, et entre l'adresse du projet.
+2. Entre ta date de naissance réelle (il faut avoir 18 ans pour la rémunération plus tard).
+3. Choisis un mot de passe unique, puis le nom d'utilisateur.
+4. Profil > « Modifier le profil » : photo, nom affiché, bio.
+5. Menu (trois traits) > Paramètres et confidentialité :
+   - **Compte** : garde un compte **personnel**, ne passe pas en compte Entreprise (d'après les guides consultés, les comptes Entreprise sont exclus du programme de rémunération).
+   - **Confidentialité** : compte public ; commentaires : tout le monde ; Duo et Collage : tout le monde.
+   - **Sécurité** : active la validation en deux étapes.
+6. Pendant deux ou trois jours avant la première publication, regarde et aime des vidéos francophones sur les prix, la consommation et la psychologie. Cela indique à TikTok à qui montrer les tiennes.
 
-**Photo de profil** : une étiquette de prix « 9,99 » sur fond jaune or, dans la charte des vidéos. Demande-la-moi, je la fabrique en image carrée.
+## 4. Créer le compte Instagram (15 minutes)
 
-**Bio** (deux versions au choix) :
-- `Pourquoi tu paies plus sans le voir. Un piège de prix expliqué par vidéo.`
-- `Les astuces des prix et des magasins, démontées en 1 min 20. Abonne-toi avant ta prochaine course.`
-
-## 3. Créer le compte TikTok
-
-1. Installe TikTok et inscris-toi avec une adresse e-mail dédiée au compte (pas ton adresse personnelle).
-2. Choisis le nom d'utilisateur, le nom affiché, la photo et la bio ci-dessus.
-3. Garde un **compte personnel** (créateur). Les comptes Business sont exclus du programme de rémunération d'après les guides consultés.
-4. Dans Paramètres > Confidentialité : compte public, commentaires ouverts, duos et collages autorisés.
-5. Active la validation en deux étapes (Paramètres > Sécurité).
-6. Avant de publier, passe deux ou trois jours à regarder et aimer des vidéos sur les prix, la consommation et la psychologie, en français. Cela indique à TikTok à qui montrer tes vidéos.
-
-## 4. Créer le compte Instagram
-
-1. Crée le compte avec la même adresse e-mail dédiée et le même nom d'utilisateur.
-2. Passe en **compte professionnel > Créateur**, catégorie « Éducation » : cela donne accès aux statistiques.
-3. Même photo, même nom affiché, même bio.
-4. Active la validation en deux étapes.
+1. Installe Instagram, « Créer un compte », avec la même adresse e-mail et le même nom d'utilisateur.
+2. Profil > « Modifier le profil » : photo, nom affiché, bio.
+3. Paramètres > « Type de compte et outils » > « Passer à un compte professionnel » > **Créateur**, catégorie « Éducation ». Cela donne les statistiques et la programmation des publications.
+4. Paramètres > « Centre de comptes » > Mot de passe et sécurité : active l'authentification à deux facteurs.
 5. Publie toujours le **fichier d'origine** que je te livre, jamais une vidéo téléchargée depuis TikTok.
 
-## 5. Publier une vidéo (à refaire à chaque fois)
+## 5. Les autres réseaux : ma recommandation
 
-- [ ] Fichier : `videos/<numéro>/livraison/<nom>-vN.mp4`, la dernière version validée.
-- [ ] Publier depuis l'appli, sans ajouter de musique ni de texte par-dessus : tout est déjà dans la vidéo.
-- [ ] Couverture : choisir une image où le gros titre est lisible.
-- [ ] Description : la question du hook, puis une question au spectateur.
-- [ ] 3 à 5 hashtags, toujours les mêmes plus un ou deux propres au sujet.
-- [ ] Cocher l'étiquette « contenu généré par IA » sur TikTok (voir section 7).
-- [ ] Répondre aux premiers commentaires dans l'heure qui suit.
+Tu as peu de temps : la même vidéo doit servir partout, sans travail en plus.
 
-**Modèle de description**
-> Pourquoi tu trouves que 9,99 €, c'est moins cher que 10 ? Et toi, tu regardes le premier chiffre ou le prix entier ?
-> #prix #consommation #psychologie #argent #supermarché
+| Réseau | Verdict | Pourquoi |
+|---|---|---|
+| TikTok | Oui, priorité 1 | C'est là que le format et la rémunération sont pensés pour toi. |
+| Instagram Reels | Oui, priorité 2 | Même fichier, public français adulte, utile plus tard pour vendre. |
+| YouTube Shorts | Oui, priorité 3 | Même fichier, et les vidéos y restent trouvables longtemps par la recherche. Dix minutes pour créer la chaîne. |
+| Facebook Reels | Seulement en automatique | Une option d'Instagram republie tes Reels sur Facebook sans rien faire. Active-la si elle t'est proposée, sinon ignore. |
+| Snapchat, X, LinkedIn, Pinterest, Threads | Non pour l'instant | Formats ou publics différents : du temps en plus pour peu de retour. |
 
-**Hashtags fixes** : `#prix #consommation #psychologie #argent`
-**Hashtags variables** : `#supermarché #soldes #abonnement #restaurant #marketing` selon le sujet.
+Pour YouTube : crée une **nouvelle chaîne** au nom du projet (même nom, même photo). Ne publie pas ces vidéos sur une chaîne consacrée à un autre sujet.
 
-## 6. Rythme de publication
+## 6. Ta routine : 20 minutes par semaine
 
-- 3 à 5 vidéos par semaine, aux mêmes heures. Pour démarrer : 18 h à 20 h en semaine, à ajuster ensuite d'après tes statistiques.
-- Même vidéo sur TikTok et Instagram le même jour.
-- Ne juge pas le compte avant 20 à 30 vidéos : les premières servent à TikTok pour trouver ton public.
+Une fois par semaine, le même jour :
+1. Ouvre `comptes/descriptions.md` et prends les vidéos de la semaine, dans l'ordre.
+2. **Programme-les d'avance** sur chaque réseau (chaque appli propose de choisir une date de publication ; l'emplacement exact du bouton change selon les versions) : 3 à 5 vidéos, à heure fixe, entre 18 h et 20 h pour démarrer.
+3. Colle la description et les hashtags. N'ajoute ni musique ni texte : tout est dans la vidéo.
+4. Sur TikTok, coche l'étiquette « contenu généré par IA » (voir section 8).
+5. Relève quatre chiffres par vidéo de la semaine passée et envoie-les-moi : vues, durée moyenne de visionnage, part de spectateurs allés jusqu'au bout, abonnés gagnés.
 
-## 7. Étiquette « contenu généré par IA »
+Dans la semaine, si tu as cinq minutes : réponds aux commentaires. C'est ce qui rapporte le plus pour le moins de temps.
 
-TikTok impose d'étiqueter les contenus IA qui contiennent de l'image, de l'audio ou de la vidéo **réalistes**. Les vidéos sont des animations, mais la voix est une voix de synthèse réaliste. Je te recommande donc de cocher l'étiquette à chaque publication : c'est mon interprétation prudente de la règle, pas une consigne explicite de TikTok sur les voix de synthèse. Si TikTok pose lui-même une étiquette automatique, elle ne peut plus être retirée.
+Avec 14 vidéos prêtes et 4 publications par semaine, tu as trois semaines et demie d'avance.
 
-## 8. Rémunération TikTok (à vérifier dans TikTok Studio)
+## 7. Ce que je peux prendre en charge
 
-Conditions rapportées par les guides consultés pour le programme de récompenses des créateurs, disponible en France :
-- 18 ans ou plus, compte personnel ;
-- 10 000 abonnés ;
-- 100 000 vues sur les 30 derniers jours ;
-- vidéos originales de plus d'une minute (les nôtres durent 1 min 15 à 1 min 30).
+- Les vidéos, les descriptions, les hashtags, la photo de profil : c'est fait ou je le fais.
+- L'analyse des statistiques que tu m'envoies et l'ajustement des sujets.
+- La publication à ta place n'est possible que si tu relies tes comptes à l'outil de publication de vidIQ. Aujourd'hui seule une chaîne YouTube consacrée à un autre projet y est reliée, donc je ne publie rien.
 
-Ces seuils viennent surtout de blogs et des conditions américaines : la page de ton compte dans TikTok Studio fait foi.
+Je ne peux pas créer les comptes moi-même : l'inscription demande ton e-mail, ton téléphone et un code de vérification.
 
-## 9. À ne pas faire
+## 8. Étiquette « contenu généré par IA »
 
-- Changer de sujet « pour tester » : une vidéo hors niche brouille l'algorithme et déçoit les abonnés.
-- Citer une marque, montrer un logo ou une personne réelle, y compris dans la description et les commentaires.
-- Donner un conseil d'investissement ou promettre des économies chiffrées.
-- Supprimer une vidéo qui démarre lentement : certaines décollent après plusieurs jours.
-- Acheter des abonnés ou des vues : cela fausse les statistiques et peut bloquer la rémunération.
+TikTok impose d'étiqueter les contenus IA qui contiennent de l'image, de l'audio ou de la vidéo **réalistes**. Les vidéos sont des animations, mais la voix est une voix de synthèse réaliste. Je te recommande de cocher l'étiquette à chaque publication : c'est mon interprétation prudente de la règle, pas une consigne explicite de TikTok sur les voix de synthèse.
 
-## 10. Ce que tu me renvoies chaque semaine
+## 9. Rémunération TikTok (à vérifier dans TikTok Studio)
 
-Pour chaque vidéo : nombre de vues, durée moyenne de visionnage, pourcentage de spectateurs allés jusqu'au bout, nombre d'abonnés gagnés. Avec ces quatre chiffres, j'ajuste les hooks, le rythme et le choix des sujets.
+Conditions rapportées par les guides consultés pour le programme de récompenses des créateurs, disponible en France : 18 ans ou plus, compte personnel, 10 000 abonnés, 100 000 vues sur les 30 derniers jours, vidéos originales de plus d'une minute. Ces seuils viennent surtout de blogs et des conditions américaines : la page de ton compte fait foi.
+
+## 10. Plus tard : proposer quelque chose à ton audience
+
+L'objectif à terme est de monétiser avec une offre, une fois la communauté installée. Rien à vendre maintenant ; trois choses à faire dès aujourd'hui pour préparer la suite :
+- **Garde le même nom partout** : c'est ta marque.
+- **Note ce que les gens demandent en commentaire** : c'est la meilleure étude de marché pour choisir l'offre.
+- **Ne mets aucun lien commercial dans la bio pour l'instant** : un compte neuf qui vend inspire moins confiance.
+
+On choisira l'offre ensemble quand les chiffres le permettront. Elle devra respecter les mêmes règles que les vidéos : aucune promesse d'économies chiffrées, aucun conseil d'investissement.
+
+## 11. À ne pas faire
+
+- Publier une vidéo hors niche « pour tester ».
+- Citer une marque ou une personne réelle, y compris en description et en commentaire.
+- Supprimer une vidéo qui démarre lentement.
+- Acheter des abonnés ou des vues.
 
 ## Sources
 
