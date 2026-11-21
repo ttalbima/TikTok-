@@ -31,3 +31,103 @@ Réserve (univers, hook et structure attribués au moment de les programmer) :
 - Finir ce qu'on a payé trop cher (coûts irrécupérables)
 
 La vidéo 002 (hyperinflation hongroise de 1946) est terminée mais hors niche : à garder en réserve, pas à publier sur ce compte.
+
+## Banque d'idées (candidats NON vérifiés)
+
+Chaque idée doit encore passer le test de niche, dont l'étude publiée. Prévoir qu'environ un tiers tombe à la vérification.
+Exclure toute idée qui ne repose que sur des travaux rétractés ou contestés (plusieurs études célèbres sur les restaurants et les portions le sont).
+
+### Lire un prix
+- Prix rond ou prix précis : lequel paraît moins cher
+- La taille de la police du prix
+- Les prix en rouge
+- Les prix qui « se prononcent » plus vite paraissent plus petits
+- L'écart dessiné entre l'ancien et le nouveau prix sur l'étiquette
+- Les remises faciles à calculer contre les remises difficiles
+- « −50 % » ou « 1 acheté, 1 offert »
+
+### Le prix de référence
+- Le plat très cher en haut de la carte
+- « Prix conseillé » et « valeur 49 € »
+- Le pourboire suggéré sur le terminal de paiement
+- « Jusqu'à −70 % »
+- Le premier prix vu en entrant dans le magasin
+
+### Choisir
+- Trop de choix tue le choix (effet contesté : à traiter comme tel)
+- L'option cochée d'avance (assurance, garantie, don)
+- Le menu groupé qui coûte plus que les éléments seuls
+- « Et avec ceci ? » : la vente additionnelle
+- La taille proposée par défaut
+
+### Gratuit et cadeaux
+- Le cadeau offert dès un montant
+- L'échantillon gratuit et l'envie de rendre
+- Le « gratuit » qui te fait perdre la tête (effet du prix zéro)
+- Le premier mois à 1 €
+
+### Payer sans le sentir
+- Le paiement sans contact
+- « 3 fois sans frais »
+- Les jetons et monnaies virtuelles dans les jeux et applis
+- Les forfaits illimités qu'on n'utilise pas
+- Le buffet à volonté
+- Payer d'avance ou payer après
+
+### Le temps qui presse
+- Le compte à rebours sur une offre
+- Les ventes flash
+- Les journées de promotion géantes de fin d'année
+- « Offre valable aujourd'hui seulement »
+- L'heure de la promo au bar
+
+### Ce que font les autres
+- « 12 personnes regardent ce produit »
+- « Meilleure vente »
+- Les avis clients et la note de 4,8
+- « Le plus choisi »
+- La file d'attente qui attire
+
+### Dans le magasin
+- Les produits chers à hauteur des yeux
+- Le pain et le lait au fond du magasin
+- La musique lente qui fait remplir le chariot
+- L'odeur dans le magasin
+- Les têtes de gondole
+- L'entrée du magasin, zone où l'on ne regarde rien
+- Les dégustations
+
+### Au restaurant et au café
+- L'alignement des prix sur la carte
+- La carte des vins et le deuxième moins cher
+- La taille des verres
+- La bouteille d'eau proposée d'office
+
+### En ligne
+- Les frais qui apparaissent à la dernière étape
+- Le prix qui change selon le moment
+- La relance du panier abandonné
+- La résiliation cachée au fond du menu
+- La case « se souvenir de ma carte »
+
+### Après l'achat
+- Finir ce qu'on a payé trop cher (coûts irrécupérables)
+- La garantie prolongée
+- On survalorise ce qu'on possède déjà (effet de dotation)
+- On aime plus ce qu'on a monté soi-même
+- Le retour gratuit qui fait commander plus
+
+### Les cases mentales de l'argent
+- L'argent trouvé se dépense plus vite
+- Le remboursement qu'on dépense aussitôt
+- Les cartes cadeaux
+- Le remboursement partiel (cashback)
+- Les points de fidélité
+- Les bons d'achat qui expirent
+
+### Promotions
+- « 3 pour le prix de 2 »
+- « Maximum 4 par client »
+- Les coupons
+- Le paquet « format familial »
+- Le paquet qui rétrécit, version 2 : la recette qui change
