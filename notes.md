@@ -56,3 +56,8 @@
   reprises de voix mesurées, et un début a été corrigé à la main (`starts` dans `voix.json`).
 - Les plans de la vidéo ont été dessinés avant la voix, sur un minutage provisoire, puis recalés sur la vraie voix.
 - Mesures : −13,1 LUFS, musique 21 dB sous la voix, pointes des bruitages 5 dB sous la voix, 111 bruitages. Son non écouté.
+
+## Recentrage de la niche (après la vidéo 002)
+- Retour du propriétaire : la vidéo 001 plaît plus que la 002, jugée peu intéressante pour le public français. Demande : une niche très serrée où celui qui aime une vidéo aime toutes les autres.
+- Décision : niche unique « Les pièges des prix », format unique « Pourquoi tu… », décor français. Les formats « Le jour où… » et « Le vrai prix de… » sont abandonnés.
+- La vidéo 002 est conservée mais hors niche. Les sujets à venir sont dans `sujets.md`, le guide de création des comptes dans `guide-comptes.md`.

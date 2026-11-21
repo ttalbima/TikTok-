@@ -1,7 +1,14 @@
-# Cahier des charges — série vidéo « Argent et économie »
+# Cahier des charges — série vidéo « Les pièges des prix »
 
 ## OBJECTIF
-Produire en autonomie des vidéos verticales (TikTok, Reels, Shorts) animées en 2D, sur la thématique : **argent et économie** (mécanismes, pièges de consommation, épisodes économiques historiques).
+Produire en autonomie des vidéos verticales (TikTok, Reels, Shorts) animées en 2D, sur une niche unique : **les pièges des prix**, c'est-à-dire les astuces de prix et de magasin qui font dépenser plus sans qu'on le remarque. Public : consommateurs français.
+
+Test de niche, obligatoire pour chaque sujet (les trois à la fois) :
+1. Le spectateur l'a vécu cette semaine : supermarché, restaurant, appli, abonnement, achat en ligne.
+2. Un mécanisme psychologique précis l'explique, appuyé par au moins une étude publiée.
+3. Le hook s'écrit « Pourquoi tu… » et parle de son propre comportement.
+Sont hors niche : l'histoire économique, la macroéconomie, les pays étrangers, la bourse, les cryptos.
+La liste des sujets à venir est dans `sujets.md`. La vidéo 002 (hyperinflation hongroise) est hors niche : ne pas en refaire de ce type.
 Deux étapes : 1) écrire le script, 2) fabriquer la vidéo à partir du script et de la voix off.
 Travail en solo : si une info manque, prendre l'option par défaut, la noter dans `notes.md` et continuer.
 
@@ -13,10 +20,8 @@ Règles de fond, sans exception :
 ## 1. SCRIPT
 - Durée : **entre 75 s et 90 s (1 min 15 à 1 min 30) pour toutes les vidéos**. Débit : 2,5 mots/s, soit 188 à 225 mots. Ne jamais descendre sous 75 s ni dépasser 90 s.
 - Vérifier tous les faits sur le web. Ne jamais inventer de date, de chiffre ou de citation. Une légende est présentée comme telle.
-- Formats de la série (la formule ouvre toujours le hook) :
-  - « Le jour où… » : épisodes économiques historiques.
-  - « Pourquoi tu… » : psychologie de l'argent.
-  - « Le vrai prix de… » : coûts cachés du quotidien.
+- Format unique de la série : « Pourquoi tu… ». La formule ouvre toujours le hook.
+- Exemples, prix et situations en euros et dans un décor français (supermarché, boulangerie, restaurant, appli).
 - Structure en 4 blocs :
   - Hook (0-3 s) : une phrase courte qui pose une tension. Pas d'intro.
   - Retainer (3-8 s) : une question dont la réponse n'arrive qu'à la fin, ou l'annonce d'un retournement.
