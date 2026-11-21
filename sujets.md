@@ -1,6 +1,7 @@
 # Sujets à venir — « Les pièges des prix »
 
 Ce sont des idées. Les faits et les études sont à vérifier au moment d'écrire chaque script ; un sujet sans étude solide est abandonné.
+État : les vidéos 003 à 015 sont fabriquées en v1 (dossiers `videos/003-…` à `videos/015-…`), en attente d'écoute et de validation.
 Règle de variété : deux vidéos qui se suivent ne partagent ni l'univers, ni la structure, ni la famille de hook (détail dans `CLAUDE.md`).
 
 | N° | Sujet | Accroche (brouillon) | Univers | Hook | Structure | Fin |

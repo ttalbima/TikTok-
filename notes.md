@@ -67,3 +67,11 @@
 
 ## Marque à éviter
 - « Caddie » est une marque déposée en France (signalé pendant la fabrication de la vidéo 005) : on dit et on écrit « chariot ». Le dossier de la vidéo 005 garde son nom d'origine.
+
+## Lot des vidéos 003 à 015
+- Fabriquées en parallèle par des agents, une par dossier ; chaque dossier contient son `script.md`, `sources.md` et `notes.md` (points non vérifiés, écarts).
+- Les objets propres à une vidéo sont définis en tête de son `plans.js`, pas dans `studio/objets.js`.
+- Les vidéos 011 à 014 ont été interrompues par une limite d'utilisation du compte Claude, puis terminées (rendu, son, contrôle) dans la session principale.
+- Plusieurs scripts dépassent légèrement 225 mots (jusqu'à 239 pour la 004) : la voix parle plus vite que 2,5 mots/s, et la durée reste entre 75 et 90 s.
+- Vidéo 010 : voix ralentie de 6 % et respirations allongées, les deux prises étant courtes (68 s). À réécouter en priorité.
+- Aucune des treize n'a été écoutée ; les prises de voix ont été choisies à la durée.
