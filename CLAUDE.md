@@ -6,7 +6,7 @@ Produire en autonomie des vidéos verticales (TikTok, Reels, Shorts) animées en
 Test de niche, obligatoire pour chaque sujet (les trois à la fois) :
 1. Le spectateur l'a vécu cette semaine : supermarché, restaurant, appli, abonnement, achat en ligne.
 2. Un mécanisme psychologique précis l'explique, appuyé par au moins une étude publiée.
-3. Le hook s'écrit « Pourquoi tu… » et parle de son propre comportement.
+3. Le hook parle du comportement du spectateur lui-même (« tu »), pas d'un tiers.
 Sont hors niche : l'histoire économique, la macroéconomie, les pays étrangers, la bourse, les cryptos.
 La liste des sujets à venir est dans `sujets.md`. La vidéo 002 (hyperinflation hongroise) est hors niche : ne pas en refaire de ce type.
 Deux étapes : 1) écrire le script, 2) fabriquer la vidéo à partir du script et de la voix off.
@@ -20,7 +20,7 @@ Règles de fond, sans exception :
 ## 1. SCRIPT
 - Durée : **entre 75 s et 90 s (1 min 15 à 1 min 30) pour toutes les vidéos**. Débit : 2,5 mots/s, soit 188 à 225 mots. Ne jamais descendre sous 75 s ni dépasser 90 s.
 - Vérifier tous les faits sur le web. Ne jamais inventer de date, de chiffre ou de citation. Une légende est présentée comme telle.
-- Format unique de la série : « Pourquoi tu… ». La formule ouvre toujours le hook.
+- La niche et la promesse ne changent jamais ; tout le reste tourne (voir « VARIÉTÉ » ci-dessous).
 - Exemples, prix et situations en euros et dans un décor français (supermarché, boulangerie, restaurant, appli).
 - Structure en 4 blocs :
   - Hook (0-3 s) : une phrase courte qui pose une tension. Pas d'intro.
@@ -59,6 +59,25 @@ Règles de fond, sans exception :
 - Pistes séparées (voix, bruitages, musique, image muette). Versions numérotées v1, v2… sans écraser les précédentes.
 - Compte rendu court : le fichier, ce qui a changé, ce qui n'a pas pu être vérifié (le son ne peut pas être écouté).
 - Référence de la série : vidéo 001, version v3 (`videos/001-pourquoi-tu-9-99/livraison/001-pourquoi-tu-9-99-v3.mp4`), validée par le propriétaire du compte. Même charte, même rythme, même voix, mêmes niveaux sonores pour toutes les suivantes.
+
+## VARIÉTÉ (même niche, jamais la même vidéo)
+Constant : la niche, la promesse (« tu repères un piège de plus »), la charte, la voix, la durée.
+Variable : cinq éléments tournent. **Deux vidéos qui se suivent ne partagent ni le même univers, ni la même structure, ni la même famille de hook.**
+- Univers : supermarché · restaurant et café · achat en ligne · abonnements et applis · vêtements et soldes · cinéma et loisirs.
+- Famille de hook :
+  - A. « Pourquoi tu… » (ton comportement)
+  - B. « Regarde bien ce prix… » (un objet ou une étiquette qu'on décortique)
+  - C. « Tu crois choisir… » (l'illusion de choix)
+  - D. Le résultat surprenant d'une étude, annoncé d'entrée
+- Structure du récit :
+  1. Démonstration : le mécanisme, puis l'étude (vidéo 001).
+  2. Parcours : on suit un client de l'entrée à la caisse.
+  3. Test : deux options à l'écran, le spectateur choisit, puis la révélation.
+  4. Origine : d'où vient cette pratique.
+  5. Côté vendeur : « si tu tenais le magasin, tu ferais quoi ? »
+- Fin : boucle · question au spectateur · défi (« la prochaine fois, regarde… »).
+- Image et son : objet vedette différent, ouverture différente (gros titre, objet ou personnage), tonalité de la musique décalée d'une vidéo à l'autre (`key` dans `son.json`).
+Le choix fait pour chaque vidéo est noté dans `sujets.md`.
 
 ## VALIDATION
 - Autonomie complète, du sujet à la vidéo finie (la vidéo 001 est validée).

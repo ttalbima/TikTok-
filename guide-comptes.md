@@ -4,8 +4,9 @@
 
 **Les pièges des prix : les astuces de prix et de magasin qui te font dépenser plus sans que tu le remarques.**
 
-- Un seul format : « Pourquoi tu… ».
-- Un seul décor : la vie de consommateur en France (supermarché, restaurant, appli, abonnement).
+- Un seul sujet : les prix et ce qu'ils te font faire.
+- Un seul décor : la vie de consommateur en France.
+- Des vidéos qui ne se ressemblent pas : le lieu (supermarché, restaurant, en ligne, abonnements, soldes, cinéma), la façon d'ouvrir, la façon de raconter et la fin changent à chaque fois.
 - Une seule promesse : après chaque vidéo, tu repères un piège de plus.
 
 Celui qui a aimé la vidéo sur le 9,99 € doit retrouver exactement la même chose dans la suivante : c'est ce qui le fait s'abonner.

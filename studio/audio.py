@@ -98,7 +98,8 @@ if fxmax > vpeak * db(-5): fx *= vpeak * db(-5) / fxmax
 # ---------- musique : électro minimale, 100 BPM ----------
 BPM = 100; beat = 60 / BPM; bar = 4 * beat; s16 = beat / 4
 A = 220.0
-note = lambda semis: A * 2 ** (semis / 12)          # demi-tons depuis la3 (220 Hz)
+KEY = son.get("key", 0)                          # décalage de tonalité, en demi-tons
+note = lambda semis: A * 2 ** ((semis + KEY) / 12)          # demi-tons depuis la3 (220 Hz)
 CH = {"Am": [0, 3, 7], "F": [-4, 0, 3], "Dm": [-7, -4, 0], "E": [-5, -1, 2], "C": [-9, -5, -2], "G": [-14, -10, -7]}
 reveal = words[son["reveal_word"]]["s"] if "reveal_word" in son else 1e9
 nbars = int(np.ceil(N / SR / bar))

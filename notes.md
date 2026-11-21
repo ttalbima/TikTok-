@@ -61,3 +61,6 @@
 - Retour du propriétaire : la vidéo 001 plaît plus que la 002, jugée peu intéressante pour le public français. Demande : une niche très serrée où celui qui aime une vidéo aime toutes les autres.
 - Décision : niche unique « Les pièges des prix », format unique « Pourquoi tu… », décor français. Les formats « Le jour où… » et « Le vrai prix de… » sont abandonnés.
 - La vidéo 002 est conservée mais hors niche. Les sujets à venir sont dans `sujets.md`, le guide de création des comptes dans `guide-comptes.md`.
+
+## Règle de variété (demande du propriétaire)
+- Les vidéos ne doivent pas se répéter. Niche et promesse fixes ; univers, famille de hook, structure, fin, objet vedette et tonalité de la musique tournent. Le format unique « Pourquoi tu… » est remplacé par quatre familles de hook.
