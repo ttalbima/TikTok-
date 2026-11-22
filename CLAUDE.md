@@ -83,7 +83,7 @@ Le choix fait pour chaque vidéo est noté dans `sujets.md`.
 - But final : proposer une offre payante à l'audience, **plus tard**, une fois la communauté installée. D'ici là : aucune vente, aucun lien commercial, aucun appel à acheter dans les vidéos ni les descriptions.
 - Le propriétaire a peu de temps : tout ce qui est livré doit être prêt à l'emploi (fichier, description, hashtags), et la même vidéo sert sur TikTok, Instagram et YouTube Shorts.
 - Les corrections des vidéos 003 à 015 (v1 non écoutées) sont remises à plus tard, à sa demande.
-- Documents de lancement : `guide-comptes.md`, `comptes/descriptions.md`, `comptes/photo-de-profil.png`.
+- Documents de lancement : `guide-comptes.md`, `comptes/descriptions.md`, `comptes/prompt-logo.md` (le logo se génère avec Gemini : le propriétaire n'a pas aimé les logos dessinés en code).
 
 ## VALIDATION
 - Autonomie complète, du sujet à la vidéo finie (la vidéo 001 est validée).

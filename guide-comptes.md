@@ -1,7 +1,7 @@
 # Guide — créer et lancer les comptes, de A à Z
 
 Temps à prévoir : 45 minutes une seule fois pour tout créer, puis 20 minutes par semaine.
-Fichiers prêts : `comptes/photo-de-profil.png` (photo de profil) et `comptes/descriptions.md` (texte à coller pour chaque vidéo).
+Fichiers prêts : `comptes/prompt-logo.md` (prompt pour générer le logo) et `comptes/descriptions.md` (texte à coller pour chaque vidéo).
 
 ## 1. La niche en une phrase
 
@@ -20,7 +20,7 @@ Fichiers prêts : `comptes/photo-de-profil.png` (photo de profil) et `comptes/de
    Solutions de repli : `prixpieges`, `pourquoitupaies`, `cachedansleprix`.
 3. Garde sous la main :
    - **Nom affiché** : `Les pièges des prix | Psycho de la conso` (sur TikTok, si c'est trop long : `Les pièges des prix`)
-   - **Photo** : `comptes/photo-de-profil.png` (étiquette « 9,99 » accrochée à un hameçon ; variantes dans `comptes/profil-B.png` et `profil-C.png`)
+   - **Photo** : le logo à générer avec le prompt de `comptes/prompt-logo.md`
    - **Bio** :
      ```
      Pourquoi tu paies plus sans le voir 🧠
@@ -77,7 +77,7 @@ Avec 14 vidéos prêtes et 4 publications par semaine, tu as trois semaines et d
 
 ## 7. Ce que je peux prendre en charge
 
-- Les vidéos, les descriptions, les hashtags, la photo de profil : c'est fait ou je le fais.
+- Les vidéos, les descriptions, les hashtags, le prompt du logo : c'est fait ou je le fais.
 - L'analyse des statistiques que tu m'envoies et l'ajustement des sujets.
 - La publication à ta place n'est possible que si tu relies tes comptes à l'outil de publication de vidIQ. Aujourd'hui seule une chaîne YouTube consacrée à un autre projet y est reliée, donc je ne publie rien.
 
