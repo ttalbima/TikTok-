@@ -19,9 +19,14 @@ Fichiers prêts : `comptes/photo-de-profil.png` (photo de profil) et `comptes/de
    - `piegeaprix`
    Solutions de repli : `prixpieges`, `pourquoitupaies`, `cachedansleprix`.
 3. Garde sous la main :
-   - **Nom affiché** : `Les pièges des prix`
-   - **Photo** : `comptes/photo-de-profil.png`
-   - **Bio** : `Pourquoi tu paies plus sans le voir. Un piège de prix expliqué par vidéo.`
+   - **Nom affiché** : `Les pièges des prix | Psycho de la conso` (sur TikTok, si c'est trop long : `Les pièges des prix`)
+   - **Photo** : `comptes/photo-de-profil.png` (étiquette « 9,99 » accrochée à un hameçon ; variantes dans `comptes/profil-B.png` et `profil-C.png`)
+   - **Bio** :
+     ```
+     Pourquoi tu paies plus sans le voir 🧠
+     Un piège de prix décrypté par vidéo, études à l'appui 📊
+     Abonne-toi avant tes prochaines courses 🛒
+     ```
 
 ## 3. Créer le compte TikTok (15 minutes)
 
