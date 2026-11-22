@@ -1,7 +1,7 @@
 # Guide — créer et lancer les comptes, de A à Z
 
 Temps à prévoir : 45 minutes une seule fois pour tout créer, puis 20 minutes par semaine.
-Fichiers prêts : `comptes/prompt-logo.md` (prompt pour générer le logo) et `comptes/descriptions.md` (texte à coller pour chaque vidéo).
+Fichiers prêts : `comptes/photo-de-profil.png` (photo de profil) et `comptes/descriptions.md` (texte à coller pour chaque vidéo).
 
 ## 1. La thématique en une phrase
 
@@ -17,7 +17,7 @@ Fichiers prêts : `comptes/prompt-logo.md` (prompt pour générer le logo) et `c
 2. Choisis le nom. Recommandé : `piegesdelargent`, qui couvre toute la thématique. Second choix : `lepiegedesprix`, plus étroit (il colle aux prix, moins aux arnaques et aux factures). Je n'ai trouvé aucun profil public à ces deux noms sur TikTok ni sur Instagram en novembre 2026 ; seule l'inscription confirme qu'un nom est libre.
 3. Garde sous la main :
    - **Nom affiché** : `Les pièges de l'argent | Conso & arnaques` (sur TikTok, si c'est trop long : `Les pièges de l'argent`)
-   - **Photo** : le logo à générer avec le prompt de `comptes/prompt-logo.md`
+   - **Photo** : `comptes/photo-de-profil.png` (logo typographique « PIÈGES DE L'ARGENT »)
    - **Bio** :
      ```
      Ce qui te fait perdre de l'argent sans le voir 🧠
@@ -74,7 +74,7 @@ Avec 14 vidéos prêtes et 4 publications par semaine, tu as trois semaines et d
 
 ## 7. Ce que je peux prendre en charge
 
-- Les vidéos, les descriptions, les hashtags, le prompt du logo : c'est fait ou je le fais.
+- Les vidéos, les descriptions, les hashtags, la photo de profil : c'est fait ou je le fais.
 - L'analyse des statistiques que tu m'envoies et l'ajustement des sujets.
 - La publication à ta place n'est possible que si tu relies tes comptes à l'outil de publication de vidIQ. Aujourd'hui seule une chaîne YouTube consacrée à un autre projet y est reliée, donc je ne publie rien.
 
