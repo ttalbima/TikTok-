@@ -9,10 +9,10 @@ const path = require('path');
   await p.evaluate(async () => {
     document.body.style.cssText = 'margin:0;width:1080px;height:1080px';
     document.body.innerHTML = `
-    <div style="position:absolute;inset:0;background:#0B0D12;display:flex;flex-direction:column;align-items:center;justify-content:center">
-      <div style="font-family:Anton;font-size:305px;line-height:.92;color:#F4EBD9;letter-spacing:4px">PIÈGES</div>
-      <div style="margin-top:40px;padding:6px 30px 12px;background:#FFC83D;transform:rotate(-3deg)">
-        <div style="font-family:Anton;font-size:136px;line-height:1;color:#0B0D12;letter-spacing:6px">DE L'ARGENT</div>
+    <div style="position:absolute;inset:0;background:#FFC83D;display:flex;flex-direction:column;align-items:center;justify-content:center">
+      <div style="font-family:Anton;font-size:305px;line-height:.92;color:#14213D;letter-spacing:4px">PIÈGES</div>
+      <div style="margin-top:40px;padding:6px 30px 12px;background:#FF5A4E;transform:rotate(-3deg)">
+        <div style="font-family:Anton;font-size:136px;line-height:1;color:#F4EBD9;letter-spacing:6px">DE L'ARGENT</div>
       </div>
     </div>`;
     await document.fonts.load('200px Anton'); await document.fonts.ready;
