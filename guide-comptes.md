@@ -24,11 +24,7 @@ Fichiers prêts : `comptes/photo-de-profil.png` (photo de profil) et `comptes/de
      Prix, abonnements, arnaques : un piège par vidéo 🔍
      Abonne-toi pour ne plus te faire avoir
      ```
-   - **Bio TikTok** (TikTok limite la bio à 80 caractères) :
-     ```
-     L'argent que tu perds sans le voir 🧠
-     Abonne-toi pour ne plus te faire avoir
-     ```
+   - **Bio TikTok** : la même que sur Instagram (TikTok accepte 160 caractères).
    - **Nom affiché TikTok** (30 caractères maximum) : `Les pièges de l'argent`
 
 ## 3. Créer le compte TikTok (15 minutes)
