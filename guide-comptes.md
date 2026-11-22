@@ -47,7 +47,25 @@ Fichiers prêts : `comptes/photo-de-profil.png` (photo de profil) et `comptes/de
 4. Paramètres > « Centre de comptes » > Mot de passe et sécurité : active l'authentification à deux facteurs.
 5. Publie toujours le **fichier d'origine** que je te livre, jamais une vidéo téléchargée depuis TikTok.
 
-## 5. Les autres réseaux : ma recommandation
+## 4 bis. Créer la chaîne YouTube (10 minutes)
+
+Ne transforme pas ta chaîne personnelle (elle porte ton vrai nom) : crée une **chaîne séparée au nom du projet**.
+1. Dans un navigateur, connecté à ton compte Google, ouvre `youtube.com/channel_switcher` et choisis « Créer une chaîne ». Le parcours exact peut changer selon les versions de YouTube.
+2. Nom : `Les pièges de l'argent`. Identifiant : `@piegesdelargent` (pas vérifié, YouTube te dira s'il est libre).
+3. Photo : `comptes/photo-de-profil.png`. Bannière : `comptes/banniere-youtube.png` (2560 × 1440, texte dans la zone visible sur tous les écrans).
+4. Description (à coller) :
+   ```
+   Ce qui te fait perdre de l'argent sans que tu le remarques.
+
+   Prix en magasin, abonnements, factures, arnaques, techniques de marketing : chaque vidéo décrypte un piège du quotidien, avec ses sources (études publiées, textes de loi, chiffres officiels).
+
+   Aucun conseil d'investissement : juste de quoi repérer les pièges.
+
+   Abonne-toi pour ne plus te faire avoir.
+   ```
+5. Laisse « Ma Communauté » désactivé pour l'instant.
+
+
 
 Tu as peu de temps : la même vidéo doit servir partout, sans travail en plus.
 
