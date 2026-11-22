@@ -26,8 +26,8 @@ Fichiers prêts : `comptes/photo-de-profil.png` (photo de profil) et `comptes/de
      ```
    - **Bio TikTok** (TikTok limite la bio à 80 caractères) :
      ```
-     Ce qui te fait perdre de l'argent sans le voir 🧠
-     Prix, abonnements, arnaques 🔍
+     L'argent que tu perds sans le voir 🧠
+     Abonne-toi pour ne plus te faire avoir
      ```
    - **Nom affiché TikTok** (30 caractères maximum) : `Les pièges de l'argent`
 
