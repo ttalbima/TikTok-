@@ -126,7 +126,7 @@
   ]);
   S(51, 3, bg => [
     E(540, 600, lg(bg, '20,00 €'), { a: 'drop', sfx: 'thud', m: [{ w: 55, s: 1.06, dur: .2 }] }),
-    E(540, 1090, Tx('AVEC LE SIGNE', 150, 'var(--a1)'), { a: 'up', w: 53 }),
+    E(540, 1090, Tx('AVEC LE SIGNE', 150, 'var(--a1)'), { a: 'up', w: 53, m: [{ w: 56, d: .3, s: 1.07, dur: .2 }, { w: 56, d: .55, s: 1, dur: .2 }] }),   // v2 : rebond ajouté
   ]);
   S(57, 3, bg => [
     E(540, 700, Tx('2', 760, 'var(--a1)'), { a: 'stamp', sfx: 'stamp', loop: 'pulse', amp: .03, per: .7 }),
@@ -289,7 +289,7 @@
   ]);
   S(170, 8, bg => [
     E(540, 600, O.carte([{ p: '12' }, { p: '20', l: 300 }, { p: '28', l: 200 }], { w: 560 }), { a: 'pop', sfx: 'pop', loop: 'float', amp: 22, per: 1.3 }),
-    E(540, 1200, Tx('SI LÉGÈRES', 210, 'var(--a1)'), { a: 'up', w: 174 }),
+    E(540, 1200, Tx('SI LÉGÈRES', 210, 'var(--a1)'), { a: 'up', w: 174, m: [{ w: 175, d: .35, s: 1.07, dur: .2 }, { w: 175, d: .6, s: 1, dur: .2 }] }),   // v2 : rebond ajouté, la respiration est plus longue
   ]);
   const barre = (bg, glyph, label, size, gy = 600) => [
     E(540, gy, Tx(glyph, size), { a: 'pop', sfx: 'pop' }),

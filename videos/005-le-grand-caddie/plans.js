@@ -82,9 +82,9 @@
   const inCart = (cx, cy, w, fx, h) => [cx + (fx - 300) * w / 600, cy + 70 * w / 600 - h / 2 - 6];
   const under = (y, col, an) => E(540, y, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col, sw: 28, draw: an }), { a: 'none', cut: false });
 
-  V.keywords = [4, 10, 11, 14, 18, 24, 29, 44, 57, 71, 73, 85, 91, 95, 102, 106, 110, 121, 130, 135, 141, 143, 147, 152, 161, 167, 171, 177, 189, 192, 198, 207, 215];
+  V.keywords = [4, 10, 14, 18, 24, 29, 44, 57, 71, 73, 85, 91, 95, 102, 106, 110, 121, 130, 135, 141, 143, 147, 152, 161, 167, 171, 177, 189, 192, 198, 207, 215];
 
-  /* ===== SCÈNE 1 — HOOK ===== */
+  /* ===== SCÈNE 1 — HOOK : « Donne un chariot plus grand à des clients : ils achètent plus. » ===== */
   S(0, 1, bg => [
     E(540, 660, cart(bg, { w: 620 }), { a: 'left', dist: 1300, dur: .55, sfx: 'whoosh', m: [{ d: .55, r: -4, dur: .12 }, { d: .7, r: 0, dur: .2 }] }),
     E(540, 1160, Tx('UN CHARIOT', 180, 'var(--a1)'), { a: 'up', w: 2 }),
@@ -104,27 +104,14 @@
     E(540, 900, Tx('PLUS', 460, 'var(--a1)'), { a: 'stamp', w: 10, sfx: 'stamp', loop: 'pulse', amp: .03, per: .6 }),
   ]);
 
-  /* ===== SCÈNE 2 — RETAINER ===== */
-  S(11, 2, bg => [
-    E(540, 640, O.store({ w: 700, fill: P.navy, ink: P.yellow }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1150, Tx('MÊME MAGASIN', 150, 'var(--a1)'), { a: 'up', w: 11 }),
-  ]);
-  S(11, 2, bg => [
-    E(540, 440, O.tag('2,50 €', { w: 560 }), { a: 'left', sfx: 'pop' }),
-    E(540, 690, Tx('=', 220, 'var(--a1)'), { a: 'pop', d: .15 }),
-    E(540, 940, O.tag('2,50 €', { w: 560 }), { a: 'right', d: .08 }),
-    E(540, 1210, Tx('MÊMES PRIX', 150, 'var(--a1)'), { a: 'up', w: 11 }),
-  ]);
-  S(11, 2, bg => [
-    E(540, 600, Tx('MÊMES', 280), { a: 'pop', sfx: 'pop' }),
-    E(540, 910, Tx('ENVIES', 320, 'var(--a1)'), { a: 'stamp', w: 11, sfx: 'stamp' }),
-  ]);
+  /* ===== SCÈNE 2 — RETAINER : « Et le plus étrange, c'est que ton assiette te fait exactement le même coup. » ===== */
+  k += 3; // trois plans retirés (« Même magasin, mêmes prix, mêmes envies. ») : on saute leurs couleurs pour que la suite garde ses fonds
   S(11, 2, bg => [
     E(540, 560, Tx('LE PLUS', 250), { a: 'down', w: 12 }),
     E(540, 860, Tx('ÉTRANGE', 280, 'var(--a1)'), { a: 'stamp', w: 14, sfx: 'stamp', loop: 'swing', amp: 2.5, per: .5 }),
   ]);
   S(15, 2, bg => [
-    E(540, 660, O.plate({ w: 700 }), { a: 'spin', w: 17, sfx: 'swish' }),
+    E(540, 660, O.plate({ w: 700 }), { a: 'spin', d: .05, sfx: 'swish' }),
     E(540, 1170, Tx('TON ASSIETTE', 155, 'var(--a1)'), { a: 'up', w: 18 }),
   ]);
   S(19, 2, bg => [
