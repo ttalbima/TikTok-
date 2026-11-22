@@ -90,3 +90,10 @@
 
 ## Leçon : décalage d'indices (22/11/2026)
 - La première version de studio/remap_plans.py décalait aussi les largeurs d'objets (« w: 200 » dans O.coin, O.person…), signalé par un agent de retouche. Corrigé : l'outil ne décale plus que les « w: » qui désignent un mot déclencheur. Les 12 vidéos en retouche sont corrigées à la main par les agents, d'après plans-avant.js.
+
+## Retouche de structure des vidéos 001 et 003 à 015 (22/11/2026)
+- Méthode : remontage de la voix existante (phrases coupées ou déplacées) avec `studio/montage_voix.py`, 9 phrases courtes réenregistrées en une seule prise (920 crédits ElevenLabs, `videos/_retouches/`), indices des plans décalés avec `studio/remap_plans.py`, plans du début et de la fin refaits par trois agents `fabrication` en mode retouche.
+- Résultat : `controle_structure.py` répond OK sur les 14 vidéos. 008 et 014 n'ont demandé aucun changement d'image ni de son (seul le découpage du script était mal étiqueté).
+- Trois agents qui rendent en même temps saturent la mémoire : `render all` plante. Rendre scène par scène, ou un seul agent de rendu à la fois.
+- Après une retouche qui supprime des plans, effacer les anciennes images de `build/planche/` avant de refaire les planches.
+- Restent à faire : écoute par le propriétaire (raccords de voix), contrôle indépendant par l'agent `verification`, et deux défauts d'image du corps de la 003 signalés par un agent (titres « ENCORE + FORT » et « TON CHOIX »), non vérifiés.

@@ -94,7 +94,7 @@ Le choix fait pour chaque vidéo est noté dans `sujets.md`.
 ## OBJECTIF À TERME ET PRIORITÉS DU PROPRIÉTAIRE
 - But final : proposer une offre payante à l'audience, **plus tard**, une fois la communauté installée. D'ici là : aucune vente, aucun lien commercial, aucun appel à acheter dans les vidéos ni les descriptions.
 - Le propriétaire a peu de temps : tout ce qui est livré doit être prêt à l'emploi (fichier, description, hashtags), et la même vidéo sert sur TikTok, Instagram et YouTube Shorts.
-- Les corrections des vidéos 003 à 015 (v1 non écoutées) sont remises à plus tard, à sa demande.
+- Structure recalée le 22/11/2026 sur les vidéos 001 et 003 à 015, sans tout refaire (voix remontée avec `studio/montage_voix.py`, plans du début et de la fin retouchés) : 001 en v4, 008 et 014 inchangées (v1), les autres en v2. Aucune n'a encore été écoutée par le propriétaire ; la v3 de la 001 reste la référence validée tant qu'il n'a pas validé la v4.
 - Documents de lancement : `guide-comptes.md`, `comptes/descriptions.md`, `comptes/banniere-youtube.png`, `comptes/photo-de-profil.png` (logo typographique choisi par le propriétaire : texte seul « PIÈGES DE L'ARGENT », bleu nuit sur fond crème, bandeau corail ; il trouve le noir trop sombre et le jaune trop agressif en fond ; il a refusé les logos à illustration : étiquette, hameçon, tapette à souris).
 
 ## CROISSANCE
