@@ -151,7 +151,7 @@
     E(540, 1110, Tx(`${cnt({ from: 0, to: 8, dur: .6, sfx: 'tick' })} CASES VIDES`, 170, 'var(--a1)'), { a: 'fade' }),
   ]);
   S(36, 3, bg => [
-    ...Array.from({ length: 8 }, (_, i) => E(195 + (i % 4) * 230, 480 + Math.floor(i / 4) * 300, tasse(bg, { w: 183 }), { a: 'pop', d: i * .07, dur: .2, sfx: i % 3 === 0 ? 'pop' : undefined })),
+    ...Array.from({ length: 8 }, (_, i) => E(195 + (i % 4) * 230, 480 + Math.floor(i / 4) * 300, tasse(bg, { w: 190 }), { a: 'pop', d: i * .07, dur: .2, sfx: i % 3 === 0 ? 'pop' : undefined })),
     E(540, 1150, Tx('8 CAFÉS', 240, 'var(--a1)'), { a: 'stamp', w: 37, sfx: 'stamp' }),
   ]);
   S(39, 3, bg => [
@@ -237,7 +237,7 @@
   ]);
   S(85, 5, bg => [
     E(540, 640, O.voiture({ w: 760, fill: bg === 'coral' ? P.yellow : P.coral }), { a: 'right', dist: 900, sfx: 'whoosh' }),
-    ...[[220, 330], [400, 260], [660, 300], [860, 380], [300, 440]].map(([x, y], i) => E(x, y, O.disc({ w: 63 + (i % 3) * 30, fill: P.cream }), { a: 'pop', w: 87, d: i * .08, loop: 'float', per: 1 + i * .2, cut: false })),
+    ...[[220, 330], [400, 260], [660, 300], [860, 380], [300, 440]].map(([x, y], i) => E(x, y, O.disc({ w: 70 + (i % 3) * 30, fill: P.cream }), { a: 'pop', w: 87, d: i * .08, loop: 'float', per: 1 + i * .2, cut: false })),
     E(540, 1110, Tx('LAVAGE AUTO', 200, 'var(--a1)'), { a: 'stamp', w: 89, sfx: 'stamp' }),
   ]);
   S(91, 5, bg => [

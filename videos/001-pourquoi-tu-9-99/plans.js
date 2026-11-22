@@ -6,67 +6,54 @@
   const cnt = o => `<span data-count='${JSON.stringify(o)}'></span>`;
 
   // mots-clés : accents de la musique
-  V.keywords = [18, 18, 20, 22, 22, 23, 44, 54, 61, 66, 82, 90, 99, 105, 119, 137, 141, 146, 170, 177, 184, 193];
+  V.keywords = [1, 5, 8, 13, 17, 20, 23, 44, 54, 61, 66, 82, 90, 99, 105, 119, 137, 141, 146, 170, 177, 184, 193];
 
-  /* ===== SCÈNE 1 — HOOK ===== */
-  shot({ w: 18, bg: 'navy', scene: 1, html: [
+  /* ===== SCÈNE 1 — HOOK : « Pourquoi 9,99 € te paraît moins cher ? » ===== */
+  shot({ w: 0, bg: 'navy', scene: 1, html: [
     E(540, 700, Tx('POURQUOI', 240), { a: 'stamp', sfx: 'stamp' }),
-    E(540, 1010, Tx('?', 420, 'var(--a1)'), { w: 18, rot: 8, loop: 'swing', amp: 5, per: .9, sfx: 'pop' }),
+    E(540, 1010, Tx('?', 420, 'var(--a1)'), { d: .2, rot: 8, loop: 'swing', amp: 5, per: .9, sfx: 'pop' }),
   ] });
-  shot({ w: 18, bg: 'yellow', scene: 1, html: [
+  shot({ w: 1, bg: 'coral', scene: 1, html: [
+    E(540, 760, O.burst({ w: 1000 }), { a: 'pop', d: .72, loop: 'spin', per: 7, cut: false }),
+    E(540, 760, O.tag('9,99 €', { w: 840 }), { a: 'drop', sfx: 'thud', m: [{ d: .85, s: 1.08, dur: .18 }, { d: 1.05, s: 1, dur: .2 }] }),
+  ] });
+  shot({ w: 2, bg: 'yellow', scene: 1, html: [
     E(540, 880, O.person({ w: 460, fill: P.navy }), { a: 'up', sfx: 'pop' }),
     E(540, 380, Tx('TOI', 240, 'var(--a1)'), { a: 'down', d: .1 }),
   ] });
-  shot({ w: 18, bg: 'coral', scene: 1, html: [
-    E(540, 760, O.burst({ w: 1000 }), { a: 'pop', d: .72, loop: 'spin', per: 7, cut: false }),
-    E(540, 760, O.tag('9,99 €', { w: 840 }), { a: 'drop', sfx: 'thud', m: [{ d: 1.0, s: 1.08, dur: .18 }, { d: 1.2, s: 1, dur: .2 }] }),
-  ] });
-  shot({ w: 18, bg: 'green', scene: 1, html: [
+  shot({ w: 4, bg: 'green', scene: 1, html: [
     E(540, 450, O.arrow({ w: 340, fill: P.coral }), { a: 'down', rot: 90, sfx: 'fall' }),
-    E(540, 850, Tx('MOINS', 300), { a: 'stamp', w: 18, sfx: 'stamp' }),
-    E(540, 1150, Tx('CHER', 300, 'var(--a1)'), { a: 'stamp', w: 18 }),
-  ] });
-  shot({ w: 18, bg: 'cream', scene: 1, html: [
-    E(330, 560, O.tag('9,99 €', { w: 480, fill: P.yellow }), { a: 'left', rot: -6 }),
-    E(720, 880, O.tag('10 €', { w: 600, fill: P.navy, ink: P.cream }), { w: 18, rot: 5, sfx: 'pop' }),
-    E(540, 1170, Tx('?', 280, 'var(--a1)'), { w: 18, d: .45, loop: 'swing', amp: 7, per: .8 }),
+    E(540, 850, Tx('MOINS', 300), { a: 'stamp', d: .08, sfx: 'stamp' }),
+    E(540, 1150, Tx('CHER ?', 300, 'var(--a1)'), { a: 'stamp', w: 5 }),
   ] });
 
-  /* ===== SCÈNE 2 — RETAINER ===== */
-  shot({ w: 18, bg: 'navy', scene: 2, html: [
+  /* ===== SCÈNE 2 — RETAINER : « Pourtant, ce 9 a déjà fait vendre plus, en augmentant le prix. » ===== */
+  shot({ w: 6, bg: 'coral', scene: 2, html: [
+    E(540, 760, Tx('POURTANT…', 220), { a: 'stamp', sfx: 'stamp' }),
+    E(540, 940, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col: P.yellow, sw: 28, draw: { d: .25, dur: .3 } }), { a: 'none', cut: false }),
+  ] });
+  shot({ w: 8, bg: 'cream', scene: 2, html: [
+    E(320, 760, Tx('9', 860, 'var(--a1)'), { a: 'stamp', sfx: 'stamp', loop: 'pulse', amp: .03, per: .7 }),
+    E(650, 1050, O.bar(200, { w: 110, fill: P.navy, grow: { w: 11, sfx: 'rise' } }), { a: 'none' }),
+    E(790, 980, O.bar(340, { w: 110, fill: P.navy, grow: { w: 12 } }), { a: 'none' }),
+    E(930, 890, O.bar(520, { w: 110, fill: P.green, grow: { w: 13 } }), { a: 'none' }),
+  ] });
+  shot({ w: 14, bg: 'yellow', scene: 2, html: [
+    E(540, 870, O.tag('PRIX', { w: 640, fill: P.navy, ink: P.cream }), { a: 'pop', m: [{ w: 15, dy: -70, s: 1.12, dur: .4 }, { w: 17, d: .3, s: 1.2, dur: .2 }, { w: 17, d: .5, s: 1.12, dur: .2 }] }),
+    E(540, 430, O.arrow({ w: 380, fill: P.coral }), { a: 'up', w: 15, rot: -90, sfx: 'rise', loop: 'float', amp: 18, per: .8 }),
+    E(540, 1200, Tx('+ CHER', 220, 'var(--a1)'), { a: 'stamp', w: 17, sfx: 'stamp' }),
+  ] });
+
+  /* ===== SCÈNE 3 — LE CERVEAU (ouvre sur « Un seul centime d'écart. ») ===== */
+  shot({ w: 18, bg: 'navy', scene: 3, html: [
     E(540, 680, O.coin('1', { w: 480 }), { a: 'drop', sfx: 'coin', loop: 'pulse', amp: .03, per: 1 }),
     E(540, 1150, Tx('1 CENTIME', 200, 'var(--a1)'), { a: 'up', w: 20 }),
   ] });
-  shot({ w: 21, bg: 'yellow', scene: 2, html: [
+  shot({ w: 21, bg: 'yellow', scene: 3, html: [
     E(540, 500, O.tag('9,99 €', { w: 620 }), { a: 'left' }),
     E(540, 1060, O.tag('10,00 €', { w: 620, fill: P.navy, ink: P.cream }), { a: 'right', d: .08 }),
     E(540, 780, Tx("0,01 € D'ÉCART", 130), { d: .3, sfx: 'pop' }),
   ] });
-  shot({ w: 22, bg: 'coral', scene: 2, html: [
-    E(540, 620, Tx('ET', 320), { a: 'stamp', sfx: 'stamp' }),
-    E(540, 930, Tx('POURTANT…', 220, 'var(--a1)'), { a: 'up', w: 22 }),
-  ] });
-  shot({ w: 22, bg: 'green', scene: 2, html: [
-    E(540, 780, O.calendar('UN JOUR', { w: 680 }), { a: 'spin', sfx: 'swish', m: [{ w: 22, r: -6, dur: .25 }, { w: 22, d: .3, r: 0, dur: .25 }] }),
-  ] });
-  shot({ w: 22, bg: 'cream', scene: 2, html: [
-    E(320, 760, Tx('9', 860, 'var(--a1)'), { a: 'stamp', sfx: 'stamp', loop: 'pulse', amp: .03, per: .7 }),
-    E(650, 1050, O.bar(200, { w: 101, fill: P.navy, grow: { w: 22, sfx: 'rise' } }), { a: 'none' }),
-    E(790, 980, O.bar(340, { w: 101, fill: P.navy, grow: { w: 22 } }), { a: 'none' }),
-    E(930, 890, O.bar(520, { w: 101, fill: P.green, grow: { w: 22 } }), { a: 'none' }),
-  ] });
-  shot({ w: 22, bg: 'navy', scene: 2, html: [
-    E(540, 420, O.shirt({ w: 640, hanger: true }), { a: 'down', dist: 900, org: '50% 0%', loop: 'swing', amp: 7, per: 1.1, damp: 1.2, sfx: 'swish' },
-      'transform-origin:50% 0%'),
-    E(540, 1210, Tx('UN VÊTEMENT', 160, 'var(--a1)'), { a: 'up', w: 22 }),
-  ] });
-  shot({ w: 22, bg: 'yellow', scene: 2, html: [
-    E(540, 870, O.tag('PRIX', { w: 640, fill: P.navy, ink: P.cream }), { a: 'pop', m: [{ w: 22, dy: -70, s: 1.12, dur: .4 }, { w: 22, d: .55, s: 1.2, dur: .2 }, { w: 22, d: .78, s: 1.12, dur: .2 }] }),
-    E(540, 430, O.arrow({ w: 380, fill: P.coral }), { a: 'up', w: 22, rot: -90, sfx: 'rise', loop: 'float', amp: 18, per: .8 }),
-    E(540, 1200, Tx('+ CHER', 220, 'var(--a1)'), { a: 'stamp', w: 22, sfx: 'stamp' }),
-  ] });
-
-  /* ===== SCÈNE 3 — LE CERVEAU ===== */
   shot({ w: 22, bg: 'coral', scene: 3, html: [
     E(540, 720, O.brain({ w: 720 }), { a: 'pop', sfx: 'pop', loop: 'float', per: 1.4 }),
     E(540, 1190, Tx('TON CERVEAU', 170, 'var(--a1)'), { a: 'up', w: 23 }),
@@ -180,7 +167,7 @@
     E(540, 450, O.tag('4,00 €', { w: 620 }), { a: 'none' }),
     E(540, 850, O.tag('3,99 €', { w: 620, fill: P.yellow }), { a: 'drop', w: 94, sfx: 'thud' }),
     E(310, 1190, Tx('4', 260, 'var(--a1)'), { a: 'pop', w: 94, d: .75, sfx: 'pop' }),
-    E(540, 1190, O.arrow({ w: 191, fill: P.navy }), { a: 'pop', w: 94, d: .88 }),
+    E(540, 1190, O.arrow({ w: 200, fill: P.navy }), { a: 'pop', w: 94, d: .88 }),
     E(770, 1190, Tx('3', 260, 'var(--a1)'), { a: 'pop', w: 94, d: 1.0 }),
   ] });
   shot({ w: 95, bg: 'green', scene: 4, html: [
@@ -225,7 +212,7 @@
   ] });
   shot({ w: 120, bg: 'navy', scene: 5, html: [
     E(540, 1180, O.drawer({ w: 760 }), { a: 'none' }),
-    E(540, 1090, O.coin('1', { w: 191 }), { a: 'none', m: [{ w: 121, dy: -590, s: 1.7, dur: .5, sfx: 'coin' }] }),
+    E(540, 1090, O.coin('1', { w: 200 }), { a: 'none', m: [{ w: 121, dy: -590, s: 1.7, dur: .5, sfx: 'coin' }] }),
     E(540, 870, Tx('1 CENTIME', 200, 'var(--a1)'), { a: 'stamp', w: 123, sfx: 'stamp' }),
   ] });
   shot({ w: 124, bg: 'yellow', scene: 5, html: [
@@ -296,7 +283,7 @@
     E(200, 820, t3(0), { a: 'pop', sfx: 'pop' }),
     E(880, 820, t3(2), { a: 'pop', d: .16 }),
     E(540, 820, t3(1), { a: 'pop', d: .08, m: [{ w: 166, dy: -190, s: 1.5, dur: .35, sfx: 'rise' }] }),
-    E(540, 350, O.arrow({ w: 191, fill: P.navy }), { a: 'down', w: 166, d: .15, rot: 90 }),
+    E(540, 350, O.arrow({ w: 200, fill: P.navy }), { a: 'down', w: 166, d: .15, rot: 90 }),
     E(540, 1160, Tx('LE MILIEU', 180, 'var(--a1)'), { a: 'up', w: 166 }),
   ] });
   shot({ w: 168, bg: 'cream', scene: 6, html: [
@@ -335,9 +322,9 @@
     E(540, 1230, Tx('1ER CHIFFRE', 160, 'var(--a1)'), { a: 'stamp', w: 192, sfx: 'stamp' }),
   ] });
   shot({ w: 194, bg: 'navy', scene: 7, html: [
-    E(340, 620, O.disc({ w: 111 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 620, O.disc({ w: 111 }), { a: 'pop', w: 195, sfx: 'pop' }),
-    E(740, 620, O.disc({ w: 111 }), { a: 'pop', w: 195, d: .28, sfx: 'pop' }),
+    E(340, 620, O.disc({ w: 120 }), { a: 'pop', sfx: 'pop' }),
+    E(540, 620, O.disc({ w: 120 }), { a: 'pop', w: 195, sfx: 'pop' }),
+    E(740, 620, O.disc({ w: 120 }), { a: 'pop', w: 195, d: .28, sfx: 'pop' }),
     E(540, 1010, Tx('?', 420, 'var(--a1)'), { a: 'pop', w: 195, d: .55, rot: 8, loop: 'swing', amp: 5, per: .9 }),
   ] });
 })();

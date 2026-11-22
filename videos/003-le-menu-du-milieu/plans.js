@@ -211,16 +211,16 @@
     E(540, 930, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col: P.coral, sw: 28, draw: { d: .2, dur: .3 } }), { a: 'none', cut: false }),
   ]);
   S(107, 6, bg => [
-    E(240, 1050 - 150, O.bar(300, { w: 212, fill: obj(bg), grow: { d: 0, dur: .3 } }), { a: 'none' }),
-    E(840, 1050 - 150, O.bar(300, { w: 212, fill: obj(bg), grow: { d: .08, dur: .3 } }), { a: 'none' }),
-    E(540, 1050 - 320, O.bar(640, { w: 212, fill: bg === 'yellow' ? P.coral : P.yellow, grow: { w: 109, dur: .6, sfx: 'rise' } }), { a: 'none' }),
+    E(240, 1050 - 150, O.bar(300, { w: 220, fill: obj(bg), grow: { d: 0, dur: .3 } }), { a: 'none' }),
+    E(840, 1050 - 150, O.bar(300, { w: 220, fill: obj(bg), grow: { d: .08, dur: .3 } }), { a: 'none' }),
+    E(540, 1050 - 320, O.bar(640, { w: 220, fill: bg === 'yellow' ? P.coral : P.yellow, grow: { w: 109, dur: .6, sfx: 'rise' } }), { a: 'none' }),
     E(540, 1190, Tx('+ DE CLIENTS', 170, 'var(--a1)'), { a: 'up', w: 111 }),
   ]);
   S(112, 6, bg => [
     E(220, 620, O.disc({ w: 240, fill: obj(bg) }), { a: 'pop' }),
     E(860, 620, O.disc({ w: 240, fill: obj(bg) }), { a: 'pop', d: .12 }),
     E(540, 620, O.disc({ w: 300, fill: bg === 'yellow' ? P.coral : P.yellow }), { a: 'pop', d: .06, sfx: 'pop', loop: 'pulse', amp: .06, per: .6 }),
-    E(540, 320, O.arrow({ w: 212, fill: P.coral }), { a: 'down', w: 115, rot: 90 }),
+    E(540, 320, O.arrow({ w: 220, fill: P.coral }), { a: 'down', w: 115, rot: 90 }),
     E(540, 1080, Tx('AU MILIEU', 240, 'var(--a1)'), { a: 'stamp', w: 116, sfx: 'stamp' }),
   ]);
   S(118, 6, bg => [

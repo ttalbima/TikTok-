@@ -237,7 +237,7 @@
   S(127, 4, bg => [
     E(540, 820, O.rect(900, 16, fg(bg), 8), { a: 'none', cut: false }),
     E(180, 760, O.anchor({ w: 240, col: fg(bg) }), { a: 'none' }),
-    E(360, 660, who(bg, { w: 215 }), { a: 'none', m: [{ w: 130, dx: 430, dur: .5, e: 'inOut', sfx: 'whoosh' }, { w: 131, d: .25, dx: 150, dur: .35, e: 'outBack', sfx: 'swish' }] }),
+    E(360, 660, who(bg, { w: 220 }), { a: 'none', m: [{ w: 130, dx: 430, dur: .5, e: 'inOut', sfx: 'whoosh' }, { w: 131, d: .25, dx: 150, dur: .35, e: 'outBack', sfx: 'swish' }] }),
     E(540, 1150, Tx("TU T'ÉLOIGNES…", 160, 'var(--a1)'), { a: 'up', w: 130 }),
   ]);
   S(132, 4, bg => [
@@ -321,9 +321,9 @@
     E(540, 1010, Tx('DOIT ÊTRE…', 220, 'var(--a1)'), { a: 'up', w: 191 }),
   ]);
   S(193, 6, bg => [
-    E(250, 1040 - 260, O.bar(520, { w: 215, fill: fg(bg), grow: { dur: .3 } }), { a: 'none' }),
-    E(540, 1040 - 190, O.bar(380, { w: 215, fill: fg(bg), grow: { d: .08, dur: .3 } }), { a: 'none' }),
-    E(830, 1040 - 110, O.bar(220, { w: 215, fill: P.coral, grow: { d: .16, dur: .3 } }), { a: 'none', loop: 'pulse', amp: .05, per: .6, lw: 195 }),
+    E(250, 1040 - 260, O.bar(520, { w: 220, fill: fg(bg), grow: { dur: .3 } }), { a: 'none' }),
+    E(540, 1040 - 190, O.bar(380, { w: 220, fill: fg(bg), grow: { d: .08, dur: .3 } }), { a: 'none' }),
+    E(830, 1040 - 110, O.bar(220, { w: 220, fill: P.coral, grow: { d: .16, dur: .3 } }), { a: 'none', loop: 'pulse', amp: .05, per: .6, lw: 195 }),
     E(830, 700, O.arrow({ w: 200, fill: P.coral }), { a: 'down', w: 195, rot: 90, sfx: 'fall' }),
     E(540, 1210, Tx('LE PLUS BAS', 220, 'var(--a1)'), { a: 'stamp', w: 195, sfx: 'stamp' }),
   ]);

@@ -109,8 +109,8 @@
   ]);
   S(18, 2, bg => [
     E(540, 760, O.box('COMPTE', { w: 640, fs: 66 }), { a: 'up', sfx: 'pop' }),
-    E(400, 420, O.coin('€', { w: 196, small: '' }), { a: 'drop', w: 19, dur: .45, sfx: 'coin' }),
-    E(680, 400, O.coin('€', { w: 196, small: '' }), { a: 'drop', w: 19, d: .12, dur: .45 }),
+    E(400, 420, O.coin('€', { w: 200, small: '' }), { a: 'drop', w: 19, dur: .45, sfx: 'coin' }),
+    E(680, 400, O.coin('€', { w: 200, small: '' }), { a: 'drop', w: 19, d: .12, dur: .45 }),
     E(540, 720, O.cross({ w: 640, draw: { w: 22, sfx: 'buzz' } }), { a: 'none', w: 22 }),
   ]);
   S(23, 2, bg => [
@@ -233,7 +233,7 @@
     E(540, 1180, Tx('EN PAYANT', 220, 'var(--a1)'), { a: 'up', w: 99 }),
   ]);
   S(101, 4, bg => [
-    E(540, 1220, bolt(bg, { w: 126 }), { a: 'spin', w: 104, d: .15, sfx: 'pop' }),
+    E(540, 1220, bolt(bg, { w: 130 }), { a: 'spin', w: 104, d: .15, sfx: 'pop' }),
     E(540, 520, Tx('LA DOULEUR', 220), { a: 'stamp', w: 102, sfx: 'stamp' }),
     E(540, 860, Tx('DE PAYER', 260, 'var(--a1)'), { a: 'stamp', w: 103, sfx: 'stamp' }),
     line(1070, P.coral, { w: 104, dur: .3 }),
@@ -242,7 +242,7 @@
   /* ===== SCÈNE 5 — LE BILLET, PUIS LA CARTE ===== */
   S(105, 5, bg => [
     E(540, 560, bill(bg, { w: 820 }), { a: 'drop', sfx: 'thud', rot: -3 }),
-    E(860, 300, bolt(bg, { w: 176 }), { a: 'pop', w: 109, sfx: 'pop' }),
+    E(860, 300, bolt(bg, { w: 180 }), { a: 'pop', w: 109, sfx: 'pop' }),
     E(540, 1090, Tx('TU LA SENS', 210, 'var(--a1)'), { a: 'stamp', w: 109, sfx: 'stamp' }),
   ]);
   S(111, 5, bg => [
@@ -284,7 +284,7 @@
   ]);
   S(140, 5, bg => [
     E(540, 600, O.receipt({ w: 460 }), { a: 'drop', sfx: 'print' }),
-    E(820, 400, bolt(bg, { w: 196 }), { a: 'pop', w: 142, sfx: 'pop', loop: 'shake', amp: 7, lw: 142 }),
+    E(820, 400, bolt(bg, { w: 200 }), { a: 'pop', w: 142, sfx: 'pop', loop: 'shake', amp: 7, lw: 142 }),
     E(540, 1170, Tx('TON RELEVÉ', 200, 'var(--a1)'), { a: 'stamp', w: 142, sfx: 'stamp' }),
   ]);
 
@@ -347,11 +347,11 @@
   ]);
   S(180, 7, bg => [
     E(540, 700, O.disc({ w: 260, fill: P.navy }), { a: 'pop' }),
-    E(540, 700, O.coin('1', { w: 196 }), { a: 'pop', d: .06, sfx: 'coin', loop: 'pulse', amp: .05, per: .6 }),
+    E(540, 700, O.coin('1', { w: 200 }), { a: 'pop', d: .06, sfx: 'coin', loop: 'pulse', amp: .05, per: .6 }),
     E(540, 1060, Tx('PETIT.', 220), { a: 'up', d: .1 }),
   ]);
   S(181, 7, bg => [
-    ...Array.from({ length: 7 }, (_, i) => E(260 + (i % 4) * 190 + (i > 3 ? 95 : 0), 760 - Math.floor(i / 4) * 230, O.coin('1', { w: 176 }), { a: 'drop', d: .05 + i * .14, dur: .4, sfx: i % 2 ? undefined : 'coin' })),
+    ...Array.from({ length: 7 }, (_, i) => E(260 + (i % 4) * 190 + (i > 3 ? 95 : 0), 760 - Math.floor(i / 4) * 230, O.coin('1', { w: 180 }), { a: 'drop', d: .05 + i * .14, dur: .4, sfx: i % 2 ? undefined : 'coin' })),
     E(540, 1130, Tx('RÉPÉTÉ', 300, 'var(--a1)'), { a: 'stamp', w: 182, sfx: 'stamp' }),
   ]);
   S(184, 7, bg => [

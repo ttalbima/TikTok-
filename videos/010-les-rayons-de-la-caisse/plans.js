@@ -103,11 +103,11 @@
   /* ===== SCÈNE 1 — HOOK ===== */
   S(0, 1, bg => [
     E(540, 1010, O.rect(980, 70, T.navy2, 14), { a: 'none' }),
-    E(160, 800, O.person({ w: 202, fill: P.cream }), { a: 'pop', sfx: 'pop' }),
-    E(380, 800, O.person({ w: 202, fill: P.yellow }), { a: 'pop', d: .1 }),
-    E(600, 800, O.person({ w: 202, fill: P.coral }), { a: 'pop', d: .2 }),
+    E(160, 800, O.person({ w: 210, fill: P.cream }), { a: 'pop', sfx: 'pop' }),
+    E(380, 800, O.person({ w: 210, fill: P.yellow }), { a: 'pop', d: .1 }),
+    E(600, 800, O.person({ w: 210, fill: P.coral }), { a: 'pop', d: .2 }),
     E(880, 850, O.register({ w: 300 }), { a: 'pop', d: .3 }),
-    ...[0, 1, 2, 3].map(i => E(170 + i * 240, 1180, O.candy({ w: 184 }), { a: 'pop', d: .1 + i * .05, rot: i % 2 ? 6 : -6 })),
+    ...[0, 1, 2, 3].map(i => E(170 + i * 240, 1180, O.candy({ w: 190 }), { a: 'pop', d: .1 + i * .05, rot: i % 2 ? 6 : -6 })),
     E(540, 400, Tx('POURQUOI', 220), { a: 'down', d: .05 }),
   ]);
   S(2, 1, bg => [
@@ -135,7 +135,7 @@
   ]);
   S(13, 2, bg => [
     E(540, 700, O.rect(860, 70, P.cream, 14), { a: 'left', sfx: 'swish' }),
-    E(880, 560, O.pin({ w: 194 }), { a: 'drop', w: 13, sfx: 'thud' }),
+    E(880, 560, O.pin({ w: 200 }), { a: 'drop', w: 13, sfx: 'thud' }),
     E(540, 1010, Tx('DERNIER MÈTRE', 150, 'var(--a1)'), { a: 'stamp', w: 13, d: .1 }),
   ]);
   S(13, 2, bg => [
@@ -155,7 +155,7 @@
   /* ===== SCÈNE 3 — DANS LA FILE ===== */
   S(25, 3, bg => [
     ...[0, 1, 2, 3].map(i => E(170 + i * 245, 760, O.person({ w: 230, fill: i === 1 ? P.yellow : fg(bg) }), { a: 'right', d: i * .1, sfx: i ? undefined : 'pop' })),
-    E(415, 400, O.arrow({ w: 184, fill: P.coral }), { a: 'down', w: 27, rot: 90 }),
+    E(415, 400, O.arrow({ w: 190, fill: P.coral }), { a: 'down', w: 27, rot: 90 }),
     E(540, 1150, Tx('DANS LA FILE', 190, 'var(--a1)'), { a: 'up', w: 27 }),
   ]);
   S(30, 3, bg => [
@@ -230,8 +230,8 @@
   /* ===== SCÈNE 5 — TU CRAQUES ===== */
   S(81, 5, bg => [
     E(300, 660, O.person({ w: 340, fill: who(bg, 0) }), { a: 'pop', m: [{ w: 82, dx: 300, dur: .5, e: 'inOut', sfx: 'whoosh' }] }),
-    E(220, 1000, O.disc({ w: 84, fill: fg(bg) }), { a: 'pop', w: 82 }),
-    E(480, 1000, O.disc({ w: 84, fill: fg(bg) }), { a: 'pop', w: 82, d: .25, sfx: 'pop' }),
+    E(220, 1000, O.disc({ w: 90, fill: fg(bg) }), { a: 'pop', w: 82 }),
+    E(480, 1000, O.disc({ w: 90, fill: fg(bg) }), { a: 'pop', w: 82, d: .25, sfx: 'pop' }),
     E(540, 1190, Tx('1 PAS', 240, 'var(--a1)'), { a: 'stamp', w: 84, sfx: 'stamp' }),
   ]);
   S(85, 5, bg => [
@@ -399,7 +399,7 @@
     E(540, 860, Tx('COMPTE', 340, 'var(--a1)'), { a: 'stamp', w: 202, sfx: 'stamp' }),
   ]);
   S(202, 8, bg => [
-    ...[0, 1, 2, 3, 4].map(i => E(160 + i * 190, 560 + (i % 2) * 90, O.disc({ w: 104, fill: i === 4 ? P.coral : fg(bg) }), { a: 'pop', d: i * .22, sfx: 'pop' })),
+    ...[0, 1, 2, 3, 4].map(i => E(160 + i * 190, 560 + (i % 2) * 90, O.disc({ w: 110, fill: i === 4 ? P.coral : fg(bg) }), { a: 'pop', d: i * .22, sfx: 'pop' })),
     E(540, 940, Tx('COMBIEN DE PAS ?', 130, 'var(--a1)'), { a: 'up', w: 202 }),
     E(540, 1180, candy(bg, { w: 420 }), { a: 'pop', w: 202, rot: -6, loop: 'swing', amp: 5, per: .8 }),
   ]);

@@ -142,7 +142,7 @@
   S(26, 3, bg => [
     E(540, 300, Tx('3 COURSES', 200), { a: 'stamp', w: 29, sfx: 'stamp' }),
     E(560, 740, O.store({ w: 600, fill: P.navy, ink: P.cream }), { a: 'pop' }),
-    E(170, 1090, O.person({ w: 204, fill: P.coral }), { a: 'left', m: [{ w: 27, dx: 330, dur: .7, e: 'inOut' }] }),
+    E(170, 1090, O.person({ w: 210, fill: P.coral }), { a: 'left', m: [{ w: 27, dx: 330, dur: .7, e: 'inOut' }] }),
   ]);
   S(31, 3, bg => [
     E(540, 640, O.bread({ w: 640 }), { a: 'pop', sfx: 'pop' }),
@@ -177,7 +177,7 @@
   ]);
   S(51, 3, bg => [
     E(540, 360, Tx("C'EST LÀ", 260, 'var(--a1)'), { a: 'stamp', w: 53, sfx: 'stamp' }),
-    E(540, 620, O.arrow({ w: 214, fill: P.coral }), { a: 'down', w: 53, d: .12, rot: 90, loop: 'float', amp: 14, per: .6 }),
+    E(540, 620, O.arrow({ w: 220, fill: P.coral }), { a: 'down', w: 53, d: .12, rot: 90, loop: 'float', amp: 14, per: .6 }),
     E(540, 930, cart(bg, { w: 440 }), { a: 'pop' }),
     E(540, 1250, Tx('TOUT SE JOUE', 140), { a: 'up', w: 55, dist: 220 }),
   ]);
@@ -188,9 +188,9 @@
     const it = (fx, h, html, an) => { const [x, y] = inCart(cx, cy, w, fx, h); return E(x, y, html, an); };
     return [
       E(cx, cy, cart(bg, { w }), { a: 'pop' }),
-      it(240, 130, O.bread({ w: 194 }), { a: 'drop', w: 59, dur: .5, sfx: 'thud' }),
-      it(340, 186, O.milk({ w: 104, fill: P.navy, ink: P.yellow }), { a: 'drop', w: 61, dur: .5, sfx: 'thud' }),
-      it(430, 190, O.pasta({ w: 134 }), { a: 'drop', w: 62, dur: .5, sfx: 'thud' }),
+      it(240, 130, O.bread({ w: 200 }), { a: 'drop', w: 59, dur: .5, sfx: 'thud' }),
+      it(340, 186, O.milk({ w: 110, fill: P.navy, ink: P.yellow }), { a: 'drop', w: 61, dur: .5, sfx: 'thud' }),
+      it(430, 190, O.pasta({ w: 140 }), { a: 'drop', w: 62, dur: .5, sfx: 'thud' }),
       E(540, 1200, Tx('AU FOND', 260, 'var(--a1)'), { a: 'stamp', w: 63, d: .1, sfx: 'stamp' }),
     ];
   });
@@ -199,7 +199,7 @@
     const it = (fx, h, html) => { const [x, y] = inCart(cx, cy, w, fx, h); return E(x, y, html, { a: 'none' }); };
     return [
       E(cx, cy, cart(bg, { w }), { a: 'none' }),
-      it(230, 100, O.bread({ w: 144 })), it(310, 135, O.milk({ w: 74 })), it(380, 136, O.pasta({ w: 94 })),
+      it(230, 100, O.bread({ w: 150 })), it(310, 135, O.milk({ w: 80 })), it(380, 136, O.pasta({ w: 100 })),
       E(540, 270, Tx('TON CHARIOT', 140), { a: 'down', w: 67 }),
       E(540, 1170, Tx('VIDE', 300, 'var(--a1)'), { a: 'stamp', w: 71, sfx: 'stamp' }),
     ];
@@ -216,8 +216,8 @@
   ]);
   S(77, 4, bg => [
     E(250, 560, O.bread({ w: 300 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 540, O.milk({ w: 144, fill: P.navy, ink: P.yellow }), { a: 'pop', d: .1 }),
-    E(810, 540, O.pasta({ w: 194 }), { a: 'pop', d: .2 }),
+    E(540, 540, O.milk({ w: 150, fill: P.navy, ink: P.yellow }), { a: 'pop', d: .1 }),
+    E(810, 540, O.pasta({ w: 200 }), { a: 'pop', d: .2 }),
     E(540, 550, O.cross({ w: 520, draw: { w: 80, sfx: 'buzz' } }), { a: 'none', w: 80 }),
     E(540, 960, Tx('TU NE COMPTES PAS', 120), { a: 'up', w: 79 }),
     E(540, 1170, Tx('CE QUE TU AS PRIS', 120, 'var(--a1)'), { a: 'up', w: 83 }),
@@ -247,7 +247,7 @@
   S(102, 5, bg => [
     E(540, 400, Tx('HOP', 360, 'var(--a1)'), { a: 'stamp', sfx: 'stamp' }),
     E(540, 960, cart(bg, { w: 620 }), { a: 'none', m: [{ d: .37, dy: 14, dur: .08 }, { d: .45, dy: 0, dur: .15 }] }),
-    E(180, 420, O.pack({ w: 184, fill: P.yellow, band: P.coral }), { a: 'none', m: [{ d: .05, dx: 330, dy: 510, r: 30, dur: .32, e: 'inOut', sfx: 'thud', so: .3 }] }),
+    E(180, 420, O.pack({ w: 190, fill: P.yellow, band: P.coral }), { a: 'none', m: [{ d: .05, dx: 330, dy: 510, r: 30, dur: .32, e: 'inOut', sfx: 'thud', so: .3 }] }),
   ]);
   S(103, 5, bg => [
     E(540, 640, O.shelf({ w: 760, fill: P.yellow, ink: P.navy }), { a: 'left', dist: 1100, sfx: 'whoosh' }),
@@ -256,8 +256,8 @@
   S(106, 5, bg => [
     E(540, 400, Tx('HOP', 360, 'var(--a1)'), { a: 'stamp', sfx: 'stamp' }),
     E(540, 960, cart(bg, { w: 620 }), { a: 'none', m: [{ d: .37, dy: 14, dur: .08 }, { d: .45, dy: 0, dur: .15 }] }),
-    E(470, 930, O.pack({ w: 144, fill: P.yellow, band: P.coral }), { a: 'none' }), E(610, 925, O.milk({ w: 94 }), { a: 'none' }),
-    E(900, 420, O.pack({ w: 184, fill: P.coral, band: P.cream }), { a: 'none', m: [{ d: .05, dx: -200, dy: 500, r: -30, dur: .32, e: 'inOut', sfx: 'thud', so: .3 }] }),
+    E(470, 930, O.pack({ w: 150, fill: P.yellow, band: P.coral }), { a: 'none' }), E(610, 925, O.milk({ w: 100 }), { a: 'none' }),
+    E(900, 420, O.pack({ w: 190, fill: P.coral, band: P.cream }), { a: 'none', m: [{ d: .05, dx: -200, dy: 500, r: -30, dur: .32, e: 'inOut', sfx: 'thud', so: .3 }] }),
   ]);
   S(107, 5, bg => [
     E(540, 600, O.register({ w: 660, fill: P.yellow }), { a: 'pop', sfx: 'pop' }),
@@ -268,7 +268,7 @@
     E(540, 380, Tx('3 COURSES', 220), { a: 'pop' }),
     E(540, 380, O.line('M20,20 H880', { w: 900, vw: 900, vh: 40, col: P.coral, sw: 34, draw: { w: 114, dur: .3, sfx: 'swish' } }), { a: 'none', cut: false }),
     ...Array.from({ length: 12 }, (_, i) => E(150 + (i * 271) % 800, 700 + (i * 173) % 480,
-      i % 3 === 0 ? O.milk({ w: 104 }) : O.pack({ w: 144, fill: [P.coral, P.yellow, P.cream][i % 3], band: P.navy }),
+      i % 3 === 0 ? O.milk({ w: 110 }) : O.pack({ w: 150, fill: [P.coral, P.yellow, P.cream][i % 3], band: P.navy }),
       { a: 'drop', w: 114, d: .2 + i * .07, dur: .45, rot: (i * 47) % 40 - 20, sfx: i % 4 === 0 ? 'thud' : undefined })),
   ]);
   S(116, 5, bg => [
@@ -300,7 +300,7 @@
   ]);
   S(136, 6, bg => {
     const [cx, cy, w] = [540, 780, 720];
-    const it = (i, fx, lift) => { const [x, y] = inCart(cx, cy, w, fx, 180); return E(x, y - lift, O.pack({ w: 134, fill: [P.coral, P.yellow, T.green2, P.cream][i % 4], band: i % 4 === 1 ? P.coral : P.cream === [P.coral, P.yellow, T.green2, P.cream][i % 4] ? P.coral : P.cream }), { a: 'drop', w: 138, d: i * .14, dur: .45, sfx: 'thud' }); };
+    const it = (i, fx, lift) => { const [x, y] = inCart(cx, cy, w, fx, 180); return E(x, y - lift, O.pack({ w: 140, fill: [P.coral, P.yellow, T.green2, P.cream][i % 4], band: i % 4 === 1 ? P.coral : P.cream === [P.coral, P.yellow, T.green2, P.cream][i % 4] ? P.coral : P.cream }), { a: 'drop', w: 138, d: i * .14, dur: .45, sfx: 'thud' }); };
     return [
       E(cx, cy, cart(bg, { w }), { a: 'pop' }),
       it(0, 200, 0), it(1, 320, 0), it(2, 440, 0), it(3, 260, 150), it(4, 390, 150), it(5, 330, 300),
@@ -358,7 +358,7 @@
   S(173, 7, bg => [
     E(200, 640, O.arrow({ w: 260, fill: P.navy }), { a: 'left', sfx: 'whoosh' }),
     E(880, 640, O.arrow({ w: 260, fill: P.navy }), { a: 'right', rot: 180 }),
-    E(540, 330, O.arrow({ w: 214, fill: P.navy }), { a: 'down', rot: 90, d: .1 }),
+    E(540, 330, O.arrow({ w: 220, fill: P.navy }), { a: 'down', rot: 90, d: .1 }),
     E(540, 640, O.disc({ w: 230, fill: P.coral }), { a: 'pop', w: 176, sfx: 'pop', loop: 'pulse', amp: .08, per: .5 }),
     E(540, 1130, Tx('MÊME CONCLUSION', 125, 'var(--a1)'), { a: 'stamp', w: 177, sfx: 'stamp' }),
   ]);
@@ -386,8 +386,8 @@
     E(540, 700, cart(bg, { w: 760 }), { a: 'left', dist: 1300, dur: .5, sfx: 'whoosh', m: [{ d: .5, r: -4, dur: .12 }, { d: .64, r: 0, dur: .2 }] }),
   ]);
   S(195, 7, bg => [
-    E(380, 990, O.disc({ w: 124, fill: P.navy }), { a: 'pop', w: 199, sfx: 'pop' }),
-    E(700, 990, O.disc({ w: 124, fill: P.navy }), { a: 'pop', w: 199, d: .1 }),
+    E(380, 990, O.disc({ w: 130, fill: P.navy }), { a: 'pop', w: 199, sfx: 'pop' }),
+    E(700, 990, O.disc({ w: 130, fill: P.navy }), { a: 'pop', w: 199, d: .1 }),
     E(540, 620, O.plate({ w: 520 }), { a: 'pop', sfx: 'pop', m: [{ w: 198, s: 1.35, dur: .35, sfx: 'rise' }] }),
     E(540, 1230, Tx('SUR ROULETTES', 150, 'var(--a1)'), { a: 'up', w: 200, dist: 220 }),
   ]);

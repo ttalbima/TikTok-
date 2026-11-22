@@ -203,9 +203,9 @@
   ]);
   const lab = (x, s) => E(x, 1130, Tx(s, 50, 'var(--ink)', { font: 'inter' }), { a: 'fade', cut: false });
   S(103, 5, bg => [
-    E(220, 1070 - 200, O.bar(400, { w: 205, grow: { w: 103 } }), { a: 'none' }),
-    E(540, 1070 - 200, O.bar(400, { w: 205, grow: { w: 103, d: .12 } }), { a: 'none' }),
-    E(860, 1070 - 320, O.bar(640, { w: 205, fill: P.yellow, grow: { w: 106, dur: .6, sfx: 'rise' } }), { a: 'none' }),
+    E(220, 1070 - 200, O.bar(400, { w: 210, grow: { w: 103 } }), { a: 'none' }),
+    E(540, 1070 - 200, O.bar(400, { w: 210, grow: { w: 103, d: .12 } }), { a: 'none' }),
+    E(860, 1070 - 320, O.bar(640, { w: 210, fill: P.yellow, grow: { w: 106, dur: .6, sfx: 'rise' } }), { a: 'none' }),
     lab(220, '20,00 €'), lab(540, 'VINGT EUROS'), lab(860, '20'),
     E(540, 1260, Tx('DÉPENSÉ', 150, 'var(--a1)'), { a: 'up', w: 106, dist: 200 }),
   ]);

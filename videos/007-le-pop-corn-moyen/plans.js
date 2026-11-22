@@ -230,9 +230,9 @@
   ]);
   S(143, 6, bg => [
     E(540, 380, Tx('JAMAIS', 300, 'var(--a1)'), { a: 'stamp', w: 145, sfx: 'stamp' }),
-    E(330, 1200 - 150, O.bar(300, { w: 214, fill: obj(bg), grow: { d: 0, dur: .3 } }), { a: 'none' }),
-    E(750, 1200 - 150, O.bar(300, { w: 214, fill: P.coral, grow: { d: .1, dur: .3 } }), { a: 'none', hw: 148 }),
-    E(750, 1200 - 290, O.bar(580, { w: 214, fill: P.coral, grow: { w: 148, dur: .5, sfx: 'rise' } }), { a: 'none', w: 148 }),
+    E(330, 1200 - 150, O.bar(300, { w: 220, fill: obj(bg), grow: { d: 0, dur: .3 } }), { a: 'none' }),
+    E(750, 1200 - 150, O.bar(300, { w: 220, fill: P.coral, grow: { d: .1, dur: .3 } }), { a: 'none', hw: 148 }),
+    E(750, 1200 - 290, O.bar(580, { w: 220, fill: P.coral, grow: { w: 148, dur: .5, sfx: 'rise' } }), { a: 'none', w: 148 }),
     E(330, 1250, Tx('A', 80, 'var(--ink)', { font: 'inter' }), { a: 'fade', cut: false }),
     E(750, 1250, Tx('B', 80, 'var(--ink)', { font: 'inter' }), { a: 'fade', cut: false }),
   ]);

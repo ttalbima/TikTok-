@@ -55,10 +55,10 @@
   const phone = (bg, o = {}) => O.phone(dark(bg) ? { body: P.cream, screen: P.navy, ...o } : o);
   const btn = (bg, txt, o = {}) => O.btn(txt, bg === 'coral' ? { fill: P.yellow, ink: P.navy, ...o } : o);
   const who = (bg, o = {}) => O.person({ fill: fig(bg), ...o });
-  const crown = bg => O.crown(bg === 'yellow' ? { w: 212, fill: P.coral, band: T.coral2 } : { w: 212 });
+  const crown = bg => O.crown(bg === 'yellow' ? { w: 220, fill: P.coral, band: T.coral2 } : { w: 220 });
   const under = (y, col, an) => E(540, y, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col, sw: 28, draw: an }), { a: 'none', cut: false });
 
-  V.keywords = [8, 13, 16, 25, 28, 36, 45, 50, 61, 66, 75, 79, 90, 99, 112, 116, 120, 130, 133, 143, 160, 174, 182, 186, 192, 206, 216];
+  V.keywords = [8, 13, 16, 24, 28, 36, 45, 50, 61, 66, 75, 79, 90, 99, 112, 116, 120, 130, 133, 143, 160, 174, 182, 186, 192, 206, 216];
 
   /* ===== SCÈNE 1 — HOOK ===== */
   S(0, 1, bg => [
@@ -91,23 +91,17 @@
     E(392, 600, O.disc({ w: 236 }), { a: 'pop', m: [{ w: 16, dx: 296, dur: .25, sfx: 'click' }] }),
     E(540, 1040, Tx('UN RÉGLAGE', 210, 'var(--a1)'), { a: 'stamp', w: 16, d: .1, sfx: 'stamp' }),
   ]);
-  S(25, 2, bg => [
-    E(540, 400, Tx('POUR COMPRENDRE', 125), { a: 'down' }),
-    E(540, 860, O.magnifier({ w: 560 }), { a: 'spin', w: 25, sfx: 'pop', loop: 'float', per: 1.1 }),
+  // v2 : « Mets-toi à la place du créateur de l'appli. » (phrase raccourcie : 2 plans au lieu de 4)
+  k = 8;                                             // garde les fonds d'origine pour la suite (vert, crème, puis le corps inchangé)
+  S(17, 2, bg => [
+    E(540, 380, Tx('À SA PLACE', 220, 'var(--a1)'), { a: 'down', w: 19 }),
+    E(250, 900, who(bg, { w: 340 }), { a: 'left', m: [{ w: 18, dx: 580, dur: .45, e: 'inOut', sfx: 'whoosh' }] }),
+    E(830, 900, O.person({ w: 340, fill: P.coral }), { a: 'right', m: [{ w: 18, dx: -580, dur: .45, e: 'inOut' }] }),
   ]);
-  S(25, 2, bg => [
-    E(250, 660, who(bg, { w: 320 }), { a: 'left', m: [{ w: 25, dx: 580, dur: .5, e: 'inOut', sfx: 'whoosh' }] }),
-    E(830, 660, O.person({ w: 320, fill: P.navy }), { a: 'right', m: [{ w: 25, dx: -580, dur: .5, e: 'inOut' }] }),
-    E(540, 1140, Tx('1 MINUTE', 240, 'var(--a1)'), { a: 'stamp', w: 25, sfx: 'stamp' }),
-  ]);
-  S(25, 2, bg => [
-    E(540, 380, Tx('À SA PLACE', 220, 'var(--a1)'), { a: 'down', w: 25 }),
-    E(330, 880, who(bg, { w: 380 }), { a: 'up', sfx: 'pop' }),
-    E(770, 880, phone(bg, { w: 300, cta: 'ESSAI' }), { a: 'pop', w: 25, rot: 8, sfx: 'pop' }),
-  ]);
-  S(25, 2, bg => [
-    E(540, 600, phone(bg, { w: 400, cta: 'ESSAI GRATUIT' }), { a: 'drop', sfx: 'thud' }),
-    E(540, 1160, Tx("L'APPLI", 280, 'var(--a1)'), { a: 'stamp', w: 25, sfx: 'stamp' }),
+  S(22, 2, bg => [
+    E(330, 640, who(bg, { w: 380 }), { a: 'up', sfx: 'pop' }),
+    E(770, 640, phone(bg, { w: 300, cta: 'ESSAI' }), { a: 'pop', w: 23, rot: 8, sfx: 'pop' }),
+    E(540, 1160, Tx("L'APPLI", 280, 'var(--a1)'), { a: 'stamp', w: 24, sfx: 'stamp' }),
   ]);
 
   /* ===== SCÈNE 3 — TU ES LE PATRON ===== */
@@ -117,7 +111,7 @@
     E(540, 1210, Tx('LE PATRON', 220, 'var(--a1)'), { a: 'stamp', w: 28, sfx: 'stamp' }),
   ]);
   S(29, 3, bg => [
-    ...[0, 1, 2, 3, 4].map(i => E(180 + i * 180, 700 + (i % 2) * 60, who(bg, { w: 182 }), { a: 'pop', d: i * .1, sfx: i ? undefined : 'pop' })),
+    ...[0, 1, 2, 3, 4].map(i => E(180 + i * 180, 700 + (i % 2) * 60, who(bg, { w: 190 }), { a: 'pop', d: i * .1, sfx: i ? undefined : 'pop' })),
     E(540, 1130, Tx('+ ABONNÉS', 230, 'var(--a1)'), { a: 'stamp', w: 32, sfx: 'stamp' }),
   ]);
   S(33, 3, bg => [
@@ -170,7 +164,7 @@
   ]);
   S(60, 5, bg => [
     E(540, 420, Tx('TOUT CONTINUE', 170), { a: 'stamp', w: 61, sfx: 'stamp' }),
-    ...[0, 1, 2].map(i => E(240, 900, O.coin('€', { w: 212, small: '' }), { a: 'pop', w: 60, d: i * .22, m: [{ w: 60, d: i * .22 + .1, dx: 620, dy: -60 + i * 30, dur: .5, e: 'inOut', sfx: 'coin' }] })),
+    ...[0, 1, 2].map(i => E(240, 900, O.coin('€', { w: 220, small: '' }), { a: 'pop', w: 60, d: i * .22, m: [{ w: 60, d: i * .22 + .1, dx: 620, dy: -60 + i * 30, dur: .5, e: 'inOut', sfx: 'coin' }] })),
     E(860, 900, O.box('', { w: 300, fill: P.navy }), { a: 'pop' }),
   ]);
   S(62, 5, bg => [
@@ -231,7 +225,7 @@
     E(540, 1200, Tx('ARRÊT AUTO', 190, 'var(--a1)'), { a: 'up', w: 96 }),
   ]);
   S(98, 7, bg => [
-    ...Array.from({ length: 10 }, (_, i) => E(140 + (i % 5) * 200, 480 + Math.floor(i / 5) * 300, O.person({ w: 162, fill: i === 7 ? P.yellow : T.green2 }), { a: 'pop', d: i * .04 })),
+    ...Array.from({ length: 10 }, (_, i) => E(140 + (i % 5) * 200, 480 + Math.floor(i / 5) * 300, O.person({ w: 170, fill: i === 7 ? P.yellow : T.green2 }), { a: 'pop', d: i * .04 })),
     E(540, 1150, Tx('PRESQUE PERSONNE', 120, 'var(--a1)'), { a: 'stamp', w: 99, sfx: 'stamp' }),
     E(540, 630, O.cross({ w: 560, col: P.coral, sw: 50, draw: { w: 101, d: .1, sfx: 'buzz' } }), { a: 'none', w: 101, d: .1 }),
   ]);
@@ -241,12 +235,12 @@
     E(540, 1200, Tx('SUITE AUTO', 190, 'var(--a1)'), { a: 'up', w: 106 }),
   ]);
   S(108, 7, bg => [
-    ...Array.from({ length: 10 }, (_, i) => E(140 + (i % 5) * 200, 420 + Math.floor(i / 5) * 300, O.person({ w: 162, fill: i % 2 ? P.yellow : T.navy2 }), { a: 'pop', d: i * .04, m: i % 2 ? [{ w: 112, s: 1.15, dur: .25 }] : [] })),
+    ...Array.from({ length: 10 }, (_, i) => E(140 + (i % 5) * 200, 420 + Math.floor(i / 5) * 300, O.person({ w: 170, fill: i % 2 ? P.yellow : T.navy2 }), { a: 'pop', d: i * .04, m: i % 2 ? [{ w: 112, s: 1.15, dur: .25 }] : [] })),
     E(540, 1130, Tx('LA MOITIÉ', 250, 'var(--a1)'), { a: 'stamp', w: 112, sfx: 'stamp' }),
   ]);
   S(113, 7, bg => [
     E(540, 560, O.tag('PLEIN TARIF', { w: 820, fill: P.navy, ink: P.cream, fs: 100 }), { a: 'drop', sfx: 'thud' }),
-    ...[0, 1, 2].map(i => E(300 + i * 240, 1050, O.coin('€', { w: 192, small: '' }), { a: 'drop', w: 115, d: i * .12, dur: .45, sfx: i ? undefined : 'coin' })),
+    ...[0, 1, 2].map(i => E(300 + i * 240, 1050, O.coin('€', { w: 200, small: '' }), { a: 'drop', w: 115, d: i * .12, dur: .45, sfx: i ? undefined : 'coin' })),
   ]);
   S(117, 7, bg => [
     E(540, 560, Tx('LE PLUS', 240), { a: 'down' }),
@@ -341,7 +335,7 @@
   S(187, 9, bg => [
     E(320, 760, cher(), { a: 'pop', sfx: 'pop' }),
     E(760, 760, cher(), { a: 'pop', d: .14 }),
-    E(540, 1180, O.clipboard({ w: 192 }), { a: 'up', w: 189 }),
+    E(540, 1180, O.clipboard({ w: 200 }), { a: 'up', w: 189 }),
   ]);
   S(190, 9, bg => [
     E(540, 520, O.eye({ w: 560 }), { a: 'pop', sfx: 'pop' }),
@@ -354,7 +348,7 @@
   S(196, 9, bg => [
     E(330, 1000 - 130, O.bar(260, { w: 240, grow: { d: 0 } }), { a: 'none' }),
     E(750, 1000 - 260, O.bar(520, { w: 240, fill: P.yellow, grow: { w: 197, dur: .6, sfx: 'rise' } }), { a: 'none' }),
-    E(750, 390, O.coin('€', { w: 192, small: '' }), { a: 'drop', w: 199, dur: .45, sfx: 'coin' }),
+    E(750, 390, O.coin('€', { w: 200, small: '' }), { a: 'drop', w: 199, dur: .45, sfx: 'coin' }),
     E(540, 1150, Tx('REVENUS', 240, 'var(--a1)'), { a: 'stamp', w: 197, d: .2, sfx: 'stamp' }),
   ]);
 
@@ -370,11 +364,11 @@
     under(920, P.coral, { w: 208, dur: .3 }),
   ]);
   S(210, 10, bg => [
-    ...[0, 1, 2, 3].map(i => E(170 + i * 247, 620, phone(bg, { w: 202, cta: '€' }), { a: 'drop', d: i * .14, dur: .45, sfx: i % 2 ? undefined : 'thud' })),
+    ...[0, 1, 2, 3].map(i => E(170 + i * 247, 620, phone(bg, { w: 210, cta: '€' }), { a: 'drop', d: i * .14, dur: .45, sfx: i % 2 ? undefined : 'thud' })),
     E(540, 1130, Tx('COMBIEN ?', 230, 'var(--a1)'), { a: 'stamp', w: 211, sfx: 'stamp' }),
   ]);
   S(213, 10, bg => [
-    ...[0, 1, 2, 3].map(i => E(170 + i * 247, 560, O.phone({ w: 202, off: true }), { a: 'none', rot: (i - 1.5) * 5 })),
+    ...[0, 1, 2, 3].map(i => E(170 + i * 247, 560, O.phone({ w: 210, off: true }), { a: 'none', rot: (i - 1.5) * 5 })),
     E(540, 300, Tx('Z Z Z', 150, 'var(--a1)'), { a: 'pop', w: 214, loop: 'float', per: 1 }),
     E(540, 1080, Tx('PLUS UTILISÉS ?', 150), { a: 'stamp', w: 215, sfx: 'stamp', loop: 'pulse', amp: .03, per: .7 }),
   ]);

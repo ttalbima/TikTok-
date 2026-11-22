@@ -82,7 +82,7 @@
   const win = (bg, o = {}) => O.win(bg === 'cream' ? { fill: T.cream2, ...o } : bg === 'navy' ? { bar: T.navy2, ...o } : o);
   const under = (y, col, an = {}) => E(540, y, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col, sw: 28, draw: { d: .2, dur: .3, ...an } }), { a: 'none', cut: false });
 
-  V.keywords = [5, 10, 22, 22, 27, 36, 43, 50, 53, 59, 66, 67, 80, 84, 89, 99, 102, 107, 113, 121, 123, 128, 136, 141, 156, 161, 167, 168, 178, 188, 194, 206];
+  V.keywords = [5, 10, 14, 21, 23, 27, 36, 43, 50, 53, 59, 66, 67, 80, 84, 89, 99, 102, 107, 113, 121, 123, 128, 136, 141, 156, 161, 167, 168, 178, 188, 194, 206];
 
   /* ===== SCÈNE 1 — HOOK ===== */
   S(0, 1, bg => [
@@ -100,25 +100,24 @@
     E(540, 1180, Tx('EN STOCK', 220), { a: 'up', w: 9, m: [{ w: 10, d: .4, s: 1.08, dur: .2 }, { w: 10, d: .65, s: 1, dur: .2 }] }),
   ]);
 
-  /* ===== SCÈNE 2 — RETAINER ===== */
-  S(22, 2, bg => [
+  /* ===== SCÈNE 2 — RETAINER (retouche v2 : phrase nouvelle « Il ne dit rien du produit, mais le rend plus désirable. ») ===== */
+  S(11, 2, bg => [
     E(540, 460, sac(bg, { w: 360 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 950, Tx('RIEN', 300, 'var(--a1)'), { a: 'stamp', w: 22, sfx: 'stamp' }),
-    E(540, 1190, Tx('SUR LE PRODUIT', 140), { a: 'up', w: 22 }),
+    E(540, 950, Tx('RIEN', 300, 'var(--a1)'), { a: 'stamp', w: 14, sfx: 'stamp' }),
+    E(540, 1190, Tx('DU PRODUIT', 170), { a: 'up', w: 15 }),
   ]);
-  S(22, 2, bg => [
-    E(540, 620, Tx('ET', 340), { a: 'stamp', sfx: 'stamp' }),
-    E(540, 940, Tx('POURTANT…', 190, 'var(--a1)'), { a: 'up', w: 22 }),
+  S(17, 2, bg => [
+    E(540, 620, O.burst({ w: 880, n: 14 }), { a: 'pop', w: 19, loop: 'spin', per: 6, cut: false }),
+    E(540, 620, sac(bg, { w: 340 }), { a: 'pop', sfx: 'pop', m: [{ w: 19, s: 1.35, dur: .3, sfx: 'rise' }] }),
+    E(540, 1170, Tx('MAIS…', 230, 'var(--a1)'), { a: 'up', d: .05 }),
   ]);
-  S(22, 2, bg => [
-    E(540, 620, O.burst({ w: 880, n: 14 }), { a: 'pop', w: 22, loop: 'spin', per: 6, cut: false }),
-    E(540, 620, sac(bg, { w: 340 }), { a: 'pop', sfx: 'pop', m: [{ w: 22, s: 1.35, dur: .4, sfx: 'rise' }] }),
-    E(540, 1170, Tx('PLUS…', 230, 'var(--a1)'), { a: 'up', w: 22 }),
+  S(21, 2, bg => [
+    E(540, 500, O.burst({ w: 800, n: 14, col: T.navy2 }), { a: 'pop', loop: 'spin', per: 6, cut: false }),
+    E(540, 500, sac(bg, { w: 400 }), { a: 'none', loop: 'pulse', amp: .04, per: .6 }),
+    E(540, 990, Tx('PLUS', 190), { a: 'down', dist: 200 }),
+    E(540, 1200, Tx('DÉSIRABLE', 210, 'var(--a1)'), { a: 'stamp', d: .08, sfx: 'stamp' }),
   ]);
-  S(22, 2, bg => [
-    E(540, 560, sac(bg, { w: 400, fill: P.navy, dark: T.navy2 }), { a: 'none', loop: 'pulse', amp: .04, per: .6 }),
-    E(540, 1040, Tx('DÉSIRABLE', 230, 'var(--a1)'), { a: 'stamp', sfx: 'stamp' }),
-  ]);
+  k++;   // un plan de moins qu'en v1 : on saute une couleur pour que le corps garde ses fonds d'origine
   S(22, 2, bg => [
     E(540, 560, O.magnifier({ w: 420 }), { a: 'left', sfx: 'whoosh' }),
     E(540, 1040, Tx('LA PREUVE', 240, 'var(--a1)'), { a: 'stamp', w: 23, sfx: 'stamp' }),
@@ -136,7 +135,7 @@
   ]);
   S(32, 3, bg => [
     E(280, 800, O.person({ w: 340, fill: P.yellow }), { a: 'left', sfx: 'pop' }),
-    E(280, 520, O.crown({ w: 194 }), { a: 'drop', d: .2, dur: .4 }),
+    E(280, 520, O.crown({ w: 200 }), { a: 'drop', d: .2, dur: .4 }),
     E(740, 760, win(bg, { w: 520 }), { a: 'right', w: 34 }),
     E(540, 1180, Tx('TON SITE', 240, 'var(--a1)'), { a: 'up', w: 35 }),
   ]);
@@ -292,8 +291,8 @@
     E(540, 1150, Tx('AU CRIBLE', 230, 'var(--a1)'), { a: 'up', w: 132 }),
   ]);
   S(133, 6, bg => [
-    ...Array.from({ length: 10 }, (_, i) => E(140 + (i % 5) * 200, 400 + Math.floor(i / 5) * 190, O.win({ w: 164, bar: P.navy }), { a: 'pop', d: i * .04, dur: .2, sfx: i ? undefined : 'pop' })),
-    E(740, 590, O.win({ w: 204, fill: P.yellow, bar: P.navy }), { a: 'pop', w: 134, sfx: 'ding' }),
+    ...Array.from({ length: 10 }, (_, i) => E(140 + (i % 5) * 200, 400 + Math.floor(i / 5) * 190, O.win({ w: 170, bar: P.navy }), { a: 'pop', d: i * .04, dur: .2, sfx: i ? undefined : 'pop' })),
+    E(740, 590, O.win({ w: 210, fill: P.yellow, bar: P.navy }), { a: 'pop', w: 134, sfx: 'ding' }),
     E(540, 1040, Tx('1 SUR 10', 280, 'var(--a1)'), { a: 'stamp', w: 136, sfx: 'stamp' }),
   ]);
   S(138, 6, bg => [
@@ -320,7 +319,7 @@
   ]);
   S(151, 6, bg => [
     E(540, 360, badge(bg, 'PLUS QUE 2', { w: 640, fs: 84 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 560, O.cross({ w: 174, col: P.navy, sw: 50, draw: { w: 152, sfx: 'buzz' } }), { a: 'none', w: 152 }),
+    E(540, 560, O.cross({ w: 180, col: P.navy, sw: 50, draw: { w: 152, sfx: 'buzz' } }), { a: 'none', w: 152 }),
     ...[0, 1, 2, 3, 4, 5].map(i => E(250 + (i % 3) * 290, 800 + Math.floor(i / 3) * 190, O.box('', { w: 240, fill: P.navy }), { a: 'pop', w: 154, d: i * .06, dur: .2, sfx: i ? undefined : 'pop' })),
     E(540, 1230, Tx('VRAI STOCK', 190, 'var(--a1)'), { a: 'up', w: 155, dist: 200 }),
   ]);
@@ -360,7 +359,7 @@
   S(181, 8, bg => [
     E(540, 380, Tx('AVANT DE CLIQUER', 130, 'var(--a1)'), { a: 'down', w: 182 }),
     E(540, 760, O.btn('ACHETER', { w: 760, fs: 100 }), { a: 'pop', sfx: 'pop' }),
-    E(900, 1100, O.cursor({ w: 194 }), { a: 'right', d: .1, m: [{ w: 182, dx: -260, dy: -260, dur: .55, e: 'inOut', sfx: 'whoosh' }] }),
+    E(900, 1100, O.cursor({ w: 200 }), { a: 'right', d: .1, m: [{ w: 182, dx: -260, dy: -260, dur: .55, e: 'inOut', sfx: 'whoosh' }] }),
   ]);
   S(185, 8, bg => [
     E(540, 400, Tx('?', 360, 'var(--a2)'), { a: 'pop', rot: 8, sfx: 'pop', loop: 'swing', amp: 6, per: .8 }),
