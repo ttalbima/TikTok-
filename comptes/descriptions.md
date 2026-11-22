@@ -22,3 +22,22 @@ Les vidéos sont en v1 : elles seront corrigées après écoute. Prends toujours
 | 14 | 015 — La carte sans le signe € | Pourquoi tu dépenses plus quand la carte écrit « 20 », sans le signe euro ? Sur la dernière carte que tu as lue, il y avait le signe ou juste un nombre ? #prix #consommation #psychologie #argent #restaurant |
 
 La vidéo 002 (hyperinflation hongroise) est hors niche : ne pas la publier sur ces comptes.
+
+## Titres YouTube Shorts (mot-clé au début, moins de 60 caractères)
+
+| Vidéo | Titre |
+|---|---|
+| 001 | Prix à 9,99 € : pourquoi ton cerveau se fait avoir |
+| 003 | Menu du restaurant : le piège du plat du milieu |
+| 004 | Prix barré en soldes : il n'est pas là pour t'informer |
+| 005 | Grand chariot de courses : pourquoi tu achètes plus |
+| 006 | Essai gratuit : pourquoi tu oublies de résilier |
+| 007 | Pop-corn au cinéma : le piège de la taille moyenne |
+| 008 | Livraison gratuite dès 35 € : le piège du seuil |
+| 009 | Carte ou espèces : pourquoi tu dépenses plus par carte |
+| 010 | Bonbons à la caisse : pourquoi tu craques |
+| 011 | « Plus que 2 en stock » : le piège de la rareté |
+| 012 | Carte de fidélité tamponnée : le piège des 2 tampons |
+| 013 | Abonnement 4,99 €/mois ou 60 €/an : le piège |
+| 014 | Réduflation : le paquet rétrécit, pas le prix |
+| 015 | Menu sans signe € : pourquoi tu dépenses plus |

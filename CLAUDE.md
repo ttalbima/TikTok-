@@ -96,6 +96,9 @@ Le choix fait pour chaque vidéo est noté dans `sujets.md`.
 - Les corrections des vidéos 003 à 015 (v1 non écoutées) sont remises à plus tard, à sa demande.
 - Documents de lancement : `guide-comptes.md`, `comptes/descriptions.md`, `comptes/banniere-youtube.png`, `comptes/photo-de-profil.png` (logo typographique choisi par le propriétaire : texte seul « PIÈGES DE L'ARGENT », bleu nuit sur fond crème, bandeau corail ; il trouve le noir trop sombre et le jaune trop agressif en fond ; il a refusé les logos à illustration : étiquette, hameçon, tapette à souris).
 
+## CROISSANCE
+- Stratégie par réseau : `strategie-lancement.md`. Agent dédié : `.claude/agents/croissance.md` (plan de publication, emballage par réseau, analyse des chiffres, veille datée sur les trois réseaux). Journal : `croissance/journal.md`.
+
 ## VALIDATION
 - Autonomie complète, du sujet à la vidéo finie (la vidéo 001 est validée).
 - Publication : faite manuellement par le propriétaire du compte.
