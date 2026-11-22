@@ -5,7 +5,7 @@ Concept : **une tapette à souris dont l'appât est une étiquette de prix « 9,
 ## Le prompt (à coller tel quel)
 
 ```
-Square 1:1 profile picture logo for a French social media account called "Les pièges des prix" (price traps), about the psychological tricks of prices in shops.
+Square 1:1 profile picture logo for a French social media account called "Les pièges de l'argent" (money traps), about everyday tricks that make people lose money without noticing.
 
 Subject: a classic wooden mousetrap seen from a three-quarter top view, centered. Instead of cheese, the bait is a small price tag hanging on the trigger, with the price "9,99" written on it in a tall condensed bold font.
 

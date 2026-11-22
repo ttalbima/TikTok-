@@ -75,3 +75,7 @@
 - Plusieurs scripts dépassent légèrement 225 mots (jusqu'à 239 pour la 004) : la voix parle plus vite que 2,5 mots/s, et la durée reste entre 75 et 90 s.
 - Vidéo 010 : voix ralentie de 6 % et respirations allongées, les deux prises étant courtes (68 s). À réécouter en priorité.
 - Aucune des treize n'a été écoutée ; les prises de voix ont été choisies à la durée.
+
+## Élargissement de la thématique (22/11/2026)
+- Le propriétaire refuse une niche qui s'épuise en quelques mois. Thématique élargie : « Les pièges de l'argent au quotidien », six piliers, même promesse, même charte. Les vidéos 001 et 003 à 015 restent valables (pilier 1).
+- Nom de compte recommandé : piegesdelargent (aucun profil public trouvé sur TikTok ni Instagram le 22/11/2026).

@@ -3,29 +3,26 @@
 Temps à prévoir : 45 minutes une seule fois pour tout créer, puis 20 minutes par semaine.
 Fichiers prêts : `comptes/prompt-logo.md` (prompt pour générer le logo) et `comptes/descriptions.md` (texte à coller pour chaque vidéo).
 
-## 1. La niche en une phrase
+## 1. La thématique en une phrase
 
-**Les pièges des prix : les astuces de prix et de magasin qui te font dépenser plus sans que tu le remarques.**
+**Les pièges de l'argent au quotidien : tout ce qui te fait perdre de l'argent sans que tu le remarques.**
 
-- Un seul sujet : les prix et ce qu'ils te font faire.
-- Un seul décor : la vie de consommateur en France.
-- Des vidéos qui ne se ressemblent pas : le lieu, la façon d'ouvrir, la façon de raconter et la fin changent à chaque fois.
+- Une promesse fixe : à chaque vidéo, tu repères un piège qui te coûte de l'argent.
+- Six piliers qui tournent : prix et magasins, abonnements et factures, arnaques, ton cerveau et l'argent, coulisses du marketing, vrai coût des choses.
+- Un décor : la vie quotidienne en France. Jamais de bourse, de crypto ni de conseil d'investissement.
 
 ## 2. Avant de commencer (5 minutes)
 
 1. Crée une adresse e-mail réservée au projet (par exemple chez un fournisseur gratuit). Elle servira aux trois comptes et te protège si un compte est piraté.
-2. Choisis le nom. Mes deux préférés, pour lesquels je n'ai trouvé aucun profil public sur TikTok ni sur Instagram le 21/11/2026 (ce n'est pas une garantie de disponibilité, seule l'inscription le confirme) :
-   - `lepiegedesprix` (recommandé)
-   - `piegeaprix`
-   Solutions de repli : `prixpieges`, `pourquoitupaies`, `cachedansleprix`.
+2. Choisis le nom. Recommandé : `piegesdelargent`, qui couvre toute la thématique. Second choix : `lepiegedesprix`, plus étroit (il colle aux prix, moins aux arnaques et aux factures). Je n'ai trouvé aucun profil public à ces deux noms sur TikTok ni sur Instagram en novembre 2026 ; seule l'inscription confirme qu'un nom est libre.
 3. Garde sous la main :
-   - **Nom affiché** : `Les pièges des prix | Psycho de la conso` (sur TikTok, si c'est trop long : `Les pièges des prix`)
+   - **Nom affiché** : `Les pièges de l'argent | Conso & arnaques` (sur TikTok, si c'est trop long : `Les pièges de l'argent`)
    - **Photo** : le logo à générer avec le prompt de `comptes/prompt-logo.md`
    - **Bio** :
      ```
-     Pourquoi tu paies plus sans le voir 🧠
-     Un piège de prix décrypté par vidéo, études à l'appui 📊
-     Abonne-toi avant tes prochaines courses 🛒
+     Ce qui te fait perdre de l'argent sans le voir 🧠
+     Prix, abonnements, arnaques : un piège décrypté par vidéo 🔍
+     Sources à l'appui 📊
      ```
 
 ## 3. Créer le compte TikTok (15 minutes)

@@ -1,14 +1,24 @@
-# Cahier des charges — série vidéo « Les pièges des prix »
+# Cahier des charges — série vidéo « Les pièges de l'argent »
 
 ## OBJECTIF
-Produire en autonomie des vidéos verticales (TikTok, Reels, Shorts) animées en 2D, sur une niche unique : **les pièges des prix**, c'est-à-dire les astuces de prix et de magasin qui font dépenser plus sans qu'on le remarque. Public : consommateurs français.
+Produire en autonomie des vidéos verticales (TikTok, Reels, Shorts) animées en 2D, sur une thématique durable : **les pièges de l'argent au quotidien**, c'est-à-dire tout ce qui fait perdre de l'argent sans qu'on le remarque. Public : consommateurs français.
+Promesse, identique pour toutes les vidéos : **« tu repères un piège qui te coûte de l'argent »**.
 
-Test de niche, obligatoire pour chaque sujet (les trois à la fois) :
-1. Le spectateur l'a vécu cette semaine : supermarché, restaurant, appli, abonnement, achat en ligne.
-2. Un mécanisme psychologique précis l'explique, appuyé par au moins une étude publiée.
-3. Le hook parle du comportement du spectateur lui-même (« tu »), pas d'un tiers.
-Sont hors niche : l'histoire économique, la macroéconomie, les pays étrangers, la bourse, les cryptos.
-La liste des sujets à venir est dans `sujets.md`. La vidéo 002 (hyperinflation hongroise) est hors niche : ne pas en refaire de ce type.
+Six piliers, qui tournent :
+1. Prix et magasins : astuces de prix, de rayon, de carte, de site marchand (vidéos 001, 003 à 015).
+2. Abonnements, contrats et factures : téléphone, box, énergie, assurance, banque, résiliation, petites lignes.
+3. Arnaques et manipulations : faux SMS, faux conseillers, faux avis, ventes entre particuliers, techniques de pression.
+4. Ton cerveau et l'argent : les biais qui font dépenser (argent trouvé, dépenses invisibles, comparaison aux autres).
+5. Les coulisses du marketing : emballages, couleurs, noms de produits, publicité ciblée, influence.
+6. Le vrai coût des choses : ce que coûte vraiment un objet ou une habitude sur un an, calcul sourcé.
+
+Test de niche, obligatoire pour chaque sujet (les quatre à la fois) :
+1. Un Français l'a vécu ce mois-ci.
+2. Une source vérifiable l'explique : étude publiée, texte de loi, chiffre officiel.
+3. Le hook parle du spectateur lui-même (« tu »), pas d'un tiers.
+4. La vidéo tient la promesse : à la fin, le spectateur sait repérer le piège.
+Sont hors niche : la bourse, les cryptos, les placements et tout conseil d'investissement, la macroéconomie, l'histoire économique, l'actualité politique. La vidéo 002 (hyperinflation hongroise) est hors niche.
+La liste des sujets est dans `sujets.md`.
 Deux étapes : 1) écrire le script, 2) fabriquer la vidéo à partir du script et de la voix off.
 Travail en solo : si une info manque, prendre l'option par défaut, la noter dans `notes.md` et continuer.
 
@@ -21,7 +31,7 @@ Règles de fond, sans exception :
 - Durée : **entre 75 s et 90 s (1 min 15 à 1 min 30) pour toutes les vidéos**. Débit : 2,5 mots/s, soit 188 à 225 mots. Ne jamais descendre sous 75 s ni dépasser 90 s.
 - Vérifier tous les faits sur le web. Ne jamais inventer de date, de chiffre ou de citation. Une légende est présentée comme telle.
 - La niche et la promesse ne changent jamais ; tout le reste tourne (voir « VARIÉTÉ » ci-dessous).
-- Exemples, prix et situations en euros et dans un décor français (supermarché, boulangerie, restaurant, appli).
+- Exemples, prix et situations en euros et dans un décor français. Règles et lois : uniquement le droit français ou européen, vérifié, avec sa date.
 - Structure en 4 blocs :
   - Hook (0-3 s) : une phrase courte qui pose une tension. Pas d'intro.
   - Retainer (3-8 s) : une question dont la réponse n'arrive qu'à la fin, ou l'annonce d'un retournement.
@@ -61,9 +71,10 @@ Règles de fond, sans exception :
 - Référence de la série : vidéo 001, version v3 (`videos/001-pourquoi-tu-9-99/livraison/001-pourquoi-tu-9-99-v3.mp4`), validée par le propriétaire du compte. Même charte, même rythme, même voix, mêmes niveaux sonores pour toutes les suivantes.
 
 ## VARIÉTÉ (même niche, jamais la même vidéo)
-Constant : la niche, la promesse (« tu repères un piège de plus »), la charte, la voix, la durée.
+Constant : la thématique, la promesse (« tu repères un piège qui te coûte de l'argent »), la charte, la voix, la durée.
 Variable : cinq éléments tournent. **Deux vidéos qui se suivent ne partagent ni le même univers, ni la même structure, ni la même famille de hook.**
-- Univers : supermarché · restaurant et café · achat en ligne · abonnements et applis · vêtements et soldes · cinéma et loisirs.
+- Pilier : deux vidéos qui se suivent ne viennent pas du même pilier, et aucun pilier ne revient plus de deux fois sur cinq vidéos.
+- Univers : supermarché · restaurant et café · achat en ligne · abonnements et applis · vêtements et soldes · cinéma et loisirs · banque et factures · téléphone et messages.
 - Famille de hook :
   - A. « Pourquoi tu… » (ton comportement)
   - B. « Regarde bien ce prix… » (un objet ou une étiquette qu'on décortique)

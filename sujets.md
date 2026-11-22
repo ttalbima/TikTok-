@@ -1,4 +1,6 @@
-# Sujets à venir — « Les pièges des prix »
+# Sujets — « Les pièges de l'argent »
+
+Le pilier 1 (prix et magasins) est détaillé ci-dessous. Les autres piliers sont à la fin du fichier.
 
 Ce sont des idées. Les faits et les études sont à vérifier au moment d'écrire chaque script ; un sujet sans étude solide est abandonné.
 État : les vidéos 003 à 015 sont fabriquées en v1 (dossiers `videos/003-…` à `videos/015-…`), en attente d'écoute et de validation.
@@ -131,3 +133,62 @@ Exclure toute idée qui ne repose que sur des travaux rétractés ou contestés 
 - Les coupons
 - Le paquet « format familial »
 - Le paquet qui rétrécit, version 2 : la recette qui change
+
+
+## Piliers 2 à 6 (candidats NON vérifiés)
+
+Mêmes règles : source vérifiable obligatoire, droit français daté, aucune marque, aucun conseil d'investissement.
+
+### 2. Abonnements, contrats et factures
+- La résiliation d'un abonnement en ligne : ce que la loi impose depuis 2023
+- Le tarif « première année » qui double l'année suivante
+- Les frais bancaires que tu paies sans les voir sur ton relevé
+- L'assurance de ton téléphone que ta carte bancaire couvre peut-être déjà
+- Le forfait mobile trop gros pour ce que tu consommes
+- Le changement de fournisseur d'énergie : ce que tu as le droit de faire
+- La reconduction tacite et le courrier qu'on doit t'envoyer
+- Les « petites lignes » : où elles se cachent dans un contrat
+- Le délai de rétractation : quand il existe, et quand il n'existe pas
+- Les frais de dossier, de mise en service, de résiliation
+
+### 3. Arnaques et manipulations
+- Le faux SMS de colis en attente
+- Le faux conseiller bancaire qui connaît ton nom
+- Le faux message « Maman, j'ai changé de numéro »
+- Les faux avis cinq étoiles
+- L'acheteur qui veut payer « par un lien sécurisé » sur un site de petites annonces
+- La fausse amende à régler tout de suite
+- Le faux concours « tu as gagné »
+- Pourquoi l'urgence fait tomber même les gens prudents
+- Les fausses boutiques en ligne qui ferment au bout d'un mois
+- L'appel qui affiche le vrai numéro de ta banque
+
+### 4. Ton cerveau et l'argent
+- Les petites dépenses quotidiennes qui font un gros total sur un an
+- On dépense plus vite l'argent « trouvé »
+- On compare son niveau de vie aux autres, et on dépense pour suivre
+- Remettre à plus tard une démarche qui te fait gagner de l'argent
+- On garde un abonnement « au cas où »
+- On achète pour se consoler
+- On surestime ce qu'on utilisera (salle de sport, appli payée)
+- L'effet « je l'ai mérité » après une dure journée
+
+### 5. Les coulisses du marketing
+- Pourquoi tant d'emballages sont rouges ou jaunes
+- Les mots « artisanal », « maison », « recette d'autrefois » : ce qu'ils garantissent vraiment
+- Le prix finissant par 0 qui fait « haut de gamme »
+- La publicité qui te suit d'un site à l'autre
+- Les « éditions limitées »
+- Pourquoi le même produit a plusieurs emballages
+- Les produits « pour femmes » vendus plus cher
+- L'influence : ce que le créateur doit afficher quand il est payé
+
+### 6. Le vrai coût des choses
+- Le vrai coût d'un café acheté chaque jour, sur un an
+- Le vrai coût d'une voiture, au-delà du prix d'achat
+- Le vrai coût d'un animal de compagnie
+- Le vrai coût de la livraison de repas
+- Le vrai coût d'un téléphone payé en plusieurs fois
+- Le vrai coût d'une garantie prolongée
+- Le vrai coût des capsules de café
+- Le vrai coût d'un crédit renouvelable (sans conseil : uniquement le calcul et la loi)
