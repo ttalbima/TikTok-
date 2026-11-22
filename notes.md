@@ -83,3 +83,7 @@
 ## Rôle de chef d'orchestre (22/11/2026)
 - Le propriétaire demande qu'aucun sujet ne démarre sans sa validation, et confie à la session principale la coordination des agents (connexions, adaptations). Agents créés : fabrication, verification (en plus de croissance). Chaîne de travail dans CLAUDE.md.
 - Les fabrications 016 à 018 ont été arrêtées par le propriétaire après la voix (crédits ElevenLabs déjà dépensés) : scripts et voix gardés pour reprise après validation.
+
+## Audit de structure des vidéos 001 et 003 à 015 (22/11/2026)
+- Résultat de studio/controle_structure.py : aucune ne respecte toute la structure. Hooks de 3,3 à 6,8 s (sauf 010 et 014), retainers qui finissent entre 9,8 et 15,1 s au lieu de 8 s, fins trop longues (004, 007, 010, 011, 013, 014, 015), hooks sans « tu » (005, 009, 012), défis à deux actions (004, 007, 010, 013). Boucles (001, 005, 008, 011, 014) et durées (75-90 s) conformes, variété respectée entre vidéos consécutives.
+- Cause : budgets de mots non chiffrés et aucun contrôle automatique. Corrigé : budgets dans CLAUDE.md et dans les agents, contrôle obligatoire.

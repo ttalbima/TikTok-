@@ -33,10 +33,11 @@ Règles de fond, sans exception :
 - La niche et la promesse ne changent jamais ; tout le reste tourne (voir « VARIÉTÉ » ci-dessous).
 - Exemples, prix et situations en euros et dans un décor français. Règles et lois : uniquement le droit français ou européen, vérifié, avec sa date.
 - Structure en 4 blocs :
-  - Hook (0-3 s) : une phrase courte qui pose une tension. Pas d'intro.
-  - Retainer (3-8 s) : une question dont la réponse n'arrive qu'à la fin, ou l'annonce d'un retournement.
+  - Hook (0-3 s) : une phrase courte qui pose une tension. Pas d'intro. **8 mots maximum**, avec « tu » (ou un impératif adressé au spectateur), y compris pour la famille D (« Avec une carte, tu paies plus… », pas « on paie plus »).
+  - Retainer (3-8 s) : une question dont la réponse n'arrive qu'à la fin, ou l'annonce d'un retournement. **Hook + retainer : 22 mots maximum.**
   - Body : situation, bascule, conséquence. Phrases courtes, un fait concret toutes les 2-3 s, la révélation la plus forte à la fin.
-  - CTA (une seule action) OU boucle (la dernière phrase se raccorde au début du hook), sur les 3-5 dernières s.
+  - CTA (une seule action : un seul verbe d'action, pas « regarde… et compte… ») OU boucle (la dernière phrase se raccorde au début du hook), sur les 3-5 dernières s : **9 à 14 mots**.
+  - Repère : la voix parle à environ 2,8 mots par seconde. Contrôle obligatoire après minutage : `python3 studio/controle_structure.py videos/<dossier>` doit répondre « OK ».
 - Livrer uniquement le texte, en 4 blocs minutés.
 - Ton : conteur, vif, complice, tutoiement, pas de superlatifs creux.
 
