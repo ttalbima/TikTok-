@@ -20,3 +20,9 @@
 - 223 mots prononcés, 63 plans (1,23 s en moyenne), 126 bruitages.
 - Mesures : −13,0 LUFS, musique 21 dB sous la voix, pointes des bruitages 5 dB sous la voix. Son non écouté.
 - Objets propres à la vidéo définis en tête de `plans.js` : carte, portefeuille, terminal, croissant, tasse, ballon, billet d'entrée, éclair, enveloppe.
+
+## Retouche v2 (structure recalée)
+- Voix remontée : nouvelle accroche « Avec une carte, tu es prêt à payer plus. », 76,8 s.
+- Plans : accroche recalée (carte VS billet au mot 0, PRÊT À PAYER au mot 3, PLUS au mot 8, ×2 au mot 9) ; plan QUE DES BILLETS supprimé, CHER retiré du titre. Suite inchangée. 62 plans.
+- `remap_plans.py` avait aussi décalé des largeurs d'objets (« w: N » pris pour un indice de mot) : rétablies d'après `plans-avant.js`.
+- Son non écouté ; le raccord de voix du montage est à écouter.

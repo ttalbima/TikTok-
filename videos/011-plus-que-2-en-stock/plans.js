@@ -107,9 +107,9 @@
     E(540, 1190, Tx('DU PRODUIT', 170), { a: 'up', w: 15 }),
   ]);
   S(17, 2, bg => [
-    E(540, 620, O.burst({ w: 880, n: 14 }), { a: 'pop', w: 19, loop: 'spin', per: 6, cut: false }),
-    E(540, 620, sac(bg, { w: 340 }), { a: 'pop', sfx: 'pop', m: [{ w: 19, s: 1.35, dur: .3, sfx: 'rise' }] }),
-    E(540, 1170, Tx('MAIS…', 230, 'var(--a1)'), { a: 'up', d: .05 }),
+    E(540, 540, O.burst({ w: 800, n: 14 }), { a: 'pop', w: 19, loop: 'spin', per: 6, cut: false }),
+    E(540, 540, sac(bg, { w: 340 }), { a: 'pop', sfx: 'pop', m: [{ w: 19, s: 1.25, dur: .3, sfx: 'rise' }] }),
+    E(540, 1150, Tx('MAIS…', 230, 'var(--a1)'), { a: 'up', d: .05 }),
   ]);
   S(21, 2, bg => [
     E(540, 500, O.burst({ w: 800, n: 14, col: T.navy2 }), { a: 'pop', loop: 'spin', per: 6, cut: false }),

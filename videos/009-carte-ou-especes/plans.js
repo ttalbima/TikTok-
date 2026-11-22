@@ -75,27 +75,23 @@
   const dk = bg => (bg === 'navy' ? P.cream : P.navy);
   const line = (y, col, d = {}) => E(540, y, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col, sw: 28, draw: d }), { a: 'none', cut: false });
 
-  V.keywords = [9, 9, 11, 27, 33, 38, 52, 59, 65, 69, 74, 83, 84, 102, 104, 110, 120, 127, 134, 142, 148, 157, 159, 167, 171, 177, 179, 182, 187, 200, 207, 212];
+  V.keywords = [2, 8, 11, 27, 33, 38, 52, 59, 65, 69, 74, 83, 84, 102, 104, 110, 120, 127, 134, 142, 148, 157, 159, 167, 171, 177, 179, 182, 187, 200, 207, 212];
 
-  /* ===== SCÈNE 1 — HOOK ===== */
-  S(9, 1, bg => [
+  /* ===== SCÈNE 1 — HOOK (v2 : « Avec une carte, tu es prêt à payer plus. Parfois le double. ») ===== */
+  S(0, 1, bg => [
     E(290, 620, card(bg, { w: 440 }), { a: 'left', rot: -8, sfx: 'whoosh' }),
     E(790, 900, bill(bg, { w: 440 }), { a: 'right', rot: 8, d: .08 }),
     E(540, 760, Tx('VS', 260, 'var(--a2)'), { a: 'stamp', d: .35, sfx: 'stamp' }),
   ]);
-  S(9, 1, bg => [
+  S(3, 1, bg => [
     E(540, 640, O.person({ w: 380, fill: P.navy }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1090, Tx('PRÊT À PAYER', 168, 'var(--a1)'), { a: 'up', w: 9 }),
+    E(540, 1090, Tx('PRÊT À PAYER', 168, 'var(--a1)'), { a: 'up', w: 5 }),
   ]);
-  S(9, 1, bg => [
-    E(540, 420, O.arrow({ w: 340, fill: P.yellow }), { a: 'up', rot: -90, sfx: 'rise', loop: 'float', amp: 16, per: .8 }),
-    E(540, 800, Tx('PLUS', 320), { a: 'stamp', sfx: 'stamp' }),
-    E(540, 1100, Tx('CHER', 320, 'var(--a1)'), { a: 'stamp', w: 9 }),
+  S(8, 1, bg => [
+    E(540, 440, O.arrow({ w: 340, fill: P.yellow }), { a: 'up', rot: -90, sfx: 'rise', loop: 'float', amp: 16, per: .8 }),
+    E(540, 940, Tx('PLUS', 440), { a: 'stamp', sfx: 'stamp' }),
   ]);
-  S(9, 1, bg => [
-    ...[0, 1, 2].map(i => E(540 + (i - 1) * 60, 620 + i * 170, bill(bg, { w: 560 }), { a: 'drop', d: i * .14, dur: .45, rot: (i - 1) * 7, sfx: i ? undefined : 'thud' })),
-    E(540, 300, Tx('QUE DES BILLETS', 130, 'var(--a1)'), { a: 'down', w: 9 }),
-  ]);
+  k = 4;                                             // garde les fonds d'origine pour la suite (crème, puis le reste inchangé)
   S(9, 1, bg => [
     E(540, 420, Tx('PARFOIS', 220), { a: 'down' }),
     E(540, 860, Tx('×2', 640, 'var(--a1)'), { a: 'stamp', w: 11, sfx: 'stamp', loop: 'pulse', amp: .03, per: .6 }),

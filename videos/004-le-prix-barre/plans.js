@@ -61,9 +61,9 @@
   const who = (bg, o = {}) => O.person({ w: 300, fill: fg(bg), ...o });
   const doc = bg => O.person({ w: 340, fill: light(bg) ? P.navy : P.yellow, coat: true, ink: bg === 'cream' ? P.yellow : P.cream });
 
-  V.keywords = [4, 17, 25, 27, 34, 45, 24, 46, 60, 64, 67, 85, 94, 103, 108, 115, 124, 133, 140, 145, 152, 163, 171, 175, 182, 184, 195, 202, 215, 215];
+  V.keywords = [4, 17, 20, 24, 25, 27, 34, 45, 46, 60, 64, 67, 85, 94, 103, 108, 115, 124, 133, 140, 145, 152, 163, 171, 175, 182, 184, 195, 202, 209, 215];
 
-  /* ===== SCÈNE 1 — HOOK ===== */
+  /* ===== SCÈNE 1 — HOOK : « Regarde bien ce prix barré. » ===== */
   S(0, 1, bg => [
     E(540, 760, O.ptag({ w: 900, fill: tagFill(bg) }), { a: 'drop', sfx: 'thud', rot: -4, m: [{ d: .8, s: 1.06, dur: .18 }, { d: 1.0, s: 1, dur: .2 }] }),
   ]);
@@ -72,54 +72,27 @@
     E(540, 960, Tx('BARRÉ', 340, 'var(--a1)'), { a: 'stamp', w: 4, sfx: 'stamp' }),
     strike(960, 820, { draw: { w: 4, d: .25 } }),
   ]);
-  S(5, 1, bg => [
+  /* ===== SCÈNE 2 — RETAINER : « Il n'est pas là pour t'informer. Il est là pour te faire acheter. Et la preuve vient d'une roue truquée. » ===== */
+  S(5, 2, bg => [
     E(540, 700, O.disc({ w: 560, fill: fg(bg) }), { a: 'pop', sfx: 'pop' }),
     E(540, 700, Tx('i', 420, P[bg], { css: 'text-transform:none;' }), { a: 'pop', d: .08, cut: false }),
     E(540, 1170, Tx('PAS LÀ', 220, 'var(--a1)'), { a: 'up', w: 7 }),
   ]);
-  S(9, 1, bg => [
+  S(9, 2, bg => [
     E(540, 660, O.disc({ w: 520, fill: fg(bg) }), { a: 'none' }),
     E(540, 660, Tx('i', 400, P[bg], { css: 'text-transform:none;' }), { a: 'none', cut: false }),
     E(540, 660, O.cross({ w: 640, col: P.coral, draw: { w: 10, sfx: 'buzz' } }), { a: 'none', w: 10 }),
     E(540, 1150, Tx("POUR T'INFORMER", 150), { a: 'up' }),
   ]);
-  S(11, 1, bg => [
+  S(11, 2, bg => [
     E(540, 420, Tx('IL EST LÀ', 220), { a: 'down' }),
     E(540, 700, Tx('POUR TE FAIRE', 170), { a: 'up', w: 14 }),
     E(540, 1020, Tx('ACHETER', 290, 'var(--a1)'), { a: 'stamp', w: 17, sfx: 'stamp' }),
   ]);
 
-  /* ===== SCÈNE 2 — RETAINER ===== */
-  S(25, 2, bg => [
-    E(540, 720, Tx('120 €', 440), { a: 'pop', sfx: 'pop' }),
-    strike(720, 900, { draw: { w: 26 } }),
-    E(540, 1130, Tx('BARRÉS', 220, 'var(--a1)'), { a: 'up', w: 26 }),
-  ]);
-  S(27, 2, bg => [
-    E(540, 380, O.arrow({ w: 300, fill: fg(bg) }), { a: 'down', w: 28, rot: 90, sfx: 'fall' }),
-    E(540, 860, Tx('60 €', 560, 'var(--a1)'), { a: 'stamp', sfx: 'stamp' }),
-  ]);
-  S(31, 2, bg => [
-    E(540, 520, O.burst({ w: 900, n: 14, col: light(bg) ? P.coral : P.yellow }), { a: 'pop', w: 33, loop: 'spin', per: 6, cut: false }),
-    E(540, 520, O.eye({ w: 600 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1080, Tx('UNE AFFAIRE', 190, 'var(--a1)'), { a: 'stamp', w: 34, sfx: 'stamp' }),
-  ]);
-  S(35, 2, bg => [
-    E(540, 600, Tx('POURTANT…', 205), { a: 'stamp', sfx: 'stamp' }),
-    E(330, 1010, Tx('?', 340, 'var(--a1)'), { w: 38, rot: -10, sfx: 'pop' }),
-    E(740, 1010, Tx('?', 340, 'var(--a1)'), { w: 39, rot: 10, sfx: 'pop' }),
-  ]);
-  S(41, 2, bg => [
-    E(540, 640, O.tag('? €', { w: 760, fill: tagFill(bg) }), { a: 'pop', sfx: 'pop', loop: 'swing', amp: 4, per: 1 }),
-    E(540, 1090, Tx('ÇA VAUT QUOI', 190, 'var(--a1)'), { a: 'up', w: 43 }),
-  ]);
-  S(44, 2, bg => [
-    E(540, 640, O.pull({ w: 700, fill: pullFill(bg) }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1150, Tx('CE PULL', 260, 'var(--a1)'), { a: 'stamp', w: 45, sfx: 'stamp' }),
-  ]);
   S(18, 2, bg => [
     E(540, 560, O.magnifier({ w: 520, ring: fg(bg) }), { a: 'left', sfx: 'whoosh' }),
-    E(540, 1080, Tx('LA PREUVE', 260, 'var(--a1)'), { a: 'stamp', w: 20, sfx: 'stamp' }),
+    E(540, 1080, Tx('LA PREUVE', 220, 'var(--a1)'), { a: 'stamp', w: 20, sfx: 'stamp' }),
   ]);
   S(22, 2, bg => [
     E(540, 620, O.wheel({ w: 700 }), { a: 'pop', sfx: 'pop', loop: 'spin', per: 1.4 }),
@@ -127,7 +100,34 @@
     E(540, 1170, Tx('TRUQUÉE', 260, 'var(--a1)'), { a: 'stamp', w: 24, sfx: 'stamp' }),
   ]);
 
-  /* ===== SCÈNE 3 — L'EXPÉRIENCE DE 1974 ===== */
+  /* ===== SCÈNE 3 — CORPS : « 120 € barrés… ce pull. », puis l'expérience de 1974 ===== */
+  S(25, 3, bg => [
+    E(540, 720, Tx('120 €', 440), { a: 'pop', sfx: 'pop' }),
+    strike(720, 900, { draw: { w: 26 } }),
+    E(540, 1130, Tx('BARRÉS', 220, 'var(--a1)'), { a: 'up', w: 26 }),
+  ]);
+  S(27, 3, bg => [
+    E(540, 380, O.arrow({ w: 300, fill: fg(bg) }), { a: 'down', w: 28, rot: 90, sfx: 'fall' }),
+    E(540, 860, Tx('60 €', 560, 'var(--a1)'), { a: 'stamp', sfx: 'stamp' }),
+  ]);
+  S(31, 3, bg => [
+    E(540, 520, O.burst({ w: 900, n: 14, col: light(bg) ? P.coral : P.yellow }), { a: 'pop', w: 33, loop: 'spin', per: 6, cut: false }),
+    E(540, 520, O.eye({ w: 600 }), { a: 'pop', sfx: 'pop' }),
+    E(540, 1080, Tx('UNE AFFAIRE', 190, 'var(--a1)'), { a: 'stamp', w: 34, sfx: 'stamp' }),
+  ]);
+  S(35, 3, bg => [
+    E(540, 600, Tx('POURTANT…', 205), { a: 'stamp', sfx: 'stamp' }),
+    E(330, 1010, Tx('?', 340, 'var(--a1)'), { w: 38, rot: -10, sfx: 'pop' }),
+    E(740, 1010, Tx('?', 340, 'var(--a1)'), { w: 39, rot: 10, sfx: 'pop' }),
+  ]);
+  S(41, 3, bg => [
+    E(540, 640, O.tag('? €', { w: 760, fill: tagFill(bg) }), { a: 'pop', sfx: 'pop', loop: 'swing', amp: 4, per: 1 }),
+    E(540, 1090, Tx('ÇA VAUT QUOI', 190, 'var(--a1)'), { a: 'up', w: 43 }),
+  ]);
+  S(44, 3, bg => [
+    E(540, 640, O.pull({ w: 700, fill: pullFill(bg) }), { a: 'pop', sfx: 'pop' }),
+    E(540, 1150, Tx('CE PULL', 260, 'var(--a1)'), { a: 'stamp', w: 45, sfx: 'stamp' }),
+  ]);
   S(46, 3, bg => [
     E(540, 740, Tx(cnt({ from: 1960, to: 1974, dur: .5, sfx: 'tick' }), 440), { a: 'pop' }),
     E(540, 1010, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col: P.coral, sw: 30, draw: { d: .5, dur: .3 } }), { a: 'none', cut: false }),
@@ -350,18 +350,6 @@
   S(213, 7, bg => [
     E(540, 700, O.ptag({ w: 900, fill: tagFill(bg) }), { a: 'none' }),
     E(858, 613, O.thumb({ w: 400, fill: bg === 'yellow' ? P.coral : P.yellow }), { a: 'right', dist: 900, w: 214, rot: -90, sfx: 'swish' }),
-  ]);
-  S(215, 7, bg => [
-    E(540, 620, O.brain({ w: 620, fill: light(bg) ? P.coral : P.cream, fold: light(bg) ? P.cream : P.coral }), { a: 'pop', sfx: 'pop', loop: 'float', per: 1.2 }),
-    E(540, 1130, Tx('DEMANDE-TOI', 200, 'var(--a1)'), { a: 'up', w: 215 }),
-  ]);
-  S(215, 7, bg => [
-    E(540, 560, Tx('60 €', 470, 'var(--a1)'), { a: 'stamp', sfx: 'stamp' }),
-    E(540, 1060, O.pull({ w: 420, fill: pullFill(bg) }), { a: 'pop', w: 215, sfx: 'pop' }),
-  ]);
-  S(215, 7, bg => [
-    E(540, 520, Tx('TU LES', 260), { a: 'down' }),
-    E(540, 790, Tx('AURAIS', 260), { a: 'up', w: 215 }),
-    E(540, 1100, Tx('MIS ?', 380, 'var(--a1)'), { a: 'stamp', w: 215, sfx: 'stamp', loop: 'pulse', amp: .04, per: .6 }),
+    E(540, 1190, Tx('TON POUCE', 220, 'var(--a1)'), { a: 'stamp', w: 215, sfx: 'stamp' }),
   ]);
 })();

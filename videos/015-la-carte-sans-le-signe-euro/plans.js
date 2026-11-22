@@ -61,23 +61,20 @@
   const cher = (bg, o = {}) => O.person(bg === 'cream' || bg === 'yellow' ? { fill: P.navy, coat: true, ink: P.coral, ...o } : { fill: P.yellow, coat: true, ink: P.cream, ...o });
   const under = (y, col, an = {}) => E(540, y, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col, sw: 28, draw: { d: .2, dur: .3, ...an } }), { a: 'none', cut: false });
 
-  V.keywords = [8, 8, 13, 25, 36, 43, 47, 56, 62, 67, 74, 76, 87, 96, 102, 108, 112, 121, 128, 130, 137, 146, 147, 155, 165, 175, 184, 188, 193, 209, 213];
+  V.keywords = [2, 7, 13, 25, 36, 43, 47, 56, 62, 67, 74, 76, 87, 96, 102, 108, 112, 121, 128, 130, 137, 146, 147, 155, 165, 175, 184, 188, 193, 209, 213];
 
-  /* ===== SCÈNE 1 — HOOK ===== */
-  S(8, 1, bg => [
+  /* ===== SCÈNE 1 — HOOK (retouche v2 : « Pourquoi tu dépenses plus sans le signe euro ? ») ===== */
+  S(0, 1, bg => [
     E(540, 620, lg(bg, '20', { w: 900, px: 690 }), { a: 'drop', sfx: 'thud' }),
-    E(880, 667, Tx('€', 150, P.coral), { a: 'pop', d: .3, cut: false, m: [{ w: 8, o: .15, dur: .2, e: 'outCubic' }, { w: 8, o: 1, dur: .12, e: 'outCubic' }, { w: 8, o: 0, dy: -70, dur: .3, e: 'outCubic', sfx: 'swish' }] }),
-    E(540, 1150, Tx('TU DÉPENSES +', 170, 'var(--a1)'), { a: 'up', w: 8 }),
+    E(880, 667, Tx('€', 150, P.coral), { a: 'pop', d: .3, cut: false, m: [{ w: 3, o: .15, dur: .15, e: 'outCubic' }, { w: 3, d: .18, o: 1, dur: .12, e: 'outCubic' }] }),
+    E(540, 1150, Tx('TU DÉPENSES +', 170, 'var(--a1)'), { a: 'up', w: 2 }),
   ]);
-  S(8, 1, bg => [
-    E(540, 400, O.carte([{ p: '12' }, { p: '20', l: 300 }], { w: 420 }), { a: 'down' }),
-    E(540, 980, Tx('20', 620), { a: 'stamp', w: 8, sfx: 'stamp' }),
-  ]);
-  S(8, 1, bg => [
+  S(4, 1, bg => [
     E(540, 600, Tx('€', 760), { a: 'pop', sfx: 'pop' }),
-    E(540, 620, O.cross({ w: 620, col: P.navy, draw: { w: 8, sfx: 'buzz' } }), { a: 'none', w: 8 }),
-    E(540, 1180, Tx('SANS LE SIGNE', 150, 'var(--a1)'), { a: 'up', w: 8 }),
+    E(540, 620, O.cross({ w: 620, col: P.coral, draw: { w: 6, sfx: 'buzz' } }), { a: 'none', w: 6 }),
+    E(540, 1180, Tx('SANS LE SIGNE', 150, 'var(--a1)'), { a: 'up', w: 5 }),
   ]);
+  k++;   // un plan de moins qu'en v1 : on saute une couleur pour que la suite garde ses fonds d'origine
 
   /* ===== SCÈNE 2 — RETAINER ===== */
   S(8, 2, bg => [

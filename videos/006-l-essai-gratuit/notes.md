@@ -14,3 +14,9 @@
 - 63 plans, 1,24 s en moyenne. « 7 JOURS » à l'écran (durée d'essai) est un exemple illustratif, comme l'étiquette « 9,99 € ».
 - Objets propres à la vidéo définis en tête de `plans.js` : bouton, téléphone, journal, carte bancaire.
 - Mesures : −13,0 LUFS, musique 21 dB sous la voix, bruitages 5 dB sous la voix, 123 bruitages. Son non écouté.
+
+## Retouche v2 (structure recalée)
+- Voix remontée par le chef d'orchestre (phrase raccourcie : « Mets-toi à la place du créateur de l'appli. »), 75,9 s.
+- Plans : 4 plans de l'ancienne phrase (POUR COMPRENDRE, 1 MINUTE, À SA PLACE, L'APPLI) remplacés par 2 (À SA PLACE au mot 17, L'APPLI au mot 22). Corps et fin inchangés (fonds d'origine gardés). 61 plans.
+- `remap_plans.py` avait aussi décalé des largeurs d'objets (« w: N » pris pour un indice de mot) : rétablies d'après `plans-avant.js`.
+- Son non écouté ; le raccord de voix du montage est à écouter.

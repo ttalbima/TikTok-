@@ -52,9 +52,9 @@
   const R2 = [{ p: '14 €' }, { p: '19 €' }];
   const R3 = [{ p: '14 €' }, { p: '19 €' }, { p: '29 €' }];
 
-  V.keywords = [4, 11, 24, 27, 27, 36, 40, 50, 63, 75, 85, 91, 94, 96, 111, 117, 122, 133, 143, 153, 160, 166, 184, 195, 200, 213];
+  V.keywords = [4, 11, 15, 21, 24, 28, 36, 40, 50, 63, 75, 85, 91, 94, 96, 111, 117, 122, 133, 143, 153, 160, 166, 184, 195, 200, 213];
 
-  /* ===== SCÈNE 1 — HOOK ===== */
+  /* ===== SCÈNE 1 — HOOK : « Tu crois choisir ton menu. » ===== */
   S(0, 1, bg => [
     E(540, 620, card(bg, [{ p: '?' }, { p: '?' }, { p: '?' }], { w: 600 }), { a: 'drop', sfx: 'thud' }),
     E(540, 1210, Tx('TU CROIS CHOISIR', 130, 'var(--a1)'), { a: 'up', w: 1 }),
@@ -63,50 +63,46 @@
     E(540, 600, plate(bg, { w: 680 }), { a: 'pop', sfx: 'pop' }),
     E(540, 1110, Tx('TON MENU', 250), { a: 'stamp', w: 4, sfx: 'stamp' }),
   ]);
-  S(5, 1, bg => [
+
+  /* ===== SCÈNE 2 — RETAINER : « En vrai, on a choisi pour toi. Et le plus cher n'a même pas besoin d'être vendu. » ===== */
+  S(5, 2, bg => [
     E(540, 640, Tx('EN', 420), { a: 'stamp', sfx: 'stamp' }),
     E(540, 1040, Tx('VRAI', 420, 'var(--a1)'), { a: 'stamp', w: 6 }),
   ]);
-  S(7, 1, bg => [
+  S(7, 2, bg => [
     E(540, 620, O.person({ w: 420, fill: P.cream, hat: true }), { a: 'up', sfx: 'pop' }),
     E(540, 1130, Tx('ON A CHOISI', 190, 'var(--a1)'), { a: 'stamp', w: 9, sfx: 'stamp' }),
   ]);
-  S(10, 1, bg => [
+  S(10, 2, bg => [
     E(540, 600, O.arrow({ w: 420, fill: P.coral }), { a: 'down', rot: 90, sfx: 'whoosh' }),
     E(540, 1040, Tx('POUR TOI', 260), { a: 'stamp', w: 11, sfx: 'stamp' }),
   ]);
-
-  /* ===== SCÈNE 2 — RETAINER ===== */
-  S(22, 2, bg => [
-    E(540, 560, O.clipboard({ w: 420 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1090, Tx('LE TEST', 300, 'var(--a1)'), { a: 'stamp', w: 24, sfx: 'stamp' }),
+  S(12, 2, bg => [
+    E(540, 760, tg(bg, '29 €', { w: 800 }), { a: 'drop', dur: .4, sfx: 'thud' }),
+    E(600, 470, O.crown({ w: 260, fill: P.coral, band: T.coral2 }), { a: 'drop', w: 14, dur: .4, sfx: 'ding' }),
+    E(540, 1150, Tx('LE + CHER', 200, 'var(--a1)'), { a: 'up', w: 14 }),
   ]);
-  S(25, 2, bg => [
+  S(16, 2, bg => [
+    E(540, 640, Tx('MÊME', 400), { a: 'stamp', d: .12, sfx: 'stamp' }),
+    E(540, 1020, Tx('PAS', 400, 'var(--a1)'), { a: 'stamp', w: 18 }),
+  ]);
+  S(20, 2, bg => [
+    E(540, 560, O.register({ w: 620, fill: P.navy }), { a: 'pop', sfx: 'pop' }),
+    E(540, 560, O.cross({ w: 560, col: P.yellow, draw: { w: 21, sfx: 'buzz' } }), { a: 'none', w: 21 }),
+    E(540, 1100, Tx('PAS BESOIN', 200), { a: 'stamp', d: .12, sfx: 'stamp' }),
+  ]);
+
+  /* ===== SCÈNE 3 — PREMIER CAS (ouvre sur « Fais le test avec moi. ») ===== */
+  S(22, 3, bg => [
+    E(540, 560, O.clipboard({ w: 420 }), { a: 'pop', sfx: 'pop' }),
+    E(540, 1090, Tx('LE TEST', 300, 'var(--a1)'), { a: 'stamp', w: 23, sfx: 'stamp' }),
+  ]);
+  S(25, 3, bg => [
     E(330, 640, O.person({ w: 380, fill: P.navy }), { a: 'left', sfx: 'pop' }),
     E(750, 640, O.person({ w: 380, fill: P.coral }), { a: 'right' }),
     E(540, 1130, Tx('AVEC MOI', 250), { a: 'up', w: 26 }),
   ]);
-  S(27, 2, bg => [
-    E(540, 580, Tx('À LA FIN', 250), { a: 'stamp', w: 27, sfx: 'stamp' }),
-    E(540, 940, O.arrow({ w: 460 }), { a: 'left', w: 27, sfx: 'whoosh' }),
-  ]);
-  S(27, 2, bg => [
-    E(540, 660, O.bulb({ w: 300, ink: P.cream }), { a: 'pop', w: 27, sfx: 'pop' }),
-    E(540, 310, Tx('TU SAURAS', 180), { a: 'down' }),
-    E(540, 1140, Tx('POURQUOI', 240, 'var(--a1)'), { a: 'stamp', w: 27, sfx: 'stamp' }),
-  ]);
-  S(27, 2, bg => [
-    E(540, 760, tg(bg, '29 €', { w: 800 }), { a: 'drop', sfx: 'thud' }),
-    E(600, 470, O.crown({ w: 260, fill: P.coral, band: T.coral2 }), { a: 'drop', w: 27, dur: .45, sfx: 'ding' }),
-    E(540, 1150, Tx('LE + CHER', 200, 'var(--a1)'), { a: 'up', w: 27 }),
-  ]);
-  S(27, 2, bg => [
-    E(540, 560, O.register({ w: 620, fill: P.coral }), { a: 'pop', sfx: 'pop' }),
-    E(540, 560, O.cross({ w: 560, col: P.yellow, draw: { w: 27, sfx: 'buzz' } }), { a: 'none', w: 27 }),
-    E(540, 1100, Tx('PAS BESOIN', 200), { a: 'stamp', w: 27, sfx: 'stamp' }),
-  ]);
-
-  /* ===== SCÈNE 3 — PREMIER CAS ===== */
+  k++; // un plan de moins qu'à l'origine avant le corps : on saute une couleur pour que le corps garde ses fonds
   S(27, 3, bg => [
     E(540, 620, Tx('CAS', 380), { a: 'stamp', sfx: 'stamp' }),
     E(540, 1000, Tx('N° 1', 380, 'var(--a1)'), { a: 'stamp', w: 28 }),

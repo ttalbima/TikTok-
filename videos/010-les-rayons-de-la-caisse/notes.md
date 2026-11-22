@@ -14,3 +14,9 @@
 - Script : 225 mots prononcés.
 - v1 : 77,0 s, 61 plans (1,26 s en moyenne). Mesures : −13,0 LUFS, crête −0,8 dBFS, musique 21 dB sous la voix, pointes des bruitages 5 dB sous la voix, 106 bruitages. Son non écouté.
 - Ouverture : la file devant la caisse, avec le titre « POURQUOI » au-dessus (et non un objet seul).
+
+## Retouche v2 (structure recalée)
+- Voix remontée : « Et tu lâches au dernier mètre. » et « Et compte combien de pas tu tiens. » retirées, 76,4 s.
+- Plans : 4 plans supprimés (ET TU LÂCHES, DERNIER MÈTRE, ET COMPTE, COMBIEN DE PAS ?) ; la vidéo finit sur À HAUTEUR DE MAIN. Un trait souligné ajouté sous « 1 CHIFFRE » et un balancement sur le dernier plan du corps, allongés par les respirations. 57 plans.
+- `remap_plans.py` avait aussi décalé des largeurs d'objets (« w: N » pris pour un indice de mot) : rétablies d'après `plans-avant.js`.
+- Son non écouté ; le raccord de voix du montage est à écouter.

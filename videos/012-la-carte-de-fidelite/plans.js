@@ -82,46 +82,37 @@
   const qui = bg => (bg === 'navy' || bg === 'green' ? P.cream : P.navy);
   const tamp = bg => O.tampon(bg === 'coral' ? { col: P.yellow, w: 240 } : bg === 'navy' ? { handle: P.cream, w: 240 } : { w: 240 });
 
-  V.keywords = [15, 15, 15, 15, 24, 32, 42, 44, 51, 58, 62, 71, 78, 80, 90, 91, 107, 113, 122, 131, 139, 149, 160, 174, 183, 192, 195, 202, 214];
+  V.keywords = [2, 9, 14, 17, 24, 32, 42, 44, 51, 58, 62, 71, 78, 80, 90, 91, 107, 113, 122, 131, 139, 149, 160, 174, 183, 192, 195, 202, 214];
 
-  /* ===== SCÈNE 1 — HOOK ===== */
-  S(15, 1, bg => [
-    E(540, 760, carte(bg, 10, 0, { w: 880 }), { a: 'pop', hw: 15, sfx: 'pop' }),
-    E(540, 760, carte(bg, 10, 1, { w: 880 }), { a: 'none', w: 15, hw: 15 }),
-    E(540, 760, carte(bg, 10, 2, { w: 880 }), { a: 'none', w: 15 }),
-    E(330, 380, tamp(bg), { a: 'down', dist: 300, m: [{ w: 15, d: -.1, dx: -135, dy: 200, dur: .1, e: 'inOut', sfx: 'stamp', so: .1 }, { w: 15, d: .08, dx: -135, dy: 0, dur: .15 }, { w: 15, d: -.1, dx: 15, dy: 200, dur: .1, e: 'inOut', sfx: 'stamp', so: .1 }, { w: 15, d: .08, dx: 15, dy: 0, dur: .15 }] }),
+  /* ===== SCÈNE 1 — HOOK (retouche v2 : « Deux tampons offerts, et tu finis ta carte plus vite. ») ===== */
+  S(0, 1, bg => [
+    E(540, 760, carte(bg, 10, 0, { w: 880 }), { a: 'pop', hw: 1, sfx: 'pop' }),
+    E(540, 760, carte(bg, 10, 1, { w: 880 }), { a: 'none', w: 1, hw: 2 }),
+    E(540, 760, carte(bg, 10, 2, { w: 880 }), { a: 'none', w: 2 }),
+    E(330, 380, tamp(bg), { a: 'down', dist: 300, m: [{ w: 1, d: -.1, dx: -135, dy: 200, dur: .1, e: 'inOut', sfx: 'stamp', so: .1 }, { w: 1, d: .08, dx: -135, dy: 0, dur: .15 }, { w: 2, d: -.1, dx: 15, dy: 200, dur: .1, e: 'inOut', sfx: 'stamp', so: .1 }, { w: 2, d: .08, dx: 15, dy: 0, dur: .15 }] }),
+    E(540, 1215, Tx('2 OFFERTS', 190, 'var(--a1)'), { a: 'up', w: 2, d: .2, dist: 200 }),
   ]);
-  S(15, 1, bg => [
-    E(540, 420, Tx('CARTE DE', 200), { a: 'down' }),
-    E(540, 680, Tx('FIDÉLITÉ', 280, 'var(--a1)'), { a: 'stamp', w: 15, sfx: 'stamp' }),
-    E(540, 1060, carte(bg, 10, 2, { w: 520 }), { a: 'up', w: 15, rot: -5 }),
+  S(3, 1, bg => [
+    E(540, 400, Tx('TU FINIS', 250), { a: 'down' }),
+    E(540, 860, carte(bg, 10, 10, { w: 820 }), { a: 'pop', w: 5, sfx: 'pop' }),
   ]);
-  S(15, 1, bg => [
-    E(250, 760, O.person({ w: 280, fill: P.cream }), { a: 'pop', sfx: 'pop' }),
-    E(540, 700, O.person({ w: 320, fill: P.navy }), { a: 'pop', d: .1 }),
-    E(830, 760, O.person({ w: 280, fill: P.cream }), { a: 'pop', d: .2 }),
-    E(540, 1150, Tx('LES CLIENTS', 172, 'var(--a1)'), { a: 'up', w: 15 }),
-  ]);
-  S(15, 1, bg => [
-    E(540, 560, carte(bg, 10, 10, { w: 780 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1060, Tx('+ SOUVENT', 230, 'var(--a1)'), { a: 'stamp', w: 15, sfx: 'stamp' }),
-  ]);
-  S(15, 1, bg => [
-    E(540, 620, Tx('ET', 300), { a: 'pop' }),
-    E(540, 900, Tx('+ VITE', 340, 'var(--a1)'), { a: 'stamp', w: 15, sfx: 'stamp' }),
-    E(540, 1180, O.arrow({ w: 420, fill: P.navy }), { a: 'left', w: 15, sfx: 'whoosh' }),
+  S(8, 1, bg => [
+    E(540, 520, Tx('PLUS', 260), { a: 'pop' }),
+    E(540, 830, Tx('VITE', 400, 'var(--a1)'), { a: 'stamp', w: 9, sfx: 'stamp' }),
+    E(540, 1170, O.arrow({ w: 420, fill: P.navy }), { a: 'left', w: 9, d: .1, sfx: 'whoosh' }),
   ]);
 
-  /* ===== SCÈNE 2 — RETAINER ===== */
-  S(15, 2, bg => [
+  /* ===== SCÈNE 2 — RETAINER (« Pourtant, tu n'as rien gagné. ») ===== */
+  S(10, 2, bg => [
     E(540, 700, Tx('POURTANT…', 230), { a: 'stamp', sfx: 'stamp' }),
-    E(540, 900, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col: P.yellow, sw: 28, draw: { d: .2, dur: .3 } }), { a: 'none', cut: false }),
+    E(540, 900, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col: P.yellow, sw: 28, draw: { d: .15, dur: .25 } }), { a: 'none', cut: false }),
   ]);
-  S(15, 2, bg => [
-    E(540, 600, Tx('0', 640), { a: 'stamp', w: 15, sfx: 'stamp' }),
-    E(540, 1090, Tx('RIEN GAGNÉ', 200, 'var(--a1)'), { a: 'up', w: 15 }),
-    E(540, 330, Tx('ILS ONT…', 130), { a: 'down' }),
+  S(11, 2, bg => [
+    E(540, 300, Tx('TU AS…', 150), { a: 'down' }),
+    E(540, 700, Tx('0', 500, 'var(--a2)'), { a: 'stamp', w: 13, sfx: 'stamp' }),
+    E(540, 1110, Tx('RIEN GAGNÉ', 200, 'var(--a1)'), { a: 'up', w: 14 }),
   ]);
+  k += 2;   // deux plans de moins qu'en v1 : on saute deux couleurs pour que la suite garde ses fonds d'origine
   S(15, 2, bg => [
     E(540, 560, O.clipboard({ w: 400 }), { a: 'pop', sfx: 'pop' }),
     E(540, 1060, Tx('FAIS LE TEST', 200, 'var(--a1)'), { a: 'stamp', w: 17, sfx: 'stamp' }),

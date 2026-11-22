@@ -98,7 +98,7 @@
   const rack = (bg, o = {}) => O.rack({ fill: bg === 'navy' ? T.navy2 : P.navy, ...o });
   const tagc = bg => (light(bg) ? { fill: P.navy, ink: P.cream } : {});
 
-  V.keywords = [6, 12, 13, 17, 24, 33, 37, 53, 58, 64, 68, 69, 74, 80, 89, 94, 100, 103, 115, 126, 142, 143, 152, 155, 165, 169, 172, 186, 202, 202];
+  V.keywords = [6, 12, 17, 24, 33, 37, 53, 58, 64, 68, 69, 74, 80, 89, 94, 100, 103, 115, 126, 142, 143, 152, 155, 165, 169, 172, 186, 202];
 
   /* ===== SCÈNE 1 — HOOK ===== */
   S(0, 1, bg => [
@@ -129,15 +129,8 @@
     E(540, 620, O.shelf({ w: 820 }), { a: 'pop', sfx: 'pop' }),
     E(540, 1160, Tx('TOUT LE MAGASIN', 140), { a: 'up', w: 11 }),
   ]);
-  S(13, 2, bg => [
-    E(540, 520, Tx('ET TU', 240), { a: 'down' }),
-    E(540, 820, Tx('LÂCHES', 340, 'var(--a1)'), { a: 'stamp', w: 13, sfx: 'stamp' }),
-  ]);
-  S(13, 2, bg => [
-    E(540, 700, O.rect(860, 70, P.cream, 14), { a: 'left', sfx: 'swish' }),
-    E(880, 560, O.pin({ w: 200 }), { a: 'drop', w: 13, sfx: 'thud' }),
-    E(540, 1010, Tx('DERNIER MÈTRE', 150, 'var(--a1)'), { a: 'stamp', w: 13, d: .1 }),
-  ]);
+  // v2 : « Et tu lâches au dernier mètre. » retiré (2 plans supprimés)
+  k = 7;                                             // garde les fonds d'origine pour la suite
   S(13, 2, bg => [
     E(540, 600, O.dice({ w: 420 }), { a: 'spin', sfx: 'pop' }),
     E(540, 600, O.cross({ w: 520, draw: { w: 15, sfx: 'buzz' } }), { a: 'none', w: 15 }),
@@ -150,6 +143,7 @@
   S(22, 2, bg => [
     E(540, 560, Tx('%', 620, 'var(--a1)'), { a: 'spin', sfx: 'pop', loop: 'pulse', amp: .04, per: .7 }),
     E(540, 1080, Tx('1 CHIFFRE', 230), { a: 'stamp', w: 24, sfx: 'stamp' }),
+    E(540, 1230, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col: P.coral, sw: 28, draw: { w: 24, d: .7, dur: .3, sfx: 'swish' } }), { a: 'none', cut: false }),
   ]);
 
   /* ===== SCÈNE 3 — DANS LA FILE ===== */
@@ -372,7 +366,7 @@
   S(180, 7, bg => [
     E(320, 760, rack(bg, { w: 420, empty: true }), { a: 'pop' }),
     E(760, 330, flip(O.palm({ w: 440, fill: fg(bg) })), { a: 'right', w: 182, sfx: 'whoosh' }),
-    E(320, 420, candy(bg, { w: 300 }), { a: 'none', w: 183, m: [{ w: 184, dy: 240, dur: .35, e: 'outBounce', sfx: 'thud' }] }),
+    E(320, 420, candy(bg, { w: 300 }), { a: 'none', w: 183, m: [{ w: 184, dy: 240, dur: .35, e: 'outBounce', sfx: 'thud' }], loop: 'swing', lw: 186, ld: .3, amp: 5, per: .7 }),
     E(540, 1190, Tx("CE QU'ON Y A POSÉ", 120, 'var(--a1)'), { a: 'up', w: 182, d: .1, dist: 200 }),
   ]);
 
@@ -393,14 +387,5 @@
     E(260, 700, rack(bg, { w: 420 }), { a: 'pop', sfx: 'pop' }),
     E(780, 700, flip(O.palm({ w: 460, fill: fg(bg) })), { a: 'right', w: 201, sfx: 'whoosh' }),
     E(540, 1160, Tx('À HAUTEUR DE MAIN', 120, 'var(--a1)'), { a: 'up', w: 199, dist: 200 }),
-  ]);
-  S(202, 8, bg => [
-    E(540, 520, Tx('ET', 260), { a: 'pop' }),
-    E(540, 860, Tx('COMPTE', 340, 'var(--a1)'), { a: 'stamp', w: 202, sfx: 'stamp' }),
-  ]);
-  S(202, 8, bg => [
-    ...[0, 1, 2, 3, 4].map(i => E(160 + i * 190, 560 + (i % 2) * 90, O.disc({ w: 110, fill: i === 4 ? P.coral : fg(bg) }), { a: 'pop', d: i * .22, sfx: 'pop' })),
-    E(540, 940, Tx('COMBIEN DE PAS ?', 130, 'var(--a1)'), { a: 'up', w: 202 }),
-    E(540, 1180, candy(bg, { w: 420 }), { a: 'pop', w: 202, rot: -6, loop: 'swing', amp: 5, per: .8 }),
   ]);
 })();

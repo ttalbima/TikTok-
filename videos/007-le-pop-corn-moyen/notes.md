@@ -16,3 +16,9 @@
 - Sous-titres : « 4 euros », « 8 euros », « 7,50 euros » affichés en toutes lettres pour suivre les mots prononcés.
 - 58 plans, 1,35 s en moyenne. Objets propres à la vidéo définis dans `plans.js` : cornet, ticket, panneau des tarifs.
 - Mesures : −13,0 LUFS, musique 21 dB sous la voix, pointes des bruitages 5 dB sous la voix, 100 bruitages. Son non écouté.
+
+## Retouche v2 (structure recalée)
+- Voix remontée : dernière phrase « Et regarde vers laquelle elle te pousse. » retirée, 75,9 s.
+- Plans : les 2 derniers plans (œil et flèche, ELLE TE POUSSE) supprimés ; la vidéo finit sur SERT À RIEN. Début inchangé. 56 plans.
+- `remap_plans.py` avait aussi décalé des largeurs d'objets (« w: N » pris pour un indice de mot) : rétablies d'après `plans-avant.js`.
+- Son non écouté ; le raccord de voix du montage est à écouter.
