@@ -114,6 +114,10 @@ Chaîne de travail pour chaque vidéo :
 5. `verification` contrôle la vidéo ; corrections en v2 si besoin.
 6. `croissance` prépare la publication.
 Pas plus de 3 agents en même temps (limite d'utilisation du compte Claude).
+Passages de relais (qui écrit quoi) :
+- `verification` écrit son verdict dans `videos/<dossier>/controle.md` ; une vidéo « À refaire » n'est ni terminée ni programmée.
+- `croissance` écrit le plan dans `croissance/semaine-AAAA-MM-JJ.md`, alerte quand il reste moins de 7 jours de stock, et propose des sujets dans `sujets.md` (section « à valider ») : c'est le chef d'orchestre qui les présente au propriétaire.
+- Les défauts trouvés par `verification` qui reviennent deviennent une règle dans `notes.md` et dans l'agent `fabrication`.
 
 ## VALIDATION
 - **Aucun sujet n'est lancé sans la validation explicite du propriétaire.** Une fois le sujet validé, la fabrication est autonome jusqu'à la vidéo finie.
