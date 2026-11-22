@@ -79,3 +79,7 @@
 ## Élargissement de la thématique (22/11/2026)
 - Le propriétaire refuse une niche qui s'épuise en quelques mois. Thématique élargie : « Les pièges de l'argent au quotidien », six piliers, même promesse, même charte. Les vidéos 001 et 003 à 015 restent valables (pilier 1).
 - Nom de compte recommandé : piegesdelargent (aucun profil public trouvé sur TikTok ni Instagram le 22/11/2026).
+
+## Rôle de chef d'orchestre (22/11/2026)
+- Le propriétaire demande qu'aucun sujet ne démarre sans sa validation, et confie à la session principale la coordination des agents (connexions, adaptations). Agents créés : fabrication, verification (en plus de croissance). Chaîne de travail dans CLAUDE.md.
+- Les fabrications 016 à 018 ont été arrêtées par le propriétaire après la voix (crédits ElevenLabs déjà dépensés) : scripts et voix gardés pour reprise après validation.

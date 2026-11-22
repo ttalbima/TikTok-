@@ -4,6 +4,8 @@ Le pilier 1 (prix et magasins) est détaillé ci-dessous. Les autres piliers son
 
 Ce sont des idées. Les faits et les études sont à vérifier au moment d'écrire chaque script ; un sujet sans étude solide est abandonné.
 État : les vidéos 003 à 015 sont fabriquées en v1 (dossiers `videos/003-…` à `videos/015-…`), en attente d'écoute et de validation.
+Proposés, en attente de validation (script et voix déjà faits, fabrication arrêtée avant l'animation) : 016 le faux SMS de colis (arnaques), 017 l'argent trouvé (ton cerveau et l'argent), 018 le tarif « première année » (abonnements et factures).
+
 Règle de variété : deux vidéos qui se suivent ne partagent ni l'univers, ni la structure, ni la famille de hook (détail dans `CLAUDE.md`).
 
 | N° | Sujet | Accroche (brouillon) | Univers | Hook | Structure | Fin |

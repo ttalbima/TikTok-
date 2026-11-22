@@ -100,6 +100,20 @@ Le choix fait pour chaque vidéo est noté dans `sujets.md`.
 - Rythme décidé par le propriétaire : **2 vidéos par jour dès le lancement** (vers 12 h et 19 h), même vidéo sur les trois réseaux. Objectif de fabrication : 14 vidéos par semaine, et toujours au moins une semaine d'avance en stock.
 - Stratégie par réseau : `strategie-lancement.md`. Agent dédié : `.claude/agents/croissance.md` (plan de publication, emballage par réseau, analyse des chiffres, veille datée sur les trois réseaux). Journal : `croissance/journal.md`.
 
+## ORCHESTRATION DES AGENTS
+La session principale est le **chef d'orchestre** (rôle confié par le propriétaire) : elle choisit quel agent lancer, avec quelle commande, dans quel ordre, et adapte leurs instructions quand une leçon est apprise (elle met alors à jour les fichiers `.claude/agents/*.md` et `notes.md`).
+- `fabrication` : fabrique une vidéo, d'un sujet validé au fichier livré.
+- `verification` : contrôle indépendant du script (avant la voix) puis de la vidéo finie.
+- `croissance` : plan de publication, emballage par réseau, analyse des chiffres, veille.
+Chaîne de travail pour chaque vidéo :
+1. Le chef d'orchestre propose des sujets ; **le propriétaire valide** (rien ne démarre avant).
+2. `fabrication` écrit le script et les sources, puis s'arrête.
+3. `verification` contrôle le script ; le chef d'orchestre fait corriger si besoin.
+4. `fabrication` reprend : voix, plans, son, livraison.
+5. `verification` contrôle la vidéo ; corrections en v2 si besoin.
+6. `croissance` prépare la publication.
+Pas plus de 3 agents en même temps (limite d'utilisation du compte Claude).
+
 ## VALIDATION
-- Autonomie complète, du sujet à la vidéo finie (la vidéo 001 est validée).
+- **Aucun sujet n'est lancé sans la validation explicite du propriétaire.** Une fois le sujet validé, la fabrication est autonome jusqu'à la vidéo finie.
 - Publication : faite manuellement par le propriétaire du compte.
