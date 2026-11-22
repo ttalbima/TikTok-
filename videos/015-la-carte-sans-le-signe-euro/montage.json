@@ -1,0 +1,49 @@
+{
+ "segments": [
+  {
+   "src": "neuf",
+   "de": 71,
+   "a": 78,
+   "display": [
+    "Pourquoi",
+    "tu",
+    "dépenses",
+    "plus",
+    "sans",
+    "le",
+    "signe",
+    "euro?"
+   ],
+   "bloc": "HOOK"
+  },
+  {
+   "src": "avant",
+   "de": 13,
+   "a": 32,
+   "bloc": "RETAINER"
+  },
+  {
+   "src": "avant",
+   "de": 33,
+   "a": 198,
+   "bloc": "BODY"
+  },
+  {
+   "src": "avant",
+   "de": 199,
+   "a": 218,
+   "bloc": "QUESTION"
+  }
+ ],
+ "tail": 0.4,
+ "neuf": {
+  "audio": "../_retouches/prise.mp3",
+  "mots": "../_retouches/mots.json"
+ },
+ "tempo_neuf": 0.97,
+ "etirer_silences": {
+  "ajout": 0.15,
+  "min": 0.45,
+  "depuis": 20
+ }
+}

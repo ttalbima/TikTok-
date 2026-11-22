@@ -1,0 +1,56 @@
+{
+ "segments": [
+  {
+   "src": "avant",
+   "de": 0,
+   "a": 4,
+   "bloc": "HOOK"
+  },
+  {
+   "src": "avant",
+   "de": 5,
+   "a": 11,
+   "bloc": "RETAINER"
+  },
+  {
+   "src": "neuf",
+   "de": 18,
+   "a": 27,
+   "display": [
+    "Et",
+    "le",
+    "plus",
+    "cher",
+    "n'a",
+    "même",
+    "pas",
+    "besoin",
+    "d'être",
+    "vendu."
+   ]
+  },
+  {
+   "src": "avant",
+   "de": 12,
+   "a": 16,
+   "bloc": "BODY"
+  },
+  {
+   "src": "avant",
+   "de": 35,
+   "a": 208
+  },
+  {
+   "src": "avant",
+   "de": 209,
+   "a": 221,
+   "bloc": "QUESTION"
+  }
+ ],
+ "tail": 0.6,
+ "neuf": {
+  "audio": "../_retouches/prise.mp3",
+  "mots": "../_retouches/mots.json"
+ },
+ "tempo_neuf": 0.95
+}

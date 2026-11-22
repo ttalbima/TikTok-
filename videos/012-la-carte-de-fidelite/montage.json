@@ -1,0 +1,63 @@
+{
+ "segments": [
+  {
+   "src": "neuf",
+   "de": 56,
+   "a": 65,
+   "display": [
+    "Deux",
+    "tampons",
+    "offerts,",
+    "et",
+    "tu",
+    "finis",
+    "ta",
+    "carte",
+    "plus",
+    "vite."
+   ],
+   "bloc": "HOOK"
+  },
+  {
+   "src": "neuf",
+   "de": 66,
+   "a": 70,
+   "display": [
+    "Pourtant,",
+    "tu",
+    "n'as",
+    "rien",
+    "gagné."
+   ],
+   "bloc": "RETAINER"
+  },
+  {
+   "src": "avant",
+   "de": 22,
+   "a": 31
+  },
+  {
+   "src": "avant",
+   "de": 32,
+   "a": 209,
+   "bloc": "BODY"
+  },
+  {
+   "src": "avant",
+   "de": 210,
+   "a": 221,
+   "bloc": "QUESTION"
+  }
+ ],
+ "tail": 0.6,
+ "neuf": {
+  "audio": "../_retouches/prise.mp3",
+  "mots": "../_retouches/mots.json"
+ },
+ "tempo_neuf": 0.97,
+ "etirer_silences": {
+  "ajout": 0.15,
+  "min": 0.45,
+  "depuis": 20
+ }
+}

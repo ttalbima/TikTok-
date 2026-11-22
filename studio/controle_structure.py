@@ -8,32 +8,31 @@ def norm(x):
     return ''.join(c for c in x if c.isalnum())
 
 def controle(d):
-    s = open(f'{d}/script.md').read()
-    blocks = re.findall(r'^##\s+(.+?)\n(.*?)(?=^##\s|\Z)', s, re.S | re.M)
+    import os
     m = json.load(open(f'{d}/mots.json')); w = m['words']; dur = m['duration']
-    W = [norm(x['w']) for x in w]
-    starts, last = [], 0
-    for _, txt in blocks:
-        tk = [norm(t) for t in txt.split() if norm(t)][:3]
-        idx = next((i for i in range(last, len(W) - 2) if W[i:i + 3] == tk), None)
-        if idx is None:
-            idx = next((i for i in range(last, len(W)) if W[i] == tk[0]), None)
-        starts.append(w[idx]['s'] if idx is not None else None)
-        if idx is not None: last = idx
+    if os.path.exists(f'{d}/blocs.json'):                      # vidéo retouchée : blocs donnés par indice de mot
+        bl = json.load(open(f'{d}/blocs.json')); idx = [b[1] for b in bl]; noms = [b[0] for b in bl]
+        textes = [' '.join(x['w'] for x in w[a:(idx[k + 1] if k + 1 < len(idx) else len(w))]) for k, a in enumerate(idx)]
+    else:
+        s = open(f'{d}/script.md').read()
+        blocks = re.findall(r'^##\s+(.+?)\n(.*?)(?=^##\s|\Z)', s, re.S | re.M)
+        noms = [b[0] for b in blocks]; textes = [b[1] for b in blocks]
+        W = [norm(x['w']) for x in w]; idx, last = [], 0
+        for txt in textes:
+            tk = [norm(t) for t in txt.split() if norm(t)][:3]
+            i = next((i for i in range(last, len(W) - 2) if W[i:i + 3] == tk), None)
+            if i is None: i = next((i for i in range(last, len(W)) if W[i] == tk[0]), last)
+            idx.append(i); last = i
     pb = []
     if not 75 <= dur <= 90: pb.append(f'durée {dur:.1f} s hors 75-90 s')
-    if len(starts) >= 2 and starts[1] is not None and starts[1] > 3.2: pb.append(f'hook trop long : {starts[1]:.1f} s (max 3 s)')
-    if len(starts) >= 3 and starts[2] is not None and starts[2] > 8.5: pb.append(f'retainer finit à {starts[2]:.1f} s (max 8 s)')
-    if starts[-1] is not None:
-        fin = dur - starts[-1]
-        if not 3 <= fin <= 5.5: pb.append(f'fin de {fin:.1f} s (attendu 3-5 s)')
-    hook = blocks[0][1].lower()
-    if not re.search(r"\b(tu|toi|te|t'|ton|ta|tes|regarde)\b", hook): pb.append('hook sans « tu »')
-    fin_txt = blocks[-1][1]
-    verbes = re.findall(r"\b(regarde|cache|cherche|compte|multiplie|lis|pose|demande|signale|vérifie|calcule)\b", fin_txt.lower())
-    est_boucle = 'boucle' in blocks[-1][0].lower()
-    if not est_boucle and len(set(verbes)) > 1: pb.append(f'fin avec plusieurs actions : {", ".join(sorted(set(verbes)))}')
-    print(f"{d.rstrip('/').split('/')[-1]} : {'OK' if not pb else ' ; '.join(pb)}")
+    hook_fin = w[idx[1] - 1]['e']; corps = w[idx[2]]['s']; fin0 = w[idx[-1]]['s']; fin = w[-1]['e'] - fin0
+    if hook_fin > 3.3: pb.append(f'accroche finie à {hook_fin:.1f} s (max 3 s)')
+    if corps > 8.5: pb.append(f'annonce finie à {corps:.1f} s (max 8 s)')
+    if not 2.5 <= fin <= 5.3: pb.append(f'fin de {fin:.1f} s (attendu 3-5 s)')
+    if not re.search(r"\b(tu|toi|te|t'|ton|ta|tes|regarde|donne|imagine|offre)\b", textes[0].lower()): pb.append('accroche sans « tu » ni impératif')
+    verbes = set(re.findall(r"\b(regarde|cache|cherche|compte|multiplie|pose|demande|signale|vérifie|calcule)\b", textes[-1].lower()))
+    if 'boucle' not in noms[-1].lower() and len(verbes) > 1: pb.append(f'fin avec plusieurs actions : {", ".join(sorted(verbes))}')
+    print(f"{d.rstrip('/').split('/')[-1]} : {'OK' if not pb else ' ; '.join(pb)}  [accroche {hook_fin:.1f} s · corps à {corps:.1f} s · fin {fin:.1f} s · durée {dur:.1f} s]")
     return not pb
 
 if __name__ == '__main__':

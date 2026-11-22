@@ -1,0 +1,39 @@
+{
+ "segments": [
+  {
+   "src": "avant",
+   "de": 0,
+   "a": 6,
+   "bloc": "HOOK"
+  },
+  {
+   "src": "avant",
+   "de": 7,
+   "a": 12,
+   "bloc": "RETAINER"
+  },
+  {
+   "src": "avant",
+   "de": 19,
+   "a": 30
+  },
+  {
+   "src": "avant",
+   "de": 31,
+   "a": 192,
+   "bloc": "BODY"
+  },
+  {
+   "src": "avant",
+   "de": 193,
+   "a": 208,
+   "bloc": "DÉFI"
+  }
+ ],
+ "tail": 0.6,
+ "etirer_silences": {
+  "ajout": 0.32,
+  "min": 0.45,
+  "depuis": 20
+ }
+}

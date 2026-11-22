@@ -1,29 +1,15 @@
 # 014 — Le paquet qui rétrécit
 
-Hook B (« Regarde bien ce… ») · Structure 4 (origine) · Fin : boucle · 218 mots prononcés
+Version retouchée (structure recalée) · 207 mots · 79 s
 
-## HOOK (0-5 s)
-Regarde bien ce paquet de biscuits. Le prix n'a pas bougé. Lui, si.
+## HOOK (0-2 s)
+Regarde bien ce paquet de biscuits.
 
-## RETAINER (5-13 s)
-Trente grammes ont disparu. Et tu ne l'as pas vu. Normal : tout est fait pour ça. Et une étude a mesuré à quel point.
+## RETAINER (2-8 s)
+Le prix n'a pas bougé. Lui, si. 30 grammes ont disparu. Et tu ne l'as pas vu.
 
-## BODY (13-70 s)
-D'abord, d'où ça vient. Le fabricant voit ses coûts monter. Il a deux options. Un : augmenter le prix. Deux : garder le prix, et mettre moins dans le paquet.
+## BODY (8-75 s)
+Normal: tout est fait pour ça. Et une étude a mesuré à quel point. D'abord, d'où ça vient. Le fabricant voit ses coûts monter. Il a deux options. Un: augmenter le prix. Deux: garder le prix, et mettre moins dans le paquet. Hier: 300 grammes, 2,49€. Aujourd'hui: 270 grammes, 2,49€. Même boîte, ou presque. Même étiquette. Sauf qu'au kilo, tu es passé de 8,30€ à 9,22€. 11% de hausse. Sans toucher au prix. Cette pratique a un nom, venu de l'anglais: la réduflation. Pourquoi ça marche? Une explication: le prix, tu le regardes. Le poids, presque jamais. Des chercheurs l'ont mesuré sur dix ans d'achats de glace, dans des foyers américains. Résultat: on réagit à peu près quatre fois plus à une hausse de prix qu'à une baisse de quantité. Depuis juillet 2024, en France, les grandes surfaces doivent le signaler en rayon. Mais seulement pendant deux mois. Le vrai repère, lui, reste là: le prix au kilo, écrit en petit sur l'étiquette. Alors la prochaine fois, dans le rayon, ne lis pas le gros chiffre.
 
-Hier : 300 grammes, 2,49 €. Aujourd'hui : 270 grammes, 2,49 €. Même boîte, ou presque. Même étiquette.
-
-Sauf qu'au kilo, tu es passé de 8,30 € à 9,22 €. 11 % de hausse. Sans toucher au prix.
-
-Cette pratique a un nom, venu de l'anglais : la réduflation.
-
-Pourquoi ça marche ? Une explication : le prix, tu le regardes. Le poids, presque jamais.
-
-Des chercheurs l'ont mesuré sur dix ans d'achats de glace, dans des foyers américains. Résultat : on réagit à peu près quatre fois plus à une hausse de prix qu'à une baisse de quantité.
-
-Depuis juillet 2024, en France, les grandes surfaces doivent le signaler en rayon. Mais seulement pendant deux mois.
-
-Le vrai repère, lui, reste là : le prix au kilo, écrit en petit sur l'étiquette.
-
-## BOUCLE (70-78 s)
-Alors la prochaine fois, dans le rayon, ne lis pas le gros chiffre. Lis le petit. Et regarde bien ce paquet…
+## BOUCLE (75-79 s)
+Lis le petit. Et regarde bien ce paquet…

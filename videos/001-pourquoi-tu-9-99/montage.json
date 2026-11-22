@@ -1,0 +1,66 @@
+{
+ "segments": [
+  {
+   "src": "neuf",
+   "de": 0,
+   "a": 5,
+   "display": [
+    "Pourquoi",
+    "9,99€",
+    "te",
+    "paraît",
+    "moins",
+    "cher?"
+   ],
+   "bloc": "HOOK"
+  },
+  {
+   "src": "neuf",
+   "de": 6,
+   "a": 17,
+   "display": [
+    "Pourtant,",
+    "ce",
+    "9",
+    "a",
+    "déjà",
+    "fait",
+    "vendre",
+    "plus,",
+    "en",
+    "augmentant",
+    "le",
+    "prix."
+   ],
+   "bloc": "RETAINER"
+  },
+  {
+   "src": "avant",
+   "de": 11,
+   "a": 14,
+   "bloc": "BODY"
+  },
+  {
+   "src": "avant",
+   "de": 31,
+   "a": 193
+  },
+  {
+   "src": "avant",
+   "de": 194,
+   "a": 204,
+   "bloc": "BOUCLE"
+  }
+ ],
+ "tail": 0.6,
+ "neuf": {
+  "audio": "../_retouches/prise.mp3",
+  "mots": "../_retouches/mots.json"
+ },
+ "tempo_neuf": 1.03,
+ "etirer_silences": {
+  "ajout": 0.15,
+  "min": 0.45,
+  "depuis": 20
+ }
+}

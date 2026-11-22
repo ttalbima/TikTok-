@@ -1,0 +1,49 @@
+{
+ "segments": [
+  {
+   "src": "avant",
+   "de": 0,
+   "a": 8,
+   "bloc": "HOOK"
+  },
+  {
+   "src": "avant",
+   "de": 9,
+   "a": 16,
+   "bloc": "RETAINER"
+  },
+  {
+   "src": "neuf",
+   "de": 28,
+   "a": 35,
+   "display": [
+    "Mets-toi",
+    "à",
+    "la",
+    "place",
+    "du",
+    "créateur",
+    "de",
+    "l'appli."
+   ]
+  },
+  {
+   "src": "avant",
+   "de": 33,
+   "a": 214,
+   "bloc": "BODY"
+  },
+  {
+   "src": "avant",
+   "de": 215,
+   "a": 224,
+   "bloc": "QUESTION"
+  }
+ ],
+ "tail": 0.6,
+ "neuf": {
+  "audio": "../_retouches/prise.mp3",
+  "mots": "../_retouches/mots.json"
+ },
+ "tempo_neuf": 0.96
+}

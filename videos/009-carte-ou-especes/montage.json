@@ -1,0 +1,45 @@
+{
+ "segments": [
+  {
+   "src": "neuf",
+   "de": 36,
+   "a": 44,
+   "display": [
+    "Avec",
+    "une",
+    "carte,",
+    "tu",
+    "es",
+    "prêt",
+    "à",
+    "payer",
+    "plus."
+   ],
+   "bloc": "HOOK"
+  },
+  {
+   "src": "avant",
+   "de": 13,
+   "a": 31,
+   "bloc": "RETAINER"
+  },
+  {
+   "src": "avant",
+   "de": 32,
+   "a": 204,
+   "bloc": "BODY"
+  },
+  {
+   "src": "avant",
+   "de": 205,
+   "a": 216,
+   "bloc": "QUESTION"
+  }
+ ],
+ "tail": 0.6,
+ "neuf": {
+  "audio": "../_retouches/prise.mp3",
+  "mots": "../_retouches/mots.json"
+ },
+ "tempo_neuf": 0.97
+}

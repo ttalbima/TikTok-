@@ -1,0 +1,34 @@
+{
+ "segments": [
+  {
+   "src": "avant",
+   "de": 0,
+   "a": 10,
+   "bloc": "HOOK"
+  },
+  {
+   "src": "avant",
+   "de": 17,
+   "a": 30,
+   "bloc": "RETAINER"
+  },
+  {
+   "src": "avant",
+   "de": 31,
+   "a": 206,
+   "bloc": "BODY"
+  },
+  {
+   "src": "avant",
+   "de": 207,
+   "a": 221,
+   "bloc": "BOUCLE"
+  }
+ ],
+ "tail": 0.6,
+ "etirer_silences": {
+  "ajout": 0.2,
+  "min": 0.45,
+  "depuis": 20
+ }
+}
