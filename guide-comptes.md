@@ -21,8 +21,8 @@ Fichiers prêts : `comptes/prompt-logo.md` (prompt pour générer le logo) et `c
    - **Bio** :
      ```
      Ce qui te fait perdre de l'argent sans le voir 🧠
-     Prix, abonnements, arnaques : un piège décrypté par vidéo 🔍
-     Sources à l'appui 📊
+     Prix, abonnements, arnaques : un piège par vidéo 🔍
+     Abonne-toi pour ne plus te faire avoir
      ```
 
 ## 3. Créer le compte TikTok (15 minutes)
