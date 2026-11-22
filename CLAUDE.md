@@ -97,6 +97,7 @@ Le choix fait pour chaque vidéo est noté dans `sujets.md`.
 - Documents de lancement : `guide-comptes.md`, `comptes/descriptions.md`, `comptes/banniere-youtube.png`, `comptes/photo-de-profil.png` (logo typographique choisi par le propriétaire : texte seul « PIÈGES DE L'ARGENT », bleu nuit sur fond crème, bandeau corail ; il trouve le noir trop sombre et le jaune trop agressif en fond ; il a refusé les logos à illustration : étiquette, hameçon, tapette à souris).
 
 ## CROISSANCE
+- Rythme décidé par le propriétaire : **2 vidéos par jour dès le lancement** (vers 12 h et 19 h), même vidéo sur les trois réseaux. Objectif de fabrication : 14 vidéos par semaine, et toujours au moins une semaine d'avance en stock.
 - Stratégie par réseau : `strategie-lancement.md`. Agent dédié : `.claude/agents/croissance.md` (plan de publication, emballage par réseau, analyse des chiffres, veille datée sur les trois réseaux). Journal : `croissance/journal.md`.
 
 ## VALIDATION

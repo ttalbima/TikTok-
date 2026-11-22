@@ -7,7 +7,7 @@ Mise à jour : 22/11/2026. Les réseaux ne publient pas leurs règles de classem
 1. **Les 2 premières secondes.** Les trois réseaux montrent d'abord une vidéo à un petit groupe, puis l'élargissent si les gens restent. Une accroche floue fait balayer la vidéo, et elle s'arrête là. Nos vidéos ouvrent déjà sur la tension : c'est le point le plus important à garder.
 2. **Le visionnage complet et le revisionnage.** C'est le signal le plus cité. Les fins en boucle de nos vidéos servent à ça.
 3. **Une seule thématique.** Un compte qui parle toujours du même sujet est plus vite montré au bon public.
-4. **La régularité plutôt que le volume.** 4 bonnes vidéos par semaine pendant trois mois valent mieux que 2 par jour pendant trois semaines.
+4. **La régularité.** Rythme choisi : 2 vidéos par jour (vers 12 h et 19 h). Le tenir dans la durée compte plus que tout : si le stock tombe sous une semaine d'avance, mieux vaut ralentir quelques jours que publier des vidéos bâclées.
 5. **Le fichier d'origine sur chaque réseau**, jamais une vidéo téléchargée d'un autre réseau avec son filigrane.
 
 ## TikTok
@@ -22,8 +22,12 @@ Mise à jour : 22/11/2026. Les réseaux ne publient pas leurs règles de classem
 - Réponds aux commentaires dans la première heure ; les meilleures questions deviennent des sujets.
 
 **Les 30 premiers jours**
-- Semaine 0 : regarde et commente des vidéos francophones sur l'argent et la consommation pendant 2 ou 3 jours, sans publier.
-- Semaines 1 à 4 : 4 à 5 vidéos par semaine, à heure fixe (18 h – 20 h pour commencer).
+- Avant de publier, « chauffe » le compte 2 ou 3 jours (pratique de créateurs, jamais confirmée ni démentie par TikTok, mais sans risque) :
+  - profil complet (photo, nom, bio) ;
+  - 15 à 20 minutes par jour à regarder en entier, aimer et commenter des vidéos francophones sur l'argent, la consommation, les arnaques ;
+  - suivre une dizaine de comptes du thème, pas plus ;
+  - toujours le même téléphone, pas de VPN, pas de suivis ni de commentaires en masse.
+- Ensuite : 2 vidéos par jour, à heure fixe.
 - Ne supprime aucune vidéo qui démarre mal.
 
 **Repère à surveiller** (dans les statistiques de chaque vidéo) : la part de spectateurs qui regardent jusqu'au bout et la durée moyenne de visionnage. Si une vidéo est quittée avant 3 secondes, c'est l'accroche ; si elle est quittée au milieu, c'est le rythme.
