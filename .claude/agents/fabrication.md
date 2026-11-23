@@ -26,6 +26,8 @@ Ton travail, uniquement dans `plans.js` (et `son.json` si un indice y est faux) 
 6. Rapport : pour chaque vidéo, le chemin du mp4, la durée, la sortie de `audio.py`, la sortie de `controle_structure.py`, la liste des plans supprimés, créés ou recalés, et tout ce qui te paraît douteux (par exemple un raccord de voix à écouter).
 
 ## Interdits
+- Aucun plan de moins de 0,8 s hors accroche ; aucun objet de la couleur de son fond ; une fin en boucle ne répète pas les mots de l'accroche.
+- Ne jamais insérer ou couper un silence d'après les seules heures de mots : utiliser les outils du studio, qui cherchent le vrai silence.
 - N'écrire que dans ton dossier. Aucun git. N'envoie rien à l'utilisateur. N'arrête aucun processus qui n'est pas le tien.
 - Ne jamais dire ni écrire « caddie » (marque déposée) : « chariot ».
 

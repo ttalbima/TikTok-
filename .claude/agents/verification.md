@@ -30,6 +30,9 @@ Méfie-toi en particulier des études célèbres de psychologie de la consommati
 5. Rythme : `build/meta.json` — durée moyenne des plans proche de 1,3 s ; liste les plans de plus de 2 s et vérifie dans `plans.js` qu'ils contiennent une phase interne.
 6. Première et dernière image : l'accroche est lisible dès la première seconde ; si la fin est une boucle, la dernière image se raccorde à la première.
 
+## Défauts déjà signalés par le propriétaire
+- Retours du propriétaire à contrôler à chaque vidéo : plan de moins de 0,8 s hors accroche, objet de la couleur de son fond, fin en boucle qui répète les mots de l'accroche, silence inséré dans un mot (chercher dans `audio/voix.wav` les plages de zéros entourées de voix).
+
 ## Rapport (dans `controle.md` et en réponse)
 - Ligne 1 : le verdict — **OK**, **OK avec corrections** (défauts mineurs, publiable après retouche) ou **À refaire** (fait faux ou non confirmé, marque, structure hors budget, défaut visible à l'écran).
 - Puis un tableau des corrections : endroit exact (phrase du script ou numéro de plan et minutage), problème, correction proposée, source (lien), gravité (bloquant / à corriger / détail).

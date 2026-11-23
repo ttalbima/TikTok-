@@ -97,3 +97,10 @@
 - Trois agents qui rendent en même temps saturent la mémoire : `render all` plante. Rendre scène par scène, ou un seul agent de rendu à la fois.
 - Après une retouche qui supprime des plans, effacer les anciennes images de `build/planche/` avant de refaire les planches.
 - Restent à faire : écoute par le propriétaire (raccords de voix), contrôle indépendant par l'agent `verification`, et deux défauts d'image du corps de la 003 signalés par un agent (titres « ENCORE + FORT » et « TON CHOIX »), non vérifiés.
+
+## Retours du propriétaire sur les versions retouchées (23/11/2026)
+- Vidéos 1 et 10, « bug » avant « Résultat » (et avant « Ton cerveau lit » dans la 1) : silences insérés au mauvais endroit, parfois en plein mot, parce que les outils se fiaient aux heures de mots de la transcription. Corrigé dans `montage_voix.py` et `prep_voice.py` : on ne coupe et n'insère que dans un silence mesuré. La voix de base de la 10 a été refaite sans pauses ajoutées.
+- Vidéo 4 : flèche corail sur fond corail. Corrigé (flèche bleu nuit sur ce fond).
+- Vidéo 8 : la fin répétait « regarde bien ce message », doublon avec le début quand la vidéo boucle. Phrase coupée. Même défaut corrigé d'office sur la 14 (« Et regarde bien ce paquet… »). La 11 finit encore sur « ce petit message rouge… » : laissé tel quel, à trancher par le propriétaire (la couper ferait passer la vidéo sous 75 s).
+- Vidéo 9 : un plan de 0,6 s (« UN NOM ») passait trop vite. Supprimé ; « UN NOM » s'affiche dans le plan des chercheurs.
+- Règles ajoutées au cahier des charges et aux agents. Nouvelles versions : 001 v5, 008 et 014 v2, les autres v3.

@@ -32,8 +32,8 @@
  ],
  "tail": 0.6,
  "etirer_silences": {
-  "ajout": 0.32,
-  "min": 0.45,
-  "depuis": 20
+  "ajout": 0.36,
+  "min": 0.3,
+  "depuis": 32
  }
 }

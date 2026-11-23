@@ -72,17 +72,32 @@ if any(s['src'] == 'neuf' for s in cfg['segments']):
     x *= voiced_rms(src['avant'][0]) / voiced_rms(x)        # même niveau que la voix d'origine
     src['neuf'] = (x, nw)
 
+def niveau(x, i, n):
+    return float(np.sqrt(np.mean(x[max(i, 0):max(i, 0) + n] ** 2))) if i + n <= len(x) else 0.0
+
+SEUIL = 10 ** (-45 / 20)          # en dessous : silence réel
 def bounds(x, words, a, b):
-    """Coupe au milieu du silence qui précède le mot a et qui suit le mot b (sans jamais mordre sur la voix)."""
-    s = words[a]['s']; prev = words[a - 1]['e'] if a > 0 else 0.0
-    t0 = max(prev + (s - prev) / 2, s - 0.25) if a > 0 else max(0.0, s - 0.05)
+    """Bornes d'un morceau, cherchées dans le silence RÉEL (mesuré), jamais d'après les seules heures
+    de mots, qui sont approximatives : on ne coupe ni le début ni la fin d'un mot."""
+    hop = int(.01 * SR)
+    # début : on recule depuis le début estimé du mot tant qu'il y a de la voix
+    i = int(words[a]['s'] * SR); lim = int((words[a - 1]['e'] if a > 0 else 0.0) * SR)
+    while i - hop > lim and niveau(x, i - hop, hop) > SEUIL: i -= hop
+    t0 = max(i / SR - 0.08, lim / SR if a > 0 else 0.0, 0.0)
+    # fin : on avance depuis la fin estimée du mot tant qu'il y a de la voix
     e = words[b]['e']; nxt = words[b + 1]['s'] if b + 1 < len(words) else len(x) / SR
-    # la fin d'un mot est souvent estimée trop tôt : on prolonge jusque dans le silence réel
-    hop = int(.01 * SR); i = int(e * SR)
-    lim = int(min(nxt, e + 0.6) * SR)
-    while i + hop < lim and np.sqrt(np.mean(x[i:i + hop] ** 2)) > 10 ** (-42 / 20): i += hop
-    t1 = min(i / SR + 0.12, nxt - 0.02 if b + 1 < len(words) else len(x) / SR)
-    return max(t0, 0), max(t1, e)
+    i = int(e * SR); lim = int(min(nxt + 0.15, e + 0.8, len(x) / SR) * SR)
+    while i + hop < lim and niveau(x, i, hop) > SEUIL: i += hop
+    t1 = min(i / SR + 0.12, len(x) / SR)
+    return t0, max(t1, e)
+
+def point_calme(y, t_a, t_b):
+    """Instant le plus silencieux entre t_a et t_b (fenêtre de 40 ms), ou None s'il n'y a pas de vrai silence."""
+    n = int(.04 * SR); best, bi = 1e9, None
+    for i in range(int(max(t_a, 0) * SR), int(t_b * SR) - n, int(.005 * SR)):
+        v = niveau(y, i, n)
+        if v < best: best, bi = v, i
+    return (bi + n // 2) if bi is not None and best < 10 ** (-50 / 20) else None
 
 fade = int(.008 * SR)
 # regroupe les segments qui se suivent sans coupure dans la même source : aucun raccord audio entre eux
@@ -115,13 +130,18 @@ y = np.concatenate(out)
 # allonge les respirations naturelles (silences d'au moins `min` s entre deux mots) si la durée est trop courte
 et = cfg.get('etirer_silences')
 if et:
+    f2 = int(.015 * SR); faits = 0
     for k in range(len(words) - 2, -1, -1):
         if k < et.get('depuis', 0): break
         gap = words[k + 1]['s'] - words[k]['e']
-        if gap >= et.get('min', 0.45):
-            c = int((words[k]['e'] + gap / 2) * SR)
-            y = np.concatenate([y[:c], np.zeros(int(et['ajout'] * SR), np.float32), y[c:]])
-            for w2 in words[k + 1:]: w2['s'] = round(w2['s'] + et['ajout'], 3); w2['e'] = round(w2['e'] + et['ajout'], 3)
+        if gap < et.get('min', 0.45): continue
+        c = point_calme(y, words[k]['e'] - 0.05, words[k + 1]['s'] + 0.05)
+        if c is None: continue                    # pas de vrai silence ici : on n'insère rien
+        avant, apres = y[:c].copy(), y[c:].copy()
+        avant[-f2:] *= np.linspace(1, 0, f2); apres[:f2] *= np.linspace(0, 1, f2)
+        y = np.concatenate([avant, np.zeros(int(et['ajout'] * SR), np.float32), apres]); faits += 1
+        for w2 in words[k + 1:]: w2['s'] = round(w2['s'] + et['ajout'], 3); w2['e'] = round(w2['e'] + et['ajout'], 3)
+    print(f"   {faits} respirations allongées de {et['ajout']} s")
 y = np.concatenate([y, np.zeros(int(cfg.get('tail', 0.6) * SR), np.float32)])
 wavfile.write(f'{d}/audio/voix.wav', SR, (np.clip(y, -1, 1) * 32767).astype(np.int16))
 dur = len(y) / SR

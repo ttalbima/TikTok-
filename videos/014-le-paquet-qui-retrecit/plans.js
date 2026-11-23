@@ -81,7 +81,7 @@
   const tg = (bg, txt, o = {}) => O.tag(txt, bg === 'cream' ? { fill: P.navy, ink: P.cream, ...o } : o);
   const und = (col, an = {}) => E(540, an.y || 960, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col, sw: 28, draw: { d: .2, dur: .3, ...an } }), { a: 'none', cut: false });
 
-  V.keywords = [3, 10, 12, 13, 22, 31, 36, 46, 50, 54, 58, 64, 68, 72, 78, 81, 88, 89, 95, 105, 108, 115, 119, 133, 140, 147, 152, 155, 165, 170, 173, 180, 183, 198, 201, 206];
+  V.keywords = [3, 10, 12, 13, 22, 31, 36, 46, 50, 54, 58, 64, 68, 72, 78, 81, 88, 89, 95, 105, 108, 115, 119, 133, 140, 147, 152, 155, 165, 170, 173, 180, 183, 198, 201];
 
   /* ===== SCÈNE 1 — HOOK ===== */
   S(0, 1, bg => [
@@ -369,10 +369,5 @@
     E(540, 560, O.burst({ w: 1000, n: 14, col: P.coral }), { a: 'pop', loop: 'spin', per: 6, cut: false }),
     E(540, 560, Tx('9,22 € / KG', 170), { a: 'pop', sfx: 'pop' }),
     E(540, 1090, Tx('LIS LE PETIT', 160, P.navy), { a: 'stamp', w: 201, sfx: 'stamp' }),
-  ]);
-  S(202, 11, bg => [
-    E(540, 300, O.eye({ w: 380 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1240, Tx('REGARDE BIEN', 150, 'var(--a1)'), { a: 'up', w: 203, dist: 200 }),
-    E(540, 800, pk(bg, { w: 500 }), { a: 'drop', w: 205, sfx: 'thud', loop: 'pulse', amp: .03, per: .7 }),
   ]);
 })();

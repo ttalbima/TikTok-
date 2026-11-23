@@ -1,21 +1,9 @@
 {
 "tempo": 0.94,
-"pause": 0.3,
+"pause": 0.0,
 "max_silence": 0.75,
 "tail": 0.6,
-"breaks_after": [
-6,
-30,
-43,
-55,
-70,
-86,
-100,
-121,
-144,
-165,
-192
-],
+"breaks_after": [],
 "display": [
 "Pourquoi",
 "tu",

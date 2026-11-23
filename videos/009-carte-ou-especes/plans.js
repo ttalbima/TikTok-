@@ -218,11 +218,9 @@
     E(540, 700, cher({ w: 320, fill: P.yellow }), { a: 'pop', d: .12 }),
     E(840, 760, cher({ w: 280, fill: P.yellow }), { a: 'pop', d: .24 }),
     E(540, 1180, Tx("D'AUTRES CHERCHEURS", 110, 'var(--a1)'), { a: 'up', w: 90, dist: 200 }),
+    E(540, 330, Tx('UN NOM', 230), { a: 'stamp', w: 93, sfx: 'stamp' }),
   ], undefined);
-  S(92, 4, bg => [
-    E(540, 600, O.tag('?', { w: 820, fill: P.navy, ink: P.cream, fs: 190 }), { a: 'drop', sfx: 'thud', rot: -4 }),
-    E(540, 1090, Tx('UN NOM', 300, 'var(--a1)'), { a: 'stamp', w: 94, sfx: 'stamp' }),
-  ]);
+  k++;   // plan « UN NOM » retiré (0,6 s, illisible) : on saute une couleur pour garder les fonds suivants
   S(95, 4, bg => [
     E(380, 700, O.person({ w: 420, fill: P.cream }), { a: 'left' }),
     E(800, 480, bolt(bg, { w: 220 }), { a: 'pop', w: 98, sfx: 'pop', loop: 'shake', amp: 8, lw: 98 }),

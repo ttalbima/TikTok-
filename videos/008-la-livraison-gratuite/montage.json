@@ -1,0 +1,29 @@
+{
+ "segments": [
+  {
+   "src": "avant",
+   "de": 0,
+   "a": 3,
+   "bloc": "HOOK"
+  },
+  {
+   "src": "avant",
+   "de": 4,
+   "a": 18,
+   "bloc": "RETAINER"
+  },
+  {
+   "src": "avant",
+   "de": 19,
+   "a": 193,
+   "bloc": "BODY"
+  },
+  {
+   "src": "avant",
+   "de": 194,
+   "a": 203,
+   "bloc": "BOUCLE"
+  }
+ ],
+ "tail": 0.9
+}

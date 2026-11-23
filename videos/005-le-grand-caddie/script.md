@@ -2,10 +2,10 @@
 
 Version retouchée (structure recalée) · 216 mots · 77 s
 
-## HOOK (0-4 s)
+## HOOK (0-3 s)
 Donne un chariot plus grand à des clients: ils achètent plus.
 
-## RETAINER (4-8 s)
+## RETAINER (3-8 s)
 Et le plus étrange, c'est que ton assiette te fait exactement le même coup.
 
 ## BODY (8-72 s)

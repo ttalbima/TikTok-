@@ -37,6 +37,7 @@ Règles de fond, sans exception :
   - Retainer (3-8 s) : une question dont la réponse n'arrive qu'à la fin, ou l'annonce d'un retournement. **Hook + retainer : 22 mots maximum.**
   - Body : situation, bascule, conséquence. Phrases courtes, un fait concret toutes les 2-3 s, la révélation la plus forte à la fin.
   - CTA (une seule action : un seul verbe d'action, pas « regarde… et compte… ») OU boucle (la dernière phrase se raccorde au début du hook), sur les 3-5 dernières s : **9 à 14 mots**.
+  - Une boucle ne répète jamais les mots de l'accroche : la dernière phrase s'arrête juste avant, et c'est le redémarrage de la vidéo qui les dit (pas de « regarde bien ce message » à la fin si la vidéo commence par « Regarde bien ce message »).
   - Repère : la voix parle à environ 2,8 mots par seconde. Contrôle obligatoire après minutage : `python3 studio/controle_structure.py videos/<dossier>` doit répondre « OK ».
 - Livrer uniquement le texte, en 4 blocs minutés.
 - Ton : conteur, vif, complice, tutoiement, pas de superlatifs creux.
@@ -49,6 +50,7 @@ Règles de fond, sans exception :
   Pourquoi : chaque changement relance l'attention ; une image figée fait swiper.
   Chaque plan démarre au début d'un mot. Si une idée dure plus longtemps, ajouter une phase interne (compteur, objet qui entre, mouvement de caméra) plutôt que couper.
 - Illustrer chaque phrase par une image concrète. Les mots chocs arrivent en gros titres.
+- Aucun plan de moins de 0,8 s (sauf dans l'accroche) : un visuel qui passe trop vite ne se lit pas. Un objet a toujours une couleur différente de son fond (jamais corail sur corail, jaune sur jaune…).
 - CHARTE GRAPHIQUE (fixe pour toute la série) :
   - Style : papier découpé 2D — aplats, ombres portées dures, léger grain.
   - Palette (le fond change de couleur à chaque plan) : vert billet `#0E3B2E`, bleu nuit `#14213D`, crème `#F4EBD9`, jaune or `#FFC83D`, corail `#FF5A4E`.

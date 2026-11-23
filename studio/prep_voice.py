@@ -59,7 +59,14 @@ if max_sil:
     keep.append(x[pos:]); x = np.concatenate(keep)
     print(len(cutlist), "silences raccourcis,", round(sum(c1 - c0 for c0, c1, _ in cutlist), 2), "s retirées")
 # points d'insertion : milieu du silence après chaque mot listé
-cuts = sorted(((merged[i]["e"] + merged[i + 1]["s"]) / 2, i) for i in breaks)
+def point_calme(t_a, t_b):
+    """Instant le plus silencieux entre deux mots (fenêtre de 40 ms) : on n'insère jamais une pause dans la voix."""
+    n = int(.04 * SR); best, bi = 1e9, None
+    for k in range(int(max(t_a, 0) * SR), int(t_b * SR) - n, int(.005 * SR)):
+        v = float(np.sqrt(np.mean(x[k:k + n] ** 2)))
+        if v < best: best, bi = v, k
+    return (bi + n // 2) / SR if bi is not None else (t_a + t_b) / 2
+cuts = sorted((point_calme(merged[i]["e"] - .05, merged[i + 1]["s"] + .05), i) for i in breaks)
 out, pos, shift = [], 0, 0.0
 fade = int(0.012 * SR)
 for t, i in cuts:

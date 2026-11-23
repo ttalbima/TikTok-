@@ -286,7 +286,7 @@
   ]);
   S(169, 5, bg => [
     E(540, 860, O.tag('RÉFÉRENCE', { w: 760, fs: 100, fill: tagFill(bg) }), { a: 'none', m: [{ d: 0, dy: -300, s: 1.1, dur: .7, e: 'outCubic' }] }),
-    E(540, 1010, O.arrow({ w: 360, fill: P.coral }), { a: 'up', rot: -90, sfx: 'rise', loop: 'float', amp: 16, per: .7 }),
+    E(540, 1010, O.arrow({ w: 360, fill: bg === 'coral' ? P.navy : P.coral }), { a: 'up', rot: -90, sfx: 'rise', loop: 'float', amp: 16, per: .7 }),
     E(540, 1210, Tx('EST HAUT', 190, 'var(--a1)'), { a: 'stamp', w: 171, sfx: 'stamp' }),
   ]);
   S(172, 5, bg => [
@@ -323,8 +323,8 @@
   S(193, 6, bg => [
     E(250, 1040 - 260, O.bar(520, { w: 220, fill: fg(bg), grow: { dur: .3 } }), { a: 'none' }),
     E(540, 1040 - 190, O.bar(380, { w: 220, fill: fg(bg), grow: { d: .08, dur: .3 } }), { a: 'none' }),
-    E(830, 1040 - 110, O.bar(220, { w: 220, fill: P.coral, grow: { d: .16, dur: .3 } }), { a: 'none', loop: 'pulse', amp: .05, per: .6, lw: 195 }),
-    E(830, 700, O.arrow({ w: 200, fill: P.coral }), { a: 'down', w: 195, rot: 90, sfx: 'fall' }),
+    E(830, 1040 - 110, O.bar(220, { w: 220, fill: bg === 'coral' ? P.yellow : P.coral, grow: { d: .16, dur: .3 } }), { a: 'none', loop: 'pulse', amp: .05, per: .6, lw: 195 }),
+    E(830, 700, O.arrow({ w: 200, fill: bg === 'coral' ? P.navy : P.coral }), { a: 'down', w: 195, rot: 90, sfx: 'fall' }),
     E(540, 1210, Tx('LE PLUS BAS', 220, 'var(--a1)'), { a: 'stamp', w: 195, sfx: 'stamp' }),
   ]);
   S(196, 6, bg => [

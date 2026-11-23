@@ -93,7 +93,7 @@
   const per = (bg, o = {}) => O.person({ fill: bg === 'navy' ? P.cream : P.navy, ...o });
   const under = (y, col, d = {}) => E(540, y, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col, sw: 28, draw: d }), { a: 'none', cut: false });
 
-  V.keywords = [6, 10, 18, 21, 30, 39, 49, 57, 61, 64, 74, 79, 88, 94, 105, 112, 118, 126, 130, 135, 141, 147, 152, 165, 173, 181, 185, 203, 207];
+  V.keywords = [6, 10, 18, 21, 30, 39, 49, 57, 61, 64, 74, 79, 88, 94, 105, 112, 118, 126, 130, 135, 141, 147, 152, 165, 173, 181, 185, 203];
 
   /* ===== SCÈNE 1 — HOOK ===== */
   S(0, 1, bg => [
@@ -391,13 +391,5 @@
   ]);
   S(201, 11, bg => [
     E(540, 700, msg(bg, 'PLUS QUE 4 €', 'pour la livraison gratuite', .88, { w: 940 }), { a: 'pop', sfx: 'pop', m: [{ w: 203, s: 1.06, dur: .2 }, { w: 203, d: .3, s: 1, dur: .2 }], loop: 'float', amp: 8, per: 1.2 }),
-  ]);
-  S(204, 11, bg => [
-    E(540, 520, O.eye({ w: 600 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1010, Tx('REGARDE BIEN', 178, 'var(--a1)'), { a: 'stamp', w: 205, sfx: 'stamp' }),
-  ]);
-  S(206, 11, bg => [
-    E(540, 520, pan(bg, { w: 520 }), { a: 'pop', sfx: 'pop', loop: 'swing', amp: 3, per: 1 }),
-    E(540, 1060, Tx('CE MESSAGE', 200, 'var(--a1)'), { a: 'stamp', w: 207, sfx: 'stamp', loop: 'pulse', amp: .03, per: .6 }),
   ]);
 })();
