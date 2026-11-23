@@ -2,11 +2,11 @@
 
 Ordre de publication conseillé : de haut en bas. Même texte sur TikTok, Instagram et YouTube Shorts.
 Hashtags fixes : `#prix #consommation #psychologie #argent`, plus un ou deux selon le sujet.
-Versions à publier : 001 en v6 ; 004 et 009 en v4 ; 010 en v3 ; 014 en v1 ; toutes les autres en v2. Prends toujours la dernière version du dossier `livraison/`.
+Versions à publier : 001 en v7 ; 004 et 009 en v5 ; 010 en v4 ; 014 en v2 ; toutes les autres en v3. Prends toujours la dernière version du dossier `livraison/`.
 
 | Ordre | Vidéo | Description à coller |
 |---|---|---|
-| 1 | 001 — Le 9,99 € (v6) | Pourquoi 9,99 € te paraît moins cher ? Et toi, tu regardes le premier chiffre ou le prix entier ? #prix #consommation #psychologie #argent #supermarché |
+| 1 | 001 — Le 9,99 € (v7) | Pourquoi 9,99 € te paraît moins cher ? Et toi, tu regardes le premier chiffre ou le prix entier ? #prix #consommation #psychologie #argent #supermarché |
 | 2 | 003 — Le menu du milieu | Tu crois choisir ton menu. En vrai, on a choisi pour toi. La dernière fois au resto, tu as pris lequel ? #prix #consommation #psychologie #argent #restaurant |
 | 3 | 004 — Le prix barré | Regarde bien ce prix barré : il n'est pas là pour t'informer. Tu caches le prix barré avec ton pouce, la prochaine fois ? #prix #consommation #psychologie #argent #soldes |
 | 4 | 005 — Le grand chariot | Donne un chariot plus grand à des clients : ils achètent plus. Tu prends un chariot ou un panier, toi ? #prix #consommation #psychologie #argent #supermarché |
@@ -21,7 +21,7 @@ Versions à publier : 001 en v6 ; 004 et 009 en v4 ; 010 en v3 ; 014 en v1 ; tou
 | 13 | 014 — Le paquet qui rétrécit | Regarde bien ce paquet : le prix n'a pas bougé, lui si. Tu lis le prix au kilo ? #prix #consommation #psychologie #argent #supermarché |
 | 14 | 015 — La carte sans le signe € | Pourquoi tu dépenses plus sans le signe euro ? Sur la dernière carte que tu as lue, il y avait le signe ou juste un nombre ? #prix #consommation #psychologie #argent #restaurant |
 
-La vidéo 002 (hyperinflation hongroise) est hors niche : ne pas la publier sur ces comptes.
+La vidéo 002 (hors niche) a été supprimée le 23/11/2026.
 
 ## Titres YouTube Shorts (mot-clé au début, moins de 60 caractères)
 

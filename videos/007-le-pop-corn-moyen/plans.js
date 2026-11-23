@@ -45,7 +45,7 @@
   const cy = (Y, w) => Y - 0.7 * w;                        // centre d'un cornet posé sur la ligne Y
   const cher = (bg, w = 300) => O.person({ w, fill: bg === 'navy' ? P.yellow : P.navy, coat: true, ink: P.cream });
 
-  V.keywords = [6, 13, 22, 34, 45, 50, 58, 63, 65, 83, 90, 98, 104, 108, 110, 128, 136, 150, 156, 159, 170, 184, 192, 201, 214];
+  V.keywords = [6, 13, 22, 34, 45, 50, 58, 63, 65, 83, 90, 98, 104, 108, 110, 128, 136, 150, 156, 159, 170, 184, 192, 201, 214, 221];
 
   /* ===== SCÈNE 1 — HOOK ===== */
   S(0, 1, bg => [
@@ -329,5 +329,14 @@
   S(211, 9, bg => [
     E(540, 560, cone(bg, 'M', 420), { a: 'pop', sfx: 'pop', loop: 'shake', lw: 214, ldur: .4, amp: 7 }),
     E(540, 1130, Tx('SERT À RIEN', 200, 'var(--a1)'), { a: 'stamp', w: 213, sfx: 'stamp' }),
+  ]);
+  S(215, 9, bg => [
+    E(540, 560, O.eye({ w: 640, px: .7 }), { a: 'pop', sfx: 'pop' }),
+    E(540, 1040, O.arrow({ w: 460, fill: P.coral }), { a: 'left', w: 216, sfx: 'whoosh' }),
+  ]);
+  S(218, 9, bg => [
+    E(250, cy(880, 280), cone(bg, 'M', 280), { a: 'left', m: [{ w: 220, dx: 110, dur: .25, sfx: 'thud' }, { w: 220, d: .3, dx: 60, dur: .25 }] }),
+    E(800, cy(880, 420), cone(bg, 'G', 420), { a: 'right', m: [{ w: 220, d: .12, dx: 40, s: 1.12, dur: .3 }] , loop: 'pulse', amp: .03, per: .7, lw: 221 }),
+    E(540, 1170, Tx('ELLE TE POUSSE', 160, 'var(--a1)'), { a: 'stamp', w: 221, sfx: 'stamp' }),
   ]);
 })();

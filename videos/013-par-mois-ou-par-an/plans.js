@@ -55,7 +55,7 @@
   const cup = (bg, o = {}) => O.cup({ fill: bg === 'cream' ? P.navy : P.cream, band: bg === 'coral' ? P.yellow : P.coral, lid: bg === 'navy' ? P.yellow : bg === 'cream' ? T.navy2 : P.navy, ...o });
   const under = (y, col, an) => E(540, y, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col, sw: 28, draw: an }), { a: 'none', cut: false });
 
-  V.keywords = [5, 6, 10, 18, 32, 38, 39, 41, 46, 53, 55, 62, 80, 85, 93, 103, 112, 119, 127, 133, 139, 147, 154, 158, 166, 179, 186, 190, 202];
+  V.keywords = [5, 6, 10, 18, 32, 38, 39, 41, 46, 53, 55, 62, 80, 85, 93, 103, 112, 119, 127, 133, 139, 147, 154, 158, 166, 179, 186, 190, 202, 211];
 
   /* ===== SCÈNE 1 — HOOK ===== */
   S(0, 1, bg => [
@@ -333,5 +333,17 @@
     E(540, 340, Tx('MULTIPLIE', 240), { a: 'down' }),
     E(540, 840, Tx('× 12', 600, 'var(--a1)'), { a: 'stamp', w: 201, sfx: 'stamp', m: [{ w: 202, d: .3, s: 1.07, dur: .2 }, { w: 202, d: .55, s: 1, dur: .2 }] }),
   ]);
-  // retouche v2 : la phrase « Et regarde si tu choisis encore le moins cher. » est supprimée, ses trois plans aussi
+  S(203, 7, bg => [
+    E(540, 600, O.eye({ w: 680 }), { a: 'pop', sfx: 'pop', m: [{ w: 204, s: 1.08, dur: .2 }] }),
+    E(540, 1110, Tx('REGARDE', 260, 'var(--a1)'), { a: 'up', w: 204 }),
+  ]);
+  S(206, 7, bg => [
+    E(290, 500, T1(bg, '4,99 €', { w: 470, sub: 'PAR MOIS', fs: 130 }), { a: 'down', dist: 700, org: '8% 50%', loop: 'swing', amp: 7, per: 1.1, sfx: 'swish' }),
+    E(790, 720, T2(bg, '60 €', { w: 470, sub: 'PAR AN', fs: 130 }), { a: 'down', dist: 700, d: .14, org: '8% 50%', loop: 'swing', amp: 7, per: 1.3 }),
+    E(540, 1150, Tx('TU CHOISIS…', 190, 'var(--a1)'), { a: 'up', w: 207 }),
+  ]);
+  S(209, 7, bg => [
+    E(540, 560, Tx('LE MOINS', 240), { a: 'stamp', sfx: 'stamp' }),
+    E(540, 900, Tx('CHER ?', 300, 'var(--a2)'), { a: 'stamp', w: 211, sfx: 'stamp', loop: 'pulse', amp: .04, per: .6 }),
+  ]);
 })();

@@ -34,7 +34,7 @@ Réserve (univers, hook et structure attribués au moment de les programmer) :
 - Le prix « à partir de » (prix au compte-gouttes)
 - Finir ce qu'on a payé trop cher (coûts irrécupérables)
 
-La vidéo 002 (hyperinflation hongroise de 1946) est terminée mais hors niche : à garder en réserve, pas à publier sur ce compte.
+La vidéo 002 (hyperinflation hongroise de 1946), hors niche, a été supprimée le 23/11/2026 à la demande du propriétaire.
 
 ## Banque d'idées (candidats NON vérifiés)
 

@@ -21,7 +21,7 @@ Les outils vidIQ (recherche de vidéos qui surperforment, sons, profils) coûten
   - Instagram : même description terminée par une invitation à l'envoyer à quelqu'un, 3 à 5 hashtags, minutage de la couverture.
   - YouTube Shorts : titre de moins de 60 caractères avec le mot-clé au début, description de 2 lignes, 3 hashtags.
   - Premier commentaire à épingler (une question qui lance la discussion).
-- N'utilise que le fichier d'origine de `videos/<n°>/livraison/`. Ne programme jamais la vidéo 002 (hors niche) ni une vidéo que le rapport de vérification classe « À refaire ».
+- N'utilise que le fichier d'origine de `videos/<n°>/livraison/`. La vidéo 002 a été supprimée. Ne programme jamais une vidéo que le rapport de vérification classe « À refaire ».
 
 ### B. Analyse des chiffres
 Le propriétaire envoie, par vidéo et par réseau : vues, durée moyenne de visionnage, part allée jusqu'au bout, partages ou envois, abonnés gagnés ; sur YouTube, « regardée / balayée ». S'il manque des chiffres, travaille avec ce que tu as et dis lesquels manquent.

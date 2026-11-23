@@ -124,6 +124,27 @@
         if (a.sfx) events.push({ t: +tOf(a, s.t0).toFixed(3), type: a.sfx });
       });
     });
+    // RELANCES : jamais plus de 1,5 s sans une animation nouvelle. On relève tout ce qui bouge déjà dans le plan
+    // (entrée du plan, entrées d'objets, déplacements, tracés, compteurs) et on comble chaque trou de plus de
+    // GAP secondes par un mouvement de caméra, d'un type différent à chaque fois. Muet : le son ne change pas.
+    const GAP = V.relance != null ? V.relance : 1.5;
+    let nb = 0;
+    shots.forEach(s => {
+      s.beats = [];
+      if (!GAP) return;
+      const ts = [s.t0];
+      anims.forEach(an => { if (an.shot === s) { ts.push(an.t0); an.moves.forEach(m => ts.push(m.t)); } });
+      [draws, counts, grows].forEach(l => l.forEach(x => { if (x.t0 >= s.t0 && x.t0 < s.t1) ts.push(x.t0); }));
+      const ev = ts.filter(x => x >= s.t0 - 1e-6 && x < s.t1).sort((x, y) => x - y);
+      ev.push(s.t1);
+      for (let i = 0; i + 1 < ev.length; i++) {
+        const trou = ev[i + 1] - ev[i];
+        if (trou <= GAP + 1e-6) continue;
+        const n = Math.ceil(trou / GAP) - 1;
+        for (let j = 1; j <= n; j++) { const t = ev[i] + (trou * j) / (n + 1); if (s.t1 - t > .3) s.beats.push({ t, k: nb++ }); }
+      }
+    });
+    V.nbRelances = nb;
     // volets entre grandes scènes
     const wipeEl = document.getElementById('wipe');
     shots.forEach((s, i) => {
@@ -144,7 +165,7 @@
     V.meta = {
       duration, fps: 30,
       shots: shots.map(s => ({ i: s.i, t0: s.t0, t1: s.t1, scene: s.scene, bg: s.bg, w: s.w })),
-      scenes, events,
+      scenes, events, relances: shots.flatMap(x => x.beats.map(b => +b.t.toFixed(2))), retires: V.retires,
       keywords: V.keywords.map(i => ({ t: words[i].s, w: words[i].w })),
     };
     return V.meta;
@@ -188,8 +209,27 @@
     // caméra : zoom d'entrée puis dérive lente
     const lt = t - cur.t0, len = cur.t1 - cur.t0;
     const dir = cur.i % 2 ? 1 : -1;
-    const z = 1 + .075 * (1 - ease.outCubic(clamp(lt / .38))) + .035 * clamp(lt / Math.max(len, .3));
-    cur.cam.style.transform = `translate(${dir * 10 * clamp(lt / Math.max(len, .3))}px,0) scale(${z})`;
+    const e = 1 - ease.outCubic(clamp(lt / .38)), pr = clamp(lt / Math.max(len, .3));
+    let cx = dir * 10 * pr, cy = 0, cz = 1 + .035 * pr, cr = 0;
+    // entrée de plan : six mouvements de caméra qui tournent, jamais deux fois le même de suite
+    const style = V.relance === 0 ? 0 : cur.i % 6;
+    if (style === 0) cz += .075 * e;
+    else if (style === 1) { cx += 70 * e; cz += .03 * e; }
+    else if (style === 2) cz -= .06 * e;
+    else if (style === 3) { cy += 80 * e; cz += .03 * e; }
+    else if (style === 4) { cr += 2.4 * e; cz += .06 * e; }
+    else { cx -= 70 * e; cz += .03 * e; }
+    // relances à l'intérieur du plan : cinq mouvements différents qui tournent
+    for (const b of cur.beats || []) {
+      const u = t - b.t; if (u < 0) continue;
+      const k = b.k % 5, p = clamp(u / .45), osc = Math.sin(Math.PI * p), am = Math.exp(-u * 5) * Math.sin(u * 22);
+      if (k === 0) cz += .06 * osc;                       // coup de zoom
+      else if (k === 1) cr += 1.6 * am;                   // balancement
+      else if (k === 2) cz += .045 * ease.outCubic(p);    // zoom qui reste
+      else if (k === 3) cy -= 26 * osc;                   // petit saut
+      else cx += 30 * am;                                 // secousse latérale
+    }
+    cur.cam.style.transform = `translate(${cx.toFixed(2)}px,${cy.toFixed(2)}px) rotate(${cr.toFixed(3)}deg) scale(${cz.toFixed(4)})`;
 
     for (const an of anims) {
       if (an.shot !== cur) continue;

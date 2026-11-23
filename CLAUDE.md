@@ -17,7 +17,7 @@ Test de niche, obligatoire pour chaque sujet (les quatre à la fois) :
 2. Une source vérifiable l'explique : étude publiée, texte de loi, chiffre officiel.
 3. Le hook parle du spectateur lui-même (« tu »), pas d'un tiers.
 4. La vidéo tient la promesse : à la fin, le spectateur sait repérer le piège.
-Sont hors niche : la bourse, les cryptos, les placements et tout conseil d'investissement, la macroéconomie, l'histoire économique, l'actualité politique. La vidéo 002 (hyperinflation hongroise) est hors niche.
+Sont hors niche : la bourse, les cryptos, les placements et tout conseil d'investissement, la macroéconomie, l'histoire économique, l'actualité politique. La vidéo 002 (hyperinflation hongroise), hors niche, a été supprimée le 23/11/2026 à la demande du propriétaire.
 La liste des sujets est dans `sujets.md`.
 Deux étapes : 1) écrire le script, 2) fabriquer la vidéo à partir du script et de la voix off.
 Travail en solo : si une info manque, prendre l'option par défaut, la noter dans `notes.md` et continuer.
@@ -46,7 +46,7 @@ Règles de fond, sans exception :
 - 1080×1920, 30 i/s, durée = durée de la voix.
 - Rendu en code : HTML/SVG (2D uniquement tant que la référence n'est pas validée). Filmé image par image, encodé scène par scène pour pouvoir refaire une seule scène.
 - Minutage mot à mot de la voix off (ex. faster-whisper) : tout se cale dessus.
-- RYTHME : un nouveau plan toutes les 1,3 s en moyenne, jamais plus de 1,5 s sans changement visuel.
+- RYTHME : un nouveau plan toutes les 1,3 s en moyenne, jamais plus de 1,5 s sans changement visuel. **Une animation différente toutes les 1,5 s au plus, jamais deux fois la même de suite** (consigne du propriétaire, 23/11/2026).
   Pourquoi : chaque changement relance l'attention ; une image figée fait swiper.
   Chaque plan démarre au début d'un mot. Si une idée dure plus longtemps, ajouter une phase interne (compteur, objet qui entre, mouvement de caméra) plutôt que couper.
 - Illustrer chaque phrase par une image concrète. Les mots chocs arrivent en gros titres.
@@ -96,7 +96,7 @@ Le choix fait pour chaque vidéo est noté dans `sujets.md`.
 ## OBJECTIF À TERME ET PRIORITÉS DU PROPRIÉTAIRE
 - But final : proposer une offre payante à l'audience, **plus tard**, une fois la communauté installée. D'ici là : aucune vente, aucun lien commercial, aucun appel à acheter dans les vidéos ni les descriptions.
 - Le propriétaire a peu de temps : tout ce qui est livré doit être prêt à l'emploi (fichier, description, hashtags), et la même vidéo sert sur TikTok, Instagram et YouTube Shorts.
-- Structure recalée le 22/11/2026 sur les vidéos 001 et 003 à 015, sans tout refaire (voix remontée avec `studio/montage_voix.py`), puis corrigée le 23/11/2026 après les retours du propriétaire qui ne portaient que sur les vidéos 001, 004 et 009 : 001 en v6 ; 004 et 009 en v4 ; 010 en v3 ; 014 en v1 ; les autres en v2. Ne corriger que les vidéos que le propriétaire désigne, jamais les autres. La v3 de la 001 reste la référence validée tant que le propriétaire n'a pas validé la v6.
+- État au 23/11/2026 (décision du propriétaire) : les vidéos 001 et 003 à 015 utilisent le **fichier ElevenLabs brut, sans aucun réglage** (`"brut": true` dans `voix.json` : ni ralenti, ni filtre, ni découpage, ni remontage). Ne plus retoucher ni régénérer ces voix. Conséquence acceptée : certaines vidéos durent moins de 75 s (de 69 à 78 s) et le contrôle de structure ne s'applique pas à elles. Versions : 001 v7 ; 004 et 009 v5 ; 010 v4 ; 014 v2 ; les autres v3. Ne corriger que les vidéos que le propriétaire désigne, et lui envoyer le mp4 après chaque correction. La v3 de la 001 reste la référence validée tant qu'il n'a pas validé la v7.
 - Documents de lancement : `guide-comptes.md`, `comptes/descriptions.md`, `comptes/banniere-youtube.png`, `comptes/photo-de-profil.png` (logo typographique choisi par le propriétaire : texte seul « PIÈGES DE L'ARGENT », bleu nuit sur fond crème, bandeau corail ; il trouve le noir trop sombre et le jaune trop agressif en fond ; il a refusé les logos à illustration : étiquette, hameçon, tapette à souris).
 
 ## CROISSANCE

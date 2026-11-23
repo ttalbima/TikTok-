@@ -1,9 +1,21 @@
 {
 "tempo": 0.94,
-"pause": 0.0,
+"pause": 0.3,
 "max_silence": 0.75,
 "tail": 0.6,
-"breaks_after": [],
+"breaks_after": [
+6,
+30,
+43,
+55,
+70,
+86,
+100,
+121,
+144,
+165,
+192
+],
 "display": [
 "Pourquoi",
 "tu",
@@ -221,5 +233,6 @@
 "pas",
 "tu",
 "tiens."
-]
+],
+"brut": true
 }

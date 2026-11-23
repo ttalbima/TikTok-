@@ -112,3 +112,10 @@
 - Nouvelles versions : 001 v6 ; 004 et 009 v4 uniquement. Les 11 autres vidéos avaient été refaites sans que le propriétaire le demande : il a refusé, elles ont été remises dans leur état précédent (008 v2, 010 v3, 014 v1, les autres v2).
 - RÈGLE : ne corriger que les vidéos désignées par le propriétaire. Ne jamais étendre une correction aux autres vidéos sans son accord.
 - RÈGLE (propriétaire, 23/11/2026) : après chaque correction, envoyer tout de suite le mp4 corrigé dans la discussion, sans attendre qu'il le demande.
+
+## Décisions du propriétaire du 23/11/2026 (soir)
+- Vidéo 002 supprimée du projet.
+- Voix : le fichier ElevenLabs brut, tel quel (option `"brut": true` de `voix.json`, lue par `studio/prep_voice.py`). Aucun crédit dépensé : les fichiers étaient déjà dans `audio/voix-brute.mp3`. Ne régénérer aucune voix sans sa demande.
+- Règle des 1,5 s : une animation différente toutes les 1,5 s au plus. Le moteur varie l'entrée de caméra à chaque plan et ajoute une relance de caméra dans tout trou de plus de 1,5 s ; les plans de moins de 0,8 s sont fusionnés ou retirés. Règle ajoutée à l'agent `fabrication`.
+- Les 14 vidéos sont refaites sur ces bases, avec les plans de leur première version. Reportés à la main : le pull de la 004 et l'accroche de la 009 (la carte reste à l'écran).
+- Durées obtenues : 001 72,8 s ; 003 74,4 ; 004 77,4 ; 005 75,1 ; 006 75,3 ; 007 74,3 ; 008 78,1 ; 009 75,6 ; 010 69,3 ; 011 77,2 ; 012 75,2 ; 013 76,1 ; 014 76,5 ; 015 74,1.

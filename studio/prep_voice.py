@@ -9,6 +9,10 @@ d = sys.argv[1].rstrip("/")
 cfg = json.load(open(f"{d}/voix.json"))
 tempo, pause, tail, breaks = cfg["tempo"], cfg["pause"], cfg["tail"], cfg["breaks_after"]
 display = cfg["display"]
+# "brut": true dans voix.json -> le fichier ElevenLabs est utilisé tel quel : ni ralenti, ni filtre, ni compression,
+# ni silence raccourci, ni pause ajoutée (choix du propriétaire, 23/11/2026). Seul le minutage des mots est calculé.
+BRUT = bool(cfg.get("brut"))
+if BRUT: tempo, pause, breaks = 1.0, 0.0, []; cfg["max_silence"] = None; cfg["starts"] = None
 SR = 48000
 
 raw = json.load(open(f"{d}/audio/mots-bruts.json"))
@@ -26,7 +30,7 @@ if len(display) != len(merged):
 
 # voix filtrée : coupe-bas 70 Hz, compression légère, tempo
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{d}/audio/voix-brute.mp3",
-    "-af", f"atempo={tempo},highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=2",
+    "-af", "anull" if BRUT else f"atempo={tempo},highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=2",
     "-ac", "1", "-ar", str(SR), "-c:a", "pcm_s16le", f"{d}/audio/_voix_tempo.wav"], check=True)
 sr, x = wavfile.read(f"{d}/audio/_voix_tempo.wav"); x = x.astype(np.float32) / 32768
 

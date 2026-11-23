@@ -38,3 +38,10 @@ Court, texte brut : chemin du mp4, durée, mesures audio, script final, sources 
 - Aucun plan de moins de 0,8 s : le moteur les fusionne ou les retire tout seul, mais un plan retiré est un plan perdu. Écrire donc dès le départ des plans d'au moins 0,8 s et vérifier sur la planche qu'aucune image prévue ne manque.
 - Quand une phrase tient sur deux plans, garder le même objet à l'écran et ne changer qu'un élément. Jamais de plan fait seulement de texte de liaison (« POURTANT… », « ? ? »).
 - Un raccord de voix se fait toujours avec `studio/montage_voix.py` (coupe dans le silence mesuré).
+
+## Animation différente toutes les 1,5 s (consigne du propriétaire, 23/11/2026)
+- Jamais plus de 1,5 s sans une animation nouvelle, et jamais deux fois la même de suite.
+- Dans `plans.js` : prévoir pour chaque plan de plus de 1,5 s une phase interne (objet qui entre sur un mot `w:`, déplacement `m:`, compteur, tracé), et varier les entrées d'un plan à l'autre (`pop`, `up`, `down`, `left`, `right`, `drop`, `stamp`, `spin`).
+- Le moteur (`studio/engine.js`) complète tout seul : l'entrée de caméra change à chaque plan (six mouvements qui tournent) et tout trou de plus de 1,5 s reçoit une relance de caméra (cinq mouvements qui tournent). Contrôle : `node studio/render.js <dossier> meta` puis lire `relances` dans `build/meta.json` ; beaucoup de relances = plans trop pauvres, à enrichir à la main.
+- Ces mouvements sont muets : on peut refilmer l'image sans refaire le son.
+- Ne corriger que les vidéos désignées par le propriétaire, et lui envoyer le mp4 après chaque correction.
