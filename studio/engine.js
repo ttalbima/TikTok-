@@ -145,6 +145,18 @@
       }
     });
     V.nbRelances = nb;
+    // contrôle de la règle des 1,5 s : liste de toutes les animations (instant, type)
+    const suivi = [];
+    shots.forEach(s => {
+      suivi.push({ t: s.t0, k: 'plan' + (s.i % 6) });
+      anims.forEach(an => { if (an.shot === s && an.t0 > s.t0 + .05 && an.t0 < s.t1) suivi.push({ t: an.t0, k: an.a.a || 'pop' }); if (an.shot === s) an.moves.forEach(m => m.t < s.t1 && suivi.push({ t: m.t, k: 'déplacement' })); });
+      draws.forEach(x => { if (x.t0 > s.t0 + .05 && x.t0 < s.t1) suivi.push({ t: x.t0, k: 'tracé' }); });
+      counts.forEach(x => { if (x.t0 > s.t0 + .05 && x.t0 < s.t1) suivi.push({ t: x.t0, k: 'compteur' }); });
+      grows.forEach(x => { if (x.t0 > s.t0 + .05 && x.t0 < s.t1) suivi.push({ t: x.t0, k: 'barre' }); });
+      s.beats.forEach(b => suivi.push({ t: b.t, k: 'relance' + (b.k % 5) }));
+    });
+    suivi.sort((x, y) => x.t - y.t);
+    V.suivi = suivi;
     // volets entre grandes scènes
     const wipeEl = document.getElementById('wipe');
     shots.forEach((s, i) => {
@@ -165,7 +177,7 @@
     V.meta = {
       duration, fps: 30,
       shots: shots.map(s => ({ i: s.i, t0: s.t0, t1: s.t1, scene: s.scene, bg: s.bg, w: s.w })),
-      scenes, events, relances: shots.flatMap(x => x.beats.map(b => +b.t.toFixed(2))), retires: V.retires,
+      scenes, events, relances: shots.flatMap(x => x.beats.map(b => +b.t.toFixed(2))), retires: V.retires, suivi: V.suivi,
       keywords: V.keywords.map(i => ({ t: words[i].s, w: words[i].w })),
     };
     return V.meta;
