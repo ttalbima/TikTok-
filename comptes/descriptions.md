@@ -2,11 +2,11 @@
 
 Ordre de publication conseillé : de haut en bas. Même texte sur TikTok, Instagram et YouTube Shorts.
 Hashtags fixes : `#prix #consommation #psychologie #argent`, plus un ou deux selon le sujet.
-Versions à publier : la v4 pour la 001, la v1 pour les 008 et 014, la v2 pour toutes les autres (structure recalée le 22/11/2026, pas encore écoutée). Prends toujours la dernière version du dossier `livraison/`.
+Versions à publier (corrigées le 23/11/2026) : 001 en v6 ; 004, 009 et 010 en v4 ; 014 en v2 ; toutes les autres en v3. Prends toujours la dernière version du dossier `livraison/`.
 
 | Ordre | Vidéo | Description à coller |
 |---|---|---|
-| 1 | 001 — Le 9,99 € (v4) | Pourquoi 9,99 € te paraît moins cher ? Et toi, tu regardes le premier chiffre ou le prix entier ? #prix #consommation #psychologie #argent #supermarché |
+| 1 | 001 — Le 9,99 € (v6) | Pourquoi 9,99 € te paraît moins cher ? Et toi, tu regardes le premier chiffre ou le prix entier ? #prix #consommation #psychologie #argent #supermarché |
 | 2 | 003 — Le menu du milieu | Tu crois choisir ton menu. En vrai, on a choisi pour toi. La dernière fois au resto, tu as pris lequel ? #prix #consommation #psychologie #argent #restaurant |
 | 3 | 004 — Le prix barré | Regarde bien ce prix barré : il n'est pas là pour t'informer. Tu caches le prix barré avec ton pouce, la prochaine fois ? #prix #consommation #psychologie #argent #soldes |
 | 4 | 005 — Le grand chariot | Donne un chariot plus grand à des clients : ils achètent plus. Tu prends un chariot ou un panier, toi ? #prix #consommation #psychologie #argent #supermarché |

@@ -35,6 +35,6 @@ Ton travail, uniquement dans `plans.js` (et `son.json` si un indice y est faux) 
 Court, texte brut : chemin du mp4, durée, mesures audio, script final, sources (URL), points non vérifiés et écarts, problèmes, et ce qui n'est pas terminé.
 
 ## Règles ajoutées le 23/11/2026 (retours du propriétaire)
-- Aucun plan de moins de 0,8 s : le moteur les fusionne ou les retire tout seul, mais un plan retiré est un plan perdu. Vérifier avec `node studio/render.js <dossier> meta` que le nombre de plans retirés est à zéro, sinon regrouper les plans à la main.
+- Aucun plan de moins de 0,8 s : le moteur les fusionne ou les retire tout seul, mais un plan retiré est un plan perdu. Écrire donc dès le départ des plans d'au moins 0,8 s et vérifier sur la planche qu'aucune image prévue ne manque.
 - Quand une phrase tient sur deux plans, garder le même objet à l'écran et ne changer qu'un élément. Jamais de plan fait seulement de texte de liaison (« POURTANT… », « ? ? »).
 - Un raccord de voix se fait toujours avec `studio/montage_voix.py` (coupe dans le silence mesuré).
