@@ -111,3 +111,4 @@
 - Cohérence visuelle : quand une phrase tient sur deux plans, le même objet reste à l'écran et un seul élément change (004 : le pull reste, l'étiquette passe à « ? € » ; 009 : la carte reste pendant toute l'accroche). Pas de plan fait seulement de texte et de points d'interrogation.
 - Nouvelles versions : 001 v6 ; 004 et 009 v4 uniquement. Les 11 autres vidéos avaient été refaites sans que le propriétaire le demande : il a refusé, elles ont été remises dans leur état précédent (008 v2, 010 v3, 014 v1, les autres v2).
 - RÈGLE : ne corriger que les vidéos désignées par le propriétaire. Ne jamais étendre une correction aux autres vidéos sans son accord.
+- RÈGLE (propriétaire, 23/11/2026) : après chaque correction, envoyer tout de suite le mp4 corrigé dans la discussion, sans attendre qu'il le demande.
