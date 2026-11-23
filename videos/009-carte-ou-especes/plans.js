@@ -78,23 +78,17 @@
   V.keywords = [2, 8, 11, 27, 33, 38, 52, 59, 65, 69, 74, 83, 84, 102, 104, 110, 120, 127, 134, 142, 148, 157, 159, 167, 171, 177, 179, 182, 187, 200, 207, 212];
 
   /* ===== SCÈNE 1 — HOOK (v2 : « Avec une carte, tu es prêt à payer plus. Parfois le double. ») ===== */
+  // accroche en deux plans seulement, la carte reste à l'écran du début à la fin
   S(0, 1, bg => [
-    E(290, 620, card(bg, { w: 440 }), { a: 'left', rot: -8, sfx: 'whoosh' }),
-    E(790, 900, bill(bg, { w: 440 }), { a: 'right', rot: 8, d: .08 }),
-    E(540, 760, Tx('VS', 260, 'var(--a2)'), { a: 'stamp', d: .35, sfx: 'stamp' }),
-  ]);
-  S(3, 1, bg => [
-    E(540, 640, O.person({ w: 380, fill: P.navy }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1090, Tx('PRÊT À PAYER', 168, 'var(--a1)'), { a: 'up', w: 5 }),
-  ]);
-  S(8, 1, bg => [
-    E(540, 440, O.arrow({ w: 340, fill: P.yellow }), { a: 'up', rot: -90, sfx: 'rise', loop: 'float', amp: 16, per: .8 }),
-    E(540, 940, Tx('PLUS', 440), { a: 'stamp', sfx: 'stamp' }),
+    E(540, 520, card(bg, { w: 660 }), { a: 'left', rot: -6, sfx: 'whoosh', loop: 'float', amp: 8, per: 1.6 }),
+    E(540, 960, Tx('PRÊT À PAYER', 168), { a: 'up', w: 3 }),
+    E(540, 1190, Tx('PLUS', 300, 'var(--a1)'), { a: 'stamp', w: 8, sfx: 'stamp' }),
   ]);
   k = 4;                                             // garde les fonds d'origine pour la suite (crème, puis le reste inchangé)
   S(9, 1, bg => [
-    E(540, 420, Tx('PARFOIS', 220), { a: 'down' }),
-    E(540, 860, Tx('×2', 640, 'var(--a1)'), { a: 'stamp', w: 11, sfx: 'stamp', loop: 'pulse', amp: .03, per: .6 }),
+    E(540, 440, card(bg, { w: 520 }), { a: 'none', rot: -6 }),
+    E(540, 770, Tx('PARFOIS', 180), { a: 'down' }),
+    E(540, 1120, Tx('×2', 420, 'var(--a1)'), { a: 'stamp', w: 11, sfx: 'stamp', loop: 'pulse', amp: .03, per: .6 }),
   ]);
 
   /* ===== SCÈNE 2 — RETAINER ===== */

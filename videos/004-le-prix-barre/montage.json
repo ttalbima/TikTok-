@@ -35,5 +35,10 @@
    "bloc": "DÉFI"
   }
  ],
- "tail": 0.6
+ "tail": 0.6,
+ "etirer_silences": {
+  "ajout": 0.12,
+  "min": 0.45,
+  "depuis": 40
+ }
 }

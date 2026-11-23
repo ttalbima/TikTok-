@@ -115,19 +115,17 @@
     E(540, 520, O.eye({ w: 600 }), { a: 'pop', sfx: 'pop' }),
     E(540, 1080, Tx('UNE AFFAIRE', 190, 'var(--a1)'), { a: 'stamp', w: 34, sfx: 'stamp' }),
   ]);
+  // « Pourtant, tu ne sais toujours pas ce que vaut ce pull » : le pull reste à l'écran, seule l'étiquette change
   S(35, 3, bg => [
-    E(540, 600, Tx('POURTANT…', 205), { a: 'stamp', sfx: 'stamp' }),
-    E(330, 1010, Tx('?', 340, 'var(--a1)'), { w: 38, rot: -10, sfx: 'pop' }),
-    E(740, 1010, Tx('?', 340, 'var(--a1)'), { w: 39, rot: 10, sfx: 'pop' }),
+    E(540, 600, O.pull({ w: 640, fill: pullFill(bg) }), { a: 'pop', sfx: 'pop' }),
+    E(540, 1130, Tx('POURTANT…', 205), { a: 'stamp', d: .15, sfx: 'stamp' }),
   ]);
   S(41, 3, bg => [
-    E(540, 640, O.tag('? €', { w: 760, fill: tagFill(bg) }), { a: 'pop', sfx: 'pop', loop: 'swing', amp: 4, per: 1 }),
-    E(540, 1090, Tx('ÇA VAUT QUOI', 190, 'var(--a1)'), { a: 'up', w: 43 }),
+    E(540, 560, O.pull({ w: 640, fill: pullFill(bg) }), { a: 'none' }),
+    E(700, 800, O.tag('? €', { w: 480, fill: tagFill(bg) }), { a: 'pop', rot: -8, sfx: 'pop', loop: 'swing', amp: 4, per: 1 }),
+    E(540, 1150, Tx('IL VAUT QUOI ?', 180, 'var(--a1)'), { a: 'up', w: 43 }),
   ]);
-  S(44, 3, bg => [
-    E(540, 640, O.pull({ w: 700, fill: pullFill(bg) }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1150, Tx('CE PULL', 260, 'var(--a1)'), { a: 'stamp', w: 45, sfx: 'stamp' }),
-  ]);
+  k++;                                               // plan « CE PULL » retiré (trop court) : les fonds suivants ne bougent pas
   S(46, 3, bg => [
     E(540, 740, Tx(cnt({ from: 1960, to: 1974, dur: .5, sfx: 'tick' }), 440), { a: 'pop' }),
     E(540, 1010, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col: P.coral, sw: 30, draw: { d: .5, dur: .3 } }), { a: 'none', cut: false }),

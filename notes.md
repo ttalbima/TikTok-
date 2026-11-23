@@ -104,3 +104,9 @@
 - Vidéo 8 : la fin répétait « regarde bien ce message », doublon avec le début quand la vidéo boucle. Phrase coupée. Même défaut corrigé d'office sur la 14 (« Et regarde bien ce paquet… »). La 11 finit encore sur « ce petit message rouge… » : laissé tel quel, à trancher par le propriétaire (la couper ferait passer la vidéo sous 75 s).
 - Vidéo 9 : un plan de 0,6 s (« UN NOM ») passait trop vite. Supprimé ; « UN NOM » s'affiche dans le plan des chercheurs.
 - Règles ajoutées au cahier des charges et aux agents. Nouvelles versions : 001 v5, 008 et 014 v2, les autres v3.
+
+## Retour du propriétaire du 23/11/2026 (suite) — plans éclair et raccords de voix
+- Raccord de voix : l'ancienne coupe débordait sur le mot suivant (bout de phrase parasite avant « Ton cerveau lit » dans la 001). `studio/montage_voix.py` coupe maintenant dans le silence mesuré entre deux mots, sans jamais déborder. Les 14 voix ont été remontées.
+- Plans éclair : le moteur (`studio/engine.js`) refuse tout plan de moins de 0,8 s. Deux plans courts qui se suivent n'en font qu'un ; un plan court isolé est retiré et le plan précédent reste à l'écran. 106 plans éclair ont ainsi disparu des 14 vidéos.
+- Cohérence visuelle : quand une phrase tient sur deux plans, le même objet reste à l'écran et un seul élément change (004 : le pull reste, l'étiquette passe à « ? € » ; 009 : la carte reste pendant toute l'accroche). Pas de plan fait seulement de texte et de points d'interrogation.
+- Nouvelles versions : 001 v6 ; 004, 009, 010 v4 ; 008 v3 ; 014 v2 ; les autres v3.

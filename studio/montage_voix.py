@@ -76,20 +76,37 @@ def niveau(x, i, n):
     return float(np.sqrt(np.mean(x[max(i, 0):max(i, 0) + n] ** 2))) if i + n <= len(x) else 0.0
 
 SEUIL = 10 ** (-45 / 20)          # en dessous : silence réel
+def silences(x, t_a, t_b, mini=0.08):
+    """Plages de silence réel (début, fin, en secondes) entre t_a et t_b."""
+    hop = int(.01 * SR); out = []; run = None
+    i = int(max(t_a, 0) * SR); fin = min(int(t_b * SR), len(x) - hop)
+    while i < fin:
+        if niveau(x, i, hop) < SEUIL: run = i if run is None else run
+        elif run is not None:
+            if (i - run) / SR >= mini: out.append((run / SR, i / SR))
+            run = None
+        i += hop
+    if run is not None and (i - run) / SR >= mini: out.append((run / SR, i / SR))
+    return out
+
 def bounds(x, words, a, b):
-    """Bornes d'un morceau, cherchées dans le silence RÉEL (mesuré), jamais d'après les seules heures
-    de mots, qui sont approximatives : on ne coupe ni le début ni la fin d'un mot."""
-    hop = int(.01 * SR)
-    # début : on recule depuis le début estimé du mot tant qu'il y a de la voix
-    i = int(words[a]['s'] * SR); lim = int((words[a - 1]['e'] if a > 0 else 0.0) * SR)
-    while i - hop > lim and niveau(x, i - hop, hop) > SEUIL: i -= hop
-    t0 = max(i / SR - 0.08, lim / SR if a > 0 else 0.0, 0.0)
-    # fin : on avance depuis la fin estimée du mot tant qu'il y a de la voix
-    e = words[b]['e']; nxt = words[b + 1]['s'] if b + 1 < len(words) else len(x) / SR
-    i = int(e * SR); lim = int(min(nxt + 0.15, e + 0.8, len(x) / SR) * SR)
-    while i + hop < lim and niveau(x, i, hop) > SEUIL: i += hop
-    t1 = min(i / SR + 0.12, len(x) / SR)
-    return t0, max(t1, e)
+    """Bornes d'un morceau, placées dans le silence RÉEL qui sépare ses mots de leurs voisins.
+    Les heures de mots sont approximatives : on cherche le silence mesuré entre le mot et son voisin,
+    sans jamais déborder sur le voisin (ni début de mot coupé, ni bout du mot suivant embarqué)."""
+    fin_fichier = len(x) / SR
+    # début : silence entre le mot précédent et le mot a
+    if a == 0: t0 = 0.0
+    else:
+        prev = words[a - 1]
+        sil = silences(x, max(prev['s'], words[a]['s'] - 1.2), words[a]['s'] + 0.12)
+        t0 = max(sil[-1][1] - 0.08, sil[-1][0]) if sil else words[a]['s']
+    # fin : silence entre le mot b et le mot suivant
+    if b + 1 >= len(words): t1 = fin_fichier
+    else:
+        nxt = words[b + 1]
+        sil = silences(x, words[b]['s'] + 0.05, min(nxt['s'] + 0.12, words[b]['s'] + 2.0))
+        t1 = min(sil[0][0] + 0.12, sil[0][1]) if sil else nxt['s']
+    return t0, max(t1, t0 + 0.05)
 
 def point_calme(y, t_a, t_b):
     """Instant le plus silencieux entre t_a et t_b (fenêtre de 40 ms), ou None s'il n'y a pas de vrai silence."""

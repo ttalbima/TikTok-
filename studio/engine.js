@@ -63,9 +63,27 @@
     const stage = document.getElementById('stage');
     stage.innerHTML = '';
     const tOf = (spec, t0) => (spec.w != null ? words[spec.w].s : t0) + (spec.d || 0);
-    shots = V.shots.map((d, i) => ({ ...d, i, t0: words[d.w].s + (d.d || 0) }));
-    shots[0].t0 = 0;
-    shots.forEach((s, i) => { s.t1 = i + 1 < shots.length ? shots[i + 1].t0 : duration; });
+    let all = V.shots.map((d, i) => ({ ...d, i, t0: words[d.w].s + (d.d || 0) }));
+    all[0].t0 = 0;
+    all.forEach((s, i) => { s.t1 = i + 1 < all.length ? all[i + 1].t0 : duration; });
+    // Aucun plan éclair : un plan de moins de MIN secondes est illisible. Deux plans courts qui se suivent
+    // n'en font qu'un (le premier reste à l'écran) ; un plan court isolé est retiré et le plan précédent
+    // reste à l'écran (ou le suivant démarre plus tôt si c'est le tout premier plan).
+    const MIN = V.minShot != null ? V.minShot : 0.8;
+    const court = s => s.t1 - s.t0 < MIN;
+    const kept = [];
+    for (let i = 0; i < all.length; i++) {
+      const s = all[i];
+      if (!court(s)) { kept.push(s); continue; }
+      let j = i + 1;
+      while (j < all.length && court(all[j]) && s.t1 - s.t0 < MIN) { s.t1 = all[j].t1; j++; }
+      if (j > i + 1) { kept.push(s); i = j - 1; }                 // fusion de plans courts consécutifs
+      else if (!kept.length && all[i + 1]) all[i + 1].t0 = s.t0;  // premier plan trop court : le suivant le remplace
+      // sinon : plan court isolé, retiré ; le plan précédent reste à l'écran
+    }
+    V.retires = all.length - kept.length;
+    shots = kept;
+    shots.forEach((s, i) => { s.i = i; s.t1 = i + 1 < shots.length ? shots[i + 1].t0 : duration; });
     events = [];
     shots.forEach(s => {
       const el = document.createElement('div');

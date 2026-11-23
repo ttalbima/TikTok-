@@ -2,10 +2,10 @@
 
 Version retouchée (structure recalée) · 214 mots · 77 s
 
-## HOOK (0-2 s)
+## HOOK (0-3 s)
 Pourquoi tu dépenses plus sans le signe euro?
 
-## RETAINER (2-8 s)
+## RETAINER (3-8 s)
 Un tout petit symbole en moins. Et pour voir ce qu'il change, mets-toi à la place du patron du restaurant.
 
 ## BODY (8-71 s)
