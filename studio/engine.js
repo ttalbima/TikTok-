@@ -69,7 +69,7 @@
     // Aucun plan éclair : un plan de moins de MIN secondes est illisible. Deux plans courts qui se suivent
     // n'en font qu'un (le premier reste à l'écran) ; un plan court isolé est retiré et le plan précédent
     // reste à l'écran (ou le suivant démarre plus tôt si c'est le tout premier plan).
-    const MIN = V.minShot != null ? V.minShot : 0.8;
+    const MIN = V.minShot != null ? V.minShot : 1.0;
     const court = s => s.t1 - s.t0 < MIN;
     const kept = [];
     for (let i = 0; i < all.length; i++) {
@@ -85,6 +85,8 @@
     shots = kept;
     shots.forEach((s, i) => { s.i = i; s.t1 = i + 1 < shots.length ? shots[i + 1].t0 : duration; });
     events = [];
+    const VU = V.minVu != null ? V.minVu : 1.0;
+    const tot = (spec, s) => Math.min(tOf(spec, s.t0), Math.max(s.t0, s.t1 - (VU ? .8 : 0)));
     shots.forEach(s => {
       const el = document.createElement('div');
       el.className = 'shot';
@@ -96,7 +98,11 @@
       el.querySelectorAll('.an').forEach(n => {
         const a = JSON.parse(n.dataset.an);
         const en = ENTRY[a.a || 'pop'];
-        const t0 = tOf(a, s.t0), dur = a.dur != null ? a.dur : en.dur;
+        // Aucun visuel éclair : un objet ou un titre reste au moins VU secondes à l'écran avant le changement de plan.
+        // S'il devait entrer trop tard (sur un mot proche de la fin du plan), il entre plus tôt.
+        let t0 = tOf(a, s.t0); const dur = a.dur != null ? a.dur : en.dur;
+        const tard = Math.max(s.t0, s.t1 - VU);
+        if (VU && t0 > tard) { t0 = Math.max(s.t0, tard - .1 * (s.nTard = (s.nTard || 0) + 1) + .1); }
         const moves = (a.m || []).map(m => ({ ...m, t: tOf(m, s.t0), dur: m.dur != null ? m.dur : .35 }));
         const hide = a.hw != null || a.hd != null ? tOf({ w: a.hw, d: a.hd }, s.t0) : null;
         const loopT = a.lw != null || a.ld != null ? tOf({ w: a.lw, d: a.ld }, s.t0) : t0;
@@ -110,18 +116,18 @@
       el.querySelectorAll('[data-draw]').forEach(n => {
         const a = JSON.parse(n.dataset.draw);
         n.setAttribute('pathLength', '1'); n.style.strokeDasharray = '1';
-        draws.push({ n, t0: tOf(a, s.t0), dur: a.dur || .35 });
-        if (a.sfx) events.push({ t: +tOf(a, s.t0).toFixed(3), type: a.sfx });
+        draws.push({ n, t0: tot(a, s), dur: a.dur || .35 });
+        if (a.sfx) events.push({ t: +tot(a, s).toFixed(3), type: a.sfx });
       });
       el.querySelectorAll('[data-count]').forEach(n => {
         const a = JSON.parse(n.dataset.count);
-        counts.push({ n, a, t0: tOf(a, s.t0), dur: a.dur || .6 });
-        if (a.sfx) events.push({ t: +tOf(a, s.t0).toFixed(3), type: a.sfx, dur: a.dur || .6 });
+        counts.push({ n, a, t0: tot(a, s), dur: a.dur || .6 });
+        if (a.sfx) events.push({ t: +tot(a, s).toFixed(3), type: a.sfx, dur: a.dur || .6 });
       });
       el.querySelectorAll('[data-grow]').forEach(n => {
         const a = JSON.parse(n.dataset.grow);
-        grows.push({ n, a, t0: tOf(a, s.t0), dur: a.dur || .45 });
-        if (a.sfx) events.push({ t: +tOf(a, s.t0).toFixed(3), type: a.sfx });
+        grows.push({ n, a, t0: tot(a, s), dur: a.dur || .45 });
+        if (a.sfx) events.push({ t: +tot(a, s).toFixed(3), type: a.sfx });
       });
     });
     // RELANCES : jamais plus de 1,5 s sans une animation nouvelle. On relève tout ce qui bouge déjà dans le plan
@@ -145,6 +151,9 @@
       }
     });
     V.nbRelances = nb;
+    // visuels éclair : durée pendant laquelle chaque objet reste visible une fois entré
+    V.brefs = anims.map(an => ({ t: +an.t0.toFixed(2), vu: +(((an.hide != null ? Math.min(an.hide, an.shot.t1) : an.shot.t1) - an.t0)).toFixed(2), plan: an.shot.i + 1, a: an.a.a || 'pop', txt: an.n.textContent.trim().slice(0, 18) }))
+      .filter(x => x.vu < 1 && x.vu > -50);
     // contrôle de la règle des 1,5 s : liste de toutes les animations (instant, type)
     const suivi = [];
     shots.forEach(s => {
@@ -177,7 +186,7 @@
     V.meta = {
       duration, fps: 30,
       shots: shots.map(s => ({ i: s.i, t0: s.t0, t1: s.t1, scene: s.scene, bg: s.bg, w: s.w })),
-      scenes, events, relances: shots.flatMap(x => x.beats.map(b => +b.t.toFixed(2))), retires: V.retires, suivi: V.suivi,
+      scenes, events, relances: shots.flatMap(x => x.beats.map(b => +b.t.toFixed(2))), retires: V.retires, suivi: V.suivi, brefs: V.brefs,
       keywords: V.keywords.map(i => ({ t: words[i].s, w: words[i].w })),
     };
     return V.meta;

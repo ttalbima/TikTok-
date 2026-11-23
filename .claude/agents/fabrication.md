@@ -45,3 +45,4 @@ Court, texte brut : chemin du mp4, durée, mesures audio, script final, sources 
 - Le moteur (`studio/engine.js`) complète tout seul : l'entrée de caméra change à chaque plan (six mouvements qui tournent) et tout trou de plus de 1,5 s reçoit une relance de caméra (cinq mouvements qui tournent). Contrôle : `node studio/render.js <dossier> meta` puis lire `relances` dans `build/meta.json` ; beaucoup de relances = plans trop pauvres, à enrichir à la main.
 - Ces mouvements sont muets : on peut refilmer l'image sans refaire le son.
 - Ne corriger que les vidéos désignées par le propriétaire, et lui envoyer le mp4 après chaque correction.
+- Aucun visuel éclair : chaque titre ou objet reste au moins 1 s à l'écran, chaque plan dure au moins 1 s. Ne jamais faire entrer un élément sur un mot situé à moins d'une seconde de la fin du plan. Contrôle : `brefs` dans `build/meta.json` doit être vide ou presque.

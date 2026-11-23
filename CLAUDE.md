@@ -50,7 +50,7 @@ Règles de fond, sans exception :
   Pourquoi : chaque changement relance l'attention ; une image figée fait swiper.
   Chaque plan démarre au début d'un mot. Si une idée dure plus longtemps, ajouter une phase interne (compteur, objet qui entre, mouvement de caméra) plutôt que couper.
 - Illustrer chaque phrase par une image concrète. Les mots chocs arrivent en gros titres.
-- Aucun plan de moins de 0,8 s (sauf dans l'accroche) : un visuel qui passe trop vite ne se lit pas. Un objet a toujours une couleur différente de son fond (jamais corail sur corail, jaune sur jaune…).
+- Aucun plan de moins de 1 s, et chaque titre ou objet reste au moins 1 s à l'écran avant le changement de plan (le moteur l'impose) : un visuel qui passe trop vite ne se lit pas. Un objet a toujours une couleur différente de son fond (jamais corail sur corail, jaune sur jaune…).
 - CHARTE GRAPHIQUE (fixe pour toute la série) :
   - Style : papier découpé 2D — aplats, ombres portées dures, léger grain.
   - Palette (le fond change de couleur à chaque plan) : vert billet `#0E3B2E`, bleu nuit `#14213D`, crème `#F4EBD9`, jaune or `#FFC83D`, corail `#FF5A4E`.
@@ -96,7 +96,7 @@ Le choix fait pour chaque vidéo est noté dans `sujets.md`.
 ## OBJECTIF À TERME ET PRIORITÉS DU PROPRIÉTAIRE
 - But final : proposer une offre payante à l'audience, **plus tard**, une fois la communauté installée. D'ici là : aucune vente, aucun lien commercial, aucun appel à acheter dans les vidéos ni les descriptions.
 - Le propriétaire a peu de temps : tout ce qui est livré doit être prêt à l'emploi (fichier, description, hashtags), et la même vidéo sert sur TikTok, Instagram et YouTube Shorts.
-- État au 23/11/2026 (décision du propriétaire) : les vidéos 001 et 003 à 015 utilisent le **fichier ElevenLabs brut, sans aucun réglage** (`"brut": true` dans `voix.json` : ni ralenti, ni filtre, ni découpage, ni remontage). Ne plus retoucher ni régénérer ces voix. Conséquence acceptée : certaines vidéos durent moins de 75 s (de 69 à 78 s) et le contrôle de structure ne s'applique pas à elles. Versions : 001 v7 ; 004 et 009 v5 ; 010 v4 ; 014 v2 ; les autres v3. Ne corriger que les vidéos que le propriétaire désigne, et lui envoyer le mp4 après chaque correction. La v3 de la 001 reste la référence validée tant qu'il n'a pas validé la v7.
+- État au 23/11/2026 (décision du propriétaire) : les vidéos 001 et 003 à 015 utilisent le **fichier ElevenLabs brut, sans aucun réglage** (`"brut": true` dans `voix.json` : ni ralenti, ni filtre, ni découpage, ni remontage). Ne plus retoucher ni régénérer ces voix. Conséquence acceptée : certaines vidéos durent moins de 75 s (de 69 à 78 s) et le contrôle de structure ne s'applique pas à elles. Versions : 001 v8 ; 004 et 009 v6 ; 010 v5 ; 014 v3 ; les autres v4. Ne corriger que les vidéos que le propriétaire désigne, et lui envoyer le mp4 après chaque correction. La v3 de la 001 reste la référence validée tant qu'il n'a pas validé la v8.
 - Documents de lancement : `guide-comptes.md`, `comptes/descriptions.md`, `comptes/banniere-youtube.png`, `comptes/photo-de-profil.png` (logo typographique choisi par le propriétaire : texte seul « PIÈGES DE L'ARGENT », bleu nuit sur fond crème, bandeau corail ; il trouve le noir trop sombre et le jaune trop agressif en fond ; il a refusé les logos à illustration : étiquette, hameçon, tapette à souris).
 
 ## CROISSANCE
