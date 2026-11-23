@@ -2,7 +2,7 @@
 
 Ordre de publication conseillé : de haut en bas. Même texte sur TikTok, Instagram et YouTube Shorts.
 Hashtags fixes : `#prix #consommation #psychologie #argent`, plus un ou deux selon le sujet.
-Versions à publier (corrigées le 23/11/2026) : 001 en v6 ; 004, 009 et 010 en v4 ; 014 en v2 ; toutes les autres en v3. Prends toujours la dernière version du dossier `livraison/`.
+Versions à publier : 001 en v6 ; 004 et 009 en v4 ; 010 en v3 ; 014 en v1 ; toutes les autres en v2. Prends toujours la dernière version du dossier `livraison/`.
 
 | Ordre | Vidéo | Description à coller |
 |---|---|---|

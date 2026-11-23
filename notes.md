@@ -106,7 +106,8 @@
 - Règles ajoutées au cahier des charges et aux agents. Nouvelles versions : 001 v5, 008 et 014 v2, les autres v3.
 
 ## Retour du propriétaire du 23/11/2026 (suite) — plans éclair et raccords de voix
-- Raccord de voix : l'ancienne coupe débordait sur le mot suivant (bout de phrase parasite avant « Ton cerveau lit » dans la 001). `studio/montage_voix.py` coupe maintenant dans le silence mesuré entre deux mots, sans jamais déborder. Les 14 voix ont été remontées.
-- Plans éclair : le moteur (`studio/engine.js`) refuse tout plan de moins de 0,8 s. Deux plans courts qui se suivent n'en font qu'un ; un plan court isolé est retiré et le plan précédent reste à l'écran. 106 plans éclair ont ainsi disparu des 14 vidéos.
+- Raccord de voix : l'ancienne coupe débordait sur le mot suivant (bout de phrase parasite avant « Ton cerveau lit » dans la 001). `studio/montage_voix.py` coupe maintenant dans le silence mesuré entre deux mots, sans jamais déborder. Appliqué seulement à la 001, la 004 et la 009.
+- Plans éclair : le moteur (`studio/engine.js`) refuse tout plan de moins de 0,8 s. Deux plans courts qui se suivent n'en font qu'un ; un plan court isolé est retiré et le plan précédent reste à l'écran. Appliqué seulement aux vidéos 001, 004 et 009.
 - Cohérence visuelle : quand une phrase tient sur deux plans, le même objet reste à l'écran et un seul élément change (004 : le pull reste, l'étiquette passe à « ? € » ; 009 : la carte reste pendant toute l'accroche). Pas de plan fait seulement de texte et de points d'interrogation.
-- Nouvelles versions : 001 v6 ; 004, 009, 010 v4 ; 008 v3 ; 014 v2 ; les autres v3.
+- Nouvelles versions : 001 v6 ; 004 et 009 v4 uniquement. Les 11 autres vidéos avaient été refaites sans que le propriétaire le demande : il a refusé, elles ont été remises dans leur état précédent (008 v2, 010 v3, 014 v1, les autres v2).
+- RÈGLE : ne corriger que les vidéos désignées par le propriétaire. Ne jamais étendre une correction aux autres vidéos sans son accord.
