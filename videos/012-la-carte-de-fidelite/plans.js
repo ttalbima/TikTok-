@@ -92,22 +92,22 @@
 
   /* ===== SCÈNE 1 — HOOK : la carte reste à l'écran pendant toute l'accroche ===== */
   S(0, 1, bg => [
-    E(540, 760, carte(bg, 10, 0, { w: 880 }), { a: 'pop', hw: 1, sfx: 'pop' }),
-    E(540, 760, carte(bg, 10, 1, { w: 880 }), { a: 'none', w: 1, hw: 2 }),
-    E(540, 760, carte(bg, 10, 2, { w: 880 }), { a: 'none', w: 2 }),
-    E(330, 380, tamp(bg), { a: 'down', dist: 300, m: [...frappe(1, -135), ...frappe(2, 15)] }),
-    E(540, 1190, Tx('2 TAMPONS OFFERTS', 115, 'var(--a1)'), { a: 'up', d: .1 }),
+    E(540, 800, carte(bg, 10, 0, { w: 880 }), { a: 'pop', hw: 1, sfx: 'pop' }),
+    E(540, 800, carte(bg, 10, 1, { w: 880 }), { a: 'none', w: 1, hw: 2 }),
+    E(540, 800, carte(bg, 10, 2, { w: 880 }), { a: 'none', w: 2 }),
+    E(330, 350, tamp(bg), { a: 'down', dist: 300, m: [...frappe(1, -135, 280), ...frappe(2, 15, 280)] }),
+    E(540, 1220, Tx('2 TAMPONS OFFERTS', 115, 'var(--a1)'), { a: 'up', d: .1 }),
   ]);
   S(3, 1, bg => [
-    E(540, 760, carte(bg, 10, 2, { w: 880 }), { a: 'none' }),
+    E(540, 800, carte(bg, 10, 2, { w: 880 }), { a: 'none' }),
     ...[0, 1, 2].map(i => E(300 + i * 240, 340, O.arrow({ w: 200 + i * 40, fill: i === 2 ? acc(bg) : qui(bg) }), { a: 'left', d: .1 + i * .12, sfx: i ? undefined : 'whoosh' })),
-    E(540, 1190, Tx('TU REVIENS + VITE', 115, 'var(--a1)'), { a: 'up', w: 4 }),
+    E(540, 1220, Tx('TU REVIENS + VITE', 115, 'var(--a1)'), { a: 'up', w: 4 }),
   ]);
 
   /* ===== SCÈNE 2 — RETAINER ===== */
   S(8, 2, bg => [
-    E(540, 760, carte(bg, 10, 2, { w: 880 }), { a: 'none', m: [{ w: 11, s: 1.05, dur: .2 }, { w: 11, d: .25, s: 1, dur: .2 }] }),
-    E(540, 1190, Tx('POURTANT…', 150), { a: 'up', d: .1 }),
+    E(540, 800, carte(bg, 10, 2, { w: 880 }), { a: 'none', m: [{ w: 11, s: 1.05, dur: .2 }, { w: 11, d: .25, s: 1, dur: .2 }] }),
+    E(540, 1220, Tx('POURTANT…', 150), { a: 'up', d: .1 }),
     E(540, 340, Tx('RIEN GAGNÉ', 170, 'var(--a1)'), { a: 'down', w: 10, sfx: 'stamp' }),
   ]);
   S(13, 2, bg => [
@@ -144,11 +144,11 @@
     E(540, 1110, Tx(`${cnt({ from: 0, to: 10, w: 43, dur: .5, sfx: 'tick' })} CASES`, 220, 'var(--a1)'), { a: 'up', w: 43 }),
   ]);
   S(45, 3, bg => [
-    E(540, 780, carte(bg, 10, 0, { w: 880, label: 'B' }), { a: 'none', hw: 46 }),
-    E(540, 780, carte(bg, 10, 1, { w: 880, label: 'B' }), { a: 'none', w: 46, hw: 48 }),
-    E(540, 780, carte(bg, 10, 2, { w: 880, label: 'B' }), { a: 'none', w: 48 }),
-    E(330, 400, tamp(bg), { a: 'down', dist: 300, m: [...frappe(46, -135), ...frappe(48, 15)] }),
-    E(540, 1210, Tx('DÉJÀ TAMPONNÉES', 130, 'var(--a1)'), { a: 'up', w: 48, dist: 200 }),
+    E(540, 810, carte(bg, 10, 0, { w: 880, label: 'B' }), { a: 'none', hw: 46 }),
+    E(540, 810, carte(bg, 10, 1, { w: 880, label: 'B' }), { a: 'none', w: 46, hw: 48 }),
+    E(540, 810, carte(bg, 10, 2, { w: 880, label: 'B' }), { a: 'none', w: 48 }),
+    E(330, 360, tamp(bg), { a: 'down', dist: 300, m: [...frappe(46, -135, 280), ...frappe(48, 15, 280)] }),
+    E(540, 1235, Tx('DÉJÀ TAMPONNÉES', 130, 'var(--a1)'), { a: 'up', w: 48, dist: 200 }),
   ]);
   S(50, 3, bg => [
     E(540, 440, carte(bg, 8, 0, { w: 560, label: 'A' }), { a: 'left' }),
@@ -161,7 +161,7 @@
     E(540, 340, Tx('CHOISIS', 260), { a: 'down', sfx: 'stamp' }),
     E(290, 760, carte(bg, 8, 0, { w: 460, label: 'A' }), { a: 'pop', d: .1, loop: 'pulse', amp: .05, per: .5 }),
     E(790, 760, carte(bg, 10, 2, { w: 460, label: 'B' }), { a: 'pop', d: .2, loop: 'pulse', amp: .05, per: .5 }),
-    E(540, 1170, Tx(`${cnt({ from: 2, to: 0, w: 59, dur: .9, sfx: 'tick' })} SECONDES`, 170, 'var(--a1)'), { a: 'up', w: 57 }),
+    E(540, 1170, Tx('2 SECONDES', 170, 'var(--a1)'), { a: 'up', w: 57, sfx: 'tick' }),
   ]);
 
   /* ===== SCÈNE 4 — ON COMPTE ===== */
@@ -227,10 +227,10 @@
   ]);
   // « Résultat : la carte déjà tamponnée » : un seul plan
   S(109, 5, bg => [
-    E(540, 330, Tx('RÉSULTAT', 230, 'var(--a1)'), { a: 'down', sfx: 'stamp' }),
-    E(540, 780, O.burst({ w: 1050, n: 16, col: acc(bg) }), { a: 'pop', w: 110, d: .1, loop: 'spin', per: 7, cut: false }),
-    E(540, 780, carte(bg, 10, 2, { w: 760, label: 'B' }), { a: 'spin', w: 110, sfx: 'pop', m: [{ w: 113, s: 1.07, dur: .2 }, { w: 113, d: .25, s: 1, dur: .2 }] }),
-    E(540, 1220, Tx('DÉJÀ TAMPONNÉE', 130), { a: 'up', w: 111, dist: 200 }),
+    E(540, 290, Tx('RÉSULTAT', 200, 'var(--a1)'), { a: 'down', sfx: 'stamp' }),
+    E(540, 770, O.burst({ w: 740, n: 16, col: acc(bg) }), { a: 'pop', w: 110, d: .1, loop: 'spin', per: 7, cut: false }),
+    E(540, 770, carte(bg, 10, 2, { w: 760, label: 'B' }), { a: 'spin', w: 110, sfx: 'pop', m: [{ w: 113, s: 1.07, dur: .2 }, { w: 113, d: .25, s: 1, dur: .2 }] }),
+    E(540, 1235, Tx('DÉJÀ TAMPONNÉE', 130), { a: 'up', w: 111, dist: 200 }),
   ]);
   S(114, 5, bg => [
     E(300, 1010 - 130, O.bar(260, { w: 240, fill: qui(bg), grow: { dur: .4 } }), { a: 'none' }),
@@ -313,15 +313,15 @@
   S(185, 7, bg => [
     E(880, 660, O.drapeau({ w: 260, pole: qui(bg), a: P.cream, b: bg === 'navy' ? P.coral : P.navy }), { a: 'down', d: .1 }),
     ...[0, 1, 2].map(i => E(170, 520 + i * 130, O.rect(220 - i * 40, 26, qui(bg), 13), { a: 'left', w: 189, d: i * .06, cut: false, m: [{ w: 189, d: .4, o: 0, dur: .3, e: 'outCubic' }] })),
-    E(230, 700, O.person({ w: 320, fill: qui(bg) }), { a: 'left', rot: 16, sfx: 'pop', m: [{ w: 189, dx: 420, dur: .55, e: 'inOut', sfx: 'whoosh' }] }),
+    E(230, 700, O.person({ w: 320, fill: qui(bg) }), { a: 'left', rot: 16, sfx: 'pop', m: [{ w: 189, dx: 330, dur: .55, e: 'inOut', sfx: 'whoosh' }] }),
     E(540, 1170, Tx('IL ACCÉLÈRE', 190, 'var(--a1)'), { a: 'up', w: 188 }),
   ]);
   // phrase ajoutée : « Plus c'est proche, plus tu veux finir. »
   S(194, 7, bg => [
-    E(540, 660, carte(bg, 10, 9, { w: 800 }), { a: 'pop', sfx: 'pop', hw: 197 }),
-    E(540, 660, carte(bg, 10, 10, { w: 800 }), { a: 'none', w: 197 }),
-    E(850, 444, tamp(bg), { a: 'down', dist: 300, m: frappe(197, 0) }),
-    E(540, 1170, Tx('TU VEUX FINIR', 160, 'var(--a1)'), { a: 'up', d: .2 }),
+    E(540, 760, carte(bg, 10, 9, { w: 800 }), { a: 'pop', sfx: 'pop', hw: 197 }),
+    E(540, 760, carte(bg, 10, 10, { w: 800 }), { a: 'none', w: 197 }),
+    E(850, 336, tamp(bg), { a: 'down', dist: 300, m: frappe(197, 0, 400) }),
+    E(540, 1200, Tx('TU VEUX FINIR', 160, 'var(--a1)'), { a: 'up', d: .2 }),
   ]);
 
   /* ===== SCÈNE 8 — CONCLUSION ===== */
@@ -359,8 +359,8 @@
     E(540, 1170, Tx('LA PROCHAINE FOIS', 115, 'var(--a1)'), { a: 'up', d: .15 }),
   ]);
   shot({ w: 233, bg: 'navy', scene: 9, html: [
-    E(540, 760, carte('navy', 10, 2, { w: 880 }), { a: 'none' }),
-    E(330, 380, tamp('navy'), { a: 'down', dist: 300 }),
-    E(540, 1190, Tx('DÉJÀ ENTAMÉE…', 150, 'var(--a1)'), { a: 'up', w: 236 }),
+    E(540, 800, carte('navy', 10, 2, { w: 880 }), { a: 'none' }),
+    E(330, 350, tamp('navy'), { a: 'down', dist: 300 }),
+    E(540, 1220, Tx('DÉJÀ ENTAMÉE…', 150, 'var(--a1)'), { a: 'up', w: 236 }),
   ] });
 })();
