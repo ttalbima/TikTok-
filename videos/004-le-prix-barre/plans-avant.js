@@ -105,18 +105,16 @@
     E(540, 1080, Tx('UNE AFFAIRE', 190, 'var(--a1)'), { a: 'stamp', w: 27, sfx: 'stamp' }),
   ]);
   S(28, 2, bg => [
-    E(540, 600, Tx('POURTANT…', 205), { a: 'stamp', sfx: 'stamp' }),
-    E(330, 1010, Tx('?', 340, 'var(--a1)'), { w: 31, rot: -10, sfx: 'pop' }),
-    E(740, 1010, Tx('?', 340, 'var(--a1)'), { w: 32, rot: 10, sfx: 'pop' }),
+    E(540, 600, O.pull({ w: 640, fill: pullFill(bg) }), { a: 'pop', sfx: 'pop' }),
+    E(540, 1130, Tx('POURTANT…', 205), { a: 'stamp', d: .15, sfx: 'stamp' }),
   ]);
+  // le pull reste à l'écran, seule l'étiquette change
   S(34, 2, bg => [
-    E(540, 640, O.tag('? €', { w: 760, fill: tagFill(bg) }), { a: 'pop', sfx: 'pop', loop: 'swing', amp: 4, per: 1 }),
-    E(540, 1090, Tx('ÇA VAUT QUOI', 190, 'var(--a1)'), { a: 'up', w: 36 }),
+    E(540, 560, O.pull({ w: 640, fill: pullFill(bg) }), { a: 'none' }),
+    E(700, 800, O.tag('? €', { w: 480, fill: tagFill(bg) }), { a: 'pop', rot: -8, sfx: 'pop', loop: 'swing', amp: 4, per: 1 }),
+    E(540, 1150, Tx('IL VAUT QUOI ?', 180, 'var(--a1)'), { a: 'up', w: 36 }),
   ]);
-  S(37, 2, bg => [
-    E(540, 640, O.pull({ w: 700, fill: pullFill(bg) }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1150, Tx('CE PULL', 260, 'var(--a1)'), { a: 'stamp', w: 38, sfx: 'stamp' }),
-  ]);
+  k++;                                               // plan « CE PULL » retiré : les fonds suivants ne bougent pas
   S(39, 2, bg => [
     E(540, 560, O.magnifier({ w: 520, ring: fg(bg) }), { a: 'left', sfx: 'whoosh' }),
     E(540, 1080, Tx('LA PREUVE', 260, 'var(--a1)'), { a: 'stamp', w: 41, sfx: 'stamp' }),
@@ -214,7 +212,7 @@
     E(540, 700, O.rect(860, 44, fg(bg), 22), { a: 'none' }),
     E(250, 520, Tx('25 %', 170), { a: 'pop' }),
     E(830, 520, Tx('45 %', 170, 'var(--a1)'), { a: 'pop', w: 110, d: .3 }),
-    E(250, 700, O.disc({ w: 150, fill: P.coral }), { a: 'pop', m: [{ w: 110, dx: 580, dur: .5, e: 'inOut', sfx: 'whoosh' }] }),
+    E(250, 700, O.disc({ w: 150, fill: bg === 'coral' ? P.navy : P.coral }), { a: 'pop', m: [{ w: 110, dx: 580, dur: .5, e: 'inOut', sfx: 'whoosh' }] }),
     E(540, 1090, Tx('DÉPLACÉ', 260, 'var(--a1)'), { a: 'stamp', w: 110, d: .2, sfx: 'stamp' }),
   ]);
 
@@ -260,12 +258,12 @@
     E(540, 1150, Tx('TOUT SEUL ? NON.', 128, 'var(--a1)'), { a: 'up', w: 144 }),
   ]);
   S(146, 5, bg => [
-    E(320, 1100 - 150, O.bar(300, { w: 260, fill: P.coral, grow: { w: 148, sfx: 'rise' } }), { a: 'none' }),
+    E(320, 1100 - 150, O.bar(300, { w: 260, fill: bg === 'coral' ? P.navy : P.coral, grow: { w: 148, sfx: 'rise' } }), { a: 'none' }),
     E(320, 1180, Tx('60', 150), { a: 'pop', w: 148 }),
     E(540, 330, Tx('TU JUGES', 220), { a: 'down' }),
   ]);
   S(149, 5, bg => [
-    E(320, 1100 - 150, O.bar(300, { w: 260, fill: P.coral, grow: { dur: .01 } }), { a: 'none' }),
+    E(320, 1100 - 150, O.bar(300, { w: 260, fill: bg === 'coral' ? P.navy : P.coral, grow: { dur: .01 } }), { a: 'none' }),
     E(320, 1180, Tx('60', 150), { a: 'none' }),
     E(760, 1100 - 300, O.bar(600, { w: 260, fill: fg(bg), grow: { w: 152, dur: .5, sfx: 'rise' } }), { a: 'none' }),
     E(760, 1180, Tx('120', 150), { a: 'pop', w: 152 }),
@@ -286,7 +284,7 @@
   ]);
   S(169, 5, bg => [
     E(540, 860, O.tag('RÉFÉRENCE', { w: 760, fs: 100, fill: tagFill(bg) }), { a: 'none', m: [{ d: 0, dy: -300, s: 1.1, dur: .7, e: 'outCubic' }] }),
-    E(540, 1010, O.arrow({ w: 360, fill: P.coral }), { a: 'up', rot: -90, sfx: 'rise', loop: 'float', amp: 16, per: .7 }),
+    E(540, 1010, O.arrow({ w: 360, fill: bg === 'coral' ? P.navy : P.coral }), { a: 'up', rot: -90, sfx: 'rise', loop: 'float', amp: 16, per: .7 }),
     E(540, 1210, Tx('EST HAUT', 190, 'var(--a1)'), { a: 'stamp', w: 171, sfx: 'stamp' }),
   ]);
   S(172, 5, bg => [
@@ -323,8 +321,8 @@
   S(193, 6, bg => [
     E(250, 1040 - 260, O.bar(520, { w: 220, fill: fg(bg), grow: { dur: .3 } }), { a: 'none' }),
     E(540, 1040 - 190, O.bar(380, { w: 220, fill: fg(bg), grow: { d: .08, dur: .3 } }), { a: 'none' }),
-    E(830, 1040 - 110, O.bar(220, { w: 220, fill: P.coral, grow: { d: .16, dur: .3 } }), { a: 'none', loop: 'pulse', amp: .05, per: .6, lw: 195 }),
-    E(830, 700, O.arrow({ w: 200, fill: P.coral }), { a: 'down', w: 195, rot: 90, sfx: 'fall' }),
+    E(830, 1040 - 110, O.bar(220, { w: 220, fill: bg === 'coral' ? P.navy : P.coral, grow: { d: .16, dur: .3 } }), { a: 'none', loop: 'pulse', amp: .05, per: .6, lw: 195 }),
+    E(830, 700, O.arrow({ w: 200, fill: bg === 'coral' ? P.navy : P.coral }), { a: 'down', w: 195, rot: 90, sfx: 'fall' }),
     E(540, 1210, Tx('LE PLUS BAS', 220, 'var(--a1)'), { a: 'stamp', w: 195, sfx: 'stamp' }),
   ]);
   S(196, 6, bg => [

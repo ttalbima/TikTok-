@@ -72,6 +72,7 @@
   };
 
   /* ----- aides ----- */
+  V.style = 2;        // charte validée le 26/11/2026
   const CYCLE = ['navy', 'yellow', 'coral', 'green', 'cream'];
   let k = 0;
   const S = (w, scene, f) => { const bg = CYCLE[k++ % 5]; shot({ w, bg, scene, html: f(bg) }); };
@@ -82,132 +83,103 @@
   const inCart = (cx, cy, w, fx, h) => [cx + (fx - 300) * w / 600, cy + 70 * w / 600 - h / 2 - 6];
   const under = (y, col, an) => E(540, y, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col, sw: 28, draw: an }), { a: 'none', cut: false });
 
-  V.keywords = [4, 10, 16, 20, 24, 30, 35, 50, 63, 77, 79, 91, 97, 101, 108, 112, 116, 127, 136, 141, 147, 149, 153, 158, 167, 173, 177, 183, 195, 198, 204, 213, 221];
+  V.keywords = [6, 6, 12, 14, 15, 21, 26, 41, 54, 68, 70, 91, 97, 101, 108, 112, 116, 127, 136, 141, 147, 149, 153, 158, 167, 173, 177, 183, 195, 196, 201, 224, 230];
 
-  /* ===== SCÈNE 1 — HOOK ===== */
+  /* ===== SCÈNE 1 — HOOK : « Avec un grand chariot, tu achètes plus. » ===== */
   S(0, 1, bg => [
-    E(540, 660, cart(bg, { w: 620 }), { a: 'left', dist: 1300, dur: .55, sfx: 'whoosh', m: [{ d: .55, r: -4, dur: .12 }, { d: .7, r: 0, dur: .2 }] }),
-    E(540, 1160, Tx('UN CHARIOT', 180, 'var(--a1)'), { a: 'up', w: 2 }),
-  ]);
-  S(3, 1, bg => [
-    E(540, 640, cart(bg, { w: 420 }), { a: 'none', m: [{ d: .04, s: 1.75, dur: .3, sfx: 'rise' }] }),
-    E(540, 1190, Tx('+ GRAND', 250), { a: 'stamp', d: .2, sfx: 'stamp' }),
-  ]);
-  S(5, 1, bg => [
-    E(240, 720, O.person({ w: 260, fill: P.cream }), { a: 'pop', sfx: 'pop' }),
-    E(540, 680, O.person({ w: 300, fill: P.navy }), { a: 'pop', d: .12 }),
-    E(840, 720, O.person({ w: 260, fill: P.cream }), { a: 'pop', d: .24 }),
-    E(540, 1150, Tx('DES CLIENTS', 170, 'var(--a1)'), { a: 'up', w: 7 }),
-  ]);
-  S(8, 1, bg => [
-    E(540, 520, Tx('ILS ACHÈTENT', 160), { a: 'down' }),
-    E(540, 900, Tx('PLUS', 460, 'var(--a1)'), { a: 'stamp', w: 10, sfx: 'stamp', loop: 'pulse', amp: .03, per: .6 }),
+    E(540, 600, cart(bg, { w: 660 }), { a: 'left', dist: 1300, dur: .55, sfx: 'whoosh', m: [{ w: 2, s: 1.18, dur: .3, sfx: 'rise' }] }),
+    E(540, 1030, Tx('GRAND CHARIOT', 160), { a: 'up', w: 2 }),
+    E(540, 1195, Tx('TU ACHÈTES PLUS', 140, 'var(--a1)'), { a: 'up', w: 4, sfx: 'stamp' }),
   ]);
 
   /* ===== SCÈNE 2 — RETAINER ===== */
-  S(11, 2, bg => [
-    E(540, 640, O.store({ w: 700, fill: P.navy, ink: P.yellow }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1150, Tx('MÊME MAGASIN', 150, 'var(--a1)'), { a: 'up', w: 12 }),
+  S(7, 2, bg => [
+    E(540, 560, O.store({ w: 640, fill: P.navy, ink: P.yellow }), { a: 'pop', sfx: 'pop' }),
+    E(540, 1030, Tx('MÊME MAGASIN', 150, 'var(--a1)'), { a: 'up', w: 7 }),
+    E(540, 1180, Tx('MÊMES PRIX, MÊMES ENVIES', 88), { a: 'up', w: 9 }),
   ]);
   S(13, 2, bg => [
-    E(540, 440, O.tag('2,50 €', { w: 560 }), { a: 'left', sfx: 'pop' }),
-    E(540, 690, Tx('=', 220, 'var(--a1)'), { a: 'pop', d: .15 }),
-    E(540, 940, O.tag('2,50 €', { w: 560 }), { a: 'right', d: .08 }),
-    E(540, 1210, Tx('MÊMES PRIX', 150, 'var(--a1)'), { a: 'up', w: 14 }),
+    E(260, 640, O.plate({ w: 400, fill: P.navy, rim: T.navy2 }), { a: 'left', sfx: 'swish' }),
+    E(820, 650, cart(bg, { w: 400 }), { a: 'right', w: 16 }),
+    E(540, 640, Tx('=', 240, 'var(--a1)'), { a: 'pop', w: 18, sfx: 'pop' }),
+    E(540, 1130, Tx('LE MÊME COUP', 160, 'var(--a1)'), { a: 'up', w: 19, sfx: 'stamp' }),
   ]);
-  S(15, 2, bg => [
-    E(540, 600, Tx('MÊMES', 280), { a: 'pop', sfx: 'pop' }),
-    E(540, 910, Tx('ENVIES', 320, 'var(--a1)'), { a: 'stamp', w: 16, sfx: 'stamp' }),
-  ]);
-  S(17, 2, bg => [
-    E(540, 560, Tx('LE PLUS', 250), { a: 'down', w: 18 }),
-    E(540, 860, Tx('ÉTRANGE', 280, 'var(--a1)'), { a: 'stamp', w: 20, sfx: 'stamp', loop: 'swing', amp: 2.5, per: .5 }),
-  ]);
-  S(21, 2, bg => [
-    E(540, 660, O.plate({ w: 700 }), { a: 'spin', w: 23, sfx: 'swish' }),
-    E(540, 1170, Tx('TON ASSIETTE', 155, 'var(--a1)'), { a: 'up', w: 24 }),
-  ]);
-  S(25, 2, bg => [
-    E(260, 640, O.plate({ w: 400, fill: P.navy, rim: T.navy2 }), { a: 'left' }),
-    E(820, 650, cart(bg, { w: 400 }), { a: 'right' }),
-    E(540, 640, Tx('=', 240, 'var(--a1)'), { a: 'pop', w: 27, sfx: 'pop' }),
-    E(540, 1130, Tx('LE MÊME COUP', 160, 'var(--a1)'), { a: 'stamp', w: 29, sfx: 'stamp' }),
-  ]);
+  k += 7;                                            // garde les fonds d'origine pour la suite
 
   /* ===== SCÈNE 3 — L'ENTRÉE ===== */
-  S(31, 3, bg => [
+  S(22, 3, bg => [
     E(540, 600, Tx('SUIS-MOI', 250), { a: 'stamp', sfx: 'stamp' }),
     E(540, 960, O.arrow({ w: 520 }), { a: 'left', d: .15, sfx: 'whoosh', loop: 'float', amp: 10, per: .6 }),
   ]);
-  S(32, 3, bg => [
-    E(540, 300, Tx('3 COURSES', 200), { a: 'stamp', w: 35, sfx: 'stamp' }),
+  S(23, 3, bg => [
+    E(540, 300, Tx('3 COURSES', 200), { a: 'stamp', w: 26, sfx: 'stamp' }),
     E(560, 740, O.store({ w: 600, fill: P.navy, ink: P.cream }), { a: 'pop' }),
-    E(170, 1090, O.person({ w: 210, fill: P.coral }), { a: 'left', m: [{ w: 33, dx: 330, dur: .7, e: 'inOut' }] }),
+    E(170, 1090, O.person({ w: 210, fill: P.coral }), { a: 'left', m: [{ w: 24, dx: 330, dur: .7, e: 'inOut' }] }),
   ]);
-  S(37, 3, bg => [
+  S(28, 3, bg => [
     E(540, 640, O.bread({ w: 640 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1130, Tx('PAIN', 280, 'var(--a1)'), { a: 'stamp', w: 38 }),
+    E(540, 1130, Tx('PAIN', 280, 'var(--a1)'), { a: 'stamp', w: 29 }),
   ]);
-  S(39, 3, bg => [
+  S(30, 3, bg => [
     E(540, 600, O.milk({ w: 330 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1160, Tx('LAIT', 280, 'var(--a1)'), { a: 'stamp', w: 40 }),
+    E(540, 1160, Tx('LAIT', 280, 'var(--a1)'), { a: 'stamp', w: 31 }),
   ]);
-  S(41, 3, bg => [
+  S(32, 3, bg => [
     E(540, 600, O.pasta({ w: 400 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1160, Tx('PÂTES', 280, 'var(--a1)'), { a: 'stamp', w: 42 }),
+    E(540, 1160, Tx('PÂTES', 280, 'var(--a1)'), { a: 'stamp', w: 33 }),
   ]);
-  S(43, 3, bg => [
+  S(34, 3, bg => [
     E(540, 600, O.store({ w: 620 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1140, Tx("À L'ENTRÉE", 200, 'var(--a1)'), { a: 'stamp', w: 44, sfx: 'stamp' }),
+    E(540, 1140, Tx("À L'ENTRÉE", 200, 'var(--a1)'), { a: 'stamp', w: 35, sfx: 'stamp' }),
   ]);
-  S(45, 3, bg => [
+  S(36, 3, bg => [
     E(420, 640, cart(bg, { w: 460 }), { a: 'none' }),
     E(500, 640, cart(bg, { w: 460 }), { a: 'none' }),
-    E(580, 640, cart(bg, { w: 460 }), { a: 'none', m: [{ w: 46, dx: 190, dur: .3, sfx: 'click' }, { w: 47, dx: 230, r: -5, dur: .2 }, { w: 47, d: .22, dx: 230, r: 0, dur: .2 }] }),
-    E(540, 1170, Tx('UN CHARIOT', 180), { a: 'up', w: 48 }),
+    E(580, 640, cart(bg, { w: 460 }), { a: 'none', m: [{ w: 37, dx: 190, dur: .3, sfx: 'click' }, { w: 38, dx: 230, r: -5, dur: .2 }, { w: 38, d: .22, dx: 230, r: 0, dur: .2 }] }),
+    E(540, 1170, Tx('UN CHARIOT', 180), { a: 'up', w: 39 }),
   ]);
-  S(49, 3, bg => [
+  S(40, 3, bg => [
     E(540, 600, cart(bg, { w: 800 }), { a: 'pop', sfx: 'thud', dur: .4 }),
-    E(540, 1150, Tx('GRAND', 280, 'var(--a1)'), { a: 'stamp', w: 50, sfx: 'stamp' }),
+    E(540, 1150, Tx('GRAND', 280, 'var(--a1)'), { a: 'stamp', w: 41, sfx: 'stamp' }),
   ]);
-  S(51, 3, bg => [
+  S(42, 3, bg => [
     E(540, 820, O.person({ w: 420, fill: P.cream }), { a: 'up' }),
-    E(540, 340, Tx('?', 360, 'var(--a1)'), { a: 'pop', w: 54, rot: 8, sfx: 'pop', loop: 'swing', amp: 6, per: .8 }),
-    E(540, 1210, Tx('PAS ENCORE…', 150), { a: 'up', w: 55 }),
+    E(540, 340, Tx('?', 360, 'var(--a1)'), { a: 'pop', w: 45, rot: 8, sfx: 'pop', loop: 'swing', amp: 6, per: .8 }),
+    E(540, 1210, Tx('PAS ENCORE…', 150), { a: 'up', w: 46 }),
   ]);
-  S(57, 3, bg => [
-    E(540, 360, Tx("C'EST LÀ", 260, 'var(--a1)'), { a: 'stamp', w: 59, sfx: 'stamp' }),
-    E(540, 620, O.arrow({ w: 220, fill: P.coral }), { a: 'down', w: 59, d: .12, rot: 90, loop: 'float', amp: 14, per: .6 }),
+  S(48, 3, bg => [
+    E(540, 360, Tx("C'EST LÀ", 260, 'var(--a1)'), { a: 'stamp', w: 50, sfx: 'stamp' }),
+    E(540, 620, O.arrow({ w: 220, fill: P.coral }), { a: 'down', w: 50, d: .12, rot: 90, loop: 'float', amp: 14, per: .6 }),
     E(540, 930, cart(bg, { w: 440 }), { a: 'pop' }),
-    E(540, 1250, Tx('TOUT SE JOUE', 140), { a: 'up', w: 61, dist: 220 }),
+    E(540, 1250, Tx('TOUT SE JOUE', 140), { a: 'up', w: 52, dist: 220 }),
   ]);
 
   /* ===== SCÈNE 4 — LE CHARIOT VIDE ===== */
-  S(64, 4, bg => {
+  S(55, 4, bg => {
     const [cx, cy, w] = [540, 660, 860];
     const it = (fx, h, html, an) => { const [x, y] = inCart(cx, cy, w, fx, h); return E(x, y, html, an); };
     return [
       E(cx, cy, cart(bg, { w }), { a: 'pop' }),
-      it(240, 130, O.bread({ w: 200 }), { a: 'drop', w: 65, dur: .5, sfx: 'thud' }),
-      it(340, 186, O.milk({ w: 110, fill: P.navy, ink: P.yellow }), { a: 'drop', w: 67, dur: .5, sfx: 'thud' }),
-      it(430, 190, O.pasta({ w: 140 }), { a: 'drop', w: 68, dur: .5, sfx: 'thud' }),
-      E(540, 1200, Tx('AU FOND', 260, 'var(--a1)'), { a: 'stamp', w: 69, d: .1, sfx: 'stamp' }),
+      it(240, 130, O.bread({ w: 200 }), { a: 'drop', w: 56, dur: .5, sfx: 'thud' }),
+      it(340, 186, O.milk({ w: 110, fill: P.navy, ink: P.yellow }), { a: 'drop', w: 58, dur: .5, sfx: 'thud' }),
+      it(430, 190, O.pasta({ w: 140 }), { a: 'drop', w: 59, dur: .5, sfx: 'thud' }),
+      E(540, 1200, Tx('AU FOND', 260, 'var(--a1)'), { a: 'stamp', w: 60, d: .1, sfx: 'stamp' }),
     ];
   });
-  S(71, 4, bg => {
+  S(62, 4, bg => {
     const [cx, cy, w] = [540, 680, 720];
     const it = (fx, h, html) => { const [x, y] = inCart(cx, cy, w, fx, h); return E(x, y, html, { a: 'none' }); };
     return [
       E(cx, cy, cart(bg, { w }), { a: 'none' }),
       it(230, 100, O.bread({ w: 150 })), it(310, 135, O.milk({ w: 80 })), it(380, 136, O.pasta({ w: 100 })),
-      E(540, 270, Tx('TON CHARIOT', 140), { a: 'down', w: 73 }),
-      E(540, 1170, Tx('VIDE', 300, 'var(--a1)'), { a: 'stamp', w: 77, sfx: 'stamp' }),
+      E(540, 270, Tx('TON CHARIOT', 140), { a: 'down', w: 64 }),
+      E(540, 1170, Tx('VIDE', 300, 'var(--a1)'), { a: 'stamp', w: 68, sfx: 'stamp' }),
     ];
   });
-  S(78, 4, bg => [
-    E(540, 440, cart(bg, { w: 420 }), { a: 'pop', m: [{ w: 79, r: -14, dy: 20, dur: .4, e: 'outBounce', sfx: 'fall' }] }),
+  S(69, 4, bg => [
+    E(540, 440, cart(bg, { w: 420 }), { a: 'pop', m: [{ w: 70, r: -14, dy: 20, dur: .4, e: 'outBounce', sfx: 'fall' }] }),
     E(540, 820, Tx('PRESQUE', 210), { a: 'down' }),
-    E(540, 1110, Tx('TRISTE', 330, 'var(--a1)'), { a: 'stamp', w: 79, sfx: 'stamp' }),
+    E(540, 1110, Tx('TRISTE', 330, 'var(--a1)'), { a: 'stamp', w: 70, sfx: 'stamp' }),
   ]);
   S(80, 4, bg => [
     E(540, 620, O.disc({ w: 680, fill: P.navy }), { a: 'pop' }),
@@ -379,32 +351,30 @@
     E(540, 880, Tx('PLUS', 480, 'var(--a1)'), { a: 'stamp', w: 195, sfx: 'stamp', loop: 'pulse', amp: .03, per: .6 }),
   ]);
   S(196, 7, bg => [
-    E(540, 540, Tx('À CHAQUE', 250), { a: 'pop', sfx: 'pop' }),
-    E(540, 900, Tx('FOIS', 420, 'var(--a1)'), { a: 'stamp', w: 198, sfx: 'stamp' }),
+    E(540, 620, cart(bg, { w: 640 }), { a: 'pop', sfx: 'pop' }),
+    E(540, 1060, Tx('UNE ASSIETTE GÉANTE', 112, 'var(--a1)'), { a: 'up', w: 199 }),
+    E(540, 1200, Tx('SUR ROULETTES', 120), { a: 'up', w: 202 }),
   ]);
-  S(199, 7, bg => [
-    E(540, 700, cart(bg, { w: 760 }), { a: 'left', dist: 1300, dur: .5, sfx: 'whoosh', m: [{ d: .5, r: -4, dur: .12 }, { d: .64, r: 0, dur: .2 }] }),
+  S(204, 7, bg => [
+    E(540, 620, cart(bg, { w: 420 }), { a: 'none', m: [{ d: .05, s: 1.6, dur: .5, sfx: 'rise' }] }),
+    E(540, 1060, Tx('PLUS IL EST GRAND', 124), { a: 'up' }),
+    E(540, 1200, Tx('PLUS IL PARAÎT VIDE', 112, 'var(--a1)'), { a: 'up', w: 208 }),
   ]);
-  S(201, 7, bg => [
-    E(380, 990, O.disc({ w: 130, fill: P.navy }), { a: 'pop', w: 205, sfx: 'pop' }),
-    E(700, 990, O.disc({ w: 130, fill: P.navy }), { a: 'pop', w: 205, d: .1 }),
-    E(540, 620, O.plate({ w: 520 }), { a: 'pop', sfx: 'pop', m: [{ w: 204, s: 1.35, dur: .35, sfx: 'rise' }] }),
-    E(540, 1230, Tx('SUR ROULETTES', 150, 'var(--a1)'), { a: 'up', w: 206, dist: 220 }),
+  S(213, 7, bg => [
+    E(540, 660, cart(bg, { w: 660 }), { a: 'none' }),
+    E(420, 300, O.box('', { w: 170 }), { a: 'drop', dur: .4, sfx: 'thud' }),
+    E(600, 280, O.box('', { w: 150, fill: P.coral }), { a: 'drop', d: .22, dur: .4, sfx: 'thud' }),
+    E(540, 1200, Tx('ET PLUS TU LE REMPLIS', 108, 'var(--a1)'), { a: 'up', w: 214 }),
   ]);
 
-  /* ===== SCÈNE 8 — BOUCLE ===== */
-  S(207, 8, bg => [
-    E(540, 300, O.eye({ w: 300 }), { a: 'pop', w: 211, sfx: 'pop' }),
-    E(540, 720, cart(bg, { w: 660 }), { a: 'pop' }),
-    E(540, 1030, O.line('M20,40 H780 M20,10 V70 M780,10 V70', { w: 700, vw: 800, vh: 80, col: P.navy, sw: 22, draw: { w: 213, dur: .4, sfx: 'swish' } }), { a: 'none', cut: false }),
-    E(540, 1210, Tx('REGARDE SA TAILLE', 110, 'var(--a1)'), { a: 'stamp', w: 213, sfx: 'stamp' }),
+  /* ===== SCÈNE 8 — BOUCLE : on revient sur le chariot qui entre, comme au premier plan ===== */
+  S(218, 8, bg => [
+    E(540, 560, O.store({ w: 640, fill: P.navy, ink: P.yellow }), { a: 'pop', sfx: 'pop' }),
+    E(540, 1020, Tx("À L'ENTRÉE", 190), { a: 'up', w: 219 }),
+    E(540, 1195, Tx('REGARDE SA TAILLE', 118, 'var(--a1)'), { a: 'up', w: 221 }),
   ]);
-  S(214, 8, bg => [
-    E(540, 600, O.store({ w: 660, fill: P.navy, ink: P.yellow }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1140, Tx("AVANT D'ENTRER", 140, 'var(--a1)'), { a: 'up', w: 215 }),
-  ]);
-  S(216, 8, bg => [
-    E(540, 560, Tx('TU CONNAIS', 200), { a: 'down' }),
-    E(540, 860, Tx('LA RÈGLE…', 220, 'var(--a1)'), { a: 'stamp', w: 220, sfx: 'stamp', loop: 'pulse', amp: .04, per: .6 }),
+  S(225, 8, bg => [
+    E(540, 600, cart(bg, { w: 660 }), { a: 'left', dist: 1300, dur: .55, sfx: 'whoosh' }),
+    E(540, 1150, Tx('TU CONNAIS LA SUITE…', 108, 'var(--a1)'), { a: 'up', w: 227 }),
   ]);
 })();
