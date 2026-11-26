@@ -1,29 +1,30 @@
-# 006 — Pourquoi tu oublies toujours de résilier après l'essai gratuit
+# 006 — L'essai gratuit (script validé par le propriétaire, proposé le 26/11/2026)
 
-Univers : abonnements et applis · Hook : A (« Pourquoi tu… ») · Structure : 5 (côté vendeur) · Fin : question
+Famille d'accroche A · structure « côté vendeur » · univers abonnements et applis · fin : boucle.
+Les mots entre crochets sont des indications d'émotion pour la voix : ils ne sont pas prononcés.
 
-## HOOK (0-4 s)
-Pourquoi tu oublies toujours de résilier après l'essai gratuit ?
+## HOOK (0-3 s)
+[curious] Pourquoi tu oublies toujours de résilier l'essai gratuit ?
 
-## RETAINER (4-12 s)
-Ce n'est pas ta mémoire. C'est un réglage. Et pour le comprendre, mets-toi une minute à la place de celui qui a créé l'appli.
+## RETAINER (3-8 s)
+[dramatically] Ce n'est pas ta mémoire. C'est un réglage. [curious] Mets-toi à la place du patron.
 
-## BODY (12-74 s)
-Tu es le patron. Tu veux des abonnés. Tu as deux boutons.
+## BODY
+[warmly] Tu diriges une appli. Tu veux des abonnés. Tu as deux boutons.
 
-Bouton un : à la fin de l'essai, tout s'arrête. Le client doit dire oui pour continuer.
+[curious] Bouton un : à la fin de l'essai, tout s'arrête. Le client doit dire oui pour continuer.
 
-Bouton deux : à la fin de l'essai, tout continue. Le client doit dire non pour arrêter.
+[mischievously] Bouton deux : à la fin de l'essai, tout continue. Le client doit dire non pour arrêter.
 
-Même prix. Même service. La seule différence : qui doit faire l'effort.
+[softly] Même prix. Même service. La seule différence : qui doit faire l'effort. Et l'effort, personne n'aime ça.
 
-Un journal européen a testé les deux, sur environ deux millions de lecteurs. Quand tout s'arrêtait tout seul, presque personne ne se réabonnait. Quand tout continuait tout seul, à peu près la moitié passait au plein tarif. Et le plus étrange : ces abonnés en plus ne lisaient même pas le journal.
+[curious] Un journal européen a testé les deux, sur environ deux millions de lecteurs. Quand tout s'arrêtait tout seul, presque personne ne se réabonnait. [surprised] Quand tout continuait tout seul, à peu près la moitié passait au plein tarif. [dramatically] Et le plus étrange : ces abonnés en plus ne lisaient même pas le journal.
 
-Ça s'appelle l'inertie. Ne rien faire, c'est toujours le choix le plus facile. Alors celui qui décide ce qui se passe quand tu ne fais rien décide à ta place.
+[warmly] Ça s'appelle l'inertie. Ne rien faire, c'est toujours le choix le plus facile. Alors celui qui décide ce qui se passe quand tu ne fais rien décide à ta place.
 
-Une autre étude a regardé ce qui arrive quand ta carte bancaire est remplacée. Là, tu dois ressaisir ton numéro. Donc choisir. Résultat : les résiliations bondissent. D'après ses auteurs, notre inattention double à peu près les revenus des vendeurs d'abonnements.
+[softly] Toi, tu avais prévu d'annuler. Tu avais même mis un rappel. Puis la journée est passée.
 
-Alors, patron, tu choisis quel bouton ?
+[curious] Une autre étude a regardé ce qui arrive quand ta carte bancaire est remplacée. Là, tu dois ressaisir ton numéro. Donc choisir. [surprised] Résultat : les résiliations bondissent. D'après ses auteurs, notre inattention double à peu près les revenus des vendeurs d'abonnements.
 
-## QUESTION (74-80 s)
-Et toi, tu paies combien d'abonnements que tu n'utilises plus ?
+## BOUCLE (3 à 5 dernières secondes)
+[mischievously] Alors, patron, tu choisis quel bouton ? Maintenant, tu sais…

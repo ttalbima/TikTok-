@@ -1,33 +1,34 @@
-# 008 — La livraison gratuite dès 35 €
+# 008 — La livraison gratuite (script validé par le propriétaire, proposé le 26/11/2026)
 
-Hook famille B (« Regarde bien… ») · Univers : achat en ligne · Structure : test · Fin : boucle · 228 mots prononcés
+Famille d'accroche B · structure « test » · univers achat en ligne · fin : boucle.
+Les mots entre crochets sont des indications d'émotion pour la voix : ils ne sont pas prononcés.
 
-## HOOK (0-6 s)
-Regarde bien ce message : « Plus que 4 € pour la livraison gratuite. » Il vient de te faire ajouter un article.
+## HOOK (0-3 s)
+[mischievously] Regarde bien ce message de livraison gratuite.
 
-## RETAINER (6-12 s)
-Fais le test. Et à la fin, tu verras que le « gratuit », c'est ce que tu as payé le plus cher.
+## RETAINER (3-8 s)
+[curious] « Plus que 4 euros. » [dramatically] Il vient de te faire ajouter un article.
 
-## BODY (12-72 s)
-Panier A : 31 € d'achats, plus 4,90 € de livraison. Total : 35,90 €.
+## BODY
+[warmly] Fais le test. Deux paniers, à toi de choisir. Panier A : 31 euros d'achats, plus 4 euros 90 de livraison. Total : 35 euros 90.
 
-Panier B : tu ajoutes des chaussettes à 9 €. Livraison offerte. Total : 40 €.
+[mischievously] Panier B : tu ajoutes des chaussettes à 9 euros. Livraison offerte. Total : 40 euros.
 
-Tu prends lequel ?
+[curious] Tu prends lequel ?
 
-Si tu as dit B, tu viens de payer 4,10 € de plus… pour économiser 4,90 €.
+[surprised] Si tu as dit B, tu viens de payer 4 euros 10 de plus… pour économiser 4 euros 90. [softly] Et des chaussettes, tu n'en cherchais pas.
 
-Pourquoi ? Parce que ton cerveau ne traite pas « gratuit » comme un prix normal.
+[warmly] Pourquoi ? Parce que ton cerveau ne traite pas « gratuit » comme un prix normal.
 
-En 2007, des chercheurs proposent deux chocolats. Un très bon, à une quinzaine de centimes. Un basique, à un centime. La grande majorité prend le bon.
+[curious] En 2007, des chercheurs proposent deux chocolats. Un très bon, à une quinzaine de centimes. Un basique, à un centime. La grande majorité prend le bon.
 
-Puis ils baissent les deux prix d'un centime. L'écart reste le même. Mais le basique devient gratuit. La majorité bascule sur le gratuit.
+[mischievously] Puis ils baissent les deux prix d'un centime. L'écart reste le même. Mais le basique devient gratuit. [surprised] La majorité bascule sur le gratuit. Pour un seul centime d'écart, comme avant.
 
-Ça s'appelle l'effet du prix zéro. Depuis, d'autres études l'ont nuancé : il dépend du contexte.
+[warmly] Ça s'appelle l'effet du prix zéro. [softly] Depuis, d'autres études l'ont nuancé : il dépend du contexte.
 
-Et sur un site de mode, avec un seuil de livraison gratuite, les clients dépensaient environ 9 % de plus.
+[curious] Et sur un site de mode, avec un seuil de livraison gratuite, les clients dépensaient environ 9 % de plus.
 
-Le seuil n'est pas un cadeau. C'est une ligne d'arrivée, placée un peu plus loin que ton panier.
+[dramatically] Le seuil n'est pas un cadeau. C'est une ligne d'arrivée, placée un peu plus loin que ton panier. Et le « gratuit », c'est ce que tu as payé le plus cher.
 
-## BOUCLE (72-78 s)
-Alors la prochaine fois que tu lis « plus que 4 € »… regarde bien ce message.
+## BOUCLE (3 à 5 dernières secondes)
+[mischievously] Alors la prochaine fois qu'il manque trois fois rien à ton panier…

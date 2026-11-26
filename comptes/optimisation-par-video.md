@@ -121,7 +121,7 @@ Source : PLOS Medicine, 2018.
 
 ### Jour 1 — 19 h · 004 — Le prix barré
 
-**Fichier :** `videos/004-le-prix-barre/livraison/004-le-prix-barre-v6.mp4`
+**Fichier :** `videos/004-le-prix-barre/livraison/004-le-prix-barre-v7.mp4`
 **Image de couverture :** vers 7 s, quand la voix dit « 60 juste en dessous » : l'étiquette avec 120 € barré et 60 € en gros.
 
 **TikTok**
@@ -156,7 +156,7 @@ Sources : Science, 1974 ; article L. 112-1-1 du Code de la consommation.
 
 ### Jour 2 — 12 h · 006 — L'essai gratuit
 
-**Fichier :** `videos/006-l-essai-gratuit/livraison/006-l-essai-gratuit-v4.mp4`
+**Fichier :** `videos/006-l-essai-gratuit/livraison/006-l-essai-gratuit-v5.mp4`
 **Image de couverture :** vers 19 s, quand la voix dit « Bouton deux » : les deux boutons du patron de l'appli à l'écran.
 
 **TikTok**
@@ -401,7 +401,7 @@ Sources : Journal of Consumer Research, 1998 ; Marketing Letters, 2003.
 
 ### Jour 5 — 19 h · 008 — La livraison gratuite
 
-**Fichier :** `videos/008-la-livraison-gratuite/livraison/008-la-livraison-gratuite-v4.mp4`
+**Fichier :** `videos/008-la-livraison-gratuite/livraison/008-la-livraison-gratuite-v5.mp4`
 **Image de couverture :** vers 2,5 s, quand la voix dit « Plus que 4 € » : le message « Plus que 4 € pour la livraison gratuite ».
 
 **TikTok**
@@ -471,7 +471,7 @@ Source : étude de 2009 de l'université Cornell, 201 clients au déjeuner.
 
 ### Jour 6 — 19 h · 005 — Le grand chariot
 
-**Fichier :** `videos/005-le-grand-caddie/livraison/005-le-grand-caddie-v4.mp4`
+**Fichier :** `videos/005-le-grand-caddie/livraison/005-le-grand-caddie-v5.mp4`
 (Le dossier garde son ancien nom. N'écris jamais ce mot dans une description : on dit « chariot ».)
 **Image de couverture :** vers 25 s, quand la voix dit « ton chariot a l'air vide » : le grand chariot avec trois articles au fond.
 
@@ -507,7 +507,7 @@ Sources : congrès European Marketing Academy, 2024 ; synthèse Cochrane, 2015.
 
 ### Jour 7 — 12 h · 007 — Le pop-corn moyen
 
-**Fichier :** `videos/007-le-pop-corn-moyen/livraison/007-le-pop-corn-moyen-v4.mp4`
+**Fichier :** `videos/007-le-pop-corn-moyen/livraison/007-le-pop-corn-moyen-v5.mp4`
 **Image de couverture :** vers 22 s, quand la voix dit « à 7 euros 50 » : les trois tailles de pop-corn avec leurs prix (4 €, 7,50 €, 8 €).
 
 **TikTok**
