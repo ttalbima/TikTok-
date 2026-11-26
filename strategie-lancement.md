@@ -1,5 +1,7 @@
 # Stratégie de lancement — TikTok, Instagram, YouTube Shorts
 
+Veille du 26/11/2026 : pas de changement de stratégie. À retenir : Instagram limite à 5 hashtags par publication (annonce de décembre 2025, [source](https://www.blogdumoderateur.com/instagram-limite-hashtags-5-par-publication/)) ; YouTube favorise les Shorts originaux et réduit la portée des republications depuis le 01/10/2026 ([source](https://9to5google.com/2026/10/02/youtube-wont-recommend-unoriginal-shorts/)) ; aucun changement de classement confirmé par TikTok sur 30 jours. L'emballage vidéo par vidéo est dans `comptes/optimisation-par-video.md`.
+
 Mise à jour : 22/11/2026. Les réseaux ne publient pas leurs règles de classement : tout ce qui suit vient de leurs déclarations officielles quand c'est indiqué, sinon de pratiques de créateurs largement partagées. Les chiffres « repères » sont des ordres de grandeur, pas des règles officielles.
 
 ## Ce qui compte partout

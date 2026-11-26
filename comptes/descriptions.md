@@ -1,5 +1,7 @@
 # Descriptions prêtes à coller
 
+> **Fichier remplacé le 26/11/2026.** Utilise maintenant `comptes/optimisation-par-video.md` : nouvel ordre de publication, textes adaptés à chaque réseau, couvertures, commentaires à épingler et routine quotidienne. Ce qui suit est l'ancienne version, gardée pour mémoire (certaines accroches ne correspondent plus à la voix des vidéos).
+
 Ordre de publication conseillé : de haut en bas. Même texte sur TikTok, Instagram et YouTube Shorts.
 Hashtags fixes : `#prix #consommation #psychologie #argent`, plus un ou deux selon le sujet.
 Versions à publier : 001 en v8 ; 004 et 009 en v6 ; 010 en v5 ; 014 en v3 ; toutes les autres en v4. Prends toujours la dernière version du dossier `livraison/`.
