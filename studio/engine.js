@@ -56,7 +56,20 @@
     spin: { dur: .55, f: p => ({ s: .5 + .5 * ease.outExpo(p), r: (1 - ease.outExpo(p)) * -90, o: clamp(p * 4) }) },
   };
 
+  /* Palette du style 2 : indigo, violet électrique, turquoise, lilas, rose vif, citron vert. Pas de fond noir ni jaune. */
+  const PAL2 = { navy: '#2A1E8C', green: '#00A88A', cream: '#F7F5FF', yellow: '#C8F560', coral: '#FF4F7B' };
+  const TINT2 = { green2: '#35D6B6', yellow2: '#9BD12C', cream2: '#DCD6F5', coral2: '#D92C5F', navy2: '#7A5CFF' };
+  const BG2 = { navy: ['#5B3BF5', '#2A1E8C'], green: ['#00B899', '#04706F'], cream: ['#FBFAFF', '#E3DCFF'], yellow: ['#E2D9FF', '#BDAEFF'], coral: ['#FF6A8F', '#E52F6B'] };
+  const THEME2 = {
+    navy: { ink: PAL2.cream, a1: PAL2.yellow, a2: PAL2.coral },
+    green: { ink: PAL2.cream, a1: PAL2.yellow, a2: PAL2.navy },
+    cream: { ink: PAL2.navy, a1: PAL2.coral, a2: PAL2.green },
+    yellow: { ink: PAL2.navy, a1: PAL2.coral, a2: PAL2.green },
+    coral: { ink: PAL2.cream, a1: PAL2.yellow, a2: PAL2.navy },
+  };
   const V = (window.V = { W, H, PAL, TINT, shots: [], keywords: [] });
+  let _style = 1;
+  Object.defineProperty(V, 'style', { get: () => _style, set: v => { _style = v; if (v === 2) { Object.assign(PAL, PAL2); Object.assign(TINT, TINT2); } } });
   let words = [], duration = 0, shots = [], anims = [], draws = [], counts = [], grows = [], wipes = [], chunks = [];
   let events = [];
 
@@ -105,8 +118,8 @@
     shots.forEach(s => {
       const el = document.createElement('div');
       el.className = 'shot';
-      const th = THEME[s.bg];
-      el.style.cssText = `background:${PAL[s.bg]};--ink:${th.ink};--a1:${th.a1};--a2:${th.a2};`;
+      const th = (S2 ? THEME2 : THEME)[s.bg];
+      el.style.cssText = `background:${S2 ? `linear-gradient(165deg, ${BG2[s.bg][0]}, ${BG2[s.bg][1]})` : PAL[s.bg]};--ink:${th.ink};--a1:${th.a1};--a2:${th.a2};`;
       const inner = Array.isArray(s.html) ? s.html.join('') : s.html;
       if (S2) {
         // fond vivant : halo de lumière + trois formes qui dérivent lentement (texture, jamais au premier plan)
