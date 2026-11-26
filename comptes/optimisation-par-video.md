@@ -86,7 +86,7 @@ Pourquoi cet ordre :
 
 ### Jour 1 — 12 h · 010 — Les rayons de la caisse
 
-**Fichier :** `videos/010-les-rayons-de-la-caisse/livraison/010-les-rayons-de-la-caisse-v5.mp4`
+**Fichier :** `videos/010-les-rayons-de-la-caisse/livraison/010-les-rayons-de-la-caisse-v6.mp4`
 **Image de couverture :** vers 20 s, quand la voix dit « des barres chocolatées » : le présentoir de la caisse, à hauteur de main.
 
 **TikTok**
@@ -191,7 +191,7 @@ Sources : document de travail « Sophisticated Consumers with Inertia » ; Ameri
 
 ### Jour 2 — 19 h · 014 — Le paquet qui rétrécit
 
-**Fichier :** `videos/014-le-paquet-qui-retrecit/livraison/014-le-paquet-qui-retrecit-v3.mp4`
+**Fichier :** `videos/014-le-paquet-qui-retrecit/livraison/014-le-paquet-qui-retrecit-v4.mp4`
 **Image de couverture :** vers 26 s, quand la voix dit « 270 grammes » : le paquet d'hier (300 g) et celui d'aujourd'hui (270 g), au même prix de 2,49 €.
 
 **TikTok**
@@ -261,7 +261,7 @@ Sources : Journal of Consumer Research, 1989 ; Journal of Marketing Research, 19
 
 ### Jour 3 — 19 h · 011 — « Plus que 2 en stock »
 
-**Fichier :** `videos/011-plus-que-2-en-stock/livraison/011-plus-que-2-en-stock-v4.mp4`
+**Fichier :** `videos/011-plus-que-2-en-stock/livraison/011-plus-que-2-en-stock-v5.mp4`
 **Image de couverture :** vers 3 s, quand la voix dit « Plus que 2 en stock » : le petit message rouge à l'écran.
 
 **TikTok**
@@ -331,7 +331,7 @@ Sources : Journal of Consumer Research, 2005 ; Quantitative Marketing and Econom
 
 ### Jour 4 — 19 h · 009 — Carte ou espèces
 
-**Fichier :** `videos/009-carte-ou-especes/livraison/009-carte-ou-especes-v6.mp4`
+**Fichier :** `videos/009-carte-ou-especes/livraison/009-carte-ou-especes-v7.mp4`
 **Image de couverture :** vers 3 s, quand la voix dit « qu'avec des billets » : la carte bancaire face aux billets.
 
 **TikTok**
@@ -366,7 +366,7 @@ Sources : Marketing Letters, 2001 ; Journal of Retailing, 2024.
 
 ### Jour 5 — 12 h · 013 — Par mois ou par an
 
-**Fichier :** `videos/013-par-mois-ou-par-an/livraison/013-par-mois-ou-par-an-v4.mp4`
+**Fichier :** `videos/013-par-mois-ou-par-an/livraison/013-par-mois-ou-par-an-v5.mp4`
 **Image de couverture :** vers 4 s, quand la voix dit « 60 € par an » : les deux prix face à face, 4,99 € par mois et 60 € par an.
 
 **TikTok**
@@ -436,7 +436,7 @@ Source : Marketing Science, 2007.
 
 ### Jour 6 — 12 h · 015 — La carte sans le signe €
 
-**Fichier :** `videos/015-la-carte-sans-le-signe-euro/livraison/015-la-carte-sans-le-signe-euro-v4.mp4`
+**Fichier :** `videos/015-la-carte-sans-le-signe-euro/livraison/015-la-carte-sans-le-signe-euro-v5.mp4`
 **Image de couverture :** vers 23 s, quand la voix dit « le nombre tout seul » : les trois façons d'écrire le prix du plat du jour.
 
 **TikTok**
@@ -542,7 +542,7 @@ Sources : Journal of Consumer Research, 1982 ; Journal of Marketing Research, 20
 
 ### Jour 7 — 19 h · 012 — La carte de fidélité
 
-**Fichier :** `videos/012-la-carte-de-fidelite/livraison/012-la-carte-de-fidelite-v4.mp4`
+**Fichier :** `videos/012-la-carte-de-fidelite/livraison/012-la-carte-de-fidelite-v5.mp4`
 **Image de couverture :** vers 20 s, quand la voix dit « déjà tamponnées » : les deux cartes côte à côte, A (huit cases vides) et B (dix cases, deux tampons).
 
 **TikTok**
