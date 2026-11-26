@@ -123,6 +123,7 @@ Passages de relais (qui écrit quoi) :
 - Les défauts trouvés par `verification` qui reviennent deviennent une règle dans `notes.md` et dans l'agent `fabrication`.
 
 ## VALIDATION
+- **Fin de vidéo (consigne du 26/11/2026) : toujours une boucle.** On ne doit pas sentir que la vidéo se termine : la dernière phrase reste en suspens et s'enchaîne sur l'accroche quand la vidéo redémarre, sans en répéter les mots. Pas de question finale ni de « dis-moi en commentaire » dans la voix : la question va dans le commentaire épinglé.
 - **Depuis le 26/11/2026 : le propriétaire valide chaque SCRIPT avant tout démarrage** (ni voix, ni image avant son accord). Le script lui est envoyé dans la discussion.
 - Le script porte des indications d'émotion entre crochets pour la voix ElevenLabs (`[curious]`, `[excited]`…), non prononcées.
 - Visuels : modernes et toujours dynamiques, jamais « vieillots ». On peut tester des modèles et bibliothèques d'animation existants (GSAP, Remotion, collections de skills d'animation pour Claude) avant de fabriquer.

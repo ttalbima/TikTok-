@@ -1,6 +1,6 @@
 # 003 — Le menu du milieu (script proposé le 26/11/2026, en attente de validation)
 
-Famille d'accroche C · structure « test » · univers restaurant · fin : question.
+Famille d'accroche C · structure « test » · univers restaurant · fin : boucle (la dernière phrase s'enchaîne sur l'accroche au redémarrage).
 Les mots entre crochets sont des indications d'émotion pour la voix : ils ne sont pas prononcés.
 
 ## HOOK (0-3 s)
@@ -24,5 +24,5 @@ Les mots entre crochets sont des indications d'émotion pour la voix : ils ne so
 
 [surprised] Donc le menu à 29 euros n'a pas besoin d'être vendu. Il suffit qu'il soit sur la carte. [warmly] Et celui que tu prends « par raison », c'est celui que la carte t'a désigné.
 
-## QUESTION (72-77 s)
-[curious] Dis-moi en commentaire : la dernière fois, tu as pris lequel ?
+## BOUCLE (72-77 s)
+[mischievously] Alors la prochaine fois qu'on te tend la carte, avant même de l'ouvrir…

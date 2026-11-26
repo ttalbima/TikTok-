@@ -52,3 +52,4 @@ Court, texte brut : chemin du mp4, durée, mesures audio, script final, sources 
 - Script avec balises d'émotion entre crochets pour eleven_v4 (liste dans le guide du modèle : `[curious]`, `[excited]`, `[surprised]`, `[warmly]`, `[mischievously]`, `[sarcastic]`, `[dramatically]`, `[softly]`, `[chuckles]`). Une balise vaut jusqu'à la suivante : en changer seulement quand le ton change. Viser 225 à 240 mots, la voix expressive parle plus vite.
 - Voix utilisée brute (`"brut": true` dans voix.json).
 - Visuels : poser `V.style = 2` en tête de plans.js. Un seul langage de mouvement, un héros par plan, pas de plan fait de texte seul quand un objet peut le porter.
+- Fin : toujours une boucle. La dernière phrase reste en suspens et s'enchaîne sur l'accroche au redémarrage, sans en répéter les mots. Aucune question finale dans la voix.
