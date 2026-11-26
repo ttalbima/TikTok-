@@ -1,27 +1,28 @@
-# 003 — Le menu du milieu
+# 003 — Le menu du milieu (script validé par le propriétaire le 26/11/2026)
 
-Hook : famille C (« Tu crois choisir… ») · Structure : test · Univers : restaurant · Fin : question
+Famille d'accroche C · structure « test » · univers restaurant · fin : boucle (la dernière phrase s'enchaîne sur l'accroche au redémarrage).
+Les mots entre crochets sont des indications d'émotion pour la voix : ils ne sont pas prononcés.
 
-## HOOK (0-4 s)
-Tu crois choisir ton menu. En vrai, on a choisi pour toi.
+## HOOK (0-3 s)
+[mischievously] Tu crois choisir ton menu.
 
-## RETAINER (4-12 s)
-Fais le test avec moi. Et à la fin, tu sauras pourquoi le menu le plus cher n'a même pas besoin d'être vendu.
+## RETAINER (3-8 s)
+[dramatically] On a choisi pour toi. [curious] Fais le test : le plus cher n'est même pas là pour être vendu.
 
-## BODY (12-72 s)
-Premier cas. Deux menus sur la carte. Un à 14 euros. Un à 19 euros. Tu prends lequel ? Là, le 19 te paraît cher.
+## BODY (8-72 s)
+[warmly] Premier cas. Deux menus sur la carte. Un à 14 euros. Un à 19 euros. [curious] Tu prends lequel ? [softly] Là, le 19 te paraît cher. Tu hésites.
 
-Deuxième cas. Même carte, mais on ajoute une ligne : un menu à 29 euros. Maintenant, tu prends lequel ?
+[mischievously] Deuxième cas. Même carte, même cuisine. Mais on ajoute une ligne tout en bas : un menu à 29 euros. [curious] Maintenant, tu prends lequel ?
 
-Le menu à 19 n'a pas changé. Même plat, même prix. Mais il n'est plus « le cher ». Il est devenu celui du milieu. Le choix raisonnable.
+[surprised] Le menu à 19 n'a pas changé. Même plat, même prix. Mais il n'est plus « le cher ». Il est devenu celui du milieu. [warmly] Le choix raisonnable.
 
-En 1989, un chercheur mesure ça sur des produits du quotidien. Résultat : une option gagne des clients dès qu'elle se retrouve au milieu. Ça s'appelle l'effet de compromis.
+[curious] En 1989, un chercheur mesure ça sur des produits du quotidien. Résultat : une option gagne des clients dès qu'elle se retrouve au milieu. Ça s'appelle l'effet de compromis.
 
-Trois ans plus tard, une autre étude l'explique : l'aversion aux extrêmes. Le moins cher, tu as peur que ce soit mauvais. Le plus cher, tu as peur de te faire avoir. Le milieu, lui, se justifie tout seul.
+[dramatically] Trois ans plus tard, une autre étude l'explique : l'aversion aux extrêmes. Le moins cher, tu as peur que ce soit mauvais. Le plus cher, tu as peur de te faire avoir. [chuckles] Le milieu, lui, se justifie tout seul.
 
-Et l'effet est encore plus fort quand tu dois expliquer ton choix à quelqu'un. Par exemple, à la personne assise en face de toi.
+[mischievously] Et l'effet est encore plus fort quand tu dois expliquer ton choix à quelqu'un. Par exemple, à la personne assise en face de toi.
 
-Donc le menu à 29 euros n'a pas besoin d'être vendu. Il suffit qu'il soit là.
+[surprised] Donc le menu à 29 euros n'a pas besoin d'être vendu. Il suffit qu'il soit sur la carte. [warmly] Et celui que tu prends « par raison », c'est celui que la carte t'a désigné.
 
-## QUESTION (72-78 s)
-Dis-moi : la dernière fois, au resto, tu as pris lequel ? Celui du milieu ?
+## BOUCLE (72-77 s)
+[mischievously] Alors la prochaine fois qu'on te tend la carte, avant même de l'ouvrir…

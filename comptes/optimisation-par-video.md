@@ -226,7 +226,7 @@ Sources : Journal of Retailing, 2014 ; DGCCRF (economie.gouv.fr).
 
 ### Jour 3 — 12 h · 003 — Le menu du milieu
 
-**Fichier :** `videos/003-le-menu-du-milieu/livraison/003-le-menu-du-milieu-v4.mp4`
+**Fichier :** `videos/003-le-menu-du-milieu/livraison/003-le-menu-du-milieu-v5.mp4`
 **Image de couverture :** vers 24 s, quand la voix dit « un menu à 29 euros » : la carte avec les trois menus, 14, 19 et 29 €.
 
 **TikTok**
@@ -296,7 +296,7 @@ Sources : Journal of Personality and Social Psychology, 1975 ; article L. 121-2 
 
 ### Jour 4 — 12 h · 001 — Le 9,99 €
 
-**Fichier :** `videos/001-pourquoi-tu-9-99/livraison/001-pourquoi-tu-9-99-v8.mp4`
+**Fichier :** `videos/001-pourquoi-tu-9-99/livraison/001-pourquoi-tu-9-99-v10.mp4`
 **Image de couverture :** vers 1,5 s, quand la voix dit « 9,99 € » : l'étiquette de prix à 9,99 €.
 
 **TikTok**
