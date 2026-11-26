@@ -1,7 +1,7 @@
 # Guide — créer et lancer les comptes, de A à Z
 
 Temps à prévoir : 45 minutes une seule fois pour tout créer, puis 20 minutes par semaine.
-Fichiers prêts : `comptes/reglages.md` (tous les réglages à cocher), `comptes/photo-de-profil.png` (photo de profil) et `comptes/descriptions.md` (texte à coller pour chaque vidéo).
+Fichiers prêts : `comptes/parametrage-complet.md` (tous les onglets et tous les champs des trois comptes), `comptes/reglages.md` (version courte à cocher), `comptes/photo-de-profil.png` (photo de profil) et `comptes/descriptions.md` (texte à coller pour chaque vidéo).
 
 ## 1. La thématique en une phrase
 
