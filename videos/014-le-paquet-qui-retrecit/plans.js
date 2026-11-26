@@ -345,7 +345,7 @@
   ]);
   S(196, 10, bg => [
     E(SX, SY, sh(bg, '2,49 €', '9,22 € / KG', { w: SW }), { a: 'none', m: [{ w: 199, s: 1.05, dur: .2 }, { w: 199, d: .25, s: 1, dur: .2 }] }),
-    E(650, 790, O.magnifier({ w: 360, ring: P.coral }), { a: 'right', d: .05, sfx: 'whoosh' }),
+    E(745, 822, O.magnifier({ w: 300, ring: P.coral }), { a: 'right', d: .05, sfx: 'whoosh' }),
     E(540, 1090, Tx('EN PETIT', 190, 'var(--a1)'), { a: 'stamp', d: .15, sfx: 'stamp' }),
     E(540, 1255, Tx("SUR L'ÉTIQUETTE", 95), { a: 'up', w: 199, dist: 200 }),
   ]);
@@ -356,7 +356,7 @@
     E(540, 1130, Tx('PAS LE GROS CHIFFRE', 105, 'var(--a1)'), { a: 'up', w: 203, d: .05 }),
   ]);
   S(207, 10, bg => [
-    E(540, 560, O.burst({ w: 1000, n: 14, col: P.cream }), { a: 'pop', loop: 'spin', per: 6, cut: false }),
+    E(540, 560, O.burst({ w: 820, n: 14, col: P.cream }), { a: 'pop', loop: 'spin', per: 6, cut: false }),
     E(540, 560, O.tag('9,22 €', { w: 700, sub: 'LE KILO', fill: P.navy, ink: P.cream }), { a: 'pop', sfx: 'ding' }),
     E(540, 1100, Tx('LIS LE PETIT', 170, 'var(--a1)'), { a: 'stamp', d: .05, sfx: 'stamp' }),
   ], -.05);
