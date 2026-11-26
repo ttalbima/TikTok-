@@ -122,5 +122,8 @@ Passages de relais (qui écrit quoi) :
 - Les défauts trouvés par `verification` qui reviennent deviennent une règle dans `notes.md` et dans l'agent `fabrication`.
 
 ## VALIDATION
+- **Depuis le 26/11/2026 : le propriétaire valide chaque SCRIPT avant tout démarrage** (ni voix, ni image avant son accord). Le script lui est envoyé dans la discussion.
+- Le script porte des indications d'émotion entre crochets pour la voix ElevenLabs (`[curious]`, `[excited]`…), non prononcées.
+- Visuels : modernes et toujours dynamiques, jamais « vieillots ». On peut tester des modèles et bibliothèques d'animation existants (GSAP, Remotion, collections de skills d'animation pour Claude) avant de fabriquer.
 - **Aucun sujet n'est lancé sans la validation explicite du propriétaire.** Une fois le sujet validé, la fabrication est autonome jusqu'à la vidéo finie.
 - Publication : faite manuellement par le propriétaire du compte.
