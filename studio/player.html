@@ -11,6 +11,7 @@
 html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
 #root { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: hidden; }
 #stage, .shot { position: absolute; inset: 0; overflow: hidden; }
+#stage { isolation: isolate; }
 .shot { display: none; }
 .cam { position: absolute; inset: 0; transform-origin: 50% 42%; }
 .pos { position: absolute; width: 0; height: 0; }
@@ -30,6 +31,16 @@ svg text { font-family: 'Anton', sans-serif; }
   box-shadow: 8px 10px 0 rgba(0,0,0,.28); }
 .chunk span { display: inline-block; margin: 0 7px; }
 .chunk span.act { color: #FFC83D; transform: scale(1.07); }
+.glow, .amb { display: none; }
+.s2 .glow { display: block; position: absolute; inset: 0; background: radial-gradient(circle at 50% 36%, rgba(255,255,255,.17), rgba(255,255,255,0) 60%), linear-gradient(180deg, rgba(0,0,0,0) 58%, rgba(0,0,0,.24)); }
+.s2 .amb { display: block; position: absolute; inset: 0; overflow: hidden; }
+.s2 .amb > div { position: absolute; border-radius: 50%; }
+.s2 .an.cut { filter: drop-shadow(0 24px 28px rgba(0,0,0,.30)); }
+.s2 #grain { opacity: .05; }
+.s2 .anton { letter-spacing: 0; }
+.s2 .chunk { border: none; border-radius: 24px; background: rgba(20,33,61,.96); box-shadow: 0 18px 36px rgba(0,0,0,.38); }
+.wm { display: inline-block; overflow: hidden; vertical-align: top; padding: .16em .05em .06em; margin: -.16em -.05em -.06em; }
+.wi { display: inline-block; transform-origin: 0% 100%; }
 </style>
 </head>
 <body>

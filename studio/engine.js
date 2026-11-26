@@ -19,6 +19,7 @@
     lin: p => p,
     outCubic: p => 1 - Math.pow(1 - p, 3),
     inOut: p => (p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2),
+    outExpo: p => (p >= 1 ? 1 : 1 - Math.pow(2, -10 * p)),
     outBack: (p, s = 1.70158) => 1 + (s + 1) * Math.pow(p - 1, 3) + s * Math.pow(p - 1, 2),
     outBounce: p => {
       const n = 7.5625, d = 2.75;
@@ -41,6 +42,18 @@
     right: { dur: .36, f: (p, a) => ({ dx: (1 - ease.outBack(p, 1.3)) * (a.dist || 700), o: clamp(p * 3) }) },
     fade: { dur: .25, f: p => ({ o: p }) },
     spin: { dur: .45, f: p => ({ s: ease.outBack(p, 2), r: (1 - ease.outCubic(p)) * -200, o: clamp(p * 4) }) },
+  };
+
+  /* Style 2 (V.style = 2) : entrées nettes et rapides (décélération forte, presque pas de rebond). */
+  const ENTRY2 = {
+    pop: { dur: .45, f: p => ({ s: .55 + .45 * ease.outBack(ease.outCubic(p), 1.1), r: (1 - ease.outExpo(p)) * -8, o: clamp(p * 5) }) },
+    stamp: { dur: .36, f: p => ({ s: 1.7 - .7 * ease.outExpo(p), o: clamp(p * 4) }) },
+    drop: { dur: .55, f: p => ({ dy: -(1 - ease.outExpo(p)) * 1100, s: 1 + .05 * Math.sin(Math.PI * p), o: clamp(p * 6) }) },
+    up: { dur: .5, f: (p, a) => ({ dy: (1 - ease.outExpo(p)) * (a.dist || 420), o: clamp(p * 4) }) },
+    down: { dur: .5, f: (p, a) => ({ dy: -(1 - ease.outExpo(p)) * (a.dist || 420), o: clamp(p * 4) }) },
+    left: { dur: .5, f: (p, a) => ({ dx: -(1 - ease.outExpo(p)) * (a.dist || 700), r: (1 - ease.outExpo(p)) * -6, o: clamp(p * 4) }) },
+    right: { dur: .5, f: (p, a) => ({ dx: (1 - ease.outExpo(p)) * (a.dist || 700), r: (1 - ease.outExpo(p)) * 6, o: clamp(p * 4) }) },
+    spin: { dur: .55, f: p => ({ s: .5 + .5 * ease.outExpo(p), r: (1 - ease.outExpo(p)) * -90, o: clamp(p * 4) }) },
   };
 
   const V = (window.V = { W, H, PAL, TINT, shots: [], keywords: [] });
@@ -85,6 +98,8 @@
     shots = kept;
     shots.forEach((s, i) => { s.i = i; s.t1 = i + 1 < shots.length ? shots[i + 1].t0 : duration; });
     events = [];
+    const S2 = V.style === 2;
+    document.getElementById('root').classList.toggle('s2', S2);
     const VU = V.minVu != null ? V.minVu : 1.0;
     const tot = (spec, s) => Math.min(tOf(spec, s.t0), Math.max(s.t0, s.t1 - (VU ? .8 : 0)));
     shots.forEach(s => {
@@ -92,12 +107,22 @@
       el.className = 'shot';
       const th = THEME[s.bg];
       el.style.cssText = `background:${PAL[s.bg]};--ink:${th.ink};--a1:${th.a1};--a2:${th.a2};`;
-      el.innerHTML = `<div class="cam">${Array.isArray(s.html) ? s.html.join('') : s.html}</div>`;
+      const inner = Array.isArray(s.html) ? s.html.join('') : s.html;
+      if (S2) {
+        // fond vivant : halo de lumière + trois formes qui dérivent lentement (texture, jamais au premier plan)
+        const k = s.i, ink = th.ink, a1 = th.a1;
+        const sh = [
+          `<div style="left:${-260 + (k * 137) % 500}px;top:${120 + (k * 211) % 500}px;width:900px;height:900px;border:34px solid ${ink};opacity:.07"></div>`,
+          `<div style="left:${420 + (k * 97) % 420}px;top:${900 + (k * 173) % 500}px;width:620px;height:620px;background:${a1};opacity:.10"></div>`,
+          `<div style="left:${(k * 59) % 700}px;top:${1350 + (k * 83) % 300}px;width:260px;height:260px;border:18px solid ${a1};opacity:.12"></div>`,
+        ].join('');
+        el.innerHTML = `<div class="glow"></div><div class="amb">${sh}</div><div class="cam">${inner}</div>`;
+      } else el.innerHTML = `<div class="cam">${inner}</div>`;
       stage.appendChild(el);
-      s.el = el; s.cam = el.firstChild;
+      s.el = el; s.cam = el.querySelector('.cam'); s.amb = S2 ? [...el.querySelectorAll('.amb > div')] : [];
       el.querySelectorAll('.an').forEach(n => {
         const a = JSON.parse(n.dataset.an);
-        const en = ENTRY[a.a || 'pop'];
+        let en = (S2 && ENTRY2[a.a || 'pop']) || ENTRY[a.a || 'pop'];
         // Aucun visuel éclair : un objet ou un titre reste au moins VU secondes à l'écran avant le changement de plan.
         // S'il devait entrer trop tard (sur un mot proche de la fin du plan), il entre plus tôt.
         let t0 = tOf(a, s.t0); const dur = a.dur != null ? a.dur : en.dur;
@@ -106,7 +131,14 @@
         const moves = (a.m || []).map(m => ({ ...m, t: tOf(m, s.t0), dur: m.dur != null ? m.dur : .35 }));
         const hide = a.hw != null || a.hd != null ? tOf({ w: a.hw, d: a.hd }, s.t0) : null;
         const loopT = a.lw != null || a.ld != null ? tOf({ w: a.lw, d: a.ld }, s.t0) : t0;
-        anims.push({ n, a, en, t0, dur, moves, hide, loopT, shot: s });
+        // typographie cinétique : un titre entre mot par mot, chaque mot monte de derrière un cache
+        let kin = null, dur2 = dur;
+        const tx = n.firstElementChild;
+        if (S2 && tx && tx.classList.contains('tx') && !tx.children.length && !['none', 'fade'].includes(a.a || 'pop')) {
+          tx.innerHTML = tx.textContent.trim().split(/\s+/).map(w => `<span class="wm"><span class="wi">${w}</span></span>`).join(' ');
+          kin = [...tx.querySelectorAll('.wi')]; en = ENTRY.none; dur2 = 0;
+        }
+        anims.push({ n, a, en, t0, dur: dur2, moves, hide, loopT, shot: s, kin });
         if (a.sfx) {
           const off = a.a === 'drop' ? dur * .364 : a.a === 'stamp' ? dur * .8 : 0;
           events.push({ t: +(t0 + off + (a.so || 0)).toFixed(3), type: a.sfx });
@@ -171,7 +203,7 @@
     shots.forEach((s, i) => {
       if (i && s.scene !== shots[i - 1].scene) {
         const col = Object.keys(PAL).find(c => c !== s.bg && c !== shots[i - 1].bg && c !== 'cream');
-        wipes.push({ t: s.t0, col: PAL[col] });
+        if (!S2) wipes.push({ t: s.t0, col: PAL[col] });
         events.push({ t: +(s.t0 - .1).toFixed(3), type: 'whoosh' });
       }
     });
@@ -226,14 +258,29 @@
   window.renderAt = function (t) {
     let cur = shots[0];
     for (const s of shots) if (t >= s.t0 - 1e-6) cur = s;
-    for (const s of shots) s.el.style.display = s === cur ? 'block' : 'none';
-    // caméra : zoom d'entrée puis dérive lente
+    // transition entre deux plans (style 2) : le nouveau plan pousse l'ancien, ou s'ouvre en cercle
+    const S2 = V.style === 2, TR = S2 ? .34 : 0;
+    const prev = cur.i > 0 ? shots[cur.i - 1] : null;
+    const inTr = TR && prev && t - cur.t0 < TR;
+    for (const s of shots) {
+      const on = s === cur || (inTr && s === prev);
+      s.el.style.display = on ? 'block' : 'none';
+      if (on && S2) { s.el.style.transform = ''; s.el.style.clipPath = ''; s.el.style.zIndex = s === cur ? 2 : 1; }
+    }
+    if (inTr) {
+      const p = ease.outExpo((t - cur.t0) / TR), kind = cur.i % 4;
+      if (kind === 0) { cur.el.style.transform = `translateX(${((1 - p) * 1080).toFixed(1)}px)`; prev.el.style.transform = `translateX(${(-p * 380).toFixed(1)}px)`; }
+      else if (kind === 1) { cur.el.style.transform = `translateY(${((1 - p) * 1920).toFixed(1)}px)`; prev.el.style.transform = `translateY(${(-p * 560).toFixed(1)}px)`; }
+      else if (kind === 2) { cur.el.style.clipPath = `circle(${(p * 125).toFixed(2)}% at 50% 42%)`; prev.el.style.transform = `scale(${(1 + .08 * p).toFixed(4)})`; }
+      else { cur.el.style.transform = `translateX(${(-(1 - p) * 1080).toFixed(1)}px)`; prev.el.style.transform = `translateX(${(p * 380).toFixed(1)}px)`; }
+    }
+    const camera = cur => {
     const lt = t - cur.t0, len = cur.t1 - cur.t0;
     const dir = cur.i % 2 ? 1 : -1;
     const e = 1 - ease.outCubic(clamp(lt / .38)), pr = clamp(lt / Math.max(len, .3));
     let cx = dir * 10 * pr, cy = 0, cz = 1 + .035 * pr, cr = 0;
     // entrée de plan : six mouvements de caméra qui tournent, jamais deux fois le même de suite
-    const style = V.relance === 0 ? 0 : cur.i % 6;
+    const style = V.relance === 0 ? 0 : S2 ? [0, 2, 4][cur.i % 3] : cur.i % 6;
     if (style === 0) cz += .075 * e;
     else if (style === 1) { cx += 70 * e; cz += .03 * e; }
     else if (style === 2) cz -= .06 * e;
@@ -251,9 +298,16 @@
       else cx += 30 * am;                                 // secousse latérale
     }
     cur.cam.style.transform = `translate(${cx.toFixed(2)}px,${cy.toFixed(2)}px) rotate(${cr.toFixed(3)}deg) scale(${cz.toFixed(4)})`;
+    // formes de fond : dérive lente, à contre-sens de la caméra (profondeur)
+    cur.amb.forEach((d, j) => {
+      const sp = .22 + j * .09, ph = cur.i * 1.7 + j * 2.1;
+      d.style.transform = `translate(${(Math.sin(t * sp + ph) * (46 + j * 18) - cx * (1.5 + j)).toFixed(2)}px,${(Math.cos(t * sp * .8 + ph) * (60 + j * 22) - lt * (14 + j * 9)).toFixed(2)}px) scale(${(1 + .04 * Math.sin(t * .5 + ph)).toFixed(4)})`;
+    });
+    };
+    camera(cur); if (inTr) camera(prev);
 
     for (const an of anims) {
-      if (an.shot !== cur) continue;
+      if (an.shot !== cur && !(inTr && an.shot === prev)) continue;
       const { n, a, en } = an;
       if (t < an.t0 - 1e-6 || (an.hide != null && t >= an.hide)) { n.style.visibility = 'hidden'; continue; }
       n.style.visibility = 'visible';
@@ -278,6 +332,10 @@
         else if (a.loop === 'spin') st.r += (360 * u) / per;
         else if (a.loop === 'shake') { st.dx += Math.sin(u * 61) * (amp || 10); st.dy += Math.cos(u * 53) * (amp || 10) * .6; }
       }
+      if (an.kin) an.kin.forEach((wi, k) => {
+        const p = ease.outExpo(clamp((t - an.t0 - k * .07) / .5));
+        wi.style.transform = `translateY(${((1 - p) * 115).toFixed(2)}%) rotate(${((1 - p) * 7).toFixed(2)}deg)`;
+      });
       n.style.opacity = clamp(st.o);
       n.style.transform = `translate(-50%,-50%) translate(${st.dx.toFixed(2)}px,${st.dy.toFixed(2)}px) rotate(${((a.rot || 0) + st.r).toFixed(2)}deg) scale(${Math.max(st.s, 0).toFixed(4)})`;
     }
@@ -300,7 +358,8 @@
     } else V.wipeEl.style.display = 'none';
     // sous-titres
     for (const c of chunks) {
-      const on = t >= c.t0 - .02 && t < c.t1;
+      const nx = chunks[chunks.indexOf(c) + 1];
+      const on = t >= c.t0 - .02 && t < c.t1 && !(nx && t >= nx.t0 - .02);
       c.el.style.display = on ? 'block' : 'none';
       if (!on) continue;
       const k = .92 + .08 * ease.outBack(clamp((t - c.t0 + .02) / .12), 2);

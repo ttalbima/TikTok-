@@ -126,3 +126,6 @@
 - Émotions entre crochets dans les scripts, pour la voix ElevenLabs.
 - Visuels plus modernes et dynamiques ; pistes repérées à tester : collection `iart-ai/motion-skills`, skill `gsap-animation` (notedit/happy-skills), skills Remotion. Rien n'est installé ni testé à ce stade.
 - La vidéo 001 est à refaire : script proposé dans `videos/001-pourquoi-tu-9-99/script-propose.md`, en attente de validation.
+- 001 v9 (26/11/2026) : script validé, voix eleven_v4 avec balises d'émotion (aucune n'est prononcée, vérifié par transcription), 2 prises, 2 808 crédits. La voix expressive parle plus vite : 68,4 s au lieu de 75 s visés. Pour les prochains scripts avec émotions, viser 225 à 240 mots.
+- Style visuel 2 (`V.style = 2` dans plans.js) : titres qui entrent mot par mot derrière un cache, transitions poussées ou en cercle entre les plans, fonds animés (halo et formes qui dérivent), ombres douces, entrées sans rebond. Inspiré des fiches « kinetic-typography » et « motion-art-direction » de la collection iart-ai (MIT), lues comme référence ; aucun code externe installé. Les anciennes vidéos gardent le style 1 tant que `V.style` n'est pas posé.
+- Sous-titres : corrigé un recouvrement d'une image entre deux blocs (moteur). Il existe encore dans les vidéos 003 à 015 déjà rendues.

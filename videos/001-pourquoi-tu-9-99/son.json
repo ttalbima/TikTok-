@@ -1,13 +1,13 @@
 {
-  "reveal_word": 180,
-  "music_db": -21,
-  "sections": {
-    "1": "basslong pluck",
-    "2": "bass pluck hat",
-    "3": "kick hat bass pluck",
-    "4": "kick hat hat16 clap bass pluck16",
-    "5": "kickhalf basslong pizz hat",
-    "6": "kick hat bass pluck",
-    "7": "basslong pluck hat"
-  }
+ "reveal_word": 168,
+ "music_db": -21,
+ "sections": {
+  "1": "basslong pluck",
+  "2": "bass pluck hat",
+  "3": "kick hat bass pluck",
+  "4": "kick hat hat16 clap bass pluck16",
+  "5": "kickhalf basslong pizz hat",
+  "6": "kick hat bass pluck",
+  "7": "basslong pluck hat"
+ }
 }

@@ -46,3 +46,9 @@ Court, texte brut : chemin du mp4, durée, mesures audio, script final, sources 
 - Ces mouvements sont muets : on peut refilmer l'image sans refaire le son.
 - Ne corriger que les vidéos désignées par le propriétaire, et lui envoyer le mp4 après chaque correction.
 - Aucun visuel éclair : chaque titre ou objet reste au moins 1 s à l'écran, chaque plan dure au moins 1 s. Ne jamais faire entrer un élément sur un mot situé à moins d'une seconde de la fin du plan. Contrôle : `brefs` dans `build/meta.json` doit être vide ou presque.
+
+## Depuis le 26/11/2026
+- Le propriétaire valide le SCRIPT avant tout démarrage : écrire le script, s'arrêter, attendre son accord transmis par le chef d'orchestre.
+- Script avec balises d'émotion entre crochets pour eleven_v4 (liste dans le guide du modèle : `[curious]`, `[excited]`, `[surprised]`, `[warmly]`, `[mischievously]`, `[sarcastic]`, `[dramatically]`, `[softly]`, `[chuckles]`). Une balise vaut jusqu'à la suivante : en changer seulement quand le ton change. Viser 225 à 240 mots, la voix expressive parle plus vite.
+- Voix utilisée brute (`"brut": true` dans voix.json).
+- Visuels : poser `V.style = 2` en tête de plans.js. Un seul langage de mouvement, un héros par plan, pas de plan fait de texte seul quand un objet peut le porter.
