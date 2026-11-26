@@ -1,29 +1,32 @@
-# 014 — Le paquet qui rétrécit
+# 014 — Le paquet qui rétrécit (script validé par le propriétaire, proposé le 26/11/2026)
 
-Hook B (« Regarde bien ce… ») · Structure 4 (origine) · Fin : boucle · 218 mots prononcés
+Famille d'accroche B · structure « origine » · univers supermarché · fin : boucle.
+Les mots entre crochets sont des indications d'émotion pour la voix : ils ne sont pas prononcés.
 
-## HOOK (0-5 s)
-Regarde bien ce paquet de biscuits. Le prix n'a pas bougé. Lui, si.
+## HOOK (0-3 s)
+[mischievously] Regarde bien ce paquet de biscuits.
 
-## RETAINER (5-13 s)
-Trente grammes ont disparu. Et tu ne l'as pas vu. Normal : tout est fait pour ça. Et une étude a mesuré à quel point.
+## RETAINER (3-8 s)
+[dramatically] Le prix n'a pas bougé. Lui, si. [curious] Trente grammes ont disparu.
 
-## BODY (13-70 s)
-D'abord, d'où ça vient. Le fabricant voit ses coûts monter. Il a deux options. Un : augmenter le prix. Deux : garder le prix, et mettre moins dans le paquet.
+## BODY
+[softly] Et tu ne l'as pas vu. Normal : tout est fait pour ça.
 
-Hier : 300 grammes, 2,49 €. Aujourd'hui : 270 grammes, 2,49 €. Même boîte, ou presque. Même étiquette.
+[warmly] D'abord, d'où ça vient. Le fabricant voit ses coûts monter. Il a deux options. Un : augmenter le prix. [mischievously] Deux : garder le prix, et mettre moins dans le paquet.
 
-Sauf qu'au kilo, tu es passé de 8,30 € à 9,22 €. 11 % de hausse. Sans toucher au prix.
+[curious] Hier : 300 grammes, 2 euros 49. Aujourd'hui : 270 grammes, 2 euros 49. Même boîte, ou presque. Même étiquette. Dans le rayon, tu ne vois aucune différence.
 
-Cette pratique a un nom, venu de l'anglais : la réduflation.
+[surprised] Sauf qu'au kilo, tu es passé de 8 euros 30 à 9 euros 22. 11 % de hausse. Sans toucher au prix. Tu paies plus, et le ticket de caisse ne te le dira jamais.
 
-Pourquoi ça marche ? Une explication : le prix, tu le regardes. Le poids, presque jamais.
+[warmly] Cette pratique a un nom, venu de l'anglais : la réduflation.
 
-Des chercheurs l'ont mesuré sur dix ans d'achats de glace, dans des foyers américains. Résultat : on réagit à peu près quatre fois plus à une hausse de prix qu'à une baisse de quantité.
+[curious] Pourquoi ça marche ? Une explication : le prix, tu le regardes. Le poids, presque jamais.
 
-Depuis juillet 2024, en France, les grandes surfaces doivent le signaler en rayon. Mais seulement pendant deux mois.
+[dramatically] Des chercheurs l'ont mesuré sur dix ans d'achats de glace, dans des foyers américains. Résultat : on réagit à peu près quatre fois plus à une hausse de prix qu'à une baisse de quantité.
 
-Le vrai repère, lui, reste là : le prix au kilo, écrit en petit sur l'étiquette.
+[warmly] Depuis juillet 2024, en France, les grandes surfaces doivent le signaler en rayon. [softly] Mais seulement pendant deux mois.
 
-## BOUCLE (70-78 s)
-Alors la prochaine fois, dans le rayon, ne lis pas le gros chiffre. Lis le petit. Et regarde bien ce paquet…
+[mischievously] Le vrai repère, lui, reste là : le prix au kilo, écrit en petit sur l'étiquette. Ne lis pas le gros chiffre. Lis le petit.
+
+## BOUCLE (3 à 5 dernières secondes)
+[mischievously] Et la prochaine fois qu'une boîte te semble un peu plus légère…
