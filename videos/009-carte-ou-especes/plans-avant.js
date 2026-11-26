@@ -78,27 +78,22 @@
   V.keywords = [2, 12, 15, 31, 37, 42, 56, 63, 69, 73, 78, 87, 88, 106, 108, 114, 124, 131, 138, 146, 152, 161, 163, 171, 175, 181, 183, 186, 191, 204, 211, 216];
 
   /* ===== SCÈNE 1 — HOOK ===== */
+  // accroche en trois plans, la carte reste à l'écran du début à la fin
   S(0, 1, bg => [
-    E(290, 620, card(bg, { w: 440 }), { a: 'left', rot: -8, sfx: 'whoosh' }),
-    E(790, 900, bill(bg, { w: 440 }), { a: 'right', rot: 8, d: .08 }),
-    E(540, 760, Tx('VS', 260, 'var(--a2)'), { a: 'stamp', d: .35, sfx: 'stamp' }),
+    E(540, 520, card(bg, { w: 660 }), { a: 'left', rot: -6, sfx: 'whoosh', loop: 'float', amp: 8, per: 1.6 }),
+    E(540, 960, Tx('PRÊT À PAYER', 168), { a: 'up', w: 3 }),
+    E(540, 1190, Tx('PLUS CHER', 240, 'var(--a1)'), { a: 'stamp', w: 8, sfx: 'stamp' }),
   ]);
-  S(3, 1, bg => [
-    E(540, 640, O.person({ w: 380, fill: P.navy }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1090, Tx('PRÊT À PAYER', 168, 'var(--a1)'), { a: 'up', w: 5 }),
-  ]);
-  S(8, 1, bg => [
-    E(540, 420, O.arrow({ w: 340, fill: P.yellow }), { a: 'up', rot: -90, sfx: 'rise', loop: 'float', amp: 16, per: .8 }),
-    E(540, 800, Tx('PLUS', 320), { a: 'stamp', sfx: 'stamp' }),
-    E(540, 1100, Tx('CHER', 320, 'var(--a1)'), { a: 'stamp', w: 9 }),
-  ]);
+  k = 2;                                             // garde les fonds d'origine (vert, crème, puis la suite inchangée)
   S(10, 1, bg => [
-    ...[0, 1, 2].map(i => E(540 + (i - 1) * 60, 620 + i * 170, bill(bg, { w: 560 }), { a: 'drop', d: i * .14, dur: .45, rot: (i - 1) * 7, sfx: i ? undefined : 'thud' })),
-    E(540, 300, Tx('QUE DES BILLETS', 130, 'var(--a1)'), { a: 'down', w: 11 }),
+    E(300, 520, card(bg, { w: 440 }), { a: 'none', rot: -6 }),
+    E(780, 700, bill(bg, { w: 440 }), { a: 'right', rot: 8, sfx: 'whoosh' }),
+    E(540, 1120, Tx("QU'AVEC DES BILLETS", 120, 'var(--a1)'), { a: 'up', w: 11 }),
   ]);
   S(13, 1, bg => [
-    E(540, 420, Tx('PARFOIS', 220), { a: 'down' }),
-    E(540, 860, Tx('×2', 640, 'var(--a1)'), { a: 'stamp', w: 15, sfx: 'stamp', loop: 'pulse', amp: .03, per: .6 }),
+    E(540, 440, card(bg, { w: 520 }), { a: 'none', rot: -6 }),
+    E(540, 770, Tx('PARFOIS', 180), { a: 'down' }),
+    E(540, 1120, Tx('×2', 420, 'var(--a1)'), { a: 'stamp', w: 15, sfx: 'stamp', loop: 'pulse', amp: .03, per: .6 }),
   ]);
 
   /* ===== SCÈNE 2 — RETAINER ===== */

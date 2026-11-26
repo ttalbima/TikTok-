@@ -1,31 +1,34 @@
-# 010 — Les rayons de la caisse
+# 010 — Les rayons de la caisse (script validé par le propriétaire, proposé le 26/11/2026)
 
-Hook A (« Pourquoi tu… ») · Structure 2 (parcours : la file d'attente) · Fin : défi
+Famille d'accroche A · structure « parcours » · univers supermarché · fin : boucle.
+Les mots entre crochets sont des indications d'émotion pour la voix : ils ne sont pas prononcés.
 
 ## HOOK (0-3 s)
-Pourquoi tu craques toujours à la caisse ?
+[curious] Pourquoi tu craques toujours à la caisse ?
 
-## RETAINER (3-9 s)
-Tu as tenu tout le magasin. Et tu lâches au dernier mètre. Ce n'est pas un hasard, et la preuve tient en un chiffre.
+## RETAINER (3-8 s)
+[dramatically] Tu as tenu tout le magasin. [mischievously] Et tu lâches au dernier mètre.
 
-## BODY (9-70 s)
-Tu es dans la file. Ton chariot est plein, ta liste est finie.
+## BODY
+[softly] Ce n'est pas un hasard, et la preuve tient en un chiffre.
 
-Devant toi, trois personnes. Et tes yeux cherchent quelque chose à faire.
+[warmly] Tu es dans la file. Ton chariot est plein, ta liste est finie. Tu as bien résisté. Devant toi, trois personnes. Et tes yeux cherchent quelque chose à faire.
 
-À gauche, des chewing-gums. À droite, des barres chocolatées. Pile à hauteur de ta main.
+[mischievously] À gauche, des chewing-gums. À droite, des barres chocolatées. Pile à hauteur de ta main.
 
-Regarde les prix : 1 euro, 2 euros. À côté de tes 80 euros de courses, ça ne pèse rien.
+[curious] Regarde les prix : 1 euro, 2 euros. À côté de tes 80 euros de courses, ça ne pèse rien.
 
-Tu avances d'un pas. Le présentoir te suit. Hop, une barre sur le tapis.
+[excited] Tu avances d'un pas. Le présentoir te suit. Hop, une barre sur le tapis. Tu ne l'as même pas décidé.
 
-Elle n'était pas sur ta liste. Un achat d'impulsion : une envie, un produit sous la main, pas le temps de réfléchir.
+[warmly] Elle n'était pas sur ta liste. C'est un achat d'impulsion : une envie, un produit sous la main, pas le temps de réfléchir.
 
-Et quand on retire tout ça ? Des supermarchés britanniques ont enlevé bonbons et chips de leurs caisses. Des chercheurs ont suivi les achats.
+[curious] Et quand on retire tout ça ? Des supermarchés britanniques ont enlevé bonbons et chips de leurs caisses. Des chercheurs ont suivi les achats.
 
-Résultat, publié en 2018 : 17 % d'achats en moins pour ces produits, tout de suite. Et encore 15 % un an plus tard.
+[surprised] Résultat, publié en 2018 : 17 % d'achats en moins pour ces produits, tout de suite. Et encore 15 % un an plus tard.
 
-C'est une étude d'observation : un lien, pas une preuve absolue. L'idée est simple : ce que tu achètes à la caisse dépend de ce qu'on y a posé.
+[softly] C'est une étude d'observation : un lien, pas une preuve absolue. [dramatically] Mais l'idée est simple : ce que tu achètes à la caisse dépend de ce qu'on y a posé.
 
-## DÉFI (70-78 s)
-La prochaine fois, dans la file, regarde ce qu'on a placé à hauteur de ta main. Et compte combien de pas tu tiens.
+[mischievously] Alors dans la file, regarde ce qu'on a placé à hauteur de ta main. Compte tes pas.
+
+## BOUCLE (3 à 5 dernières secondes)
+[mischievously] Et si une barre finit quand même sur le tapis, tu sauras enfin…

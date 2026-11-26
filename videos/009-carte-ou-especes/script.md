@@ -1,33 +1,34 @@
-# 009 — Carte ou espèces
+# 009 — Carte ou espèces (script validé par le propriétaire, proposé le 26/11/2026)
 
-Hook famille D (résultat d'étude) · Structure 4 (origine) · Univers : café, boulangerie · Fin : question
+Famille d'accroche D · structure « origine » · univers café et boulangerie · fin : boucle.
+Les mots entre crochets sont des indications d'émotion pour la voix : ils ne sont pas prononcés.
 
-## HOOK (0-5 s)
-Avec une carte, on est prêt à payer plus cher qu'avec des billets. Parfois le double.
+## HOOK (0-3 s)
+[surprised] Par carte, tu acceptes de payer plus.
 
-## RETAINER (5-12 s)
-Et ça n'a rien à voir avec l'argent sur ton compte. C'est une histoire de douleur. Regarde d'où ça vient.
+## RETAINER (3-8 s)
+[curious] Parfois le double. [dramatically] Et ça n'a rien à voir avec ton compte.
 
-## BODY (12-72 s)
-En 2001, deux chercheurs organisent une enchère dans une école de commerce. À gagner : deux places pour un match de basket.
+## BODY
+[warmly] C'est une histoire de douleur. Regarde d'où ça vient.
 
-Les étudiants écrivent leur offre en secret. Une moitié devra payer en espèces. L'autre moitié, par carte.
+[curious] En 2001, deux chercheurs organisent une enchère dans une école de commerce. À gagner : deux places pour un match de basket.
 
-Même match. Mêmes places. Résultat : ceux qui paient par carte proposent plus du double.
+[mischievously] Les étudiants écrivent leur offre en secret. Une moitié devra payer en espèces. L'autre moitié, par carte.
 
-Pourquoi ? Quelques années plus tôt, d'autres chercheurs avaient donné un nom à ce qu'on ressent en payant : la douleur de payer.
+[surprised] Même match. Mêmes places. Résultat : ceux qui paient par carte proposent plus du double.
 
-Avec un billet, tu la sens. Tu ouvres ton portefeuille, tu comptes, tu vois l'argent partir.
+[curious] Pourquoi ? Quelques années plus tôt, d'autres chercheurs avaient donné un nom à ce qu'on ressent en payant : la douleur de payer.
 
-Avec une carte, tu poses, ça bipe, c'est fini. Rien ne quitte ta main. La douleur arrive plus tard, sur ton relevé.
+[softly] Avec un billet, tu la sens. Tu ouvres ton portefeuille, tu comptes, tu vois l'argent partir. Dix euros de moins dans ta poche, ça se remarque.
 
-Alors à la boulangerie, le croissant en plus passe tout seul. Au café, le deuxième aussi.
+[excited] Avec une carte, tu poses, ça bipe, c'est fini. Rien ne quitte ta main. [dramatically] La douleur arrive plus tard, sur ton relevé. Et souvent, tu ne te souviens même plus de ce que c'était.
 
-Attention : l'écart n'est pas toujours aussi énorme. En 2024, une analyse de 71 études conclut que l'effet est réel, mais petit.
+[mischievously] Alors à la boulangerie, le croissant en plus passe tout seul. Au café, le deuxième aussi.
 
-Petit. Mais répété à chaque passage en caisse.
+[warmly] Attention : l'écart n'est pas toujours aussi énorme. En 2024, une analyse de 71 études conclut que l'effet est réel, mais petit.
 
-Et c'est toute l'idée : moins tu vois l'argent partir, moins tu le sens.
+[dramatically] Petit. Mais répété à chaque passage en caisse. Moins tu vois l'argent partir, moins tu le sens. [softly] Et ce que tu ne sens pas, tu ne le comptes pas.
 
-## QUESTION (72-78 s)
-Et toi : ton dernier achat sans contact, tu sais combien il coûtait ?
+## BOUCLE (3 à 5 dernières secondes)
+[mischievously] Alors la prochaine fois que ça bipe, souviens-toi d'une chose…
