@@ -82,7 +82,7 @@
   const win = (bg, o = {}) => O.win(bg === 'cream' ? { fill: T.cream2, ...o } : bg === 'navy' ? { bar: T.navy2, ...o } : o);
   const under = (y, col, an = {}) => E(540, y, O.line('M20,20 H780', { w: 800, vw: 800, vh: 40, col, sw: 28, draw: { d: .2, dur: .3, ...an } }), { a: 'none', cut: false });
 
-  V.keywords = [5, 10, 15, 27, 33, 42, 49, 56, 59, 65, 72, 73, 86, 90, 95, 105, 108, 113, 119, 127, 129, 134, 142, 147, 162, 167, 173, 174, 184, 194, 200, 212];
+  V.keywords = [5, 10, 14, 21, 21, 27, 36, 42, 45, 51, 58, 65, 78, 82, 87, 97, 100, 105, 111, 119, 136, 141, 149, 154, 169, 174, 180, 181, 191, 213, 219, 238];
 
   /* ===== SCÈNE 1 — HOOK ===== */
   S(0, 1, bg => [
@@ -96,294 +96,294 @@
   ]);
   S(6, 1, bg => [
     E(540, 340, Tx('PLUS QUE', 220), { a: 'down' }),
-    E(540, 760, Tx('2', 520, 'var(--a1)'), { a: 'stamp', w: 8, sfx: 'stamp' }),
+    E(540, 760, Tx('2', 520, 'var(--a1)'), { a: 'stamp', w: 9, sfx: 'stamp' }),
     E(540, 1180, Tx('EN STOCK', 220), { a: 'up', w: 9, m: [{ w: 10, d: .4, s: 1.08, dur: .2 }, { w: 10, d: .65, s: 1, dur: .2 }] }),
   ]);
 
   /* ===== SCÈNE 2 — RETAINER ===== */
   S(11, 2, bg => [
     E(540, 460, sac(bg, { w: 360 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 950, Tx('RIEN', 300, 'var(--a1)'), { a: 'stamp', w: 15, sfx: 'stamp' }),
-    E(540, 1190, Tx('SUR LE PRODUIT', 140), { a: 'up', w: 17 }),
-  ]);
-  S(19, 2, bg => [
-    E(540, 620, Tx('ET', 340), { a: 'stamp', sfx: 'stamp' }),
-    E(540, 940, Tx('POURTANT…', 190, 'var(--a1)'), { a: 'up', w: 20 }),
+    E(540, 950, Tx('RIEN', 300, 'var(--a1)'), { a: 'stamp', w: 14, sfx: 'stamp' }),
+    E(540, 1190, Tx('SUR LE PRODUIT', 140), { a: 'up', w: 19 }),
   ]);
   S(21, 2, bg => [
-    E(540, 620, O.burst({ w: 880, n: 14 }), { a: 'pop', w: 25, loop: 'spin', per: 6, cut: false }),
-    E(540, 620, sac(bg, { w: 340 }), { a: 'pop', sfx: 'pop', m: [{ w: 25, s: 1.35, dur: .4, sfx: 'rise' }] }),
-    E(540, 1170, Tx('PLUS…', 230, 'var(--a1)'), { a: 'up', w: 26 }),
+    E(540, 620, Tx('ET', 340), { a: 'stamp', sfx: 'stamp' }),
+    E(540, 940, Tx('POURTANT…', 190, 'var(--a1)'), { a: 'up', w: 21 }),
   ]);
-  S(27, 2, bg => [
+  S(21, 2, bg => [
+    E(540, 620, O.burst({ w: 880, n: 14 }), { a: 'pop', w: 21, loop: 'spin', per: 6, cut: false }),
+    E(540, 620, sac(bg, { w: 340 }), { a: 'pop', sfx: 'pop', m: [{ w: 21, s: 1.35, dur: .4, sfx: 'rise' }] }),
+    E(540, 1170, Tx('PLUS…', 230, 'var(--a1)'), { a: 'up', w: 21 }),
+  ]);
+  S(21, 2, bg => [
     E(540, 560, sac(bg, { w: 400, fill: P.navy, dark: T.navy2 }), { a: 'none', loop: 'pulse', amp: .04, per: .6 }),
     E(540, 1040, Tx('DÉSIRABLE', 230, 'var(--a1)'), { a: 'stamp', sfx: 'stamp' }),
   ]);
-  S(28, 2, bg => [
+  S(21, 2, bg => [
     E(540, 560, O.magnifier({ w: 420 }), { a: 'left', sfx: 'whoosh' }),
-    E(540, 1040, Tx('LA PREUVE', 240, 'var(--a1)'), { a: 'stamp', w: 29, sfx: 'stamp' }),
+    E(540, 1040, Tx('LA PREUVE', 240, 'var(--a1)'), { a: 'stamp', w: 21, sfx: 'stamp' }),
   ]);
-  S(32, 2, bg => [
+  S(21, 2, bg => [
     E(300, 660, O.jar(10, { w: 380 }), { a: 'drop', sfx: 'thud' }),
-    E(780, 660, O.jar(2, { w: 380 }), { a: 'drop', w: 33, sfx: 'thud' }),
-    E(540, 1150, Tx('2 BOCAUX', 230, 'var(--a1)'), { a: 'up', w: 34 }),
+    E(780, 660, O.jar(2, { w: 380 }), { a: 'drop', w: 21, sfx: 'thud' }),
+    E(540, 1150, Tx('2 BOCAUX', 230, 'var(--a1)'), { a: 'up', w: 21 }),
   ]);
 
   /* ===== SCÈNE 3 — CÔTÉ VENDEUR ===== */
-  S(36, 3, bg => [
+  S(21, 3, bg => [
     E(540, 700, O.burst({ w: 1000, n: 12, col: P.coral }), { a: 'pop', loop: 'spin', per: 7, cut: false }),
     E(540, 700, Tx('IMAGINE', 280), { a: 'stamp', sfx: 'stamp' }),
   ]);
-  S(38, 3, bg => [
+  S(23, 3, bg => [
     E(280, 800, O.person({ w: 340, fill: P.yellow }), { a: 'left', sfx: 'pop' }),
     E(280, 520, O.crown({ w: 200 }), { a: 'drop', d: .2, dur: .4 }),
-    E(740, 760, win(bg, { w: 520 }), { a: 'right', w: 40 }),
-    E(540, 1180, Tx('TON SITE', 240, 'var(--a1)'), { a: 'up', w: 41 }),
+    E(740, 760, win(bg, { w: 520 }), { a: 'right', w: 25 }),
+    E(540, 1180, Tx('TON SITE', 240, 'var(--a1)'), { a: 'up', w: 26 }),
   ]);
-  S(43, 3, bg => [
+  S(28, 3, bg => [
     E(540, 330, Tx('TU VENDS', 190), { a: 'down' }),
-    E(540, 820, O.sac({ w: 560, fill: P.navy, dark: T.navy2 }), { a: 'pop', w: 45, sfx: 'pop' }),
+    E(540, 820, O.sac({ w: 560, fill: P.navy, dark: T.navy2 }), { a: 'pop', w: 30, sfx: 'pop' }),
   ]);
-  S(49, 3, bg => [
+  S(36, 3, bg => [
     E(540, 760, O.tag('39 €', { w: 860 }), { a: 'drop', sfx: 'thud', m: [{ d: .7, s: 1.07, dur: .18 }, { d: .92, s: 1, dur: .2 }] }),
   ]);
-  S(50, 3, bg => [
+  S(36, 3, bg => [
     E(240, 840, O.person({ w: 280, fill: P.cream }), { a: 'pop', sfx: 'pop' }),
     E(540, 800, O.person({ w: 300, fill: P.yellow }), { a: 'pop', d: .12 }),
     E(840, 840, O.person({ w: 280, fill: P.cream }), { a: 'pop', d: .24 }),
-    E(540, 380, O.eye({ w: 380 }), { a: 'pop', w: 52, sfx: 'pop' }),
+    E(540, 380, O.eye({ w: 380 }), { a: 'pop', w: 38, sfx: 'pop' }),
   ]);
-  S(53, 3, bg => [
+  S(39, 3, bg => [
     E(540, 600, O.person({ w: 360 }), { a: 'none', loop: 'swing', amp: 4, per: .7 }),
     E(260, 380, Tx('?', 280, 'var(--a1)'), { a: 'pop', rot: -14, sfx: 'pop' }),
     E(820, 380, Tx('?', 280, 'var(--a2)'), { a: 'pop', d: .2, rot: 14 }),
     E(540, 1130, Tx('HÉSITENT', 240, 'var(--a1)'), { a: 'stamp', d: .1, sfx: 'stamp' }),
   ]);
-  S(55, 3, bg => [
+  S(41, 3, bg => [
     E(300, 600, O.person({ w: 300, fill: P.cream }), { a: 'none', m: [{ d: .1, dx: 1100, dur: .6, e: 'inOut', sfx: 'whoosh' }] }),
     E(600, 600, O.person({ w: 300, fill: P.yellow }), { a: 'none', m: [{ d: .25, dx: 1100, dur: .6, e: 'inOut' }] }),
-    E(540, 1040, Tx('« RÉFLÉCHIR »', 170, 'var(--a1)'), { a: 'pop', w: 56, sfx: 'pop' }),
-    E(540, 560, O.bubble({ w: 460 }), { a: 'pop', w: 56, d: .5, sfx: 'pop' }),
-    E(540, 500, Tx('…', 240, P.navy), { a: 'pop', w: 56, d: .65, cut: false }),
+    E(540, 1040, Tx('« RÉFLÉCHIR »', 170, 'var(--a1)'), { a: 'pop', w: 42, sfx: 'pop' }),
+    E(540, 560, O.bubble({ w: 460 }), { a: 'pop', w: 42, d: .5, sfx: 'pop' }),
+    E(540, 500, Tx('…', 240, P.navy), { a: 'pop', w: 42, d: .65, cut: false }),
+  ]);
+  S(43, 3, bg => [
+    E(540, 500, Tx('TU FAIS', 240), { a: 'down' }),
+    E(540, 880, Tx('QUOI ?', 380, 'var(--a1)'), { a: 'stamp', w: 45, sfx: 'stamp' }),
+  ]);
+  S(47, 3, bg => [
+    E(440, 600, O.tag('39 €', { w: 600 }), { a: 'pop', sfx: 'pop', m: [{ w: 47, dy: 160, s: .8, dur: .4, sfx: 'fall' }] }),
+    E(880, 620, O.arrow({ w: 300, fill: P.navy }), { a: 'down', w: 47, d: .15, rot: 90 }),
+    E(540, 1150, Tx('- CHER ?', 260, 'var(--a1)'), { a: 'up', w: 48 }),
+  ]);
+  S(49, 3, bg => [
+    ...[0, 1, 2].map(i => E(290 + i * 250, 520, O.coin('€', { w: 220, small: '' }), { a: 'pop', d: i * .08, m: [{ d: .3 + i * .1, dy: 1300, r: 60, dur: .5, e: 'inOut', sfx: i ? undefined : 'fall' }] })),
+    E(540, 1040, Tx('ÇA COÛTE', 250, 'var(--a1)'), { a: 'stamp', w: 51, sfx: 'stamp' }),
+  ]);
+  S(52, 3, bg => [
+    E(540, 400, Tx('1 LIGNE', 240), { a: 'down' }),
+    E(540, 700, O.line('M20,20 H880', { w: 900, vw: 900, vh: 40, col: P.coral, sw: 34, draw: { w: 54, d: 0, dur: .4, sfx: 'swish' } }), { a: 'none', cut: false }),
+    E(540, 1010, badge(bg, 'PLUS QUE 2 EN STOCK', { w: 940 }), { a: 'pop', w: 56, sfx: 'pop', loop: 'pulse', amp: .05, per: .45 }),
   ]);
   S(57, 3, bg => [
-    E(540, 500, Tx('TU FAIS', 240), { a: 'down' }),
-    E(540, 880, Tx('QUOI ?', 380, 'var(--a1)'), { a: 'stamp', w: 59, sfx: 'stamp' }),
-  ]);
-  S(60, 3, bg => [
-    E(440, 600, O.tag('39 €', { w: 600 }), { a: 'pop', sfx: 'pop', m: [{ w: 61, dy: 160, s: .8, dur: .4, sfx: 'fall' }] }),
-    E(880, 620, O.arrow({ w: 300, fill: P.navy }), { a: 'down', w: 60, d: .15, rot: 90 }),
-    E(540, 1150, Tx('- CHER ?', 260, 'var(--a1)'), { a: 'up', w: 62 }),
-  ]);
-  S(63, 3, bg => [
-    ...[0, 1, 2].map(i => E(290 + i * 250, 520, O.coin('€', { w: 220, small: '' }), { a: 'pop', d: i * .08, m: [{ d: .3 + i * .1, dy: 1300, r: 60, dur: .5, e: 'inOut', sfx: i ? undefined : 'fall' }] })),
-    E(540, 1040, Tx('ÇA COÛTE', 250, 'var(--a1)'), { a: 'stamp', w: 65, sfx: 'stamp' }),
-  ]);
-  S(66, 3, bg => [
-    E(540, 400, Tx('1 LIGNE', 240), { a: 'down' }),
-    E(540, 700, O.line('M20,20 H880', { w: 900, vw: 900, vh: 40, col: P.coral, sw: 34, draw: { w: 68, d: 0, dur: .4, sfx: 'swish' } }), { a: 'none', cut: false }),
-    E(540, 1010, badge(bg, 'PLUS QUE 2 EN STOCK', { w: 940 }), { a: 'pop', w: 70, sfx: 'pop', loop: 'pulse', amp: .05, per: .45 }),
-  ]);
-  S(71, 3, bg => [
     E(540, 500, O.tag('0 €', { w: 620 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1010, Tx('GRATUIT', 300, 'var(--a1)'), { a: 'stamp', w: 72, sfx: 'stamp' }),
+    E(540, 1010, Tx('GRATUIT', 300, 'var(--a1)'), { a: 'stamp', w: 58, sfx: 'stamp' }),
   ]);
 
   /* ===== SCÈNE 4 — L'EXPÉRIENCE DE 1975 ===== */
-  S(73, 4, bg => [
+  S(65, 4, bg => [
     E(540, 740, Tx(cnt({ from: 1960, to: 1975, dur: .5, sfx: 'tick' }), 440), { a: 'pop', m: [{ d: 1.05, s: 1.08, dur: .2 }, { d: 1.3, s: 1, dur: .2 }] }),
     under(1010, P.coral, { d: .6 }),
   ]);
   const cher = (fill = P.navy, ink = P.cream) => O.person({ w: 340, fill, coat: true, ink });
-  S(74, 4, bg => [
+  S(66, 4, bg => [
     E(320, 720, cher(), { a: 'pop', sfx: 'pop' }),
     E(760, 720, cher(), { a: 'pop', d: .15 }),
-    E(540, 1130, O.clipboard({ w: 220 }), { a: 'up', w: 76 }),
+    E(540, 1130, O.clipboard({ w: 220 }), { a: 'up', w: 68 }),
   ]);
-  S(78, 4, bg => [
+  S(70, 4, bg => [
     E(540, 720, O.cookie({ w: 620 }), { a: 'spin', sfx: 'pop' }),
   ]);
-  S(81, 4, bg => [
+  S(73, 4, bg => [
     ...[0, 1, 2, 3].map(i => E(180 + i * 240, 700 + (i % 2) * 50, O.person({ w: 230, fill: [P.navy, P.coral, P.green, P.navy][i] }), { a: 'pop', d: i * .1, sfx: i ? undefined : 'pop' })),
-    E(540, 1150, Tx('ÉTUDIANTES', 200, 'var(--a1)'), { a: 'up', w: 82 }),
+    E(540, 1150, Tx('ÉTUDIANTES', 200, 'var(--a1)'), { a: 'up', w: 74 }),
+  ]);
+  S(75, 4, bg => [
+    E(540, 620, O.jar(10, { w: 520 }), { a: 'drop', sfx: 'thud' }),
+    E(540, 1170, Tx('BOCAL 1', 230, 'var(--a1)'), { a: 'up', w: 76 }),
+  ]);
+  S(78, 4, bg => [
+    E(540, 620, Tx('10', 680), { a: 'stamp', sfx: 'stamp' }),
+    E(540, 1100, Tx('BISCUITS', 240, 'var(--a1)'), { a: 'up', w: 78 }),
+  ]);
+  S(79, 4, bg => [
+    E(540, 620, O.jar(2, { w: 520, lid: P.navy }), { a: 'drop', sfx: 'thud' }),
+    E(540, 1170, Tx('BOCAL 2', 230, 'var(--a1)'), { a: 'up', w: 80 }),
+  ]);
+  S(82, 4, bg => [
+    E(540, 620, Tx('2', 680, 'var(--a1)'), { a: 'stamp', sfx: 'stamp' }),
+    E(540, 1100, Tx('BISCUITS', 240), { a: 'up', w: 82 }),
   ]);
   S(83, 4, bg => [
-    E(540, 620, O.jar(10, { w: 520 }), { a: 'drop', sfx: 'thud' }),
-    E(540, 1170, Tx('BOCAL 1', 230, 'var(--a1)'), { a: 'up', w: 84 }),
-  ]);
-  S(85, 4, bg => [
-    E(540, 620, Tx('10', 680), { a: 'stamp', sfx: 'stamp' }),
-    E(540, 1100, Tx('BISCUITS', 240, 'var(--a1)'), { a: 'up', w: 86 }),
-  ]);
-  S(87, 4, bg => [
-    E(540, 620, O.jar(2, { w: 520, lid: P.navy }), { a: 'drop', sfx: 'thud' }),
-    E(540, 1170, Tx('BOCAL 2', 230, 'var(--a1)'), { a: 'up', w: 88 }),
-  ]);
-  S(89, 4, bg => [
-    E(540, 620, Tx('2', 680, 'var(--a1)'), { a: 'stamp', sfx: 'stamp' }),
-    E(540, 1100, Tx('BISCUITS', 240), { a: 'up', w: 90 }),
-  ]);
-  S(91, 4, bg => [
     E(250, 560, O.cookie({ w: 340 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 560, Tx('=', 260), { a: 'pop', w: 93, sfx: 'pop' }),
-    E(830, 560, O.cookie({ w: 340 }), { a: 'pop', w: 93, d: .25 }),
-    E(540, 1080, Tx('LES MÊMES', 205, 'var(--a1)'), { a: 'stamp', w: 95, sfx: 'stamp' }),
+    E(540, 560, Tx('=', 260), { a: 'pop', w: 85, sfx: 'pop' }),
+    E(830, 560, O.cookie({ w: 340 }), { a: 'pop', w: 85, d: .25 }),
+    E(540, 1080, Tx('LES MÊMES', 205, 'var(--a1)'), { a: 'stamp', w: 87, sfx: 'stamp' }),
   ]);
-  S(96, 4, bg => [
+  S(88, 4, bg => [
     E(540, 420, Tx('POURTANT', 250, 'var(--a1)'), { a: 'stamp', sfx: 'stamp' }),
-    E(540, 930, O.jar(2, { w: 440 }), { a: 'up', w: 97, sfx: 'pop' }),
+    E(540, 930, O.jar(2, { w: 440 }), { a: 'up', w: 89, sfx: 'pop' }),
   ]);
-  S(100, 4, bg => [
+  S(92, 4, bg => [
     E(540, 600, O.jar(2, { w: 500, light: true }), { a: 'pop', sfx: 'pop', loop: 'pulse', amp: .03, per: .6 }),
     E(540, 1160, Tx('PRESQUE VIDE', 170, 'var(--a1)'), { a: 'stamp', d: .1, sfx: 'stamp' }),
   ]);
-  S(103, 4, bg => [
+  S(95, 4, bg => [
     E(540, 660, O.burst({ w: 820, n: 14 }), { a: 'pop', loop: 'spin', per: 6, cut: false }),
     E(540, 660, O.cookie({ w: 360 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 380, O.crown({ w: 260 }), { a: 'drop', w: 105, dur: .45, sfx: 'ding' }),
-    E(540, 1180, Tx('+ DÉSIRABLES', 170, 'var(--a1)'), { a: 'up', w: 104 }),
+    E(540, 380, O.crown({ w: 260 }), { a: 'drop', w: 97, dur: .45, sfx: 'ding' }),
+    E(540, 1180, Tx('+ DÉSIRABLES', 170, 'var(--a1)'), { a: 'up', w: 96 }),
   ]);
-  S(106, 4, bg => [
+  S(98, 4, bg => [
     E(330, 520, O.cookie({ w: 300 }), { a: 'pop' }),
     E(730, 540, O.tag('€€€', { w: 440 }), { a: 'right', d: .1, rot: 6, sfx: 'pop' }),
-    E(540, 1040, Tx('+ CHERS', 300, 'var(--a1)'), { a: 'stamp', w: 107, sfx: 'stamp' }),
+    E(540, 1040, Tx('+ CHERS', 300, 'var(--a1)'), { a: 'stamp', w: 99, sfx: 'stamp' }),
   ]);
 
   /* ===== SCÈNE 5 — L'EFFET DE RARETÉ ===== */
-  S(109, 5, bg => [
+  S(101, 5, bg => [
     E(540, 380, Tx("ÇA S'APPELLE", 150), { a: 'down' }),
-    E(540, 660, Tx("L'EFFET", 280), { a: 'pop', w: 111, sfx: 'pop' }),
-    E(540, 960, Tx('DE RARETÉ', 240, 'var(--a1)'), { a: 'stamp', w: 113, sfx: 'stamp' }),
-    under(1130, P.coral, { w: 113, d: .3 }),
+    E(540, 660, Tx("L'EFFET", 280), { a: 'pop', w: 103, sfx: 'pop' }),
+    E(540, 960, Tx('DE RARETÉ', 240, 'var(--a1)'), { a: 'stamp', w: 105, sfx: 'stamp' }),
+    under(1130, P.coral, { w: 105, d: .3 }),
   ]);
-  S(114, 5, bg => [
+  S(106, 5, bg => [
     E(540, 620, O.jar(1, { w: 480 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 1150, Tx('CE QUI MANQUE', 160, 'var(--a1)'), { a: 'up', w: 116 }),
+    E(540, 1150, Tx('CE QUI MANQUE', 160, 'var(--a1)'), { a: 'up', w: 108 }),
   ]);
-  S(118, 5, bg => [
+  S(110, 5, bg => [
     E(540, 620, O.disc({ w: 640, fill: P.navy }), { a: 'pop' }),
     E(540, 620, O.cookie({ w: 400 }), { a: 'pop', d: .06, sfx: 'pop', loop: 'pulse', amp: .05, per: .5 }),
-    E(540, 1140, Tx('MEILLEUR', 260, 'var(--a1)'), { a: 'stamp', w: 119, sfx: 'stamp' }),
+    E(540, 1140, Tx('MEILLEUR', 260, 'var(--a1)'), { a: 'stamp', w: 111, sfx: 'stamp' }),
   ]);
-  S(120, 5, bg => [
-    E(540, 600, O.clock({ w: 620 }), { a: 'pop', sfx: 'pop', loop: 'shake', amp: 7, lw: 127, ld: .2 }),
+  S(112, 5, bg => [
+    E(540, 600, O.clock({ w: 620 }), { a: 'pop', sfx: 'pop', loop: 'shake', amp: 7, lw: 119, ld: .2 }),
     E(540, 600, O.hand({ w: 620, col: P.navy }), { a: 'none', loop: 'spin', per: .7, cut: false }),
-    E(540, 1150, Tx('VITE !', 340, 'var(--a1)'), { a: 'stamp', w: 127, sfx: 'stamp' }),
+    E(540, 1150, Tx('VITE !', 340, 'var(--a1)'), { a: 'stamp', w: 119, sfx: 'stamp' }),
   ]);
 
   /* ===== SCÈNE 6 — L'ÉTUDE DE 2019 ===== */
-  S(128, 6, bg => [
+  S(135, 6, bg => [
     E(540, 740, Tx(cnt({ from: 2005, to: 2019, dur: .5, sfx: 'tick' }), 440), { a: 'pop' }),
     under(1010, P.yellow, { d: .55 }),
   ]);
-  S(130, 6, bg => [
+  S(137, 6, bg => [
     E(300, 760, cher(P.navy, P.yellow), { a: 'pop', sfx: 'pop' }),
     E(700, 760, cher(P.green, P.yellow), { a: 'pop', d: .15 }),
-    E(760, 480, O.magnifier({ w: 320 }), { a: 'right', w: 132, sfx: 'whoosh' }),
+    E(760, 480, O.magnifier({ w: 320 }), { a: 'right', w: 139, sfx: 'whoosh' }),
   ]);
-  S(133, 6, bg => [
+  S(140, 6, bg => [
     E(540, 420, Tx('11 000', 340, 'var(--a1)'), { a: 'stamp', sfx: 'stamp' }),
-    ...Array.from({ length: 8 }, (_, i) => E(165 + (i % 4) * 250, 800 + Math.floor(i / 4) * 200, O.win({ w: 220, bar: T.navy2 }), { a: 'pop', w: 134, d: i * .06, dur: .2 })),
-    E(540, 1210, Tx('SITES', 200), { a: 'up', w: 135 }),
-  ]);
-  S(137, 6, bg => [
-    E(540, 640, win(bg, { w: 640 }), { a: 'pop' }),
-    E(300, 640, O.magnifier({ w: 400 }), { a: 'left', sfx: 'whoosh', m: [{ d: .35, dx: 420, dur: .5, e: 'inOut' }] }),
-    E(540, 1150, Tx('AU CRIBLE', 230, 'var(--a1)'), { a: 'up', w: 138 }),
-  ]);
-  S(139, 6, bg => [
-    ...Array.from({ length: 10 }, (_, i) => E(140 + (i % 5) * 200, 400 + Math.floor(i / 5) * 190, O.win({ w: 170, bar: P.navy }), { a: 'pop', d: i * .04, dur: .2, sfx: i ? undefined : 'pop' })),
-    E(740, 590, O.win({ w: 210, fill: P.yellow, bar: P.navy }), { a: 'pop', w: 140, sfx: 'ding' }),
-    E(540, 1040, Tx('1 SUR 10', 280, 'var(--a1)'), { a: 'stamp', w: 142, sfx: 'stamp' }),
+    ...Array.from({ length: 8 }, (_, i) => E(165 + (i % 4) * 250, 800 + Math.floor(i / 4) * 200, O.win({ w: 220, bar: T.navy2 }), { a: 'pop', w: 141, d: i * .06, dur: .2 })),
+    E(540, 1210, Tx('SITES', 200), { a: 'up', w: 142 }),
   ]);
   S(144, 6, bg => [
+    E(540, 640, win(bg, { w: 640 }), { a: 'pop' }),
+    E(300, 640, O.magnifier({ w: 400 }), { a: 'left', sfx: 'whoosh', m: [{ d: .35, dx: 420, dur: .5, e: 'inOut' }] }),
+    E(540, 1150, Tx('AU CRIBLE', 230, 'var(--a1)'), { a: 'up', w: 145 }),
+  ]);
+  S(146, 6, bg => [
+    ...Array.from({ length: 10 }, (_, i) => E(140 + (i % 5) * 200, 400 + Math.floor(i / 5) * 190, O.win({ w: 170, bar: P.navy }), { a: 'pop', d: i * .04, dur: .2, sfx: i ? undefined : 'pop' })),
+    E(740, 590, O.win({ w: 210, fill: P.yellow, bar: P.navy }), { a: 'pop', w: 147, sfx: 'ding' }),
+    E(540, 1040, Tx('1 SUR 10', 280, 'var(--a1)'), { a: 'stamp', w: 149, sfx: 'stamp' }),
+  ]);
+  S(151, 6, bg => [
     E(540, 380, O.badge('PLUS QUE 2 EN STOCK', { w: 820 }), { a: 'left', sfx: 'pop' }),
     E(540, 560, O.badge('VITE, DERNIÈRES PIÈCES', { w: 820, fill: P.yellow, ink: P.navy, fs: 64 }), { a: 'right', d: .15 }),
     E(540, 740, O.badge('12 PERSONNES REGARDENT', { w: 820, fill: P.cream, ink: P.navy, fs: 62 }), { a: 'left', d: .3 }),
-    E(540, 1100, Tx('PRESSION', 250, 'var(--a1)'), { a: 'stamp', w: 147, sfx: 'stamp' }),
+    E(540, 1100, Tx('PRESSION', 250, 'var(--a1)'), { a: 'stamp', w: 154, sfx: 'stamp' }),
   ]);
-  S(148, 6, bg => [
+  S(155, 6, bg => [
     E(220, 620, O.win({ w: 250, fill: T.cream2 }), { a: 'pop' }),
     E(540, 600, O.win({ w: 330, fill: P.yellow }), { a: 'pop', d: .1, sfx: 'pop', loop: 'pulse', amp: .04, per: .6 }),
     E(860, 620, O.win({ w: 250, fill: T.cream2 }), { a: 'pop', d: .2 }),
-    E(540, 1100, Tx('SUR CERTAINS', 170, 'var(--a1)'), { a: 'up', w: 149 }),
+    E(540, 1100, Tx('SUR CERTAINS', 170, 'var(--a1)'), { a: 'up', w: 156 }),
   ]);
-  S(151, 6, bg => [
+  S(158, 6, bg => [
     E(540, 500, O.badge('PLUS QUE 2 EN STOCK', { w: 900 }), { a: 'pop', sfx: 'pop', loop: 'pulse', amp: .07, per: .4 }),
-    E(540, 950, O.clock({ w: 420 }), { a: 'pop', w: 153, sfx: 'pop' }),
-    E(540, 950, O.hand({ w: 420 }), { a: 'none', w: 153, loop: 'spin', per: .9, cut: false }),
+    E(540, 950, O.clock({ w: 420 }), { a: 'pop', w: 160, sfx: 'pop' }),
+    E(540, 950, O.hand({ w: 420 }), { a: 'none', w: 160, loop: 'spin', per: .9, cut: false }),
   ]);
-  S(156, 6, bg => [
+  S(163, 6, bg => [
     E(540, 520, O.clock({ w: 420, ink: P.navy }), { a: 'none' }),
     E(540, 520, O.hand({ w: 420 }), { a: 'none', loop: 'spin', per: .9, cut: false }),
     E(540, 1040, Tx('PROGRAMMÉ', 200), { a: 'stamp', sfx: 'stamp' }),
   ]);
-  S(157, 6, bg => [
+  S(164, 6, bg => [
     E(540, 360, badge(bg, 'PLUS QUE 2', { w: 640, fs: 84 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 560, O.cross({ w: 180, col: P.navy, sw: 50, draw: { w: 158, sfx: 'buzz' } }), { a: 'none', w: 158 }),
-    ...[0, 1, 2, 3, 4, 5].map(i => E(250 + (i % 3) * 290, 800 + Math.floor(i / 3) * 190, O.box('', { w: 240, fill: P.navy }), { a: 'pop', w: 160, d: i * .06, dur: .2, sfx: i ? undefined : 'pop' })),
-    E(540, 1230, Tx('VRAI STOCK', 190, 'var(--a1)'), { a: 'up', w: 161, dist: 200 }),
+    E(540, 560, O.cross({ w: 180, col: P.navy, sw: 50, draw: { w: 165, sfx: 'buzz' } }), { a: 'none', w: 165 }),
+    ...[0, 1, 2, 3, 4, 5].map(i => E(250 + (i % 3) * 290, 800 + Math.floor(i / 3) * 190, O.box('', { w: 240, fill: P.navy }), { a: 'pop', w: 167, d: i * .06, dur: .2, sfx: i ? undefined : 'pop' })),
+    E(540, 1230, Tx('VRAI STOCK', 190, 'var(--a1)'), { a: 'up', w: 168, dist: 200 }),
   ]);
 
   /* ===== SCÈNE 7 — LA LOI, ET LE VRAI STOCK BAS ===== */
-  S(163, 7, bg => [
+  S(170, 7, bg => [
     E(540, 500, O.pin({ w: 320 }), { a: 'drop', sfx: 'thud' }),
-    E(540, 1000, Tx('EN FRANCE', 230, 'var(--a1)'), { a: 'stamp', w: 164, sfx: 'stamp' }),
+    E(540, 1000, Tx('EN FRANCE', 230, 'var(--a1)'), { a: 'stamp', w: 171, sfx: 'stamp' }),
   ]);
-  S(165, 7, bg => [
+  S(172, 7, bg => [
     E(540, 560, O.badge('PLUS QUE 2 EN STOCK', { w: 900 }), { a: 'pop', sfx: 'pop' }),
-    E(540, 600, O.stamp('FAUX', { w: 640, col: P.navy, fs: 190, h: 280 }), { a: 'stamp', w: 167, rot: -10, sfx: 'stamp' }),
-    E(540, 1080, Tx('FAUX STOCK', 195, 'var(--a1)'), { a: 'up', w: 168 }),
+    E(540, 600, O.stamp('FAUX', { w: 640, col: P.navy, fs: 190, h: 280 }), { a: 'stamp', w: 174, rot: -10, sfx: 'stamp' }),
+    E(540, 1080, Tx('FAUX STOCK', 195, 'var(--a1)'), { a: 'up', w: 175 }),
   ]);
-  S(169, 7, bg => [
+  S(176, 7, bg => [
     E(540, 500, O.book('LOI', { w: 400, fill: P.cream, ink: P.navy, fs: 150 }), { a: 'drop', sfx: 'thud' }),
-    E(540, 970, Tx('PRATIQUE', 200), { a: 'up', w: 171 }),
-    E(540, 1190, Tx('TROMPEUSE', 220, 'var(--a1)'), { a: 'stamp', w: 173, sfx: 'stamp' }),
+    E(540, 970, Tx('PRATIQUE', 200), { a: 'up', w: 178 }),
+    E(540, 1190, Tx('TROMPEUSE', 220, 'var(--a1)'), { a: 'stamp', w: 180, sfx: 'stamp' }),
   ]);
-  S(174, 7, bg => [
+  S(181, 7, bg => [
     E(540, 600, O.cross({ w: 560, col: P.coral, sw: 70, draw: { sfx: 'buzz' } }), { a: 'none', loop: 'shake', ld: .3, ldur: .3, amp: 8 }),
     E(540, 1100, Tx('INTERDIT', 250), { a: 'stamp', d: .15, sfx: 'stamp' }),
   ]);
-  S(175, 7, bg => [
+  S(182, 7, bg => [
     E(540, 360, Tx('MAIS…', 280), { a: 'stamp', sfx: 'stamp' }),
-    E(380, 780, O.box('', { w: 280, fill: P.navy }), { a: 'drop', w: 177, dur: .45, sfx: 'thud' }),
-    E(700, 780, O.box('', { w: 280, fill: P.navy }), { a: 'drop', w: 177, d: .15, dur: .45 }),
-    E(540, 1170, Tx('VRAI STOCK BAS', 150, 'var(--a1)'), { a: 'up', w: 178 }),
+    E(380, 780, O.box('', { w: 280, fill: P.navy }), { a: 'drop', w: 184, dur: .45, sfx: 'thud' }),
+    E(700, 780, O.box('', { w: 280, fill: P.navy }), { a: 'drop', w: 184, d: .15, dur: .45 }),
+    E(540, 1170, Tx('VRAI STOCK BAS', 150, 'var(--a1)'), { a: 'up', w: 185 }),
   ]);
-  S(181, 7, bg => [
+  S(188, 7, bg => [
     E(540, 480, O.brain({ w: 480 }), { a: 'pop', sfx: 'pop', loop: 'float', per: 1.2 }),
-    E(540, 930, Tx('MÊME EFFET', 210, 'var(--a1)'), { a: 'stamp', w: 183, sfx: 'stamp' }),
-    E(540, 1170, Tx('SUR TOI', 220), { a: 'up', w: 185 }),
+    E(540, 930, Tx('MÊME EFFET', 210, 'var(--a1)'), { a: 'stamp', w: 190, sfx: 'stamp' }),
+    E(540, 1170, Tx('SUR TOI', 220), { a: 'up', w: 192 }),
   ]);
 
   /* ===== SCÈNE 8 — BOUCLE ===== */
-  S(187, 8, bg => [
-    E(540, 380, Tx('AVANT DE CLIQUER', 130, 'var(--a1)'), { a: 'down', w: 188 }),
+  S(206, 8, bg => [
+    E(540, 380, Tx('AVANT DE CLIQUER', 130, 'var(--a1)'), { a: 'down', w: 207 }),
     E(540, 760, O.btn('ACHETER', { w: 760, fs: 100 }), { a: 'pop', sfx: 'pop' }),
-    E(900, 1100, O.cursor({ w: 200 }), { a: 'right', d: .1, m: [{ w: 188, dx: -260, dy: -260, dur: .55, e: 'inOut', sfx: 'whoosh' }] }),
+    E(900, 1100, O.cursor({ w: 200 }), { a: 'right', d: .1, m: [{ w: 207, dx: -260, dy: -260, dur: .55, e: 'inOut', sfx: 'whoosh' }] }),
   ]);
-  S(191, 8, bg => [
+  S(210, 8, bg => [
     E(540, 400, Tx('?', 360, 'var(--a2)'), { a: 'pop', rot: 8, sfx: 'pop', loop: 'swing', amp: 6, per: .8 }),
-    E(540, 800, Tx('1 SEULE', 300, 'var(--a1)'), { a: 'stamp', w: 193, sfx: 'stamp' }),
-    E(540, 1100, Tx('QUESTION', 250), { a: 'up', w: 194, m: [{ w: 194, d: .5, s: 1.07, dur: .2 }, { w: 194, d: .75, s: 1, dur: .2 }] }),
+    E(540, 800, Tx('1 SEULE', 300, 'var(--a1)'), { a: 'stamp', w: 212, sfx: 'stamp' }),
+    E(540, 1100, Tx('QUESTION', 250), { a: 'up', w: 213, m: [{ w: 213, d: .5, s: 1.07, dur: .2 }, { w: 213, d: .75, s: 1, dur: .2 }] }),
   ]);
-  S(195, 8, bg => [
+  S(214, 8, bg => [
     E(540, 740, O.fiche({ w: 700 }), { a: 'pop' }),
-    E(740, 706, O.badge('PLUS QUE 2', { w: 340, fs: 84 }), { a: 'none', m: [{ w: 196, dx: 700, dy: -900, r: 40, dur: .5, e: 'inOut', sfx: 'whoosh' }] }),
+    E(740, 706, O.badge('PLUS QUE 2', { w: 340, fs: 84 }), { a: 'none', m: [{ w: 215, dx: 700, dy: -900, r: 40, dur: .5, e: 'inOut', sfx: 'whoosh' }] }),
   ]);
-  S(198, 8, bg => [
+  S(217, 8, bg => [
     E(540, 400, Tx("TU L'AURAIS", 180), { a: 'down' }),
-    E(540, 760, Tx('VOULU ?', 320, 'var(--a1)'), { a: 'stamp', w: 200, sfx: 'stamp' }),
-    E(540, 1130, sac(bg, { w: 240 }), { a: 'up', w: 200, d: .3 }),
+    E(540, 760, Tx('VOULU ?', 320, 'var(--a1)'), { a: 'stamp', w: 219, sfx: 'stamp' }),
+    E(540, 1130, sac(bg, { w: 240 }), { a: 'up', w: 219, d: .3 }),
   ]);
-  S(201, 8, bg => [
+  S(238, 8, bg => [
     E(540, 400, O.bulb({ w: 260, ink: P.cream }), { a: 'pop', sfx: 'pop' }),
-    E(540, 800, Tx('MAINTENANT', 200, 'var(--a1)'), { a: 'stamp', w: 203, sfx: 'stamp' }),
-    E(540, 1080, Tx('TU SAIS', 280), { a: 'stamp', w: 205, sfx: 'stamp', m: [{ w: 208, s: 1.08, dur: .2 }, { w: 208, d: .25, s: 1, dur: .2 }] }),
+    E(540, 800, Tx('MAINTENANT', 200, 'var(--a1)'), { a: 'stamp', w: 238, sfx: 'stamp' }),
+    E(540, 1080, Tx('TU SAIS', 280), { a: 'stamp', w: 238, sfx: 'stamp', m: [{ w: 238, s: 1.08, dur: .2 }, { w: 238, d: .25, s: 1, dur: .2 }] }),
   ]);
-  S(209, 8, bg => [
+  S(238, 8, bg => [
     E(540, 700, O.badge('PLUS QUE 2 EN STOCK', { w: 980 }), { a: 'pop', sfx: 'pop', loop: 'pulse', amp: .06, per: .45 }),
-    E(540, 380, O.eye({ w: 340 }), { a: 'pop', w: 211, sfx: 'pop' }),
-    E(540, 1040, Tx('…', 340, 'var(--a1)'), { a: 'pop', w: 212 }),
+    E(540, 380, O.eye({ w: 340 }), { a: 'pop', w: 238, sfx: 'pop' }),
+    E(540, 1040, Tx('…', 340, 'var(--a1)'), { a: 'pop', w: 238 }),
   ]);
 })();

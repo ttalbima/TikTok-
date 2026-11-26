@@ -102,7 +102,7 @@
   S(10, 2, bg => [
     E(540, 400, card(bg, { w: 480 }), { a: 'none', rot: -6 }),
     E(540, 840, O.box('COMPTE', { w: 520, fs: 66 }), { a: 'up', sfx: 'pop' }),
-    E(540, 840, O.cross({ w: 520, draw: { w: 16, sfx: 'buzz' } }), { a: 'none', w: 16 }),
+    E(540, 840, O.cross({ w: 560, sw: 34, draw: { w: 16, sfx: 'buzz' } }), { a: 'none', w: 16 }),
     E(540, 1210, Tx('RIEN À VOIR', 170, 'var(--a1)'), { a: 'up', w: 13 }),
   ]);
   k = 6;
@@ -318,7 +318,7 @@
   ]);
   S(180, 7, bg => [
     barL({ d: 0, dur: .01 }),
-    barR({ d: 0, dur: .01 }, { org: '50% 100%', m: [{ w: 181, dy: 125, s: .61, dur: .6, e: 'inOut', sfx: 'fall' }] }),
+    barR({ d: 0, dur: .01 }, { org: '50% 100%', m: [{ w: 181, s: .61, dur: .6, e: 'inOut', sfx: 'fall' }] }),
     E(540, 300, Tx('PAS TOUJOURS', 180, 'var(--a1)'), { a: 'down', d: .1 }),
     E(540, 1210, Tx('AUSSI ÉNORME', 140), { a: 'stamp', w: 182 }),
   ]);
