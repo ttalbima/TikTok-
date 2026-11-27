@@ -1,9 +1,11 @@
 # Optimisation par vidéo — TikTok, Instagram Reels, YouTube Shorts
 
-Écrit le 26/11/2026 par l'agent `croissance`. Ce fichier remplace `comptes/descriptions.md`.
-Tout est prêt à copier-coller. Les textes reprennent l'accroche réellement dite dans chaque vidéo (script actuel).
+Écrit le 26/11/2026 par l'agent `croissance`, **remis à jour le 27/11/2026** après la refonte des 14 vidéos (nouveaux scripts, nouvelle charte, fin en boucle). Ce fichier remplace `comptes/descriptions.md`.
+Tout est prêt à copier-coller. Les textes reprennent l'accroche réellement dite dans chaque vidéo (`script.md` du 27/11/2026).
 
-**Alerte stock : 14 vidéos prêtes = exactement 7 jours à 2 par jour. Après le jour 7, il ne reste rien.** Les vidéos 016, 017 et 018 ne sont pas fabriquées. Il faut lancer la suite avant le jour 3, ou passer à 1 vidéo par jour à partir du jour 5.
+**Alerte stock (27/11/2026) : 14 vidéos prêtes = exactement 7 jours à 2 par jour. Zéro jour d'avance : après le jour 7, il ne reste rien.** Les vidéos 016, 017 et 018 attendent toujours ta validation (script et voix faits, animation pas commencée). Il faut les valider et lancer la suite avant le jour 3, ou passer à 1 vidéo par jour à partir du jour 5.
+
+À savoir avant de publier : tu n'as vu et validé que la 001 (v10). Les 13 autres attendent ton avis : regarde chaque vidéo une fois avant de la publier. Aucun rapport de vérification (`controle.md`) n'existe encore dans les dossiers.
 
 Ce que personne ne peut promettre : qu'une vidéo perce. Ce fichier met toutes les chances de ton côté, rien de plus.
 
@@ -39,7 +41,7 @@ Légende : **[Officiel]** = dit par la plateforme ou un de ses dirigeants. **[Pr
 1. **[Officiel]** Le chiffre clé est dans YouTube Studio : « Regardée / balayée ». C'est la part de gens qui restent au lieu de passer.
 2. **[Officiel]** Depuis le 1er octobre 2026, YouTube favorise les Shorts originaux et réduit la portée des chaînes qui republient surtout les vidéos des autres. Publier ta propre vidéo sur trois réseaux n'est pas visé par cette annonce, d'après sa formulation rapportée par la presse.
 3. **[Pratique]** Le titre compte plus qu'ailleurs : mot-clé au début, moins de 60 caractères. Les Shorts sont trouvés par la recherche pendant des mois.
-4. **[Officiel]** Un Short peut durer jusqu'à 3 minutes : nos vidéos de 69 à 78 secondes passent.
+4. **[Officiel]** Un Short peut durer jusqu'à 3 minutes : nos vidéos de 68 à 82 secondes passent.
 5. **[Officiel]** La case « Contenu modifié ou synthétique » vise les contenus réalistes. Pour nos animations, voir la note dans `comptes/reglages.md` (dans le doute, coche « Oui » : selon YouTube, l'étiquette ne pénalise pas).
 6. **[Pratique]** YouTube dit viser les contenus « fabriqués en masse ». Des chaînes sans visage se plaignent d'être touchées à tort (article d'opinion, non confirmé). Notre protection : chaque vidéo a un sujet, une source et une structure différents. Ne publie jamais deux fois la même.
 7. **[Pratique]** Épingle une question en commentaire et réponds aux premiers commentaires.
@@ -55,21 +57,23 @@ Le classement des accroches est une **estimation** : aucune vidéo n'a encore de
 |---|---|---|---|---|---|
 | 1 | 12 h | 010 — La caisse | Pourquoi tu craques toujours à la caisse ? | A | Supermarché |
 | 1 | 19 h | 004 — Le prix barré | Regarde bien ce prix barré. | B | Vêtements et soldes |
-| 2 | 12 h | 006 — L'essai gratuit | Pourquoi tu oublies toujours de résilier après l'essai gratuit ? | A | Abonnements |
+| 2 | 12 h | 006 — L'essai gratuit | Pourquoi tu oublies toujours de résilier l'essai gratuit ? | A | Abonnements |
 | 2 | 19 h | 014 — Le paquet qui rétrécit | Regarde bien ce paquet de biscuits. | B | Supermarché |
 | 3 | 12 h | 003 — Le menu du milieu | Tu crois choisir ton menu. | C | Restaurant |
 | 3 | 19 h | 011 — « Plus que 2 en stock » | Regarde bien ce petit message rouge. | B | Achat en ligne |
-| 4 | 12 h | 001 — Le 9,99 € | Pourquoi tu trouves que 9,99 €, c'est vraiment moins cher que 10 ? | A | Tous commerces |
-| 4 | 19 h | 009 — Carte ou espèces | Avec une carte, on est prêt à payer plus cher qu'avec des billets. | D | Café, boulangerie |
-| 5 | 12 h | 013 — Par mois ou par an | Tu crois choisir le moins cher. | C | Abonnements |
-| 5 | 19 h | 008 — La livraison gratuite | Regarde bien ce message. | B | Achat en ligne |
-| 6 | 12 h | 015 — La carte sans le signe € | Pourquoi tu dépenses plus quand la carte écrit « 20 » ? | A | Restaurant |
-| 6 | 19 h | 005 — Le grand chariot | Donne un chariot plus grand à des clients : ils achètent plus. | D | Supermarché |
+| 4 | 12 h | 001 — Le 9,99 € | Pourquoi 9,99 € te paraît moins cher ? | A | Tous commerces |
+| 4 | 19 h | 009 — Carte ou espèces | Par carte, tu acceptes de payer plus. | D | Café, boulangerie |
+| 5 | 12 h | 013 — Par mois ou par an | Tu crois choisir l'abonnement le moins cher. | C | Abonnements |
+| 5 | 19 h | 008 — La livraison gratuite | Regarde bien ce message de livraison gratuite. | B | Achat en ligne |
+| 6 | 12 h | 015 — La carte sans le signe € | Pourquoi tu dépenses plus sans le signe euro ? | A | Restaurant |
+| 6 | 19 h | 005 — Le grand chariot | Avec un grand chariot, tu achètes plus. | D | Supermarché |
 | 7 | 12 h | 007 — Le pop-corn moyen | Tu crois comparer trois tailles de pop-corn. | C | Cinéma |
-| 7 | 19 h | 012 — La carte de fidélité | Offre deux tampons sur une carte de fidélité. | D | Café |
+| 7 | 19 h | 012 — La carte de fidélité | Deux tampons offerts, et tu reviens plus vite. | D | Café |
 
 Pourquoi cet ordre :
+- Ordre inchangé après la refonte (revérifié le 27/11/2026 sur les nouveaux scripts) : les familles d'accroche, les univers et les structures n'ont pas bougé, seules les phrases ont changé.
 - Deux vidéos qui se suivent n'ont jamais la même famille d'accroche, ni le même univers, ni la même structure de récit.
+- Toutes les accroches sont maintenant en « tu » et tiennent en 8 mots.
 - Jours 1 à 3 : les sujets que tout le monde a vécu cette semaine (caisse, promo, abonnement oublié, paquet rétréci, stock limité).
 - Si tu lances pendant la semaine des grosses promotions de fin novembre, c'est un bon moment pour 004 (jour 1) et 011 (jour 3). Tu peux alors ajouter `#blackfriday` à ces deux vidéos, à la place du dernier hashtag.
 - Limite connue : les 14 vidéos viennent du même pilier (prix et magasins). La règle « jamais deux fois le même pilier à la suite » ne pourra être tenue qu'avec les vidéos 016 à 018.
@@ -81,20 +85,21 @@ Pourquoi cet ordre :
 À chaque publication, sur les trois réseaux :
 - prends le fichier indiqué (pas un fichier `image-muette`, pas une vidéo retéléchargée d'un réseau) ;
 - TikTok : coche « Contenu généré par IA » ;
-- le minutage de la couverture est calculé d'après la voix : **fais glisser jusqu'à l'instant indiqué et vérifie que l'image correspond à la description**. Sinon, prends l'image la plus proche où le gros titre est lisible ;
-- le texte de couverture ne sert que si l'image choisie n'a pas déjà un gros titre lisible.
+- couverture : **prends une image des 2 premières secondes**. Chaque vidéo ouvre maintenant sur un objet concret avec un gros titre : c'est l'image la plus claire, et c'est celle que le spectateur retrouve en lançant la vidéo. Les descriptions ci-dessous viennent des planches de contrôle (`livraison/<n°>-v<version>-planche-1.jpg`, première image). Le titre entre mot par mot : **fais glisser jusqu'à ce qu'il soit entier**, sans dépasser l'instant indiqué (après, le plan change) ;
+- le texte de couverture est un secours : ne l'ajoute pas si le gros titre de l'image est lisible, sinon deux textes se chevauchent ;
+- la voix ne pose plus de question à la fin (les vidéos finissent en boucle) : **c'est le commentaire épinglé qui pose la question**. Ne l'oublie pas.
 
 ### Jour 1 — 12 h · 010 — Les rayons de la caisse
 
 **Fichier :** `videos/010-les-rayons-de-la-caisse/livraison/010-les-rayons-de-la-caisse-v6.mp4`
-**Image de couverture :** vers 20 s, quand la voix dit « des barres chocolatées » : le présentoir de la caisse, à hauteur de main.
+**Image de couverture :** entre 1 et 2 s (le plan change à 2,1 s) : fond violet, une barre chocolatée rose et vert citron posée sur le tapis de caisse, gros titre « TU CRAQUES À LA CAISSE ? ».
 
 **TikTok**
 ```
 Achat impulsif à la caisse du supermarché : pourquoi tu craques sur les chewing-gums et les barres chocolatées dans la file. Et toi, tu tiens combien de pas ?
 #supermarché #courses #achatimpulsif #consommation #argent
 ```
-- Texte de couverture : `TU CRAQUES EN CAISSE ?`
+- Texte de couverture : `TU CRAQUES À LA CAISSE ?`
 - Commentaire à épingler : `C'est quoi, ton dernier achat pas prévu à la caisse ?`
 
 **Instagram**
@@ -104,7 +109,7 @@ Tu as tenu tout le magasin, et tu lâches au dernier mètre. Ce n'est pas un has
 Envoie-la à quelqu'un qui ressort toujours avec une barre chocolatée.
 #supermarché #courses #achatimpulsif #consommation #argent
 ```
-- Texte de couverture : `TU CRAQUES EN CAISSE ?`
+- Texte de couverture : `TU CRAQUES À LA CAISSE ?`
 - Story de partage : `Toi aussi, tu craques à la caisse ?`
 
 **YouTube Shorts**
@@ -122,14 +127,14 @@ Source : PLOS Medicine, 2018.
 ### Jour 1 — 19 h · 004 — Le prix barré
 
 **Fichier :** `videos/004-le-prix-barre/livraison/004-le-prix-barre-v7.mp4`
-**Image de couverture :** vers 7 s, quand la voix dit « 60 juste en dessous » : l'étiquette avec 120 € barré et 60 € en gros.
+**Image de couverture :** entre 1 et 2 s (le plan change à 2,1 s) : fond rose, une étiquette blanche avec « 120 € » barré et « 60 € » en gros, titre « PRIX BARRÉ » en vert citron.
 
 **TikTok**
 ```
 Prix barré, soldes, promo : pourquoi 120 € barrés te font voir une affaire à 60 €. Ça s'appelle l'ancrage. Tu caches le prix barré avec ton pouce, la prochaine fois ?
 #prixbarré #soldes #promo #consommation #argent
 ```
-- Texte de couverture : `CACHE LE PRIX BARRÉ`
+- Texte de couverture : `REGARDE CE PRIX BARRÉ`
 - Commentaire à épingler : `Ton dernier achat en promo : tu l'aurais pris sans le prix barré ?`
 
 **Instagram**
@@ -139,7 +144,7 @@ Il n'est pas là pour t'informer. Il est là pour te faire acheter. Tu ne juges 
 Envoie-la à quelqu'un qui ne résiste pas à une étiquette de promo.
 #prixbarré #soldes #promo #consommation #argent
 ```
-- Texte de couverture : `CACHE LE PRIX BARRÉ`
+- Texte de couverture : `REGARDE CE PRIX BARRÉ`
 - Story de partage : `Cache le prix barré avec ton pouce.`
 
 **YouTube Shorts**
@@ -157,24 +162,24 @@ Sources : Science, 1974 ; article L. 112-1-1 du Code de la consommation.
 ### Jour 2 — 12 h · 006 — L'essai gratuit
 
 **Fichier :** `videos/006-l-essai-gratuit/livraison/006-l-essai-gratuit-v5.mp4`
-**Image de couverture :** vers 19 s, quand la voix dit « Bouton deux » : les deux boutons du patron de l'appli à l'écran.
+**Image de couverture :** entre 1,5 et 2,5 s (le plan change à 2,8 s) : fond violet, un téléphone avec un bouton rose « ESSAI GRATUIT », titre « TU OUBLIES DE RÉSILIER ? ».
 
 **TikTok**
 ```
 Essai gratuit, abonnement, résiliation : pourquoi tu oublies toujours de résilier. Ce n'est pas ta mémoire, c'est un réglage. Tu paies combien d'abonnements que tu n'utilises plus ?
 #abonnement #essaigratuit #résiliation #consommation #argent
 ```
-- Texte de couverture : `ESSAI GRATUIT : LE PIÈGE`
+- Texte de couverture : `TU OUBLIES DE RÉSILIER ?`
 - Commentaire à épingler : `Quel abonnement tu paies encore sans l'utiliser ?`
 
 **Instagram**
 ```
-Pourquoi tu oublies toujours de résilier après l'essai gratuit ?
+Pourquoi tu oublies toujours de résilier l'essai gratuit ?
 Ce n'est pas ta mémoire. C'est un réglage : à la fin de l'essai, tout continue, et c'est à toi de dire non. Ne rien faire, c'est toujours le choix le plus facile.
 Envoie-la à quelqu'un qui a encore un abonnement oublié.
 #abonnement #essaigratuit #résiliation #consommation #argent
 ```
-- Texte de couverture : `ESSAI GRATUIT : LE PIÈGE`
+- Texte de couverture : `TU OUBLIES DE RÉSILIER ?`
 - Story de partage : `Tu as résilié ton dernier essai gratuit ?`
 
 **YouTube Shorts**
@@ -192,24 +197,24 @@ Sources : document de travail « Sophisticated Consumers with Inertia » ; Ameri
 ### Jour 2 — 19 h · 014 — Le paquet qui rétrécit
 
 **Fichier :** `videos/014-le-paquet-qui-retrecit/livraison/014-le-paquet-qui-retrecit-v4.mp4`
-**Image de couverture :** vers 26 s, quand la voix dit « 270 grammes » : le paquet d'hier (300 g) et celui d'aujourd'hui (270 g), au même prix de 2,49 €.
+**Image de couverture :** vers 1 s (le plan change à 1,1 s) : fond violet, un œil au-dessus d'un paquet rose marqué « BISCUITS », titre « REGARDE BIEN ». Si tu préfères, vers 2 s : le même paquet sur fond lilas, titre « CE PAQUET ».
 
 **TikTok**
 ```
 Réduflation (shrinkflation) : le paquet rétrécit, le prix ne bouge pas. Le vrai repère, c'est le prix au kilo sur l'étiquette. Tu le lis, toi ?
 #réduflation #shrinkflation #supermarché #courses #consommation
 ```
-- Texte de couverture : `MÊME PRIX, MOINS DEDANS`
+- Texte de couverture : `REGARDE BIEN CE PAQUET`
 - Commentaire à épingler : `Quel type de produit a rétréci chez toi sans que le prix bouge ? (sans citer de marque)`
 
 **Instagram**
 ```
 Regarde bien ce paquet de biscuits.
-Le prix n'a pas bougé. Lui, si. Ça s'appelle la réduflation. Le vrai repère reste là : le prix au kilo, écrit en petit sur l'étiquette.
+Le prix n'a pas bougé. Lui, si : trente grammes ont disparu. Ça s'appelle la réduflation. Le vrai repère reste là : le prix au kilo, écrit en petit sur l'étiquette.
 Envoie-la à la personne qui fait les courses chez toi.
 #réduflation #shrinkflation #supermarché #courses #consommation
 ```
-- Texte de couverture : `MÊME PRIX, MOINS DEDANS`
+- Texte de couverture : `REGARDE BIEN CE PAQUET`
 - Story de partage : `Ne lis pas le gros chiffre. Lis le petit.`
 
 **YouTube Shorts**
@@ -227,31 +232,31 @@ Sources : Journal of Retailing, 2014 ; DGCCRF (economie.gouv.fr).
 ### Jour 3 — 12 h · 003 — Le menu du milieu
 
 **Fichier :** `videos/003-le-menu-du-milieu/livraison/003-le-menu-du-milieu-v5.mp4`
-**Image de couverture :** vers 24 s, quand la voix dit « un menu à 29 euros » : la carte avec les trois menus, 14, 19 et 29 €.
+**Image de couverture :** entre 1 et 2 s (le plan change à 2,1 s) : fond violet, une carte de restaurant blanche « LA CARTE » avec trois lignes « MENU ? », titre « TU CROIS CHOISIR ».
 
 **TikTok**
 ```
 Menu au restaurant : pourquoi tu prends presque toujours celui du milieu. Ça s'appelle l'effet de compromis. La dernière fois, tu as pris lequel ?
 #restaurant #menu #psychologie #consommation #argent
 ```
-- Texte de couverture : `QUI CHOISIT TON MENU ?`
+- Texte de couverture : `TU CROIS CHOISIR TON MENU`
 - Commentaire à épingler : `14, 19 ou 29 € : tu prends lequel ?`
 
 **Instagram**
 ```
-Tu crois choisir ton menu. En vrai, on a choisi pour toi.
-Ajoute un menu à 29 € sur la carte : celui à 19 € devient le choix raisonnable. Le plus cher n'a même pas besoin d'être vendu. Il suffit qu'il soit là.
+Tu crois choisir ton menu.
+On a choisi pour toi. Ajoute un menu à 29 € sur la carte : celui à 19 € devient le choix raisonnable. Le plus cher n'a pas besoin d'être vendu. Il suffit qu'il soit sur la carte.
 Envoie-la à la personne avec qui tu vas au resto.
 #restaurant #menu #psychologie #consommation #argent
 ```
-- Texte de couverture : `QUI CHOISIT TON MENU ?`
+- Texte de couverture : `TU CROIS CHOISIR TON MENU`
 - Story de partage : `Au resto, tu prends celui du milieu ?`
 
 **YouTube Shorts**
 - Titre : `Menu au restaurant : le piège du menu du milieu`
 ```
 Menu au restaurant : une option gagne des clients dès qu'elle se retrouve au milieu. C'est l'effet de compromis.
-Le menu le plus cher n'a pas besoin d'être vendu : il suffit qu'il soit là.
+Le menu le plus cher n'a pas besoin d'être vendu : il suffit qu'il soit sur la carte.
 Sources : Journal of Consumer Research, 1989 ; Journal of Marketing Research, 1992.
 #restaurant #menu #consommation
 ```
@@ -262,24 +267,24 @@ Sources : Journal of Consumer Research, 1989 ; Journal of Marketing Research, 19
 ### Jour 3 — 19 h · 011 — « Plus que 2 en stock »
 
 **Fichier :** `videos/011-plus-que-2-en-stock/livraison/011-plus-que-2-en-stock-v5.mp4`
-**Image de couverture :** vers 3 s, quand la voix dit « Plus que 2 en stock » : le petit message rouge à l'écran.
+**Image de couverture :** vers 1 s (le plan change à 1,4 s) : fond violet, une fiche produit avec un sac à dos rose, le prix 39 €, une petite pastille rose « PLUS QUE 2 » et le bouton « AJOUTER AU PANIER », titre « REGARDE BIEN ».
 
 **TikTok**
 ```
 « Plus que 2 en stock » sur un site marchand : pourquoi ce message te pousse à acheter vite. C'est l'effet de rareté. Sans cette ligne, tu l'aurais voulu ?
 #achatenligne #ecommerce #rareté #consommation #argent
 ```
-- Texte de couverture : `STOCK LIMITÉ, VRAIMENT ?`
+- Texte de couverture : `PLUS QUE 2 EN STOCK ?`
 - Commentaire à épingler : `Tu as déjà acheté plus vite à cause d'un « plus que 2 en stock » ?`
 
 **Instagram**
 ```
-Regarde bien ce petit message rouge : « Plus que 2 en stock ».
-Il ne te dit rien sur le produit. Et pourtant, il vient de le rendre plus désirable. Avant de cliquer, une seule question : sans cette ligne, tu l'aurais voulu ?
+Regarde bien ce petit message rouge.
+« Plus que 2 en stock. » Il ne dit rien du produit. Pourtant, tu le veux. Avant de cliquer, une seule question : sans cette ligne, tu l'aurais voulu ?
 Envoie-la à quelqu'un qui commande toujours « avant qu'il n'y en ait plus ».
 #achatenligne #ecommerce #rareté #consommation #argent
 ```
-- Texte de couverture : `STOCK LIMITÉ, VRAIMENT ?`
+- Texte de couverture : `PLUS QUE 2 EN STOCK ?`
 - Story de partage : `Sans cette ligne, tu l'aurais voulu ?`
 
 **YouTube Shorts**
@@ -297,28 +302,28 @@ Sources : Journal of Personality and Social Psychology, 1975 ; article L. 121-2 
 ### Jour 4 — 12 h · 001 — Le 9,99 €
 
 **Fichier :** `videos/001-pourquoi-tu-9-99/livraison/001-pourquoi-tu-9-99-v10.mp4`
-**Image de couverture :** vers 1,5 s, quand la voix dit « 9,99 € » : l'étiquette de prix à 9,99 €.
+**Image de couverture :** entre 1,5 et 3 s (le plan change à 3,3 s) : fond rose, une étiquette blanche « 9,99 € » entourée de petits traits vert citron, titre « MOINS CHER VRAIMENT ? ».
 
 **TikTok**
 ```
-Prix en 9,99 € : pourquoi ton cerveau le range dans « neuf euros et quelques », pas dans « dix ». C'est l'effet du chiffre de gauche. Tu regardes le premier chiffre ou le prix entier ?
+Prix en 9,99 € : pourquoi il te paraît moins cher. Ton cerveau le range dans « neuf euros et quelques », pas dans « dix ». C'est l'effet du chiffre de gauche. Tu regardes le premier chiffre ou le prix entier ?
 #prix #psychologie #courses #consommation #argent
 ```
-- Texte de couverture : `9,99 € OU 10 € ?`
+- Texte de couverture : `9,99 € : MOINS CHER ?`
 - Commentaire à épingler : `3,99 € ou 4 € : honnêtement, tu sens une différence ?`
 
 **Instagram**
 ```
-Pourquoi tu trouves que 9,99 €, c'est vraiment moins cher que 10 ?
-Un seul centime d'écart. Ton cerveau lit de gauche à droite : il voit le 9, et il classe le prix avant d'avoir fini de lire.
+Pourquoi 9,99 € te paraît moins cher ?
+Un centime d'écart. Ton cerveau lit de gauche à droite : il voit le 9, et il classe le prix avant d'avoir fini de lire.
 Envoie-la à quelqu'un qui dit toujours « c'était neuf euros ».
 #prix #psychologie #courses #consommation #argent
 ```
-- Texte de couverture : `9,99 € OU 10 € ?`
+- Texte de couverture : `9,99 € : MOINS CHER ?`
 - Story de partage : `9,99 € : tu lis 9 ou 10 ?`
 
 **YouTube Shorts**
-- Titre : `Prix à 9,99 € : pourquoi ton cerveau lit 9 et pas 10`
+- Titre : `Prix à 9,99 € : pourquoi il te paraît moins cher`
 ```
 Prix à 9,99 € : ton cerveau lit de gauche à droite et classe le prix dès le premier chiffre. C'est l'effet du chiffre de gauche.
 Il ne marche que si le premier chiffre change : entre 4 € et 3,99 €, pas entre 3,60 € et 3,59 €.
@@ -332,31 +337,31 @@ Sources : Journal of Consumer Research, 2005 ; Quantitative Marketing and Econom
 ### Jour 4 — 19 h · 009 — Carte ou espèces
 
 **Fichier :** `videos/009-carte-ou-especes/livraison/009-carte-ou-especes-v7.mp4`
-**Image de couverture :** vers 3 s, quand la voix dit « qu'avec des billets » : la carte bancaire face aux billets.
+**Image de couverture :** entre 1,5 et 2,5 s (le plan change à 2,6 s) : fond violet, une carte bancaire blanche à puce vert citron, titre « TU ACCEPTES DE PAYER PLUS ».
 
 **TikTok**
 ```
-Carte bancaire ou espèces : pourquoi tu dépenses plus facilement par carte et en sans contact. Ça s'appelle la douleur de payer. Ton dernier achat sans contact, tu sais combien il coûtait ?
-#cartebancaire #sanscontact #espèces #consommation #argent
+Carte bancaire ou espèces : pourquoi tu acceptes de payer plus par carte. Tu poses, ça bipe, et tu ne sens rien. Ça s'appelle la douleur de payer. Ton dernier paiement par carte, tu te souviens du montant ?
+#cartebancaire #paiement #espèces #consommation #argent
 ```
-- Texte de couverture : `CARTE OU ESPÈCES ?`
+- Texte de couverture : `PAR CARTE, TU PAIES PLUS`
 - Commentaire à épingler : `Tu paies plutôt par carte ou en espèces ? Dis-moi pourquoi.`
 
 **Instagram**
 ```
-Avec une carte, on est prêt à payer plus cher qu'avec des billets.
-Ça n'a rien à voir avec l'argent sur ton compte. Avec un billet, tu vois l'argent partir. Avec une carte, tu poses, ça bipe, c'est fini. L'effet est réel, mais petit. Petit, et répété à chaque passage en caisse.
-Envoie-la à quelqu'un qui paie tout en sans contact.
-#cartebancaire #sanscontact #espèces #consommation #argent
+Par carte, tu acceptes de payer plus.
+Et ça n'a rien à voir avec ton compte. Avec un billet, tu vois l'argent partir. Avec une carte, tu poses, ça bipe, c'est fini. L'effet est réel, mais petit. Petit, mais répété à chaque passage en caisse.
+Envoie-la à quelqu'un qui paie tout par carte.
+#cartebancaire #paiement #espèces #consommation #argent
 ```
-- Texte de couverture : `CARTE OU ESPÈCES ?`
+- Texte de couverture : `PAR CARTE, TU PAIES PLUS`
 - Story de partage : `Carte ou espèces : tu sens la différence ?`
 
 **YouTube Shorts**
-- Titre : `Carte ou espèces : pourquoi tu dépenses plus par carte`
+- Titre : `Carte ou espèces : pourquoi tu paies plus par carte`
 ```
 Carte bancaire ou espèces : moins tu vois l'argent partir, moins tu le sens. Ça s'appelle la douleur de payer.
-En 2024, une analyse de 71 études conclut que l'effet est réel, mais petit.
+Dans une enchère de 2001, ceux qui payaient par carte ont proposé plus du double. En 2024, une analyse de 71 études conclut que l'effet est réel, mais petit.
 Sources : Marketing Letters, 2001 ; Journal of Retailing, 2024.
 #cartebancaire #espèces #consommation
 ```
@@ -367,24 +372,24 @@ Sources : Marketing Letters, 2001 ; Journal of Retailing, 2024.
 ### Jour 5 — 12 h · 013 — Par mois ou par an
 
 **Fichier :** `videos/013-par-mois-ou-par-an/livraison/013-par-mois-ou-par-an-v5.mp4`
-**Image de couverture :** vers 4 s, quand la voix dit « 60 € par an » : les deux prix face à face, 4,99 € par mois et 60 € par an.
+**Image de couverture :** vers 1 s (le plan change à 1,4 s) : fond violet, deux étiquettes, « 4,99 € par mois » en blanc et « 60 € par an » en vert citron, titre « TU CROIS CHOISIR ». Si tu préfères, vers 2 s : les mêmes étiquettes sur fond lilas, titre « TU CROIS CHOISIR LE MOINS CHER ».
 
 **TikTok**
 ```
 Abonnement à 4,99 € par mois ou 60 € par an : c'est le même prix, à 12 centimes près. Pourquoi « par mois » passe mieux. Tu multiplies par douze, toi ?
 #abonnement #prix #psychologie #consommation #argent
 ```
-- Texte de couverture : `4,99 € OU 60 € ?`
+- Texte de couverture : `4,99 € PAR MOIS OU 60 € PAR AN ?`
 - Commentaire à épingler : `Tu as combien d'abonnements payés « par mois » ?`
 
 **Instagram**
 ```
-Tu crois choisir le moins cher. 4,99 € par mois, ou 60 € par an ?
-4,99 fois 12 : 59,88 €. C'est le même prix. Tu ne juges plus le prix. Tu juges la taille du morceau.
+Tu crois choisir l'abonnement le moins cher.
+4,99 € par mois, ou 60 € par an ? Fais le calcul : 4,99 fois 12, ça fait 59,88 €. C'est le même prix. Tu ne juges plus le prix. Tu juges la taille du morceau.
 Envoie-la à quelqu'un qui dit « ce n'est que 4,99 € par mois ».
 #abonnement #prix #psychologie #consommation #argent
 ```
-- Texte de couverture : `4,99 € OU 60 € ?`
+- Texte de couverture : `4,99 € PAR MOIS OU 60 € PAR AN ?`
 - Story de partage : `« Par mois » ? Multiplie par douze.`
 
 **YouTube Shorts**
@@ -402,24 +407,24 @@ Sources : Journal of Consumer Research, 1998 ; Marketing Letters, 2003.
 ### Jour 5 — 19 h · 008 — La livraison gratuite
 
 **Fichier :** `videos/008-la-livraison-gratuite/livraison/008-la-livraison-gratuite-v5.mp4`
-**Image de couverture :** vers 2,5 s, quand la voix dit « Plus que 4 € » : le message « Plus que 4 € pour la livraison gratuite ».
+**Image de couverture :** entre 1,5 et 2,5 s (le plan change à 3 s) : fond violet, un message blanc « PLUS QUE 4 € pour la livraison gratuite » avec une barre rose presque pleine, titre « REGARDE BIEN ».
 
 **TikTok**
 ```
 Livraison gratuite dès un certain montant : pourquoi « plus que 4 € » te fait ajouter un article à ton panier. C'est l'effet du prix zéro. Ça t'est arrivé cette semaine ?
 #livraisongratuite #achatenligne #panier #consommation #argent
 ```
-- Texte de couverture : `LIVRAISON GRATUITE, VRAIMENT ?`
+- Texte de couverture : `PLUS QUE 4 € : LE PIÈGE`
 - Commentaire à épingler : `C'est quoi, le dernier article que tu as ajouté juste pour la livraison gratuite ?`
 
 **Instagram**
 ```
-Regarde bien ce message : « Plus que 4 € pour la livraison gratuite. »
-Il vient de te faire ajouter un article. Le seuil n'est pas un cadeau. C'est une ligne d'arrivée, placée un peu plus loin que ton panier.
+Regarde bien ce message de livraison gratuite.
+« Plus que 4 €. » Il vient de te faire ajouter un article. Le seuil n'est pas un cadeau. C'est une ligne d'arrivée, placée un peu plus loin que ton panier.
 Envoie-la à quelqu'un qui ajoute toujours un article pour avoir la livraison.
 #livraisongratuite #achatenligne #panier #consommation #argent
 ```
-- Texte de couverture : `LIVRAISON GRATUITE, VRAIMENT ?`
+- Texte de couverture : `PLUS QUE 4 € : LE PIÈGE`
 - Story de partage : `Tu ajoutes un article pour la livraison ?`
 
 **YouTube Shorts**
@@ -437,24 +442,24 @@ Source : Marketing Science, 2007.
 ### Jour 6 — 12 h · 015 — La carte sans le signe €
 
 **Fichier :** `videos/015-la-carte-sans-le-signe-euro/livraison/015-la-carte-sans-le-signe-euro-v5.mp4`
-**Image de couverture :** vers 23 s, quand la voix dit « le nombre tout seul » : les trois façons d'écrire le prix du plat du jour.
+**Image de couverture :** vers 1 s (le plan change à 1,3 s) : fond violet, une carte de restaurant « LA CARTE » avec entrée 9, plat du jour 20 (en gros, en rose) et dessert 7, sans signe euro, titre « TU DÉPENSES + ».
 
 **TikTok**
 ```
-Carte de restaurant sans le signe euro : pourquoi tu dépenses plus quand le prix est écrit « 20 » tout court. Sur la dernière carte que tu as lue, il y avait le signe ?
+Carte de restaurant sans le signe euro : pourquoi tu dépenses plus quand le prix est écrit « 20 » tout court. Un tout petit symbole en moins, et le prix pèse moins lourd. Tu l'avais déjà remarqué ?
 #restaurant #menu #prix #consommation #argent
 ```
-- Texte de couverture : `20 OU 20 € ?`
-- Commentaire à épingler : `La prochaine fois au resto, regarde la carte : signe euro, ou juste un nombre ? Reviens me dire.`
+- Texte de couverture : `SANS LE SIGNE €, TU DÉPENSES +`
+- Commentaire à épingler : `Sur la dernière carte de resto que tu as lue : signe euro, ou juste un nombre ?`
 
 **Instagram**
 ```
-Pourquoi tu dépenses plus quand la carte écrit « 20 », sans le signe euro ?
+Pourquoi tu dépenses plus sans le signe euro ?
 Un tout petit symbole en moins. Le signe euro te rappelle que c'est de l'argent. Ton argent. Sans lui, « 20 » n'est plus qu'un nombre. Attention : l'étude porte sur un seul restaurant.
 Envoie-la à quelqu'un qui travaille dans la restauration.
 #restaurant #menu #prix #consommation #argent
 ```
-- Texte de couverture : `20 OU 20 € ?`
+- Texte de couverture : `SANS LE SIGNE €, TU DÉPENSES +`
 - Story de partage : `Sur ta dernière carte : « 20 » ou « 20 € » ?`
 
 **YouTube Shorts**
@@ -465,7 +470,7 @@ Attention : un seul restaurant, un seul service. Les auteurs disent que ça ne m
 Source : étude de 2009 de l'université Cornell, 201 clients au déjeuner.
 #restaurant #prix #consommation
 ```
-- Commentaire à épingler : `La prochaine fois au resto, regarde la carte : signe euro, ou juste un nombre ? Reviens me dire.`
+- Commentaire à épingler : `Sur la dernière carte de resto que tu as lue : signe euro, ou juste un nombre ?`
 
 ---
 
@@ -473,24 +478,24 @@ Source : étude de 2009 de l'université Cornell, 201 clients au déjeuner.
 
 **Fichier :** `videos/005-le-grand-caddie/livraison/005-le-grand-caddie-v5.mp4`
 (Le dossier garde son ancien nom. N'écris jamais ce mot dans une description : on dit « chariot ».)
-**Image de couverture :** vers 25 s, quand la voix dit « ton chariot a l'air vide » : le grand chariot avec trois articles au fond.
+**Image de couverture :** entre 1,5 et 2,5 s (le plan change à 2,8 s) : fond violet, un grand chariot vide, blanc et vert citron, titre « GRAND CHARIOT, TU ACHÈTES PLUS ».
 
 **TikTok**
 ```
 Chariot de supermarché : pourquoi un grand chariot te fait acheter plus pendant tes courses. Tu prends un chariot ou un panier, toi ?
 #supermarché #courses #chariot #consommation #argent
 ```
-- Texte de couverture : `GRAND CHARIOT, GROS TICKET`
+- Texte de couverture : `GRAND CHARIOT, TU ACHÈTES PLUS`
 - Commentaire à épingler : `Pour « trois courses », tu prends un chariot ou un panier ?`
 
 **Instagram**
 ```
-Donne un chariot plus grand à des clients : ils achètent plus.
-Même magasin, mêmes prix, mêmes envies. Tu ne comptes pas ce que tu as pris : tu regardes la place qui reste. (Résultat de congrès de 2024, pas encore confirmé dans une grande revue.)
+Avec un grand chariot, tu achètes plus.
+Même magasin, mêmes prix, mêmes envies. Tu poses trois articles au fond, et ton chariot a l'air vide. Tu ne comptes pas ce que tu as pris : tu regardes la place qui reste. (Résultat de congrès de 2024, pas encore confirmé dans une grande revue.)
 Envoie-la à quelqu'un qui entre pour du pain et ressort avec un chariot plein.
 #supermarché #courses #chariot #consommation #argent
 ```
-- Texte de couverture : `GRAND CHARIOT, GROS TICKET`
+- Texte de couverture : `GRAND CHARIOT, TU ACHÈTES PLUS`
 - Story de partage : `Regarde la taille de ton chariot avant d'entrer.`
 
 **YouTube Shorts**
@@ -508,24 +513,24 @@ Sources : congrès European Marketing Academy, 2024 ; synthèse Cochrane, 2015.
 ### Jour 7 — 12 h · 007 — Le pop-corn moyen
 
 **Fichier :** `videos/007-le-pop-corn-moyen/livraison/007-le-pop-corn-moyen-v5.mp4`
-**Image de couverture :** vers 22 s, quand la voix dit « à 7 euros 50 » : les trois tailles de pop-corn avec leurs prix (4 €, 7,50 €, 8 €).
+**Image de couverture :** entre 1,5 et 2,5 s (le plan change à 2,7 s) : fond violet, trois cornets de pop-corn roses marqués P, M et G, titre « 3 TAILLES ».
 
 **TikTok**
 ```
 Pop-corn au cinéma : petit, moyen ou grand ? Pourquoi la taille moyenne est là pour te faire prendre le grand. Ça s'appelle un leurre. Tu l'avais repéré ?
 #cinéma #popcorn #prix #consommation #argent
 ```
-- Texte de couverture : `LE MOYEN : UN LEURRE`
+- Texte de couverture : `3 TAILLES, UN SEUL PIÈGE`
 - Commentaire à épingler : `Petit à 4 €, moyen à 7,50 €, grand à 8 € : tu prends lequel ?`
 
 **Instagram**
 ```
-Tu crois comparer trois tailles de pop-corn. Une seule est là pour être achetée.
-Le moyen coûte presque autant que le grand. Il n'est pas là pour être vendu. Il est là pour être battu.
+Tu crois comparer trois tailles de pop-corn.
+Une seule est là pour être achetée. Une autre, pour ne jamais l'être. Le moyen coûte presque autant que le grand. Il n'est pas là pour être vendu. Il est là pour être battu.
 Envoie-la à la personne qui paie le pop-corn.
 #cinéma #popcorn #prix #consommation #argent
 ```
-- Texte de couverture : `LE MOYEN : UN LEURRE`
+- Texte de couverture : `3 TAILLES, UN SEUL PIÈGE`
 - Story de partage : `Devant trois tailles, cherche celle qui ne sert à rien.`
 
 **YouTube Shorts**
@@ -543,24 +548,24 @@ Sources : Journal of Consumer Research, 1982 ; Journal of Marketing Research, 20
 ### Jour 7 — 19 h · 012 — La carte de fidélité
 
 **Fichier :** `videos/012-la-carte-de-fidelite/livraison/012-la-carte-de-fidelite-v5.mp4`
-**Image de couverture :** vers 20 s, quand la voix dit « déjà tamponnées » : les deux cartes côte à côte, A (huit cases vides) et B (dix cases, deux tampons).
+**Image de couverture :** vers 1 s (le plan change à 1,4 s) : fond violet, une carte « FIDÉLITÉ » à dix cases dont deux déjà cochées, un tampon posé dessus, titre « 2 TAMPONS OFFERTS ».
 
 **TikTok**
 ```
-Carte de fidélité avec deux tampons déjà offerts : pourquoi tu la finis plus vite. C'est l'effet de progrès offert. Tu as combien de cartes entamées dans ton portefeuille ?
+Carte de fidélité avec deux tampons déjà offerts : pourquoi tu reviens plus vite. C'est l'effet de progrès offert. Tu as combien de cartes entamées dans ton portefeuille ?
 #cartedefidélité #fidélité #café #consommation #argent
 ```
-- Texte de couverture : `2 TAMPONS « OFFERTS » ?`
+- Texte de couverture : `2 TAMPONS OFFERTS ?`
 - Commentaire à épingler : `Carte A (8 cases vides) ou carte B (10 cases, 2 déjà tamponnées) : laquelle tu finis ?`
 
 **Instagram**
 ```
-Offre deux tampons sur une carte de fidélité : les clients la finissent plus souvent. Et plus vite.
-Pourtant, ils n'ont rien gagné : il reste exactement le même nombre de cafés à payer. Ces deux tampons ne sont pas un cadeau. C'est un élan qu'on te donne, pour que tu reviennes.
+Deux tampons offerts, et tu reviens plus vite.
+Pourtant, tu n'as rien gagné : il reste exactement le même nombre de cafés à payer. Ces deux tampons ne sont pas un cadeau. C'est un élan qu'on te donne, pour que tu reviennes.
 Envoie-la à quelqu'un qui a le portefeuille plein de cartes de fidélité.
 #cartedefidélité #fidélité #café #consommation #argent
 ```
-- Texte de couverture : `2 TAMPONS « OFFERTS » ?`
+- Texte de couverture : `2 TAMPONS OFFERTS ?`
 - Story de partage : `Combien de cartes entamées dans ton portefeuille ?`
 
 **YouTube Shorts**
